@@ -50,7 +50,7 @@ class Scratch3Minecraft {
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.STRING,
-                            defaultValue: '石(stone)'
+                            defaultValue: this.BLOCK_INFO[0].name
                         },
                         X: {
                             type: ArgumentType.NUMBER,
@@ -171,24 +171,24 @@ class Scratch3Minecraft {
         return [
             {
                 name: formatMessage({
-                    id: 'minecraft.air',
-                    default: '空気(air)'
-                }),
-                blockID: '0',
-                blockData: '0'
-            },
-            {
-                name: formatMessage({
                     id: 'minecraft.stone',
-                    default: '石(stone)'
+                    default: '石'
                 }),
                 blockID: '1',
                 blockData: '0'
             },
             {
                 name: formatMessage({
+                    id: 'minecraft.air',
+                    default: '空気'
+                }),
+                blockID: '0',
+                blockData: '0'
+            },
+            {
+                name: formatMessage({
                     id: 'minecraft.granite',
-                    default: '花崗岩(granite)'
+                    default: '花崗岩'
                 }),
                 blockID: '1',
                 blockData: '1'
