@@ -4,6 +4,7 @@ const ArgumentType = require('../../extension-support/argument-type');
 const BlockType = require('../../extension-support/block-type');
 const Cast = require('../../util/cast');
 const log = require('../../util/log');
+const formatMessage = require('format-message');
 
 class Scratch3Minecraft {
 
@@ -61,13 +62,86 @@ class Scratch3Minecraft {
                     opcode: 'getPosZ',
                     text: 'Z',
                     blockType: BlockType.REPORTER
+                },
+                {
+                    opcode: 'getBlocks',
+                    // text: '[BLOCK]',
+                    text: formatMessage({
+                        id: 'minecraft.blockInfo',
+                        default: '[BLOCK]',
+                        description: 'name of minecraft blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'BLOCK',
+                            defaultValue: 0
+                        }
+                    }
                 }
-
-
             ],
             menus: {
+                BLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.BLOCK_INFO)
+                }
             }
         };
+    }
+
+    /**
+     * Create data for a menu in scratch-blocks format, consisting of an array of objects with text and
+     * value properties. The text is a translated string, and the value is one-indexed.
+     * @param  {object[]} info - An array of info objects each having a name property.
+     * @return {array} - An array of objects with text and value properties.
+     * @private
+     */
+    _buildMenu(info) {
+        return info.map((entry, index) => {
+            const obj = {};
+            obj.text = entry.name;
+            obj.value = String(index);
+            return obj;
+        });
+    }
+
+    /**
+     * An array of info about each drum.
+     * @type {object[]}
+     * @param {string} name - the translatable name to display in the drums menu.
+     * @param {string} blockID - the ID of the minecraft block.
+     */
+    get BLOCK_INFO() {
+        return [
+            {
+                name: formatMessage({
+                    id: 'minecraft.air',
+                    default: '空気(air)'
+                }),
+                blockID: '0'
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.stone',
+                    default: '石(stone)'
+                }),
+                blockID: '1'
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.granite',
+                    default: '花崗岩(granite)'
+                }),
+                blockID: '1:1'
+            }
+        ];
+    }
+
+    getBlocks(args) {
+        log.log(args)
+        log.log(this.BLOCK_INFO)
+        return this.BLOCK_INFO[args.BLOCK].name;
     }
 
     getPosX() {
