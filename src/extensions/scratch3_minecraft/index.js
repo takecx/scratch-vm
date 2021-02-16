@@ -44,6 +44,29 @@ class Scratch3Minecraft {
                     }
                 },
                 {
+                    opcode: 'setBlock',
+                    blockType: BlockType.COMMAND,
+                    text: '[BLOCK]ブロックを([X],[Y],[Z])に置く',
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '石(stone)'
+                        },
+                        X: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 0
+                        },
+                        Y: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 0
+                        },
+                        Z: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
                     opcode: 'getPlayerPosition',
                     blockType: BlockType.COMMAND,
                     text: '現在位置を調べる'
@@ -65,7 +88,6 @@ class Scratch3Minecraft {
                 },
                 {
                     opcode: 'getBlocks',
-                    // text: '[BLOCK]',
                     text: formatMessage({
                         id: 'minecraft.blockInfo',
                         default: '[BLOCK]',
@@ -119,29 +141,38 @@ class Scratch3Minecraft {
                     id: 'minecraft.air',
                     default: '空気(air)'
                 }),
-                blockID: '0'
+                blockID: '0',
+                blockData: '0'
             },
             {
                 name: formatMessage({
                     id: 'minecraft.stone',
                     default: '石(stone)'
                 }),
-                blockID: '1'
+                blockID: '1',
+                blockData: '0'
             },
             {
                 name: formatMessage({
                     id: 'minecraft.granite',
                     default: '花崗岩(granite)'
                 }),
-                blockID: '1:1'
+                blockID: '1',
+                blockData: '1'
             }
         ];
     }
 
+    setBlock(args) {
+        const blockID = args.BLOCK.blockID;
+        const blockData = args.BLOCK.blockData;
+        const command = [`world.setBlock(${Math.trunc(args.X)},${Math.trunc(args.Y)},${Math.trunc(args.Z)},${blockID},${blockData})`];
+        this.sendCommand(command);
+
+    }
+
     getBlocks(args) {
-        log.log(args)
-        log.log(this.BLOCK_INFO)
-        return this.BLOCK_INFO[args.BLOCK].name;
+        return this.BLOCK_INFO[args.BLOCK];
     }
 
     getPosX() {
