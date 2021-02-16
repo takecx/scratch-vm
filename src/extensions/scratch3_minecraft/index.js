@@ -67,6 +67,41 @@ class Scratch3Minecraft {
                     }
                 },
                 {
+                    opcode: 'setBlocks',
+                    blockType: BlockType.COMMAND,
+                    text: '[BLOCK]ブロックを([STARTX],[STARTY],[STARTZ])から([ENDX],[ENDY],[ENDZ])まで置く',
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.STRING,
+                            defaultValue: this.BLOCK_INFO[0].name
+                        },
+                        STARTX: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 0
+                        },
+                        STARTY: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 0
+                        },
+                        STARTZ: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 0
+                        },
+                        ENDX: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 5
+                        },
+                        ENDY: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 5
+                        },
+                        ENDZ: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 5
+                        }
+                    }
+                },
+                {
                     opcode: 'getPlayerPosition',
                     blockType: BlockType.COMMAND,
                     text: '現在位置を調べる'
@@ -216,11 +251,30 @@ class Scratch3Minecraft {
     }
 
     setBlock(args) {
-        const blockID = args.BLOCK.blockID;
-        const blockData = args.BLOCK.blockData;
+        let [blockID, blockData] = this.findBlockInfo(args.BLOCK);
         const command = [`world.setBlock(${Math.trunc(args.X)},${Math.trunc(args.Y)},${Math.trunc(args.Z)},${blockID},${blockData})`];
         this.sendCommand(command);
+    }
 
+    setBlocks(args) {
+        let [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const command = [`world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`];
+        this.sendCommand(command);
+    }
+
+    findBlockInfo(block) {
+        let blockID = null;
+        let blockData = null;
+        log.log(typeof block);
+        if (typeof block === 'string') {
+            const targetBlock = this.BLOCK_INFO.find((b) => b.name === block)
+            blockID = targetBlock.blockID;
+            blockData = targetBlock.blockData;
+        } else {
+            blockID = block.blockID;
+            blockData = block.blockData;
+        }
+        return [blockID, blockData];
     }
 
     getBlocks(args) {
