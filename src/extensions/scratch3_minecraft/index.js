@@ -87,6 +87,39 @@ class Scratch3Minecraft {
                     blockType: BlockType.REPORTER
                 },
                 {
+                    opcode: 'changePosX',
+                    blockType: BlockType.COMMAND,
+                    text: 'Xを[VALUE]だけ変える',
+                    arguments: {
+                        VALUE: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 1
+                        }
+                    }
+                },
+                {
+                    opcode: 'changePosY',
+                    blockType: BlockType.COMMAND,
+                    text: 'Yを[VALUE]だけ変える',
+                    arguments: {
+                        VALUE: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 1
+                        }
+                    }
+                },
+                {
+                    opcode: 'changePosZ',
+                    blockType: BlockType.COMMAND,
+                    text: 'Zを[VALUE]だけ変える',
+                    arguments: {
+                        VALUE: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 1
+                        }
+                    }
+                },
+                {
                     opcode: 'getBlocks',
                     text: formatMessage({
                         id: 'minecraft.blockInfo',
@@ -161,6 +194,25 @@ class Scratch3Minecraft {
                 blockData: '1'
             }
         ];
+    }
+
+    changePosX(args) {
+        const stage = this.runtime.getTargetForStage();
+        if (stage) {
+            stage.posX = stage.posX + Cast.toNumber(args.VALUE);
+        }
+    }
+    changePosY(args) {
+        const stage = this.runtime.getTargetForStage();
+        if (stage) {
+            stage.posY = stage.posY + Cast.toNumber(args.VALUE);
+        }
+    }
+    changePosZ(args) {
+        const stage = this.runtime.getTargetForStage();
+        if (stage) {
+            stage.posZ = stage.posZ + Cast.toNumber(args.VALUE);
+        }
     }
 
     setBlock(args) {
