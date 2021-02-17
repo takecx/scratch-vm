@@ -11,9 +11,9 @@ class Scratch3Minecraft {
     constructor(runtime) {
         this.runtime = runtime;
 
-        this.ws1 = null;
-        this.ws2 = null;
+        this.websockets = [];
         this.host = 'localhost';
+
     }
 
     getInfo() {
@@ -46,21 +46,21 @@ class Scratch3Minecraft {
                 {
                     opcode: 'setBlock',
                     blockType: BlockType.COMMAND,
-                    text: '[BLOCK]ブロックを([X],[Y],[Z])に置く',
+                    text: '[BLOCK]ブロックを([STARTX],[STARTY],[STARTZ])に置く',
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.STRING,
                             defaultValue: this.BLOCK_INFO[0].name
                         },
-                        X: {
+                        STARTX: {
                             type: ArgumentType.NUMBER,
                             defaultValue: 0
                         },
-                        Y: {
+                        STARTY: {
                             type: ArgumentType.NUMBER,
                             defaultValue: 0
                         },
-                        Z: {
+                        STARTZ: {
                             type: ArgumentType.NUMBER,
                             defaultValue: 0
                         }
@@ -251,13 +251,13 @@ class Scratch3Minecraft {
     }
 
     setBlock(args) {
-        let [blockID, blockData] = this.findBlockInfo(args.BLOCK);
-        const command = [`world.setBlock(${Math.trunc(args.X)},${Math.trunc(args.Y)},${Math.trunc(args.Z)},${blockID},${blockData})`];
+        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const command = [`world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData})`];
         this.sendCommand(command);
     }
 
     setBlocks(args) {
-        let [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
         const command = [`world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`];
         this.sendCommand(command);
     }
@@ -265,7 +265,6 @@ class Scratch3Minecraft {
     findBlockInfo(block) {
         let blockID = null;
         let blockData = null;
-        log.log(typeof block);
         if (typeof block === 'string') {
             const targetBlock = this.BLOCK_INFO.find((b) => b.name === block)
             blockID = targetBlock.blockID;
@@ -308,31 +307,24 @@ class Scratch3Minecraft {
     }
 
     sendCommand(commands) {
-        if (this.ws1 === null || this.ws1.readyState === 3) {
-            this.ws1 = new WebSocket("ws://" + this.host + ":14711");
-            this.ws1.onopen = function (e) {
-                log.log('onopen !!');
-                log.log(e);
-                commands.forEach(command => {
-                    e.currentTarget.send(command);
-                });
-                e.currentTarget.close();
-            }
-            this.ws1.onmessage = function (e) {
-                log.log('onmessage !!');
-                log.log(e);
-                e.currentTarget.close();
-            }
-            this.ws1.onclose = function (e) {
-                log.log('onclose !!');
-                log.log(e);
-                // e.currentTarget = null;
-            };
-            this.ws1.onerror = function (e) {
-                log.log('onerror !!');
-                log.log(e);
-            };
-        }
+        const ws = new WebSocket("ws://" + this.host + ":14711");
+        ws.onopen = function (e) {
+            commands.forEach(command => {
+                e.currentTarget.send(command);
+            });
+            e.currentTarget.close();
+        };
+        ws.onmessage = function (e) {
+            e.currentTarget.close();
+        };
+        ws.onclose = function (e) {
+            // e.currentTarget = null;
+        };
+        ws.onerror = function (e) {
+            log.log('onerror !!');
+            log.log(e);
+        };
+        this.websockets.push(ws);
     }
 
     chat(args) {
@@ -341,58 +333,40 @@ class Scratch3Minecraft {
     }
 
     getPlayerPosition() {
-        if (this.ws1 === null || this.ws1.readyState === 3) {
-            this.ws1 = new WebSocket("ws://" + this.host + ":14711");
-            this.ws1.onopen = function (e) {
-                log.log('onopen !!');
-                log.log(e);
-                e.currentTarget.send("world.getPlayerIds()");
-            }
-            this.ws1.onmessage = this.createGetPosWs.bind(this);
-            this.ws1.onclose = function (e) {
-                log.log('onclose !!');
-                log.log(e);
-                // e.currentTarget = null;
-            };
-            this.ws1.onerror = function (e) {
-                log.log('onerror !!');
-                log.log(e);
-            };
-        }
+        const ws = new WebSocket("ws://" + this.host + ":14711");
+        ws.onopen = function (e) {
+            e.currentTarget.send("world.getPlayerIds()");
+        };
+        ws.onmessage = function (e) {
+            this.getPos(e);
+            e.currentTarget.close();
+        }.bind(this);
+        ws.onclose = function (e) {
+        };
+        ws.onerror = function (e) {
+        };
     }
 
-
-
-    createGetPosWs(event) {
-        log.log('getposws')
+    getPos(event) {
         const playerID = event.data.replace(/\r?\n/g, "");
-        if (this.ws2 === null || this.ws2.readyState === 3) {
-            this.ws2 = new WebSocket("ws://" + this.host + ":14711");
-            this.ws2.onopen = function (e) {
-                log.log('onopen !!');
-                log.log(e);
-                e.currentTarget.send("entity.getPos(" + playerID + ")");
-            }
-            this.ws2.onmessage = function (e) {
-                log.log('onmessage on ws2');
-                log.log(e);
-                let posX = e.data.split(',')[0];
-                let posY = e.data.split(',')[1];
-                let posZ = e.data.split(',')[2];
-                const stage = this.runtime.getTargetForStage();
-                stage.posX = Cast.toNumber(posX);
-                stage.posY = Cast.toNumber(posY);
-                stage.posZ = Cast.toNumber(posZ);
-                e.currentTarget.close();
-            }.bind(this);
-            this.ws2.onclose = function (e) {
-                log.log('onclose ws2');
-                log.log(e);
-                this.ws1.close();
-            }.bind(this);
-        }
+        const ws = new WebSocket("ws://" + this.host + ":14711");
+        ws.onopen = function (e) {
+            e.currentTarget.send("entity.getPos(" + playerID + ")");
+        };
+        ws.onmessage = function (e) {
+            const posX = e.data.split(',')[0];
+            const posY = e.data.split(',')[1];
+            const posZ = e.data.split(',')[2];
+            const stage = this.runtime.getTargetForStage();
+            stage.posX = Cast.toNumber(posX);
+            stage.posY = Cast.toNumber(posY);
+            stage.posZ = Cast.toNumber(posZ);
+            e.currentTarget.close();
+        }.bind(this);
+        ws.onclose = function (e) {
+            // e.currentTarget.close();
+        };
     }
-
 }
 
 module.exports = Scratch3Minecraft;
