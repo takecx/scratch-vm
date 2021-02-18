@@ -284,6 +284,17 @@ class Scratch3Minecraft {
         }
     }
 
+    _searchCoordinateMode(args) {
+        if (typeof args.STARTX === 'string' && args.STARTX.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.STARTY === 'string' && args.STARTY.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.STARTZ === 'string' && args.STARTZ.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.ENDX === 'string' && args.ENDX.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.ENDY === 'string' && args.ENDY.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.ENDZ === 'string' && args.ENDZ.indexOf('~') !== -1) return this.relativeStr;
+
+        return this.absoluteStr;
+    }
+
     setBlock(args) {
         const coordinateMode = this._searchCoordinateMode(args);
         if (coordinateMode === this.absoluteStr) {
@@ -337,6 +348,15 @@ class Scratch3Minecraft {
     }
 
     setBlocks(args) {
+        const coordinateMode = this._searchCoordinateMode(args);
+        if (coordinateMode === this.absoluteStr) {
+            this._setBlocksToAbsCoord(args);
+        } else if (coordinateMode === this.relativeStr) {
+            this._setBlocksToRelativeCoord(args);
+        }
+    }
+
+    _setBlocksToAbsCoord(args) {
         const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
         const command = [`world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`];
         this.sendCommand(command);
@@ -345,12 +365,46 @@ class Scratch3Minecraft {
     createWebSocket() {
         return new WebSocket("ws://" + this.host + ":14711");
     }
-        if (typeof args.STARTZ === 'string' && args.STARTZ.indexOf('~') !== -1) return this.relativeStr;
-        if (typeof args.ENDX === 'string' && args.ENDX.indexOf('~') !== -1) return this.relativeStr;
-        if (typeof args.ENDY === 'string' && args.ENDY.indexOf('~') !== -1) return this.relativeStr;
-        if (typeof args.ENDZ === 'string' && args.ENDZ.indexOf('~') !== -1) return this.relativeStr;
 
-        return this.absoluteStr;
+    _setBlocksToRelativeCoord(args) {
+        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const ws1 = this.createWebSocket();
+        ws1.onopen = function (e) {
+            e.currentTarget.send("world.getPlayerIds()");
+        };
+        ws1.onmessage = function (e) {
+            const playerID = e.data.replace(/\r?\n/g, "");
+            const ws2 = this.createWebSocket();
+            ws2.onopen = function (e) {
+                e.currentTarget.send("entity.getPos(" + playerID + ")");
+            };
+            ws2.onmessage = function (e) {
+                const posX = e.data.split(',')[0];
+                const posY = e.data.split(',')[1];
+                const posZ = e.data.split(',')[2];
+                const ws3 = this.createWebSocket();
+                ws3.onopen = function (e) {
+                    const startX = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+                    const startY = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+                    const startZ = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
+                    const endX = typeof args.ENDX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.ENDX.split('~')[1]) : Cast.toNumber(args.ENDX);
+                    const endY = typeof args.ENDY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.ENDY.split('~')[1]) : Cast.toNumber(args.ENDY);
+                    const endZ = typeof args.ENDZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.ENDZ.split('~')[1]) : Cast.toNumber(args.ENDZ);
+                    const command = [`world.setBlocks(${Math.trunc(startX)},${Math.trunc(startY)},${Math.trunc(startZ)},${Math.trunc(endX)},${Math.trunc(endY)},${Math.trunc(endZ)},${blockID},${blockData})`];
+                    this.sendCommand(command);
+                }.bind(this);
+                e.currentTarget.close();
+            }.bind(this);
+            ws2.onclose = function (e) {
+                // e.currentTarget.close();
+            };
+            e.currentTarget.close();
+        }.bind(this);
+        ws1.onclose = function (e) {
+        };
+        ws1.onerror = function (e) {
+        };
+
     }
 
     findBlockInfo(block) {
