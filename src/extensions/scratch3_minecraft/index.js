@@ -14,6 +14,8 @@ class Scratch3Minecraft {
         this.websockets = [];
         this.host = 'localhost';
 
+        this.absoluteStr = 'absolute';
+        this.relativeStr = 'relative';
     }
 
     getInfo() {
@@ -53,16 +55,16 @@ class Scratch3Minecraft {
                             defaultValue: this.BLOCK_INFO[0].name
                         },
                         STARTX: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 0
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
                         },
                         STARTY: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 0
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
                         },
                         STARTZ: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 0
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
                         }
                     }
                 },
@@ -76,28 +78,28 @@ class Scratch3Minecraft {
                             defaultValue: this.BLOCK_INFO[0].name
                         },
                         STARTX: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 0
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
                         },
                         STARTY: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 0
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
                         },
                         STARTZ: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 0
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
                         },
                         ENDX: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 5
+                            type: ArgumentType.STRING,
+                            defaultValue: '5'
                         },
                         ENDY: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 5
+                            type: ArgumentType.STRING,
+                            defaultValue: '5'
                         },
                         ENDZ: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 5
+                            type: ArgumentType.STRING,
+                            defaultValue: '5'
                         }
                     }
                 },
@@ -231,51 +233,9 @@ class Scratch3Minecraft {
         ];
     }
 
-    changePosX(args) {
-        const stage = this.runtime.getTargetForStage();
-        if (stage) {
-            stage.posX = stage.posX + Cast.toNumber(args.VALUE);
-        }
-    }
-    changePosY(args) {
-        const stage = this.runtime.getTargetForStage();
-        if (stage) {
-            stage.posY = stage.posY + Cast.toNumber(args.VALUE);
-        }
-    }
-    changePosZ(args) {
-        const stage = this.runtime.getTargetForStage();
-        if (stage) {
-            stage.posZ = stage.posZ + Cast.toNumber(args.VALUE);
-        }
-    }
-
-    setBlock(args) {
-        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
-        const command = [`world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData})`];
-        this.sendCommand(command);
-    }
-
-    setBlocks(args) {
-        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
-        const command = [`world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`];
-        this.sendCommand(command);
-    }
-
-    findBlockInfo(block) {
-        let blockID = null;
-        let blockData = null;
-        if (typeof block === 'string') {
-            const targetBlock = this.BLOCK_INFO.find((b) => b.name === block)
-            blockID = targetBlock.blockID;
-            blockData = targetBlock.blockData;
-        } else {
-            blockID = block.blockID;
-            blockData = block.blockData;
-        }
-        return [blockID, blockData];
-    }
-
+    /* --------------------------------------
+    *************** REPORTER ****************
+    --------------------------------------- */
     getBlocks(args) {
         return this.BLOCK_INFO[args.BLOCK];
     }
@@ -300,6 +260,111 @@ class Scratch3Minecraft {
             return stage.posZ;
         }
         return 0;
+    }
+
+    /* --------------------------------------
+    *************** COMMAND ****************
+    --------------------------------------- */
+    changePosX(args) {
+        const stage = this.runtime.getTargetForStage();
+        if (stage) {
+            stage.posX = stage.posX + Cast.toNumber(args.VALUE);
+        }
+    }
+    changePosY(args) {
+        const stage = this.runtime.getTargetForStage();
+        if (stage) {
+            stage.posY = stage.posY + Cast.toNumber(args.VALUE);
+        }
+    }
+    changePosZ(args) {
+        const stage = this.runtime.getTargetForStage();
+        if (stage) {
+            stage.posZ = stage.posZ + Cast.toNumber(args.VALUE);
+        }
+    }
+
+    setBlock(args) {
+        const coordinateMode = this._searchCoordinateMode(args);
+        if (coordinateMode === this.absoluteStr) {
+            this._setBlockToAbsCoord(args);
+        } else if (coordinateMode === this.relativeStr) {
+            this._setBlockToRelativeCoord(args);
+        }
+    }
+
+    _setBlockToAbsCoord(args) {
+        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const command = [`world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData})`];
+        this.sendCommand(command);
+    }
+
+    _setBlockToRelativeCoord(args) {
+        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const ws1 = new WebSocket("ws://" + this.host + ":14711");
+        ws1.onopen = function (e) {
+            e.currentTarget.send("world.getPlayerIds()");
+        };
+        ws1.onmessage = function (e) {
+            const playerID = e.data.replace(/\r?\n/g, "");
+            const ws2 = new WebSocket("ws://" + this.host + ":14711");
+            ws2.onopen = function (e) {
+                e.currentTarget.send("entity.getPos(" + playerID + ")");
+            };
+            ws2.onmessage = function (e) {
+                const posX = e.data.split(',')[0];
+                const posY = e.data.split(',')[1];
+                const posZ = e.data.split(',')[2];
+                const ws3 = new WebSocket("ws://" + this.host + ":14711");
+                ws3.onopen = function (e) {
+                    const X = Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]);
+                    const Y = Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]);
+                    const Z = Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]);
+                    const command = [`world.setBlock(${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)},${blockID},${blockData})`];
+                    this.sendCommand(command);
+                }.bind(this);
+                e.currentTarget.close();
+            }.bind(this);
+            ws2.onclose = function (e) {
+                // e.currentTarget.close();
+            };
+            e.currentTarget.close();
+        }.bind(this);
+        ws1.onclose = function (e) {
+        };
+        ws1.onerror = function (e) {
+        };
+    }
+
+    setBlocks(args) {
+        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const command = [`world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`];
+        this.sendCommand(command);
+    }
+
+    _searchCoordinateMode(args) {
+        if (typeof args.STARTX === 'string' && args.STARTX.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.STARTY === 'string' && args.STARTY.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.STARTZ === 'string' && args.STARTZ.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.ENDX === 'string' && args.ENDX.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.ENDY === 'string' && args.ENDY.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.ENDZ === 'string' && args.ENDZ.indexOf('~') !== -1) return this.relativeStr;
+
+        return this.absoluteStr;
+    }
+
+    findBlockInfo(block) {
+        let blockID = null;
+        let blockData = null;
+        if (typeof block === 'string') {
+            const targetBlock = this.BLOCK_INFO.find((b) => b.name === block)
+            blockID = targetBlock.blockID;
+            blockData = targetBlock.blockData;
+        } else {
+            blockID = block.blockID;
+            blockData = block.blockData;
+        }
+        return [blockID, blockData];
     }
 
     setHost(args) {
