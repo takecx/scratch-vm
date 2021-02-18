@@ -12,7 +12,6 @@ class Scratch3Minecraft {
     constructor(runtime) {
         this.runtime = runtime;
 
-        this.websockets = [];
         this.host = 'localhost';
 
         this.absoluteStr = 'absolute';
@@ -420,7 +419,6 @@ class Scratch3Minecraft {
             log.log('onerror !!');
             log.log(e);
         };
-        this.websockets.push(ws);
     }
 
     chat(args) {
