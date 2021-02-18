@@ -317,9 +317,9 @@ class Scratch3Minecraft {
                 const posZ = e.data.split(',')[2];
                 const ws3 = new WebSocket("ws://" + this.host + ":14711");
                 ws3.onopen = function (e) {
-                    const X = Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]);
-                    const Y = Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]);
-                    const Z = Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]);
+                    const X = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+                    const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+                    const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
                     const command = [`world.setBlock(${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)},${blockID},${blockData})`];
                     this.sendCommand(command);
                 }.bind(this);
