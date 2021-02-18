@@ -5,6 +5,7 @@ const BlockType = require('../../extension-support/block-type');
 const Cast = require('../../util/cast');
 const log = require('../../util/log');
 const formatMessage = require('format-message');
+const BlockInfo = require('./block_info');
 
 class Scratch3Minecraft {
 
@@ -199,39 +200,15 @@ class Scratch3Minecraft {
     }
 
     /**
-     * An array of info about each drum.
-     * @type {object[]}
-     * @param {string} name - the translatable name to display in the drums menu.
-     * @param {string} blockID - the ID of the minecraft block.
-     */
+ * An array of info about each drum.
+ * @type {object[]}
+ * @param {string} name - the translatable name to display in the drums menu.
+ * @param {string} blockID - the ID of the minecraft block.
+ */
     get BLOCK_INFO() {
-        return [
-            {
-                name: formatMessage({
-                    id: 'minecraft.stone',
-                    default: '石'
-                }),
-                blockID: '1',
-                blockData: '0'
-            },
-            {
-                name: formatMessage({
-                    id: 'minecraft.air',
-                    default: '空気'
-                }),
-                blockID: '0',
-                blockData: '0'
-            },
-            {
-                name: formatMessage({
-                    id: 'minecraft.granite',
-                    default: '花崗岩'
-                }),
-                blockID: '1',
-                blockData: '1'
-            }
-        ];
+        return BlockInfo.genBlockInfo();
     }
+
 
     /* --------------------------------------
     *************** REPORTER ****************
