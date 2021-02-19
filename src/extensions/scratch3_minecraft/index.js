@@ -411,18 +411,14 @@ class Scratch3Minecraft {
                 const posX = e.data.split(',')[0];
                 const posY = e.data.split(',')[1];
                 const posZ = e.data.split(',')[2];
-                const ws3 = this._createWebSocket();
-                ws3.onopen = function (e) {
-                    const X = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
-                    const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
-                    const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
-                    const command = [`world.setBlock(${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)},${blockID},${blockData})`];
-                    this.sendCommand(command);
-                }.bind(this);
+                const X = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+                const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+                const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
+                const command = [`world.setBlock(${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)},${blockID},${blockData})`];
+                this.sendCommand(command);
                 e.currentTarget.close();
             }.bind(this);
             ws2.onclose = function (e) {
-                // e.currentTarget.close();
             };
             e.currentTarget.close();
         }.bind(this);
@@ -467,21 +463,17 @@ class Scratch3Minecraft {
                 const posX = e.data.split(',')[0];
                 const posY = e.data.split(',')[1];
                 const posZ = e.data.split(',')[2];
-                const ws3 = this._createWebSocket();
-                ws3.onopen = function (e) {
-                    const startX = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
-                    const startY = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
-                    const startZ = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
-                    const endX = typeof args.ENDX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.ENDX.split('~')[1]) : Cast.toNumber(args.ENDX);
-                    const endY = typeof args.ENDY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.ENDY.split('~')[1]) : Cast.toNumber(args.ENDY);
-                    const endZ = typeof args.ENDZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.ENDZ.split('~')[1]) : Cast.toNumber(args.ENDZ);
-                    const command = [`world.setBlocks(${Math.trunc(startX)},${Math.trunc(startY)},${Math.trunc(startZ)},${Math.trunc(endX)},${Math.trunc(endY)},${Math.trunc(endZ)},${blockID},${blockData})`];
-                    this.sendCommand(command);
-                }.bind(this);
+                const startX = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+                const startY = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+                const startZ = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
+                const endX = typeof args.ENDX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.ENDX.split('~')[1]) : Cast.toNumber(args.ENDX);
+                const endY = typeof args.ENDY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.ENDY.split('~')[1]) : Cast.toNumber(args.ENDY);
+                const endZ = typeof args.ENDZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.ENDZ.split('~')[1]) : Cast.toNumber(args.ENDZ);
+                const command = [`world.setBlocks(${Math.trunc(startX)},${Math.trunc(startY)},${Math.trunc(startZ)},${Math.trunc(endX)},${Math.trunc(endY)},${Math.trunc(endZ)},${blockID},${blockData})`];
+                this.sendCommand(command);
                 e.currentTarget.close();
             }.bind(this);
             ws2.onclose = function (e) {
-                // e.currentTarget.close();
             };
             e.currentTarget.close();
         }.bind(this);
@@ -605,22 +597,35 @@ class Scratch3Minecraft {
         };
         ws1.onmessage = function (e) {
             const playerID = e.data.replace(/\r?\n/g, "");
-            const ws2 = this._createWebSocket();
-            ws2.onopen = function (e) {
-                e.currentTarget.send("entity.getPos(" + playerID + ")");
-            };
-            ws2.onmessage = function (e) {
-                const posX = e.data.split(',')[0];
-                const posY = e.data.split(',')[1];
-                const posZ = e.data.split(',')[2];
-                const ws3 = this._createWebSocket();
-                ws3.onopen = function (e) {
-                    const X = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
-                    const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
-                    const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
-                    const command = [`world.spawnEntity(${entityName},${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)})`];
-                    this.sendCommand(command);
-                }.bind(this);
+            this._sendRelativePositionCommand(args, 'world.spawnEntity', playerID);
+            e.currentTarget.close();
+        }.bind(this);
+        ws1.onclose = function (e) {
+        };
+        ws1.onerror = function (e) {
+        };
+    }
+
+    _sendRelativePositionCommand(args, commandStr, commandArg) {
+        const ws = this._createWebSocket();
+        ws.onopen = function (e) {
+            e.currentTarget.send(`entity.getPos(${commandArg})`);
+        };
+        ws.onmessage = function (e) {
+            const posX = e.data.split(',')[0];
+            const posY = e.data.split(',')[1];
+            const posZ = e.data.split(',')[2];
+            const X = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+            const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+            const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
+            const command = [`${commandStr}(${commandArg},${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)})`];
+            this.sendCommand(command);
+            e.currentTarget.close();
+        }.bind(this);
+        ws.onclose = function (e) {
+        };
+    }
+
     teleport(args) {
         const coordinateMode = this._searchCoordinateMode(args);
         if (coordinateMode === this.absoluteStr) {
