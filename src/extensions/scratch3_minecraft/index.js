@@ -288,13 +288,13 @@ class Scratch3Minecraft {
 
     _setBlockToRelativeCoord(args) {
         const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
-        const ws1 = this.createWebSocket();
+        const ws1 = this._createWebSocket();
         ws1.onopen = function (e) {
             e.currentTarget.send("world.getPlayerIds()");
         };
         ws1.onmessage = function (e) {
             const playerID = e.data.replace(/\r?\n/g, "");
-            const ws2 = this.createWebSocket();
+            const ws2 = this._createWebSocket();
             ws2.onopen = function (e) {
                 e.currentTarget.send("entity.getPos(" + playerID + ")");
             };
@@ -302,7 +302,7 @@ class Scratch3Minecraft {
                 const posX = e.data.split(',')[0];
                 const posY = e.data.split(',')[1];
                 const posZ = e.data.split(',')[2];
-                const ws3 = this.createWebSocket();
+                const ws3 = this._createWebSocket();
                 ws3.onopen = function (e) {
                     const X = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
                     const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
@@ -338,19 +338,19 @@ class Scratch3Minecraft {
         this.sendCommand(command);
     }
 
-    createWebSocket() {
+    _createWebSocket() {
         return new WebSocket("ws://" + this.host + ":14711");
     }
 
     _setBlocksToRelativeCoord(args) {
         const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
-        const ws1 = this.createWebSocket();
+        const ws1 = this._createWebSocket();
         ws1.onopen = function (e) {
             e.currentTarget.send("world.getPlayerIds()");
         };
         ws1.onmessage = function (e) {
             const playerID = e.data.replace(/\r?\n/g, "");
-            const ws2 = this.createWebSocket();
+            const ws2 = this._createWebSocket();
             ws2.onopen = function (e) {
                 e.currentTarget.send("entity.getPos(" + playerID + ")");
             };
@@ -358,7 +358,7 @@ class Scratch3Minecraft {
                 const posX = e.data.split(',')[0];
                 const posY = e.data.split(',')[1];
                 const posZ = e.data.split(',')[2];
-                const ws3 = this.createWebSocket();
+                const ws3 = this._createWebSocket();
                 ws3.onopen = function (e) {
                     const startX = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
                     const startY = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
@@ -402,7 +402,7 @@ class Scratch3Minecraft {
     }
 
     sendCommand(commands) {
-        const ws = this.createWebSocket();
+        const ws = this._createWebSocket();
         ws.onopen = function (e) {
             commands.forEach(command => {
                 e.currentTarget.send(command);
@@ -427,7 +427,7 @@ class Scratch3Minecraft {
     }
 
     getPlayerPosition() {
-        const ws = this.createWebSocket();
+        const ws = this._createWebSocket();
         ws.onopen = function (e) {
             e.currentTarget.send("world.getPlayerIds()");
         };
@@ -443,7 +443,7 @@ class Scratch3Minecraft {
 
     getPos(event) {
         const playerID = event.data.replace(/\r?\n/g, "");
-        const ws = this.createWebSocket();
+        const ws = this._createWebSocket();
         ws.onopen = function (e) {
             e.currentTarget.send("entity.getPos(" + playerID + ")");
         };
