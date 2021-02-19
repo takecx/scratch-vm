@@ -1,6 +1,6 @@
 const formatMessage = require('format-message');
 
-exports.genBlockInfo = () => {
+exports.genBuildingBlockInfo = () => {
     return [
         {
             name: formatMessage({
