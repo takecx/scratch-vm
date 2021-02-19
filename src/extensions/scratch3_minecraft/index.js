@@ -405,7 +405,7 @@ class Scratch3Minecraft {
             const playerID = e.data.replace(/\r?\n/g, "");
             const ws2 = this._createWebSocket();
             ws2.onopen = function (e) {
-                e.currentTarget.send("entity.getPos(" + playerID + ")");
+                e.currentTarget.send(`entity.getPos(${playerID})`);
             };
             ws2.onmessage = function (e) {
                 const posX = e.data.split(',')[0];
@@ -461,7 +461,7 @@ class Scratch3Minecraft {
             const playerID = e.data.replace(/\r?\n/g, "");
             const ws2 = this._createWebSocket();
             ws2.onopen = function (e) {
-                e.currentTarget.send("entity.getPos(" + playerID + ")");
+                e.currentTarget.send(`entity.getPos(${playerID})`);
             };
             ws2.onmessage = function (e) {
                 const posX = e.data.split(',')[0];
@@ -554,7 +554,7 @@ class Scratch3Minecraft {
         const playerID = event.data.replace(/\r?\n/g, "");
         const ws = this._createWebSocket();
         ws.onopen = function (e) {
-            e.currentTarget.send("entity.getPos(" + playerID + ")");
+            e.currentTarget.send(`entity.getPos(${playerID})`);
         };
         ws.onmessage = function (e) {
             const posX = e.data.split(',')[0];
