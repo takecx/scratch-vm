@@ -1087,15 +1087,18 @@ class RenderedTarget extends Target {
             tempo: this.tempo,
             volume: this.volume,
             videoTransparency: this.videoTransparency,
-            videoState: this.videoState
+            videoState: this.videoState,
 
+            posX: this.posX,
+            posY: this.posY,
+            posZ: this.posZ
         };
     }
 
     /**
      * Dispose, destroying any run-time properties.
      */
-    dispose () {
+    dispose() {
         this.runtime.changeCloneCounter(-1);
         this.runtime.stopForTarget(this);
         this.runtime.removeExecutable(this);

@@ -470,6 +470,11 @@ const serializeTarget = function (target, extensions) {
         if (target.hasOwnProperty('videoTransparency')) obj.videoTransparency = target.videoTransparency;
         if (target.hasOwnProperty('videoState')) obj.videoState = target.videoState;
         if (target.hasOwnProperty('textToSpeechLanguage')) obj.textToSpeechLanguage = target.textToSpeechLanguage;
+        // minecraft extension
+        if (target.hasOwnProperty('posX')) obj.posX = target.posX;
+        if (target.hasOwnProperty('posY')) obj.posY = target.posY;
+        if (target.hasOwnProperty('posZ')) obj.posZ = target.posZ;
+
     } else { // The stage does not need the following properties, but sprites should
         obj.visible = target.visible;
         obj.x = target.x;
