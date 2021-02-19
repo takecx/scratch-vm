@@ -20,7 +20,7 @@ class Scratch3Minecraft {
 
     getInfo() {
         return {
-            id: 'Minecraft',
+            id: 'minecraft',
             name: 'Minecraft',
             blocks: [
                 {
