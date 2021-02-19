@@ -4,6 +4,7 @@ const Cast = require('../../util/cast');
 const log = require('../../util/log');
 const formatMessage = require('format-message');
 const BlockInfo = require('./block_info');
+const EntityInfo = require('./entity_info');
 
 class Scratch3Minecraft {
 
@@ -201,12 +202,59 @@ class Scratch3Minecraft {
                             defaultValue: 0
                         }
                     }
-                }
+                },
+                {
+                    opcode: 'spawnEntity',
+                    text: formatMessage({
+                        id: 'minecraft.spawnEntity',
+                        default: '([STARTX],[STARTY],[STARTZ])に[ENTITY]を召喚する',
+                        description: 'spawn entity'
+                    }),
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        STARTX: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTY: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTZ: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        ENTITY: {
+                            type: ArgumentType.STRING,
+                            defaultValue: this.ENTITY_INFO[0].name
+                        }
+                    }
+                },
+                {
+                    opcode: 'getEntities',
+                    text: formatMessage({
+                        id: 'minecraft.entityInfo',
+                        default: '[ENTITY]',
+                        description: 'name of minecraft entities.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        ENTITY: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'ENTITY',
+                            defaultValue: 0
+                        }
+                    }
+                },
             ],
             menus: {
                 BLOCK: {
                     acceptReporters: true,
                     items: this._buildMenu(this.BLOCK_INFO)
+                },
+                ENTITY: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.ENTITY_INFO)
                 }
             }
         };
@@ -235,15 +283,22 @@ class Scratch3Minecraft {
  * @param {string} blockID - the ID of the minecraft block.
  */
     get BLOCK_INFO() {
-        return BlockInfo.genBlockInfo();
+        return BlockInfo.genBuildingBlockInfo();
     }
 
+    get ENTITY_INFO() {
+        return EntityInfo.genEntityInfo();
+    }
 
     /* --------------------------------------
     *************** REPORTER ****************
     --------------------------------------- */
     getBlocks(args) {
         return this.BLOCK_INFO[args.BLOCK];
+    }
+
+    getEntities(args) {
+        return this.ENTITY_INFO[args.ENTITY];
     }
 
     getPosX() {
@@ -490,6 +545,70 @@ class Scratch3Minecraft {
         ws.onclose = function (e) {
             // e.currentTarget.close();
         };
+    }
+
+    spawnEntity(args) {
+        const coordinateMode = this._searchCoordinateMode(args);
+        if (coordinateMode === this.absoluteStr) {
+            this._spawnEntityToAbsCoord(args);
+        } else if (coordinateMode === this.relativeStr) {
+            this._spawnEntityToRelativeCoord(args);
+        }
+    }
+
+    _spawnEntityToAbsCoord(args) {
+        const entityName = this._findEntityInfo(args.ENTITY);
+        const command = [`world.spawnEntity(${entityName},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`];
+        this.sendCommand(command);
+    }
+
+    _findEntityInfo(entityName) {
+        let entity = null;
+        if (typeof entityName === 'string') {
+            const targetEntity = this.ENTITY_INFO.find((e) => e.name === entityName);
+            entity = targetEntity.entityName;
+        } else {
+            entity = entityName.entityName;
+        }
+        return entity;
+    }
+
+    _spawnEntityToRelativeCoord(args) {
+        const entityName = this._findEntityInfo(args.ENTITY);
+        const ws1 = this._createWebSocket();
+        ws1.onopen = function (e) {
+            e.currentTarget.send("world.getPlayerIds()");
+        };
+        ws1.onmessage = function (e) {
+            const playerID = e.data.replace(/\r?\n/g, "");
+            const ws2 = this._createWebSocket();
+            ws2.onopen = function (e) {
+                e.currentTarget.send("entity.getPos(" + playerID + ")");
+            };
+            ws2.onmessage = function (e) {
+                const posX = e.data.split(',')[0];
+                const posY = e.data.split(',')[1];
+                const posZ = e.data.split(',')[2];
+                const ws3 = this._createWebSocket();
+                ws3.onopen = function (e) {
+                    const X = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+                    const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+                    const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
+                    const command = [`world.spawnEntity(${entityName},${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)})`];
+                    this.sendCommand(command);
+                }.bind(this);
+                e.currentTarget.close();
+            }.bind(this);
+            ws2.onclose = function (e) {
+                // e.currentTarget.close();
+            };
+            e.currentTarget.close();
+        }.bind(this);
+        ws1.onclose = function (e) {
+        };
+        ws1.onerror = function (e) {
+        };
+
     }
 }
 
