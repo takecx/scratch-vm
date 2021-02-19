@@ -246,6 +246,30 @@ class Scratch3Minecraft {
                         }
                     }
                 },
+                {
+                {
+                    opcode: 'teleport',
+                    text: formatMessage({
+                        id: 'minecraft.teleport',
+                        default: '([STARTX],[STARTY],[STARTZ])にテレポートする',
+                        description: 'teleport'
+                    }),
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        STARTX: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTY: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTZ: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        }
+                    }
+                }
             ],
             menus: {
                 BLOCK: {
@@ -597,11 +621,40 @@ class Scratch3Minecraft {
                     const command = [`world.spawnEntity(${entityName},${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)})`];
                     this.sendCommand(command);
                 }.bind(this);
-                e.currentTarget.close();
-            }.bind(this);
-            ws2.onclose = function (e) {
-                // e.currentTarget.close();
-            };
+    teleport(args) {
+        const coordinateMode = this._searchCoordinateMode(args);
+        if (coordinateMode === this.absoluteStr) {
+            this._teleportToAbsCoord(args);
+        } else if (coordinateMode === this.relativeStr) {
+            this._teleportToRelativeCoord(args);
+        }
+    }
+
+    _teleportToAbsCoord(args) {
+        const ws1 = this._createWebSocket();
+        ws1.onopen = function (e) {
+            e.currentTarget.send("world.getPlayerIds()");
+        };
+        ws1.onmessage = function (e) {
+            const playerID = e.data.replace(/\r?\n/g, "");
+            const command = [`entity.setPos(${playerID},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`];
+            this.sendCommand(command);
+            e.currentTarget.close();
+        }.bind(this);
+        ws1.onclose = function (e) {
+        };
+        ws1.onerror = function (e) {
+        };
+    }
+
+    _teleportToRelativeCoord(args) {
+        const ws1 = this._createWebSocket();
+        ws1.onopen = function (e) {
+            e.currentTarget.send("world.getPlayerIds()");
+        };
+        ws1.onmessage = function (e) {
+            const playerID = e.data.replace(/\r?\n/g, "");
+            this._sendRelativePositionCommand(args, 'entity.setPos', playerID);
             e.currentTarget.close();
         }.bind(this);
         ws1.onclose = function (e) {
