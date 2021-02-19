@@ -1,5 +1,3 @@
-// import { Rcon } from 'rcon-client'
-
 const ArgumentType = require('../../extension-support/argument-type');
 const BlockType = require('../../extension-support/block-type');
 const Cast = require('../../util/cast');
@@ -26,7 +24,11 @@ class Scratch3Minecraft {
                 {
                     opcode: 'setHost',
                     blockType: BlockType.COMMAND,
-                    text: '[TEXT]に接続する',
+                    text: formatMessage({
+                        id: 'minecraft.setHost',
+                        default: '[TEXT]に接続する',
+                        description: 'connection host.'
+                    }),
                     arguments: {
                         TEXT: {
                             type: ArgumentType.STRING,
@@ -37,7 +39,11 @@ class Scratch3Minecraft {
                 {
                     opcode: 'chat',
                     blockType: BlockType.COMMAND,
-                    text: '[TEXT]と言う',
+                    text: formatMessage({
+                        id: 'minecraft.chat',
+                        default: '[TEXT]と言う',
+                        description: 'chat.'
+                    }),
                     arguments: {
                         TEXT: {
                             type: ArgumentType.STRING,
@@ -48,7 +54,11 @@ class Scratch3Minecraft {
                 {
                     opcode: 'setBlock',
                     blockType: BlockType.COMMAND,
-                    text: '[BLOCK]ブロックを([STARTX],[STARTY],[STARTZ])に置く',
+                    text: formatMessage({
+                        id: 'minecraft.setBlock',
+                        default: '[BLOCK]ブロックを([STARTX],[STARTY],[STARTZ])に置く',
+                        description: 'setBlock.'
+                    }),
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.STRING,
@@ -71,7 +81,11 @@ class Scratch3Minecraft {
                 {
                     opcode: 'setBlocks',
                     blockType: BlockType.COMMAND,
-                    text: '[BLOCK]ブロックを([STARTX],[STARTY],[STARTZ])から([ENDX],[ENDY],[ENDZ])まで置く',
+                    text: formatMessage({
+                        id: 'minecraft.setBlocks',
+                        default: '[BLOCK]ブロックを([STARTX],[STARTY],[STARTZ])から([ENDX],[ENDY],[ENDZ])まで置く',
+                        description: 'setBlocks.'
+                    }),
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.STRING,
@@ -106,7 +120,11 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getPlayerPosition',
                     blockType: BlockType.COMMAND,
-                    text: '現在位置を調べる'
+                    text: formatMessage({
+                        id: 'minecraft.getPlayerPosition',
+                        default: '現在位置を調べる',
+                        description: 'getPlayerPosition.'
+                    })
                 },
                 {
                     opcode: 'getPosX',
@@ -126,7 +144,11 @@ class Scratch3Minecraft {
                 {
                     opcode: 'changePosX',
                     blockType: BlockType.COMMAND,
-                    text: 'Xを[VALUE]だけ変える',
+                    text: formatMessage({
+                        id: 'minecraft.changePosX',
+                        default: 'Xを[VALUE]だけ変える',
+                        description: 'changePosX.'
+                    }),
                     arguments: {
                         VALUE: {
                             type: ArgumentType.NUMBER,
@@ -137,7 +159,11 @@ class Scratch3Minecraft {
                 {
                     opcode: 'changePosY',
                     blockType: BlockType.COMMAND,
-                    text: 'Yを[VALUE]だけ変える',
+                    text: formatMessage({
+                        id: 'minecraft.changePosY',
+                        default: 'Yを[VALUE]だけ変える',
+                        description: 'changePosY.'
+                    }),
                     arguments: {
                         VALUE: {
                             type: ArgumentType.NUMBER,
@@ -148,7 +174,11 @@ class Scratch3Minecraft {
                 {
                     opcode: 'changePosZ',
                     blockType: BlockType.COMMAND,
-                    text: 'Zを[VALUE]だけ変える',
+                    text: formatMessage({
+                        id: 'minecraft.changePosZ',
+                        default: 'Zを[VALUE]だけ変える',
+                        description: 'changePosZ.'
+                    }),
                     arguments: {
                         VALUE: {
                             type: ArgumentType.NUMBER,
