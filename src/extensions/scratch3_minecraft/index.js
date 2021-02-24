@@ -14,6 +14,8 @@ class Scratch3Minecraft {
         this.runtime = runtime;
 
         this.host = 'localhost';
+        this.posUpdating = false;
+        this.blockSearching = false;
 
         this.absoluteStr = 'absolute';
         this.relativeStr = 'relative';
