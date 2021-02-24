@@ -490,22 +490,25 @@ class Scratch3Minecraft {
     }
 
     setBlock(args) {
-        const coordinateMode = this._searchCoordinateMode(args);
-        if (coordinateMode === this.absoluteStr) {
-            this._setBlockToAbsCoord(args);
-        } else if (coordinateMode === this.relativeStr) {
-            this._setBlockToRelativeCoord(args);
-        }
+        this.waitForValidCondition().then(() => {
+            const coordinateMode = this._searchCoordinateMode(args);
+            if (coordinateMode === this.absoluteStr) {
+                this._setBlockToAbsCoord(args);
+            } else if (coordinateMode === this.relativeStr) {
+                this._setBlockToRelativeCoord(args);
+            }
+        });
     }
 
     _setBlockToAbsCoord(args) {
-        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
         const command = [`world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData})`];
-        this.sendCommand(command);
+        this._sendCommand(command);
     }
 
+
     _setBlockToRelativeCoord(args) {
-        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
         const ws1 = this._createWebSocket();
         ws1.onopen = function (e) {
             e.currentTarget.send("world.getPlayerIds()");
@@ -538,26 +541,24 @@ class Scratch3Minecraft {
     }
 
     setBlocks(args) {
-        const coordinateMode = this._searchCoordinateMode(args);
-        if (coordinateMode === this.absoluteStr) {
-            this._setBlocksToAbsCoord(args);
-        } else if (coordinateMode === this.relativeStr) {
-            this._setBlocksToRelativeCoord(args);
-        }
+        this.waitForValidCondition().then(() => {
+            const coordinateMode = this._searchCoordinateMode(args);
+            if (coordinateMode === this.absoluteStr) {
+                this._setBlocksToAbsCoord(args);
+            } else if (coordinateMode === this.relativeStr) {
+                this._setBlocksToRelativeCoord(args);
+            }
+        });
     }
 
     _setBlocksToAbsCoord(args) {
-        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
         const command = [`world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`];
-        this.sendCommand(command);
-    }
-
-    _createWebSocket() {
-        return new WebSocket("ws://" + this.host + ":14711");
+        this._sendCommand(command);
     }
 
     _setBlocksToRelativeCoord(args) {
-        const [blockID, blockData] = this.findBlockInfo(args.BLOCK);
+        const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
         const ws1 = this._createWebSocket();
         ws1.onopen = function (e) {
             e.currentTarget.send("world.getPlayerIds()");
@@ -673,12 +674,14 @@ class Scratch3Minecraft {
     }
 
     spawnEntity(args) {
-        const coordinateMode = this._searchCoordinateMode(args);
-        if (coordinateMode === this.absoluteStr) {
-            this._spawnEntityToAbsCoord(args);
-        } else if (coordinateMode === this.relativeStr) {
-            this._spawnEntityToRelativeCoord(args);
-        }
+        this.waitForValidCondition().then(() => {
+            const coordinateMode = this._searchCoordinateMode(args);
+            if (coordinateMode === this.absoluteStr) {
+                this._spawnEntityToAbsCoord(args);
+            } else if (coordinateMode === this.relativeStr) {
+                this._spawnEntityToRelativeCoord(args);
+            }
+        });
     }
 
     _spawnEntityToAbsCoord(args) {
@@ -736,12 +739,14 @@ class Scratch3Minecraft {
     }
 
     teleport(args) {
-        const coordinateMode = this._searchCoordinateMode(args);
-        if (coordinateMode === this.absoluteStr) {
-            this._teleportToAbsCoord(args);
-        } else if (coordinateMode === this.relativeStr) {
-            this._teleportToRelativeCoord(args);
-        }
+        this.waitForValidCondition().then(() => {
+            const coordinateMode = this._searchCoordinateMode(args);
+            if (coordinateMode === this.absoluteStr) {
+                this._teleportToAbsCoord(args);
+            } else if (coordinateMode === this.relativeStr) {
+                this._teleportToRelativeCoord(args);
+            }
+        });
     }
 
     _teleportToAbsCoord(args) {
