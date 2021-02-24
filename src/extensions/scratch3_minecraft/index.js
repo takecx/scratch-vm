@@ -596,7 +596,7 @@ class Scratch3Minecraft {
 
     }
 
-    findBlockInfo(block) {
+    _findBlockInfo(block) {
         let blockID = null;
         let blockData = null;
         if (typeof block === 'string') {
