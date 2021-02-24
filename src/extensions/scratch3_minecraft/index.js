@@ -272,6 +272,50 @@ class Scratch3Minecraft {
                             defaultValue: '0'
                         }
                     }
+                },
+                {
+                    opcode: 'searchBlock',
+                    text: formatMessage({
+                        id: 'minecraft.searchBlock',
+                        default: '([STARTX],[STARTY],[STARTZ])のブロックを調べる'
+                    }),
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        STARTX: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTY: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTZ: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        }
+                    }
+                },
+                {
+                    opcode: 'getSearchedBlock',
+                    text: formatMessage({
+                        id: 'minecraft.getSearchedBlock',
+                        default: '調べたブロック'
+                    }),
+                    blockType: BlockType.REPORTER
+                },
+                {
+                    opcode: 'checkBlockType',
+                    text: formatMessage({
+                        id: 'minecraft.checkBlockType',
+                        default: '調べたブロックが[TARGETBLOCK]である'
+                    }),
+                    blockType: BlockType.BOOLEAN,
+                    arguments: {
+                        TARGETBLOCK: {
+                            type: ArgumentType.STRING,
+                            defaultValue: this.BUILDING_BLOCK_INFO[0].name
+                        }
+                    }
                 }
             ],
             menus: {
@@ -669,6 +713,100 @@ class Scratch3Minecraft {
         };
         ws1.onerror = function (e) {
         };
+
+    }
+
+    searchBlock(args) {
+        this.waitForValidCondition().then(() => {
+            this.blockSearching = true;
+            const coordinateMode = this._searchCoordinateMode(args);
+            if (coordinateMode === this.absoluteStr) {
+                this._searchBlockToAbsCoord(args);
+            } else if (coordinateMode === this.relativeStr) {
+                this._searchBlockToRelativeCoord(args);
+            }
+        });
+    }
+
+    _searchBlockToAbsCoord(args) {
+        const ws = this._createWebSocket();
+        ws.onopen = function (e) {
+            e.currentTarget.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
+        };
+        ws.onmessage = function (e) {
+            const actualBlock = e.data.replace(/\r?\n/g, "");
+            this.searchBlockID = actualBlock.split(',')[0];
+            this.searchBlockData = actualBlock.split(',')[1];
+            e.currentTarget.close();
+        }.bind(this);
+        ws.onclose = function (e) {
+            this.blockSearching = false;
+        }.bind(this);
+        ws.onerror = function (e) {
+        };
+    }
+
+    _searchBlockToRelativeCoord(args) {
+
+    }
+
+    getSearchedBlock() {
+        return this.BUILDING_BLOCK_INFO.find(b => b.blockID === this.searchBlockID && b.blockData === this.searchBlockData).name;
+    }
+    checkBlockType(args) {
+        const targetBlock = typeof args.TARGETBLOCK === 'string' ? args.TARGETBLOCK : args.TARGETBLOCK.name;
+        return targetBlock === this.getSearchedBlock();
+    }
+
+    _checkBlockTypeToAbsCoord(args) {
+        const ws = this._createWebSocket();
+        ws.onopen = function (e) {
+            e.currentTarget.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
+        };
+        ws.onmessage = function (e) {
+            log.log(e);
+            const actualBlock = e.data.replace(/\r?\n/g, "");
+            const actualBlockID = actualBlock.split(',')[0];
+            const actualBlockData = actualBlock.split(',')[1];
+            const [expectedBlockID, expectedBlockData] = this._findBlockInfo(args.BLOCK);
+            log.log(`${actualBlockID} ${actualBlockData} ${expectedBlockID} ${expectedBlockData}`);
+            log.log(expectedBlockID === actualBlockID);
+            log.log(expectedBlockData === actualBlockData);
+            this.blockTypeCheckResult = (expectedBlockID === actualBlockID) && (expectedBlockData === actualBlockData);
+            e.currentTarget.close();
+        }.bind(this);
+        ws.onclose = function (e) {
+            log.log('onclose');
+            this.blockTypeChecking = false;
+        }.bind(this);
+        ws.onerror = function (e) {
+            log.log('onerror');
+        };
+    }
+
+    waitForFinishBlockTypeCheck() {
+        return new Promise((resolve, reject) => {
+            const maxNumberOfAttempts = 40;
+            const intervalTime = 50; //ms
+
+            let currentAttempt = 0;
+            const interval = setInterval(() => {
+                if (currentAttempt > maxNumberOfAttempts - 1) {
+                    clearInterval(interval);
+                    reject(new Error('Maximum number of attempts exceeded'));
+                } else if (this.blockTypeChecking === false) {
+                    clearInterval(interval);
+                    resolve();
+                }
+                currentAttempt++;
+            }, intervalTime);
+        });
+    }
+
+    _checkBlockTypeToRelativeCoord(args) {
+
+    }
+
 
     }
 }
