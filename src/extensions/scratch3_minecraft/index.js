@@ -66,7 +66,7 @@ class Scratch3Minecraft {
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.STRING,
-                            defaultValue: this.BLOCK_INFO[0].name
+                            defaultValue: this.BUILDING_BLOCK_INFO[0].name
                         },
                         STARTX: {
                             type: ArgumentType.STRING,
@@ -93,7 +93,7 @@ class Scratch3Minecraft {
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.STRING,
-                            defaultValue: this.BLOCK_INFO[0].name
+                            defaultValue: this.BUILDING_BLOCK_INFO[0].name
                         },
                         STARTX: {
                             type: ArgumentType.STRING,
@@ -193,8 +193,8 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getBlocks',
                     text: formatMessage({
-                        id: 'minecraft.blockInfo',
-                        default: '[BLOCK]',
+                        id: 'minecraft.buildingBlockInfo',
+                        default: '建築ブロック：[BLOCK]',
                         description: 'name of minecraft blocks.'
                     }),
                     blockType: BlockType.REPORTER,
@@ -277,7 +277,7 @@ class Scratch3Minecraft {
             menus: {
                 BLOCK: {
                     acceptReporters: true,
-                    items: this._buildMenu(this.BLOCK_INFO)
+                    items: this._buildMenu(this.BUILDING_BLOCK_INFO)
                 },
                 ENTITY: {
                     acceptReporters: true,
@@ -309,7 +309,7 @@ class Scratch3Minecraft {
  * @param {string} name - the translatable name to display in the drums menu.
  * @param {string} blockID - the ID of the minecraft block.
  */
-    get BLOCK_INFO() {
+    get BUILDING_BLOCK_INFO() {
         return BlockInfo.genBuildingBlockInfo();
     }
 
@@ -321,7 +321,7 @@ class Scratch3Minecraft {
     *************** REPORTER ****************
     --------------------------------------- */
     getBlocks(args) {
-        return this.BLOCK_INFO[args.BLOCK];
+        return this.BUILDING_BLOCK_INFO[args.BLOCK];
     }
 
     getEntities(args) {
@@ -491,7 +491,7 @@ class Scratch3Minecraft {
         let blockID = null;
         let blockData = null;
         if (typeof block === 'string') {
-            const targetBlock = this.BLOCK_INFO.find((b) => b.name === block)
+            const targetBlock = this.BUILDING_BLOCK_INFO.find((b) => b.name === block)
             blockID = targetBlock.blockID;
             blockData = targetBlock.blockData;
         } else {
