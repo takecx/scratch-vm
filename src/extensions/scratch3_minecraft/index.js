@@ -330,6 +330,9 @@ class Scratch3Minecraft {
         };
     }
 
+    /* --------------------------------------
+    *************** Utility ****************
+    --------------------------------------- */
     /**
      * Create data for a menu in scratch-blocks format, consisting of an array of objects with text and
      * value properties. The text is a translated string, and the value is one-indexed.
@@ -347,17 +350,88 @@ class Scratch3Minecraft {
     }
 
     /**
- * An array of info about each drum.
- * @type {object[]}
- * @param {string} name - the translatable name to display in the drums menu.
- * @param {string} blockID - the ID of the minecraft block.
- */
+     * An array of info about each drum.
+     * @type {object[]}
+     * @param {string} name - the translatable name to display in the drums menu.
+     * @param {string} blockID - the ID of the minecraft block.
+     */
     get BUILDING_BLOCK_INFO() {
         return BlockInfo.genBuildingBlockInfo();
     }
 
     get ENTITY_INFO() {
         return EntityInfo.genEntityInfo();
+    }
+
+    get PARTICLE_INFO() {
+        return ParticleInfo.genParticleInfo();
+    }
+
+    _createWebSocket() {
+        return new WebSocket("ws://" + this.host + ":14711");
+    }
+
+    getPlayerPosAsync() {
+        this.posUpdating = true;
+        return new Promise(((resolve, reject) => {
+            const server1 = this._createWebSocket();
+            server1.onopen = function (e) {
+                e.currentTarget.send('world.getPlayerIds()');
+            };
+            server1.onmessage = function (e) {
+                const playerID = e.data.replace(/\r?\n/g, '');
+                const server2 = this._createWebSocket();
+                server2.onopen = function (ev) {
+                    ev.currentTarget.send(`entity.getPos(${playerID})`);
+                };
+                server2.onmessage = function (ev) {
+                    const posX = ev.data.split(',')[0];
+                    const posY = ev.data.split(',')[1];
+                    const posZ = ev.data.split(',')[2];
+                    const stage = this.runtime.getTargetForStage();
+                    stage.posX = Cast.toNumber(posX);
+                    stage.posY = Cast.toNumber(posY);
+                    stage.posZ = Cast.toNumber(posZ);
+                    server2.close();
+                }.bind(this);
+                server2.onclose = function (ev) {
+                    resolve();
+                };
+            }.bind(this);
+            server1.onerror = function (err) {
+                reject(err);
+            };
+        }));
+    }
+
+    waitForValidCondition() {
+        return new Promise((resolve, reject) => {
+            const maxNumberOfAttempts = 40;
+            const intervalTime = 50; //ms
+
+            let currentAttempt = 0;
+            const interval = setInterval(() => {
+                if (currentAttempt > maxNumberOfAttempts - 1) {
+                    clearInterval(interval);
+                    reject(new Error('Maximum number of attempts exceeded'));
+                } else if (this.posUpdating === false && this.blockSearching == false) {
+                    clearInterval(interval);
+                    resolve();
+                }
+                currentAttempt++;
+            }, intervalTime);
+        });
+    }
+
+    _searchCoordinateMode(args) {
+        if (typeof args.STARTX === 'string' && args.STARTX.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.STARTY === 'string' && args.STARTY.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.STARTZ === 'string' && args.STARTZ.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.ENDX === 'string' && args.ENDX.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.ENDY === 'string' && args.ENDY.indexOf('~') !== -1) return this.relativeStr;
+        if (typeof args.ENDZ === 'string' && args.ENDZ.indexOf('~') !== -1) return this.relativeStr;
+
+        return this.absoluteStr;
     }
 
     /* --------------------------------------
@@ -413,17 +487,6 @@ class Scratch3Minecraft {
         if (stage) {
             stage.posZ = stage.posZ + Cast.toNumber(args.VALUE);
         }
-    }
-
-    _searchCoordinateMode(args) {
-        if (typeof args.STARTX === 'string' && args.STARTX.indexOf('~') !== -1) return this.relativeStr;
-        if (typeof args.STARTY === 'string' && args.STARTY.indexOf('~') !== -1) return this.relativeStr;
-        if (typeof args.STARTZ === 'string' && args.STARTZ.indexOf('~') !== -1) return this.relativeStr;
-        if (typeof args.ENDX === 'string' && args.ENDX.indexOf('~') !== -1) return this.relativeStr;
-        if (typeof args.ENDY === 'string' && args.ENDY.indexOf('~') !== -1) return this.relativeStr;
-        if (typeof args.ENDZ === 'string' && args.ENDZ.indexOf('~') !== -1) return this.relativeStr;
-
-        return this.absoluteStr;
     }
 
     setBlock(args) {
