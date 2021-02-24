@@ -626,7 +626,6 @@ class Scratch3Minecraft {
             e.currentTarget.close();
         };
         ws.onclose = function (e) {
-            // e.currentTarget = null;
         };
         ws.onerror = function (e) {
             log.log('onerror !!');
