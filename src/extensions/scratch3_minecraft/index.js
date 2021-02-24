@@ -26,21 +26,6 @@ class Scratch3Minecraft {
             blockIconURI: blockIconURI,
             blocks: [
                 {
-                    opcode: 'setHost',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft.setHost',
-                        default: '[TEXT]に接続する',
-                        description: 'connection host.'
-                    }),
-                    arguments: {
-                        TEXT: {
-                            type: ArgumentType.STRING,
-                            defaultValue: 'localhost'
-                        }
-                    }
-                },
-                {
                     opcode: 'chat',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
@@ -250,7 +235,6 @@ class Scratch3Minecraft {
                     }
                 },
                 {
-                {
                     opcode: 'teleport',
                     text: formatMessage({
                         id: 'minecraft.teleport',
@@ -314,6 +298,21 @@ class Scratch3Minecraft {
                         TARGETBLOCK: {
                             type: ArgumentType.STRING,
                             defaultValue: this.BUILDING_BLOCK_INFO[0].name
+                        }
+                    }
+                },
+                {
+                    opcode: 'setHost',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.setHost',
+                        default: '[TEXT]に接続する',
+                        description: 'connection host.'
+                    }),
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 'localhost'
                         }
                     }
                 }
