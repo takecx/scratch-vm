@@ -529,7 +529,7 @@ class Scratch3Minecraft {
                 const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
                 const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
                 const command = [`world.setBlock(${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)},${blockID},${blockData})`];
-                this.sendCommand(command);
+                this._sendCommand(command);
                 e.currentTarget.close();
             }.bind(this);
             ws2.onclose = function (e) {
@@ -582,7 +582,7 @@ class Scratch3Minecraft {
                 const endY = typeof args.ENDY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.ENDY.split('~')[1]) : Cast.toNumber(args.ENDY);
                 const endZ = typeof args.ENDZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.ENDZ.split('~')[1]) : Cast.toNumber(args.ENDZ);
                 const command = [`world.setBlocks(${Math.trunc(startX)},${Math.trunc(startY)},${Math.trunc(startZ)},${Math.trunc(endX)},${Math.trunc(endY)},${Math.trunc(endZ)},${blockID},${blockData})`];
-                this.sendCommand(command);
+                this._sendCommand(command);
                 e.currentTarget.close();
             }.bind(this);
             ws2.onclose = function (e) {
@@ -614,7 +614,7 @@ class Scratch3Minecraft {
         this.host = args.TEXT;
     }
 
-    sendCommand(commands) {
+    _sendCommand(commands) {
         const ws = this._createWebSocket();
         ws.onopen = function (e) {
             commands.forEach(command => {
@@ -636,43 +636,13 @@ class Scratch3Minecraft {
 
     chat(args) {
         const command = ["chat.post(" + args.TEXT + ")"];
-        this.sendCommand(command);
+        this._sendCommand(command);
     }
 
     getPlayerPosition() {
-        const ws = this._createWebSocket();
-        ws.onopen = function (e) {
-            e.currentTarget.send("world.getPlayerIds()");
-        };
-        ws.onmessage = function (e) {
-            this.getPos(e);
-            e.currentTarget.close();
-        }.bind(this);
-        ws.onclose = function (e) {
-        };
-        ws.onerror = function (e) {
-        };
-    }
-
-    getPos(event) {
-        const playerID = event.data.replace(/\r?\n/g, "");
-        const ws = this._createWebSocket();
-        ws.onopen = function (e) {
-            e.currentTarget.send(`entity.getPos(${playerID})`);
-        };
-        ws.onmessage = function (e) {
-            const posX = e.data.split(',')[0];
-            const posY = e.data.split(',')[1];
-            const posZ = e.data.split(',')[2];
-            const stage = this.runtime.getTargetForStage();
-            stage.posX = Cast.toNumber(posX);
-            stage.posY = Cast.toNumber(posY);
-            stage.posZ = Cast.toNumber(posZ);
-            e.currentTarget.close();
-        }.bind(this);
-        ws.onclose = function (e) {
-            // e.currentTarget.close();
-        };
+        this.getPlayerPosAsync().then(() => {
+            this.posUpdating = false;
+        });
     }
 
     spawnEntity(args) {
@@ -689,7 +659,7 @@ class Scratch3Minecraft {
     _spawnEntityToAbsCoord(args) {
         const entityName = this._findEntityInfo(args.ENTITY);
         const command = [`world.spawnEntity(${entityName},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`];
-        this.sendCommand(command);
+        this._sendCommand(command);
     }
 
     _findEntityInfo(entityName) {
@@ -733,7 +703,7 @@ class Scratch3Minecraft {
             const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
             const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
             const command = [`${commandStr}(${commandArg},${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)})`];
-            this.sendCommand(command);
+            this._sendCommand(command);
             e.currentTarget.close();
         }.bind(this);
         ws.onclose = function (e) {
@@ -759,7 +729,7 @@ class Scratch3Minecraft {
         ws1.onmessage = function (e) {
             const playerID = e.data.replace(/\r?\n/g, "");
             const command = [`entity.setPos(${playerID},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`];
-            this.sendCommand(command);
+            this._sendCommand(command);
             e.currentTarget.close();
         }.bind(this);
         ws1.onclose = function (e) {
