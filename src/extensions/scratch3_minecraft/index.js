@@ -317,6 +317,21 @@ class Scratch3Minecraft {
                             defaultValue: 'localhost'
                         }
                     }
+                },
+                {
+                    opcode: 'changeWeather',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.changeWeather',
+                        default: '天気を[WEATHER]に変える'
+                    }),
+                    arguments: {
+                        WEATHER: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'WEATHER',
+                            defaultValue: 0
+                        }
+                    }
                 }
             ],
             menus: {
@@ -327,6 +342,10 @@ class Scratch3Minecraft {
                 ENTITY: {
                     acceptReporters: true,
                     items: this._buildMenu(this.ENTITY_INFO)
+                },
+                WEATHER: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.WEATHER_TYPES)
                 }
             }
         };
@@ -367,6 +386,31 @@ class Scratch3Minecraft {
 
     get PARTICLE_INFO() {
         return ParticleInfo.genParticleInfo();
+    }
+
+    get WEATHER_TYPES() {
+        return [
+            {
+                name: formatMessage({
+                    id: 'minecraft.clear',
+                    default: '晴れ'
+                }),
+                weather: 'clear'
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.rain',
+                    default: '雨'
+                }),
+                weather: 'rain'
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.thunder',
+                    default: '雷'
+                }),
+                weather: 'thunder'
+            }];
     }
 
     _createWebSocket() {
@@ -796,10 +840,10 @@ class Scratch3Minecraft {
         return targetBlock === this.getSearchedBlock();
     }
 
-    _checkBlockTypeToAbsCoord(args) {
-        const ws = this._createWebSocket();
-        ws.onopen = function (e) {
-            e.currentTarget.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
+    changeWeather(args) {
+        const weather = this.WEATHER_TYPES[args.WEATHER].weather;
+        const command = [`world.changeWeather(${weather})`];
+        this._sendCommand(command);
         };
         ws.onmessage = function (e) {
             log.log(e);
