@@ -332,6 +332,21 @@ class Scratch3Minecraft {
                             defaultValue: 0
                         }
                     }
+                },
+                {
+                    opcode: 'changeGameMode',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.changeGameMode',
+                        default: '[GAMEMODE]にする'
+                    }),
+                    arguments: {
+                        GAMEMODE: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'GAMEMODE',
+                            defaultValue: 0
+                        }
+                    }
                 }
             ],
             menus: {
@@ -346,6 +361,10 @@ class Scratch3Minecraft {
                 WEATHER: {
                     acceptReporters: true,
                     items: this._buildMenu(this.WEATHER_TYPES)
+                },
+                GAMEMODE: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.GAMEMODES)
                 }
             }
         };
@@ -411,6 +430,39 @@ class Scratch3Minecraft {
                 }),
                 weather: 'thunder'
             }];
+    }
+
+    get GAMEMODES() {
+        return [
+            {
+                name: formatMessage({
+                    id: 'minecraft.survival',
+                    default: 'サバイバルモード'
+                }),
+                mode: 0
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.creative',
+                    default: 'クリエイティブモード'
+                }),
+                mode: 1
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.adventure',
+                    default: 'アドベンチャーモード'
+                }),
+                mode: 2
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.spectator',
+                    default: 'スペクテイターモード'
+                }),
+                mode: 3
+            }
+        ];
     }
 
     _createWebSocket() {
@@ -866,10 +918,11 @@ class Scratch3Minecraft {
         };
     }
 
-    waitForFinishBlockTypeCheck() {
-        return new Promise((resolve, reject) => {
-            const maxNumberOfAttempts = 40;
-            const intervalTime = 50; //ms
+    changeGameMode(args) {
+        const gamemode = this.GAMEMODES[args.GAMEMODE].mode;
+        const command = [`world.changeGameMode(${gamemode})`];
+        this._sendCommand(command);
+    }
 
             let currentAttempt = 0;
             const interval = setInterval(() => {
