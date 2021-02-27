@@ -216,21 +216,6 @@ class Scratch3Minecraft {
                             defaultValue: '0'
                         },
                         ENTITY: {
-                            type: ArgumentType.STRING,
-                            defaultValue: this.ENTITY_INFO[0].name
-                        }
-                    }
-                },
-                {
-                    opcode: 'getEntities',
-                    text: formatMessage({
-                        id: 'minecraft.entityInfo',
-                        default: '[ENTITY]',
-                        description: 'name of minecraft entities.'
-                    }),
-                    blockType: BlockType.REPORTER,
-                    arguments: {
-                        ENTITY: {
                             type: ArgumentType.NUMBER,
                             menu: 'ENTITY',
                             defaultValue: 0
@@ -657,10 +642,6 @@ class Scratch3Minecraft {
     --------------------------------------- */
     getBlocks(args) {
         return this.BUILDING_BLOCK_INFO[args.BLOCK];
-    }
-
-    getEntities(args) {
-        return this.ENTITY_INFO[args.ENTITY];
     }
 
     getPosX() {
