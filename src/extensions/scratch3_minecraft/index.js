@@ -860,11 +860,12 @@ class Scratch3Minecraft {
 
     _findEntityInfo(entityName) {
         let entity = null;
-        if (typeof entityName === 'string') {
+        if (typeof entityName === 'string' && Number.isNaN(Cast.toNumber(entityName))) {
             const targetEntity = this.ENTITY_INFO.find((e) => e.name === entityName);
             entity = targetEntity.entityName;
         } else {
-            entity = entityName.entityName;
+            const index = Cast.toNumber(entityName);
+            entity = this.ENTITY_INFO[index].entityName;
         }
         return entity;
     }
