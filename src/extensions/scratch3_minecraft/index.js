@@ -347,6 +347,21 @@ class Scratch3Minecraft {
                             defaultValue: 0
                         }
                     }
+                },
+                {
+                    opcode: 'changeDifficulty',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.changeDifficulty',
+                        default: '[DIFFICULTY]にする'
+                    }),
+                    arguments: {
+                        DIFFICULTY: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'DIFFICULTY',
+                            defaultValue: 0
+                        }
+                    }
                 }
             ],
             menus: {
@@ -365,6 +380,10 @@ class Scratch3Minecraft {
                 GAMEMODE: {
                     acceptReporters: true,
                     items: this._buildMenu(this.GAMEMODES)
+                },
+                DIFFICULTY: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.DIFFICULTIES)
                 }
             }
         };
@@ -461,6 +480,39 @@ class Scratch3Minecraft {
                     default: 'スペクテイターモード'
                 }),
                 mode: 3
+            }
+        ];
+    }
+
+    get DIFFICULTIES() {
+        return [
+            {
+                name: formatMessage({
+                    id: 'minecraft.peaceful',
+                    default: 'ピースフル'
+                }),
+                difficulty: 0
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.easy',
+                    default: 'イージー'
+                }),
+                difficulty: 1
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.normal',
+                    default: 'ノーマル'
+                }),
+                difficulty: 2
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.hard',
+                    default: 'ハード'
+                }),
+                difficulty: 3
             }
         ];
     }
@@ -924,11 +976,11 @@ class Scratch3Minecraft {
         this._sendCommand(command);
     }
 
-            let currentAttempt = 0;
+    changeDifficulty(args) {
             const interval = setInterval(() => {
-                if (currentAttempt > maxNumberOfAttempts - 1) {
-                    clearInterval(interval);
-                    reject(new Error('Maximum number of attempts exceeded'));
+        const command = [`world.changeDifficulty(${difficulty})`];
+        this._sendCommand(command);
+    }
                 } else if (this.blockTypeChecking === false) {
                     clearInterval(interval);
                     resolve();
