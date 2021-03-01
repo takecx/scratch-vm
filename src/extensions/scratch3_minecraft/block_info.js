@@ -985,6 +985,590 @@ exports.genBuildingBlockInfo = () => {
             }),
             blockID: '159',
             blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.OrangeTerracotta',
+                default: '橙色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '1'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.MagentaTerracotta',
+                default: '赤紫色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '2'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.LightBlueTerracotta',
+                default: '空色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '3'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.YellowTerracotta',
+                default: '黃色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '4'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.LimeTerracotta',
+                default: '黄緑色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '5'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PinkTerracotta',
+                default: '桃色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '6'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.GrayTerracotta',
+                default: '灰色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '7'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.LightGrayTerracotta',
+                default: '薄灰色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '8'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.CyanTerracotta',
+                default: '青緑色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '9'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PurpleTerracotta',
+                default: '紫色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '10'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BlueTerracotta',
+                default: '青色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '11'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BrownTerracotta',
+                default: '茶色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '12'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.GreenTerracotta',
+                default: '緑色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '13'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.RedTerracotta',
+                default: '赤色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '14'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BlackTerracotta',
+                default: '黒色のテラコッタ'
+            }),
+            blockID: '159',
+            blockData: '15'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.AcaciaWood',
+                default: 'アカシアの木'
+            }),
+            blockID: '162',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.DarkOakWood',
+                default: 'ダークオークの木'
+            }),
+            blockID: '162',
+            blockData: '1'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.AcaciaWoodStairs',
+                default: 'アカシアの木の階段'
+            }),
+            blockID: '163',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.DarkOakWoodStairs',
+                default: 'ダークオークの木の階段'
+            }),
+            blockID: '164',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.Prismarine',
+                default: '海晶ブロック'
+            }),
+            blockID: '168',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PrismarineBricks',
+                default: '海晶レンガ'
+            }),
+            blockID: '168',
+            blockData: '1'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.DarkPrismarine',
+                default: '暗海晶ブロック'
+            }),
+            blockID: '168',
+            blockData: '2'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.SeaLantern',
+                default: 'シーランタン'
+            }),
+            blockID: '169',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.HayBale',
+                default: '干草の俵'
+            }),
+            blockID: '170',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.HardenedClay',
+                default: 'テラコッタ'
+            }),
+            blockID: '172',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BlockofCoal',
+                default: '石炭ブロック'
+            }),
+            blockID: '173',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PackedIce',
+                default: '氷塊'
+            }),
+            blockID: '174',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.RedSandstone',
+                default: '赤い砂岩'
+            }),
+            blockID: '179',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ChiseledRedSandstone',
+                default: '模様入りの赤い砂岩'
+            }),
+            blockID: '179',
+            blockData: '1'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.SmoothRedSandstone',
+                default: '滑らかな赤い砂岩'
+            }),
+            blockID: '179',
+            blockData: '2'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.RedSandstoneStairs',
+                default: '赤い砂岩の階段'
+            }),
+            blockID: '180',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.RedSandstoneSlab',
+                default: '赤い砂岩のハーフブロック'
+            }),
+            blockID: '182',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PurpurBlock',
+                default: 'プルプァブロック'
+            }),
+            blockID: '201',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PurpurPillar',
+                default: 'プルプァの柱'
+            }),
+            blockID: '202',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PurpurStairs',
+                default: 'プルプァの階段'
+            }),
+            blockID: '203',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PurpurSlab',
+                default: 'プルプァのハーフブロック'
+            }),
+            blockID: '205',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.EndStoneBricks',
+                default: 'エンドストーンレンガ'
+            }),
+            blockID: '206',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.MagmaBlock',
+                default: 'マグマブロック'
+            }),
+            blockID: '213',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.NetherWartBlock',
+                default: 'ネザーウォートブロック'
+            }),
+            blockID: '214',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.RedNetherBrick',
+                default: '赤いネザーレンガ'
+            }),
+            blockID: '215',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BoneBlock',
+                default: '骨ブロック'
+            }),
+            blockID: '216',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.WhiteConcrete',
+                default: '白色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.OrangeConcrete',
+                default: '橙色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '1'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.MagentaConcrete',
+                default: '赤紫色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '2'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.LightBlueConcrete',
+                default: '空色色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '3'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.YellowConcrete',
+                default: '黄色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '4'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.LimeConcrete',
+                default: '黄緑色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '5'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PinkConcrete',
+                default: '桃色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '6'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.GrayConcrete',
+                default: '灰色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '7'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.LightGrayConcrete',
+                default: '薄灰色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '8'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.CyanConcrete',
+                default: '青緑色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '9'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PurpleConcrete',
+                default: '紫色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '10'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BlueConcrete',
+                default: '青色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '11'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BrownConcrete',
+                default: '茶色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '12'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.GreenConcrete',
+                default: '緑色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '13'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.RedConcrete',
+                default: '赤色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '14'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BlackConcrete',
+                default: '黒色のコンクリート'
+            }),
+            blockID: '251',
+            blockData: '15'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.WhiteConcretePowder',
+                default: '白色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.OrangeConcretePowder',
+                default: '橙色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '1'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.MagentaConcretePowder',
+                default: '赤紫色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '2'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.LightBlueConcretePowder',
+                default: '空色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '3'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.YellowConcretePowder',
+                default: '黃色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '4'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.LimeConcretePowder',
+                default: '黄緑色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '5'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PinkConcretePowder',
+                default: '桃色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '6'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.GrayConcretePowder',
+                default: '灰色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '7'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.LightGrayConcretePowder',
+                default: '薄灰色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '8'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.CyanConcretePowder',
+                default: '青緑色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '9'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.PurpleConcretePowder',
+                default: '紫色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '10'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BlueConcretePowder',
+                default: '青色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '11'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BrownConcretePowder',
+                default: '茶色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '12'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.GreenConcretePowder',
+                default: '緑色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '13'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.RedConcretePowder',
+                default: '赤色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '14'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.BlackConcretePowder',
+                default: '黒色のコンクリートパウダー'
+            }),
+            blockID: '252',
+            blockData: '15'
         }
     ];
 };
