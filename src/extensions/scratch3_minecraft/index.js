@@ -180,7 +180,7 @@ class Scratch3Minecraft {
                     }
                 },
                 {
-                    opcode: 'getBlocks',
+                    opcode: 'getBuildingBlocks',
                     text: formatMessage({
                         id: 'minecraft.buildingBlockInfo',
                         default: '建築ブロック：[BLOCK]',
@@ -190,7 +190,23 @@ class Scratch3Minecraft {
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.NUMBER,
-                            menu: 'BLOCK',
+                            menu: 'BUILDINGBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'getDecorationBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.decorationBlockInfo',
+                        default: '装飾ブロック：[BLOCK]',
+                        description: 'name of minecraft decoration blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'DECORATIONBLOCK',
                             defaultValue: 0
                         }
                     }
@@ -421,9 +437,13 @@ class Scratch3Minecraft {
                 }
             ],
             menus: {
-                BLOCK: {
+                BUILDINGBLOCK: {
                     acceptReporters: true,
                     items: this._buildMenu(this.BUILDING_BLOCK_INFO)
+                },
+                DECORATIONBLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.DECORATION_BLOCK_INFO)
                 },
                 ENTITY: {
                     acceptReporters: true,
@@ -484,6 +504,10 @@ class Scratch3Minecraft {
      */
     get BUILDING_BLOCK_INFO() {
         return BlockInfo.genBuildingBlockInfo();
+    }
+
+    get DECORATION_BLOCK_INFO() {
+        return BlockInfo.genDecorationBlockInfo();
     }
 
     get ENTITY_INFO() {
@@ -694,8 +718,12 @@ class Scratch3Minecraft {
     /* --------------------------------------
     *************** REPORTER ****************
     --------------------------------------- */
-    getBlocks(args) {
+    getBuildingBlocks(args) {
         return this.BUILDING_BLOCK_INFO[args.BLOCK];
+    }
+
+    getDecorationBlocks(args) {
+        return this.DECORATION_BLOCK_INFO[args.BLOCK];
     }
 
     getPosX() {
