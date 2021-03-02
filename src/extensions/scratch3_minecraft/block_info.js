@@ -2994,6 +2994,219 @@ exports.genDecorationBlockInfo = () => {
     ];
 }
 
+exports.genRedStoneBlockInfo = () => {
+    return [{
+        blockData: 0,
+        blockID: 23,
+        name: formatMessage({ id: 'minecraft.Dispenser', default: 'ディスペンサー' })
+    },
+    {
+        blockData: 0,
+        blockID: 25,
+        name: formatMessage({ id: 'minecraft.NoteBlock', default: '音符ブロック' })
+    },
+    {
+        blockData: 0,
+        blockID: 33,
+        name: formatMessage({ id: 'minecraft.Piston', default: 'ピストン' })
+    },
+    {
+        blockData: 0,
+        blockID: 29,
+        name: formatMessage({ id: 'minecraft.StickyPiston', default: '粘着ピストン' })
+    },
+    {
+        blockData: 0,
+        blockID: 46,
+        name: formatMessage({ id: 'minecraft.TNT', default: 'TNT' })
+    },
+    {
+        blockData: 0,
+        blockID: 69,
+        name: formatMessage({ id: 'minecraft.Lever', default: 'レバー' })
+    },
+    {
+        blockData: 0,
+        blockID: 70,
+        name: formatMessage({ id: 'minecraft.StonePressurePlate', default: '石の感圧板' })
+    },
+    {
+        blockData: 0,
+        blockID: 72,
+        name: formatMessage({ id: 'minecraft.WoodenPressurePlate', default: '木の感圧板' })
+    },
+    {
+        blockData: 0,
+        blockID: 75,
+        name: formatMessage({ id: 'minecraft.RedstoneTorch(off)', default: 'レッドストーントーチ(off)' })
+    },
+    {
+        blockData: 0,
+        blockID: 76,
+        name: formatMessage({ id: 'minecraft.RedstoneTorch(on)', default: 'レッドストーントーチ(on)' })
+    },
+    {
+        blockData: 0,
+        blockID: 77,
+        name: formatMessage({ id: 'minecraft.StoneButton', default: '石のボタン' })
+    },
+    {
+        blockData: 0,
+        blockID: 96,
+        name: formatMessage({ id: 'minecraft.Wooden Trapdoor', default: '木のトラップドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 107,
+        name: formatMessage({ id: 'minecraft.OakFenceGate', default: 'オークのフェンスゲート' })
+    },
+    {
+        blockData: 0,
+        blockID: 183,
+        name: formatMessage({ id: 'minecraft.SpruceFenceGate', default: 'トウヒのフェンスゲート' })
+    },
+    {
+        blockData: 0,
+        blockID: 184,
+        name: formatMessage({ id: 'minecraft.BirchFenceGate', default: 'シラカバのフェンスゲート' })
+    },
+    {
+        blockData: 0,
+        blockID: 185,
+        name: formatMessage({ id: 'minecraft.JungleFenceGate', default: 'ジャングルのフェンスゲート' })
+    },
+    {
+        blockData: 0,
+        blockID: 186,
+        name: formatMessage({ id: 'minecraft.DarkOakFenceGate', default: 'ダークオークのフェンスゲート' })
+    },
+    {
+        blockData: 0,
+        blockID: 187,
+        name: formatMessage({ id: 'minecraft.AcaciaFenceGate', default: 'アカシアのフェンスゲート' })
+    },
+    {
+        blockData: 0,
+        blockID: 123,
+        name: formatMessage({ id: 'minecraft.Redstone Lamp(inactive)', default: 'レッドストーンランプ(inactive)' })
+    },
+    {
+        blockData: 0,
+        blockID: 124,
+        name: formatMessage({ id: 'minecraft.Redstone Lamp(active)', default: 'レッドストーンランプ(active)' })
+    },
+    {
+        blockData: 0,
+        blockID: 131,
+        name: formatMessage({ id: 'minecraft.Tripwire Hook', default: 'トリップワイヤーフック' })
+    },
+    {
+        blockData: 0,
+        blockID: 143,
+        name: formatMessage({ id: 'minecraft.Wooden Buttons', default: '木のボタン' })
+    },
+    {
+        blockData: 0,
+        blockID: 146,
+        name: formatMessage({ id: 'minecraft.Trapped Chest', default: 'トラップチェスト' })
+    },
+    {
+        blockData: 0,
+        blockID: 147,
+        name: formatMessage({ id: 'minecraft.WeightedPressurePlate(light)', default: '重量感圧板(軽)' })
+    },
+    {
+        blockData: 0,
+        blockID: 148,
+        name: formatMessage({ id: 'minecraft.WeightedPressurePlate(heavy)', default: '重量感圧板(重)' })
+    },
+    {
+        blockData: 0,
+        blockID: 151,
+        name: formatMessage({ id: 'minecraft.Daylight Detector', default: '日照センサー' })
+    },
+    {
+        blockData: 0,
+        blockID: 152,
+        name: formatMessage({ id: 'minecraft.Block of Redstone', default: 'レッドストーンブロック' })
+    },
+    {
+        blockData: 0,
+        blockID: 154,
+        name: formatMessage({ id: 'minecraft.Hopper', default: 'ホッパー' })
+    },
+    {
+        blockData: 0,
+        blockID: 158,
+        name: formatMessage({ id: 'minecraft.Dropper', default: 'ドロッパー' })
+    },
+    {
+        blockData: 0,
+        blockID: 167,
+        name: formatMessage({ id: 'minecraft.Iron Trapdoor', default: '鉄のトラップドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 218,
+        name: formatMessage({ id: 'minecraft.Observer', default: 'オブザーバー' })
+    },
+    {
+        blockData: 0,
+        blockID: 330,
+        name: formatMessage({ id: 'minecraft.Iron Door', default: '鉄のドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 324,
+        name: formatMessage({ id: 'minecraft.OakDoor', default: 'オークのドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 330,
+        name: formatMessage({ id: 'minecraft.IronDoor', default: '鉄のドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 427,
+        name: formatMessage({ id: 'minecraft.SpruceDoor', default: 'トウヒのドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 428,
+        name: formatMessage({ id: 'minecraft.BirchDoor', default: 'シラカバのドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 429,
+        name: formatMessage({ id: 'minecraft.JungleDoor', default: 'ジャングルのドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 430,
+        name: formatMessage({ id: 'minecraft.AcaciaDoor', default: 'アカシアのドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 431,
+        name: formatMessage({ id: 'minecraft.DarkOakDoor', default: 'ダークオークのドア' })
+    },
+    {
+        blockData: 0,
+        blockID: 356,
+        name: formatMessage({ id: 'minecraft.Redstone Repeater', default: 'レッドストーンリピーター' })
+    },
+    {
+        blockData: 0,
+        blockID: 404,
+        name: formatMessage({ id: 'minecraft.Redstone Comparator', default: 'レッドストーンコンパレーター' })
+    },
+    {
+        blockData: 0,
+        blockID: 331,
+        name: formatMessage({ id: 'minecraft.Redstone Dust', default: 'レッドストーンダスト' })
+    }];
+}
+
 exports.genExtraBlockInfo = () => {
     return [
         {

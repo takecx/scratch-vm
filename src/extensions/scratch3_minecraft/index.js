@@ -212,6 +212,22 @@ class Scratch3Minecraft {
                     }
                 },
                 {
+                    opcode: 'getRedstoneBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.redstoneBlockInfo',
+                        default: 'レッドストーン：[BLOCK]',
+                        description: 'name of minecraft decoration blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'REDSTONEBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
                     opcode: 'spawnEntity',
                     text: formatMessage({
                         id: 'minecraft.spawnEntity',
@@ -445,6 +461,10 @@ class Scratch3Minecraft {
                     acceptReporters: true,
                     items: this._buildMenu(this.DECORATION_BLOCK_INFO)
                 },
+                REDSTONEBLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.REDSTONE_BLOCK_INFO)
+                },
                 ENTITY: {
                     acceptReporters: true,
                     items: this._buildMenu(this.ENTITY_INFO)
@@ -508,6 +528,10 @@ class Scratch3Minecraft {
 
     get DECORATION_BLOCK_INFO() {
         return BlockInfo.genDecorationBlockInfo();
+    }
+
+    get REDSTONE_BLOCK_INFO() {
+        return BlockInfo.genRedStoneBlockInfo();
     }
 
     get ENTITY_INFO() {
@@ -724,6 +748,10 @@ class Scratch3Minecraft {
 
     getDecorationBlocks(args) {
         return this.DECORATION_BLOCK_INFO[args.BLOCK];
+    }
+
+    getRedstoneBlocks(args) {
+        return this.REDSTONE_BLOCK_INFO[args.BLOCK];
     }
 
     getPosX() {
