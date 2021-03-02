@@ -3207,6 +3207,99 @@ exports.genRedStoneBlockInfo = () => {
     }];
 }
 
+exports.genTransportationBlockInfo = () => {
+    return [{
+        blockData: 0,
+        blockID: 27,
+        name: formatMessage({ id: 'minecraft.Powered Rail', default: 'パワードレール' })
+    },
+    {
+        blockData: 0,
+        blockID: 28,
+        name: formatMessage({ id: 'minecraft.Detector Rail', default: 'ディテクターレール' })
+    },
+    {
+        blockData: 0,
+        blockID: 66,
+        name: formatMessage({ id: 'minecraft.Rail', default: 'レール' })
+    },
+    {
+        blockData: 0,
+        blockID: 157,
+        name: formatMessage({ id: 'minecraft.Activator Rail', default: 'アクティベーターレール' })
+    },
+    {
+        blockData: 0,
+        blockID: 328,
+        name: formatMessage({ id: 'minecraft.Minecart', default: 'トロッコ' })
+    },
+    {
+        blockData: 0,
+        blockID: 329,
+        name: formatMessage({ id: 'minecraft.Saddle', default: '鞍' })
+    },
+    {
+        blockData: 0,
+        blockID: 342,
+        name: formatMessage({ id: 'minecraft.Minecart with Chest', default: 'チェスト付きトロッコ' })
+    },
+    {
+        blockData: 0,
+        blockID: 343,
+        name: formatMessage({ id: 'minecraft.Minecart with Furnace', default: 'かまど付きトロッコ' })
+    },
+    {
+        blockData: 0,
+        blockID: 398,
+        name: formatMessage({ id: 'minecraft.Carrot on a Stick', default: 'ニンジン付きの棒' })
+    },
+    {
+        blockData: 0,
+        blockID: 407,
+        name: formatMessage({ id: 'minecraft.Minecart with TNT', default: 'TNT付きトロッコ ' })
+    },
+    {
+        blockData: 0,
+        blockID: 408,
+        name: formatMessage({ id: 'minecraft.Minecart with Hopper', default: 'ホッパー付きトロッコ' })
+    },
+    {
+        blockData: 0,
+        blockID: 443,
+        name: formatMessage({ id: 'minecraft.Elytra', default: 'エリトラ' })
+    },
+    {
+        blockData: 0,
+        blockID: 333,
+        name: formatMessage({ id: 'minecraft.OakBoat', default: 'オークのボート' })
+    },
+    {
+        blockData: 0,
+        blockID: 444,
+        name: formatMessage({ id: 'minecraft.SpruceBoat', default: 'トウヒのボート' })
+    },
+    {
+        blockData: 0,
+        blockID: 445,
+        name: formatMessage({ id: 'minecraft.BirchBoat', default: 'シラカバのボート' })
+    },
+    {
+        blockData: 0,
+        blockID: 446,
+        name: formatMessage({ id: 'minecraft.JungleBoat', default: 'ジャングルのボート' })
+    },
+    {
+        blockData: 0,
+        blockID: 447,
+        name: formatMessage({ id: 'minecraft.AcaciaBoat', default: 'アカシアのボート' })
+    },
+    {
+        blockData: 0,
+        blockID: 448,
+        name: formatMessage({ id: 'minecraft.DarkOakBoat', default: 'ダークオークボート' })
+    }];
+}
+
 exports.genExtraBlockInfo = () => {
     return [
         {

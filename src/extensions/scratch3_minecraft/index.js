@@ -228,6 +228,22 @@ class Scratch3Minecraft {
                     }
                 },
                 {
+                    opcode: 'getTransportationBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.transportationBlockInfo',
+                        default: '移動[BLOCK]',
+                        description: 'name of minecraft transportation blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'TRANSPORTATIONBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
                     opcode: 'spawnEntity',
                     text: formatMessage({
                         id: 'minecraft.spawnEntity',
@@ -465,6 +481,10 @@ class Scratch3Minecraft {
                     acceptReporters: true,
                     items: this._buildMenu(this.REDSTONE_BLOCK_INFO)
                 },
+                TRANSPORTATIONBLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.TRANSPORTATION_BLOCK_INFO)
+                },
                 ENTITY: {
                     acceptReporters: true,
                     items: this._buildMenu(this.ENTITY_INFO)
@@ -532,6 +552,10 @@ class Scratch3Minecraft {
 
     get REDSTONE_BLOCK_INFO() {
         return BlockInfo.genRedStoneBlockInfo();
+    }
+
+    get TRANSPORTATION_BLOCK_INFO() {
+        return BlockInfo.genTransportationBlockInfo();
     }
 
     get ENTITY_INFO() {
@@ -752,6 +776,10 @@ class Scratch3Minecraft {
 
     getRedstoneBlocks(args) {
         return this.REDSTONE_BLOCK_INFO[args.BLOCK];
+    }
+
+    getTransportationBlocks(args) {
+        return this.TRANSPORTATION_BLOCK_INFO[args.BLOCK];
     }
 
     getPosX() {
