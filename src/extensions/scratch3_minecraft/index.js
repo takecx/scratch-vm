@@ -768,6 +768,15 @@ class Scratch3Minecraft {
         }));
     }
 
+    _convertPosToRelative(args) {
+        let relCoord = new Object();
+        const stage = this.runtime.getTargetForStage();
+        relCoord.X = typeof args.STARTX === 'string' ? Cast.toNumber(stage.posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+        relCoord.Y = typeof args.STARTY === 'string' ? Cast.toNumber(stage.posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+        relCoord.Z = typeof args.STARTZ === 'string' ? Cast.toNumber(stage.posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
+        return relCoord;
+    }
+
     /* --------------------------------------
     *************** REPORTER ****************
     --------------------------------------- */
@@ -844,15 +853,6 @@ class Scratch3Minecraft {
         const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
         const command = `world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData})`;
         await this._sendCommand(command);
-    }
-
-    _convertPosToRelative(args) {
-        let relCoord = new Object();
-        const stage = this.runtime.getTargetForStage();
-        relCoord.X = typeof args.STARTX === 'string' ? Cast.toNumber(stage.posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
-        relCoord.Y = typeof args.STARTY === 'string' ? Cast.toNumber(stage.posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
-        relCoord.Z = typeof args.STARTZ === 'string' ? Cast.toNumber(stage.posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
-        return relCoord;
     }
 
     async _setBlockToRelativeCoord(args) {
