@@ -1051,11 +1051,11 @@ class Scratch3Minecraft {
         await this._sendCommand(command);
     }
 
-    giveEnchant(args) {
+    async giveEnchant(args) {
         const level = this.LEVELS[args.LEVEL].name;
         const enchantId = this.ENCHANTS[args.ENCHANT].id;
-        const command = [`giveEnchant(${enchantId},${level})`];
-        this._sendCommand(command);
+        const command = `giveEnchant(${enchantId},${level})`;
+        await this._sendCommand(command);
     }
 
     spawnParticle(args) {
