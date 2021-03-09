@@ -768,13 +768,36 @@ class Scratch3Minecraft {
         }));
     }
 
-    _convertPosToRelative(args) {
-        let relCoord = new Object();
+    _convertStartPosToRelative(args) {
+        let startRelCoord = new Object();
         const stage = this.runtime.getTargetForStage();
-        relCoord.X = typeof args.STARTX === 'string' ? Cast.toNumber(stage.posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
-        relCoord.Y = typeof args.STARTY === 'string' ? Cast.toNumber(stage.posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
-        relCoord.Z = typeof args.STARTZ === 'string' ? Cast.toNumber(stage.posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
-        return relCoord;
+        startRelCoord.X = typeof args.STARTX === 'string' ? Cast.toNumber(stage.posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+        startRelCoord.Y = typeof args.STARTY === 'string' ? Cast.toNumber(stage.posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+        startRelCoord.Z = typeof args.STARTZ === 'string' ? Cast.toNumber(stage.posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
+        return startRelCoord;
+    }
+
+    _convertEndPosToRelative(args) {
+        let endRelCoord = new Object();
+        const stage = this.runtime.getTargetForStage();
+        endRelCoord.X = typeof args.ENDX === 'string' ? Cast.toNumber(stage.posX) + Cast.toNumber(args.ENDX.split('~')[1]) : Cast.toNumber(args.ENDX);
+        endRelCoord.Y = typeof args.ENDY === 'string' ? Cast.toNumber(stage.posY) + Cast.toNumber(args.ENDY.split('~')[1]) : Cast.toNumber(args.ENDY);
+        endRelCoord.Z = typeof args.ENDZ === 'string' ? Cast.toNumber(stage.posZ) + Cast.toNumber(args.ENDZ.split('~')[1]) : Cast.toNumber(args.ENDZ);
+        return endRelCoord;
+    }
+
+    _findBlockInfo(block) {
+        let blockID = null;
+        let blockData = null;
+        if (typeof block === 'string') {
+            const targetBlock = this.BUILDING_BLOCK_INFO.find((b) => b.name === block)
+            blockID = targetBlock.blockID;
+            blockData = targetBlock.blockData;
+        } else {
+            blockID = block.blockID;
+            blockData = block.blockData;
+        }
+        return [blockID, blockData];
     }
 
     /* --------------------------------------
@@ -858,75 +881,33 @@ class Scratch3Minecraft {
     async _setBlockToRelativeCoord(args) {
         const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
         await this.updatePlayerPosAsync();
-        const relCoord = this._convertPosToRelative(args);
+        const relCoord = this._convertStartPosToRelative(args);
         const command = `world.setBlock(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${blockID},${blockData})`;
         await this._sendCommand(command);
     }
 
-    setBlocks(args) {
+    async setBlocks(args) {
         const coordinateMode = this._searchCoordinateMode(args);
         if (coordinateMode === this.absoluteStr) {
-            this._setBlocksToAbsCoord(args);
+            await this._setBlocksToAbsCoord(args);
         } else if (coordinateMode === this.relativeStr) {
-            this._setBlocksToRelativeCoord(args);
+            await this._setBlocksToRelativeCoord(args);
         }
     }
 
-    _setBlocksToAbsCoord(args) {
+    async _setBlocksToAbsCoord(args) {
         const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
-        const command = [`world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`];
-        this._sendCommand(command);
+        const command = `world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`;
+        await this._sendCommand(command);
     }
 
-    _setBlocksToRelativeCoord(args) {
+    async _setBlocksToRelativeCoord(args) {
         const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
-        const ws1 = this._createWebSocket();
-        ws1.onopen = function (e) {
-            e.currentTarget.send("world.getPlayerIds()");
-        };
-        ws1.onmessage = function (e) {
-            const playerID = e.data.replace(/\r?\n/g, "");
-            const ws2 = this._createWebSocket();
-            ws2.onopen = function (e) {
-                e.currentTarget.send(`entity.getPos(${playerID})`);
-            };
-            ws2.onmessage = function (e) {
-                const posX = e.data.split(',')[0];
-                const posY = e.data.split(',')[1];
-                const posZ = e.data.split(',')[2];
-                const startX = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
-                const startY = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
-                const startZ = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
-                const endX = typeof args.ENDX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.ENDX.split('~')[1]) : Cast.toNumber(args.ENDX);
-                const endY = typeof args.ENDY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.ENDY.split('~')[1]) : Cast.toNumber(args.ENDY);
-                const endZ = typeof args.ENDZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.ENDZ.split('~')[1]) : Cast.toNumber(args.ENDZ);
-                const command = [`world.setBlocks(${Math.trunc(startX)},${Math.trunc(startY)},${Math.trunc(startZ)},${Math.trunc(endX)},${Math.trunc(endY)},${Math.trunc(endZ)},${blockID},${blockData})`];
-                this._sendCommand(command);
-                e.currentTarget.close();
-            }.bind(this);
-            ws2.onclose = function (e) {
-            };
-            e.currentTarget.close();
-        }.bind(this);
-        ws1.onclose = function (e) {
-        };
-        ws1.onerror = function (e) {
-        };
-
-    }
-
-    _findBlockInfo(block) {
-        let blockID = null;
-        let blockData = null;
-        if (typeof block === 'string') {
-            const targetBlock = this.BUILDING_BLOCK_INFO.find((b) => b.name === block)
-            blockID = targetBlock.blockID;
-            blockData = targetBlock.blockData;
-        } else {
-            blockID = block.blockID;
-            blockData = block.blockData;
-        }
-        return [blockID, blockData];
+        await this.updatePlayerPosAsync();
+        const startRelCoord = this._convertStartPosToRelative(args);
+        const endRelCoord = this._convertEndPosToRelative(args);
+        const command = `world.setBlocks(${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${blockID},${blockData})`;
+        await this._sendCommand(command);
     }
 
     setHost(args) {
