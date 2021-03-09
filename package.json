@@ -29,6 +29,7 @@
     "version": "json -f package.json -I -e \"this.repository.sha = '$(git log -n1 --pretty=format:%H)'\""
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@vernier/godirect": "1.5.0",
     "arraybuffer-loader": "^1.0.6",
     "atob": "2.1.2",
@@ -48,10 +49,13 @@
     "worker-loader": "^1.1.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "adm-zip": "0.4.11",
-    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "callsite": "^1.0.0",
     "copy-webpack-plugin": "^7.0.0",
