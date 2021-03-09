@@ -812,6 +812,18 @@ class Scratch3Minecraft {
         return entity;
     }
 
+    _findParticleInfo(particleName) {
+        let particle = null;
+        if (typeof particleName === 'string' && Number.isNaN(Cast.toNumber(particleName))) {
+            const targetParticle = this.PARTICLE_INFO.find((e) => e.name === particleName);
+            particle = targetParticle.particleName;
+        } else {
+            const index = Cast.toNumber(particleName);
+            particle = this.PARTICLE_INFO[index].particleName;
+        }
+        return particle;
+    }
+
     /* --------------------------------------
     *************** REPORTER ****************
     --------------------------------------- */
@@ -1058,34 +1070,28 @@ class Scratch3Minecraft {
         await this._sendCommand(command);
     }
 
-    spawnParticle(args) {
+    async spawnParticle(args) {
         const coordinateMode = this._searchCoordinateMode(args);
         if (coordinateMode === this.absoluteStr) {
-            this._spawnParticleToAbsCoord(args);
+            await this._spawnParticleToAbsCoord(args);
         } else if (coordinateMode === this.relativeStr) {
-            this._spawnParticleToRelativeCoord(args);
+            await this._spawnParticleToRelativeCoord(args);
         }
     }
 
-    _spawnParticleToAbsCoord(args) {
+    async _spawnParticleToAbsCoord(args) {
         const particleName = this._findParticleInfo(args.PARTICLE);
-        const command = [`world.spawnParticle(${particleName},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${args.SPEED},${args.COUNT})`];
-        this._sendCommand(command);
+        const command = `world.spawnParticle(${particleName},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${args.SPEED},${args.COUNT})`;
+        await this._sendCommand(command);
     }
 
-    _findParticleInfo(particleName) {
-        let particle = null;
-        if (typeof particleName === 'string' && Number.isNaN(Cast.toNumber(particleName))) {
-            const targetParticle = this.PARTICLE_INFO.find((e) => e.name === particleName);
-            particle = targetParticle.particleName;
-        } else {
-            const index = Cast.toNumber(particleName);
-            particle = this.PARTICLE_INFO[index].particleName;
-        }
-        return particle;
-    }
-    _spawnParticleToRelativeCoord(args) {
-
+    async _spawnParticleToRelativeCoord(args) {
+        const particleName = this._findParticleInfo(args.PARTICLE);
+        await this.updatePlayerPosAsync();
+        const startRelCoord = this._convertStartPosToRelative(args);
+        const endRelCoord = this._convertEndPosToRelative(args);
+        const command = `world.spawnParticle(${particleName},${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${args.SPEED},${args.COUNT})`;
+        await this._sendCommand(command);
     }
 
 }
