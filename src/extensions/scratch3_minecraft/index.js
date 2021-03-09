@@ -742,6 +742,22 @@ class Scratch3Minecraft {
         return this.absoluteStr;
     }
 
+    async _sendCommand(command) {
+        return new Promise(((resolve, reject) => {
+            const ws = this._createWebSocket();
+            ws.onopen = function (e) {
+                e.currentTarget.send(command);
+                e.currentTarget.close();
+            };
+            ws.onclose = function (e) {
+                resolve();
+            };
+            ws.onerror = function (e) {
+                reject();
+            };
+        }));
+    }
+
     /* --------------------------------------
     *************** REPORTER ****************
     --------------------------------------- */
@@ -924,23 +940,9 @@ class Scratch3Minecraft {
         this.host = args.TEXT;
     }
 
-    _sendCommand(commands) {
-        const ws = this._createWebSocket();
-        ws.onopen = function (e) {
-            commands.forEach(command => {
-                e.currentTarget.send(command);
-            });
-            e.currentTarget.close();
-        };
-        ws.onmessage = function (e) {
-            e.currentTarget.close();
-        };
-        ws.onclose = function (e) {
-        };
-        ws.onerror = function (e) {
-            log.log('onerror !!');
-            log.log(e);
-        };
+    async chat(args) {
+        const command = "chat.post(" + args.TEXT + ")";
+        await this._sendCommand(command);
     }
 
     chat(args) {
