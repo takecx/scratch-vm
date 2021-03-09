@@ -731,25 +731,6 @@ class Scratch3Minecraft {
         }));
     }
 
-    waitForValidCondition() {
-        return new Promise((resolve, reject) => {
-            const maxNumberOfAttempts = 40;
-            const intervalTime = 50; //ms
-
-            let currentAttempt = 0;
-            const interval = setInterval(() => {
-                if (currentAttempt > maxNumberOfAttempts - 1) {
-                    clearInterval(interval);
-                    reject(new Error('Maximum number of attempts exceeded'));
-                } else if (this.posUpdating === false && this.blockSearching == false) {
-                    clearInterval(interval);
-                    resolve();
-                }
-                currentAttempt++;
-            }, intervalTime);
-        });
-    }
-
     _searchCoordinateMode(args) {
         if (typeof args.STARTX === 'string' && args.STARTX.indexOf('~') !== -1) return this.relativeStr;
         if (typeof args.STARTY === 'string' && args.STARTY.indexOf('~') !== -1) return this.relativeStr;
@@ -825,14 +806,12 @@ class Scratch3Minecraft {
     }
 
     setBlock(args) {
-        this.waitForValidCondition().then(() => {
-            const coordinateMode = this._searchCoordinateMode(args);
-            if (coordinateMode === this.absoluteStr) {
-                this._setBlockToAbsCoord(args);
-            } else if (coordinateMode === this.relativeStr) {
-                this._setBlockToRelativeCoord(args);
-            }
-        });
+        const coordinateMode = this._searchCoordinateMode(args);
+        if (coordinateMode === this.absoluteStr) {
+            this._setBlockToAbsCoord(args);
+        } else if (coordinateMode === this.relativeStr) {
+            this._setBlockToRelativeCoord(args);
+        }
     }
 
     _setBlockToAbsCoord(args) {
@@ -876,14 +855,12 @@ class Scratch3Minecraft {
     }
 
     setBlocks(args) {
-        this.waitForValidCondition().then(() => {
-            const coordinateMode = this._searchCoordinateMode(args);
-            if (coordinateMode === this.absoluteStr) {
-                this._setBlocksToAbsCoord(args);
-            } else if (coordinateMode === this.relativeStr) {
-                this._setBlocksToRelativeCoord(args);
-            }
-        });
+        const coordinateMode = this._searchCoordinateMode(args);
+        if (coordinateMode === this.absoluteStr) {
+            this._setBlocksToAbsCoord(args);
+        } else if (coordinateMode === this.relativeStr) {
+            this._setBlocksToRelativeCoord(args);
+        }
     }
 
     _setBlocksToAbsCoord(args) {
@@ -976,14 +953,12 @@ class Scratch3Minecraft {
     }
 
     spawnEntity(args) {
-        this.waitForValidCondition().then(() => {
-            const coordinateMode = this._searchCoordinateMode(args);
-            if (coordinateMode === this.absoluteStr) {
-                this._spawnEntityToAbsCoord(args);
-            } else if (coordinateMode === this.relativeStr) {
-                this._spawnEntityToRelativeCoord(args);
-            }
-        });
+        const coordinateMode = this._searchCoordinateMode(args);
+        if (coordinateMode === this.absoluteStr) {
+            this._spawnEntityToAbsCoord(args);
+        } else if (coordinateMode === this.relativeStr) {
+            this._spawnEntityToRelativeCoord(args);
+        }
     }
 
     _spawnEntityToAbsCoord(args) {
@@ -1042,14 +1017,12 @@ class Scratch3Minecraft {
     }
 
     teleport(args) {
-        this.waitForValidCondition().then(() => {
-            const coordinateMode = this._searchCoordinateMode(args);
-            if (coordinateMode === this.absoluteStr) {
-                this._teleportToAbsCoord(args);
-            } else if (coordinateMode === this.relativeStr) {
-                this._teleportToRelativeCoord(args);
-            }
-        });
+        const coordinateMode = this._searchCoordinateMode(args);
+        if (coordinateMode === this.absoluteStr) {
+            this._teleportToAbsCoord(args);
+        } else if (coordinateMode === this.relativeStr) {
+            this._teleportToRelativeCoord(args);
+        }
     }
 
     _teleportToAbsCoord(args) {
@@ -1083,19 +1056,15 @@ class Scratch3Minecraft {
         };
         ws1.onerror = function (e) {
         };
-
     }
 
-    searchBlock(args) {
-        this.waitForValidCondition().then(() => {
-            this.blockSearching = true;
-            const coordinateMode = this._searchCoordinateMode(args);
-            if (coordinateMode === this.absoluteStr) {
-                this._searchBlockToAbsCoord(args);
-            } else if (coordinateMode === this.relativeStr) {
-                this._searchBlockToRelativeCoord(args);
-            }
-        });
+    async searchBlock(args) {
+        const coordinateMode = this._searchCoordinateMode(args);
+        if (coordinateMode === this.absoluteStr) {
+            this._searchBlockToAbsCoord(args);
+        } else if (coordinateMode === this.relativeStr) {
+            await this._searchBlockToRelativeCoord(args);
+        }
     }
 
     _searchBlockToAbsCoord(args) {
