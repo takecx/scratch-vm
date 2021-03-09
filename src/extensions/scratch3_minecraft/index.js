@@ -919,11 +919,6 @@ class Scratch3Minecraft {
         await this._sendCommand(command);
     }
 
-    chat(args) {
-        const command = ["chat.post(" + args.TEXT + ")"];
-        this._sendCommand(command);
-    }
-
     async getPlayerPosition() {
         await this.getPlayerPosAsync();
         await this.updatePlayerPosAsync();
