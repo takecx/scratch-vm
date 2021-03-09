@@ -920,7 +920,6 @@ class Scratch3Minecraft {
     }
 
     async getPlayerPosition() {
-        await this.getPlayerPosAsync();
         await this.updatePlayerPosAsync();
     }
 
