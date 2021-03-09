@@ -1039,10 +1039,10 @@ class Scratch3Minecraft {
         await this._sendCommand(command);
     }
 
-    changeGameMode(args) {
+    async changeGameMode(args) {
         const gamemode = this.GAMEMODES[args.GAMEMODE].mode;
-        const command = [`world.changeGameMode(${gamemode})`];
-        this._sendCommand(command);
+        const command = `world.changeGameMode(${gamemode})`;
+        await this._sendCommand(command);
     }
 
     changeDifficulty(args) {
