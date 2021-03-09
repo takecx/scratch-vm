@@ -958,66 +958,27 @@ class Scratch3Minecraft {
         await this._sendCommand(command);
     }
 
-    _sendRelativePositionCommand(args, commandStr, commandArg) {
-        const ws = this._createWebSocket();
-        ws.onopen = function (e) {
-            e.currentTarget.send(`entity.getPos(${commandArg})`);
-        };
-        ws.onmessage = function (e) {
-            const posX = e.data.split(',')[0];
-            const posY = e.data.split(',')[1];
-            const posZ = e.data.split(',')[2];
-            const X = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
-            const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
-            const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
-            const command = [`${commandStr}(${commandArg},${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)})`];
-            this._sendCommand(command);
-            e.currentTarget.close();
-        }.bind(this);
-        ws.onclose = function (e) {
-        };
-    }
-
-    teleport(args) {
+    async teleport(args) {
         const coordinateMode = this._searchCoordinateMode(args);
         if (coordinateMode === this.absoluteStr) {
-            this._teleportToAbsCoord(args);
+            await this._teleportToAbsCoord(args);
         } else if (coordinateMode === this.relativeStr) {
-            this._teleportToRelativeCoord(args);
+            await this._teleportToRelativeCoord(args);
         }
     }
 
-    _teleportToAbsCoord(args) {
-        const ws1 = this._createWebSocket();
-        ws1.onopen = function (e) {
-            e.currentTarget.send("world.getPlayerIds()");
-        };
-        ws1.onmessage = function (e) {
-            const playerID = e.data.replace(/\r?\n/g, "");
-            const command = [`entity.setPos(${playerID},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`];
-            this._sendCommand(command);
-            e.currentTarget.close();
-        }.bind(this);
-        ws1.onclose = function (e) {
-        };
-        ws1.onerror = function (e) {
-        };
+    async _teleportToAbsCoord(args) {
+        const playerID = await this.getPlayerIDAsync();
+        const command = `entity.setPos(${playerID},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`;
+        await this._sendCommand(command);
     }
 
-    _teleportToRelativeCoord(args) {
-        const ws1 = this._createWebSocket();
-        ws1.onopen = function (e) {
-            e.currentTarget.send("world.getPlayerIds()");
-        };
-        ws1.onmessage = function (e) {
-            const playerID = e.data.replace(/\r?\n/g, "");
-            this._sendRelativePositionCommand(args, 'entity.setPos', playerID);
-            e.currentTarget.close();
-        }.bind(this);
-        ws1.onclose = function (e) {
-        };
-        ws1.onerror = function (e) {
-        };
+    async _teleportToRelativeCoord(args) {
+        const playerID = await this.getPlayerIDAsync();
+        await this.updatePlayerPosAsync();
+        const relCoord = this._convertStartPosToRelative(args);
+        const command = `entity.setPos(${playerID},${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)})`;
+        await this._sendCommand(command);
     }
 
     async searchBlock(args) {
