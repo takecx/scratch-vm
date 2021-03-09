@@ -863,6 +863,10 @@ class Scratch3Minecraft {
         }
     }
 
+    setHost(args) {
+        this.host = args.TEXT;
+    }
+
     async setBlock(args) {
         const coordinateMode = this._searchCoordinateMode(args);
         if (coordinateMode === this.absoluteStr) {
@@ -908,10 +912,6 @@ class Scratch3Minecraft {
         const endRelCoord = this._convertEndPosToRelative(args);
         const command = `world.setBlocks(${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${blockID},${blockData})`;
         await this._sendCommand(command);
-    }
-
-    setHost(args) {
-        this.host = args.TEXT;
     }
 
     async chat(args) {
