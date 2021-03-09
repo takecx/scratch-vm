@@ -1045,10 +1045,10 @@ class Scratch3Minecraft {
         await this._sendCommand(command);
     }
 
-    changeDifficulty(args) {
+    async changeDifficulty(args) {
         const difficulty = this.DIFFICULTIES[args.DIFFICULTY].difficulty;
-        const command = [`world.changeDifficulty(${difficulty})`];
-        this._sendCommand(command);
+        const command = `world.changeDifficulty(${difficulty})`;
+        await this._sendCommand(command);
     }
 
     giveEnchant(args) {
