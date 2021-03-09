@@ -853,6 +853,14 @@ class Scratch3Minecraft {
         return 0;
     }
 
+    getSearchedBlock() {
+        const targetBlock = this.BUILDING_BLOCK_INFO.find(b => b.blockID === this.searchBlockID && b.blockData === this.searchBlockData);
+        if (typeof targetBlock === 'undefined') {
+            return '不明';
+        }
+        return targetBlock.name;
+    }
+
     /* --------------------------------------
     *************** COMMAND ****************
     --------------------------------------- */
@@ -1013,9 +1021,6 @@ class Scratch3Minecraft {
 
     }
 
-    getSearchedBlock() {
-        return this.BUILDING_BLOCK_INFO.find(b => b.blockID === this.searchBlockID && b.blockData === this.searchBlockData).name;
-    }
     checkBlockType(args) {
         const targetBlock = typeof args.TARGETBLOCK === 'string' ? args.TARGETBLOCK : args.TARGETBLOCK.name;
         return targetBlock === this.getSearchedBlock();
