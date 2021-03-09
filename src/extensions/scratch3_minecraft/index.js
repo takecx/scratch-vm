@@ -1033,10 +1033,10 @@ class Scratch3Minecraft {
         return targetBlock === this.getSearchedBlock();
     }
 
-    changeWeather(args) {
+    async changeWeather(args) {
         const weather = this.WEATHER_TYPES[args.WEATHER].weather;
-        const command = [`world.changeWeather(${weather})`];
-        this._sendCommand(command);
+        const command = `world.changeWeather(${weather})`;
+        await this._sendCommand(command);
     }
 
     changeGameMode(args) {
