@@ -16,8 +16,6 @@ class Scratch3Minecraft {
         this.runtime = runtime;
 
         this.host = 'localhost';
-        this.posUpdating = false;
-        this.blockSearching = false;
 
         this.absoluteStr = 'absolute';
         this.relativeStr = 'relative';
@@ -700,8 +698,7 @@ class Scratch3Minecraft {
         return new WebSocket("ws://" + this.host + ":14711");
     }
 
-    getPlayerPosAsync() {
-        this.posUpdating = true;
+    async getPlayerPosAsync() {
         return new Promise(((resolve, reject) => {
             const server1 = this._createWebSocket();
             server1.onopen = function (e) {
@@ -721,11 +718,12 @@ class Scratch3Minecraft {
                     stage.posX = Cast.toNumber(posX);
                     stage.posY = Cast.toNumber(posY);
                     stage.posZ = Cast.toNumber(posZ);
-                    server2.close();
+                    ev.currentTarget.close();
                 }.bind(this);
                 server2.onclose = function (ev) {
                     resolve();
                 };
+                e.currentTarget.close();
             }.bind(this);
             server1.onerror = function (err) {
                 reject(err);
@@ -973,10 +971,8 @@ class Scratch3Minecraft {
         this._sendCommand(command);
     }
 
-    getPlayerPosition() {
-        this.getPlayerPosAsync().then(() => {
-            this.posUpdating = false;
-        });
+    async getPlayerPosition() {
+        await this.getPlayerPosAsync();
     }
 
     spawnEntity(args) {
