@@ -714,7 +714,7 @@ class Scratch3Minecraft {
             }
         }));
     }
-    async getPlayerPosAsync() {
+    async updatePlayerPosAsync() {
         const playerID = await this.getPlayerIDAsync();
         return new Promise(((resolve, reject) => {
             const server = this._createWebSocket();
@@ -857,8 +857,7 @@ class Scratch3Minecraft {
 
     async _setBlockToRelativeCoord(args) {
         const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
-        const playerID = await this.getPlayerIDAsync();
-        await this.getPlayerPosAsync();
+        await this.updatePlayerPosAsync();
         const relCoord = this._convertPosToRelative(args);
         const command = `world.setBlock(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${blockID},${blockData})`;
         await this._sendCommand(command);
@@ -946,6 +945,7 @@ class Scratch3Minecraft {
 
     async getPlayerPosition() {
         await this.getPlayerPosAsync();
+        await this.updatePlayerPosAsync();
     }
 
     spawnEntity(args) {
@@ -1082,6 +1082,7 @@ class Scratch3Minecraft {
     }
 
     _searchBlockToRelativeCoord(args) {
+        await this.updatePlayerPosAsync();
 
     }
 
