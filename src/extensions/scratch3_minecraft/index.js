@@ -698,36 +698,46 @@ class Scratch3Minecraft {
         return new WebSocket("ws://" + this.host + ":14711");
     }
 
-    async getPlayerPosAsync() {
+    async getPlayerIDAsync() {
         return new Promise(((resolve, reject) => {
-            const server1 = this._createWebSocket();
-            server1.onopen = function (e) {
+            const server = this._createWebSocket();
+            server.onopen = function (e) {
                 e.currentTarget.send('world.getPlayerIds()');
             };
-            server1.onmessage = function (e) {
+            server.onmessage = function (e) {
                 const playerID = e.data.replace(/\r?\n/g, '');
-                const server2 = this._createWebSocket();
-                server2.onopen = function (ev) {
-                    ev.currentTarget.send(`entity.getPos(${playerID})`);
-                };
-                server2.onmessage = function (ev) {
-                    const posX = ev.data.split(',')[0];
-                    const posY = ev.data.split(',')[1];
-                    const posZ = ev.data.split(',')[2];
-                    const stage = this.runtime.getTargetForStage();
-                    stage.posX = Cast.toNumber(posX);
-                    stage.posY = Cast.toNumber(posY);
-                    stage.posZ = Cast.toNumber(posZ);
-                    ev.currentTarget.close();
-                }.bind(this);
-                server2.onclose = function (ev) {
-                    resolve();
-                };
+                e.currentTarget.close();
+                resolve(playerID);
+            };
+            server.onerror = function (e) {
+                reject();
+            }
+        }));
+    }
+    async getPlayerPosAsync() {
+        const playerID = await this.getPlayerIDAsync();
+        return new Promise(((resolve, reject) => {
+            const server = this._createWebSocket();
+
+            server.onopen = function (e) {
+                e.currentTarget.send(`entity.getPos(${playerID})`);
+            };
+            server.onmessage = function (e) {
+                const posX = e.data.split(',')[0];
+                const posY = e.data.split(',')[1];
+                const posZ = e.data.split(',')[2];
+                const stage = this.runtime.getTargetForStage();
+                stage.posX = Cast.toNumber(posX);
+                stage.posY = Cast.toNumber(posY);
+                stage.posZ = Cast.toNumber(posZ);
                 e.currentTarget.close();
             }.bind(this);
-            server1.onerror = function (err) {
-                reject(err);
+            server.onclose = function (e) {
+                resolve();
             };
+            server.onerror = function (e) {
+                reject();
+            }
         }));
     }
 
