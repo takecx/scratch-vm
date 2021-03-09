@@ -800,6 +800,18 @@ class Scratch3Minecraft {
         return [blockID, blockData];
     }
 
+    _findEntityInfo(entityName) {
+        let entity = null;
+        if (typeof entityName === 'string' && Number.isNaN(Cast.toNumber(entityName))) {
+            const targetEntity = this.ENTITY_INFO.find((e) => e.name === entityName);
+            entity = targetEntity.entityName;
+        } else {
+            const index = Cast.toNumber(entityName);
+            entity = this.ENTITY_INFO[index].entityName;
+        }
+        return entity;
+    }
+
     /* --------------------------------------
     *************** REPORTER ****************
     --------------------------------------- */
@@ -923,48 +935,27 @@ class Scratch3Minecraft {
         await this.updatePlayerPosAsync();
     }
 
-    spawnEntity(args) {
+    async spawnEntity(args) {
         const coordinateMode = this._searchCoordinateMode(args);
         if (coordinateMode === this.absoluteStr) {
-            this._spawnEntityToAbsCoord(args);
+            await this._spawnEntityToAbsCoord(args);
         } else if (coordinateMode === this.relativeStr) {
-            this._spawnEntityToRelativeCoord(args);
+            await this._spawnEntityToRelativeCoord(args);
         }
     }
 
-    _spawnEntityToAbsCoord(args) {
+    async _spawnEntityToAbsCoord(args) {
         const entityName = this._findEntityInfo(args.ENTITY);
-        const command = [`world.spawnEntity(${entityName},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`];
-        this._sendCommand(command);
+        const command = `world.spawnEntity(${entityName},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`;
+        await this._sendCommand(command);
     }
 
-    _findEntityInfo(entityName) {
-        let entity = null;
-        if (typeof entityName === 'string' && Number.isNaN(Cast.toNumber(entityName))) {
-            const targetEntity = this.ENTITY_INFO.find((e) => e.name === entityName);
-            entity = targetEntity.entityName;
-        } else {
-            const index = Cast.toNumber(entityName);
-            entity = this.ENTITY_INFO[index].entityName;
-        }
-        return entity;
-    }
-
-    _spawnEntityToRelativeCoord(args) {
+    async _spawnEntityToRelativeCoord(args) {
         const entityName = this._findEntityInfo(args.ENTITY);
-        const ws1 = this._createWebSocket();
-        ws1.onopen = function (e) {
-            e.currentTarget.send("world.getPlayerIds()");
-        };
-        ws1.onmessage = function (e) {
-            const playerID = e.data.replace(/\r?\n/g, "");
-            this._sendRelativePositionCommand(args, 'world.spawnEntity', playerID);
-            e.currentTarget.close();
-        }.bind(this);
-        ws1.onclose = function (e) {
-        };
-        ws1.onerror = function (e) {
-        };
+        await this.updatePlayerPosAsync();
+        const relCoord = this._convertStartPosToRelative(args);
+        const command = `world.spawnEntity(${entityName},${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)})`;
+        await this._sendCommand(command);
     }
 
     _sendRelativePositionCommand(args, commandStr, commandArg) {
