@@ -821,53 +821,37 @@ class Scratch3Minecraft {
         }
     }
 
-    setBlock(args) {
+    async setBlock(args) {
         const coordinateMode = this._searchCoordinateMode(args);
         if (coordinateMode === this.absoluteStr) {
-            this._setBlockToAbsCoord(args);
+            await this._setBlockToAbsCoord(args);
         } else if (coordinateMode === this.relativeStr) {
-            this._setBlockToRelativeCoord(args);
+            await this._setBlockToRelativeCoord(args);
         }
     }
 
-    _setBlockToAbsCoord(args) {
+    async _setBlockToAbsCoord(args) {
         const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
-        const command = [`world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData})`];
-        this._sendCommand(command);
+        const command = `world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData})`;
+        await this._sendCommand(command);
     }
 
+    _convertPosToRelative(args) {
+        let relCoord = new Object();
+        const stage = this.runtime.getTargetForStage();
+        relCoord.X = typeof args.STARTX === 'string' ? Cast.toNumber(stage.posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+        relCoord.Y = typeof args.STARTY === 'string' ? Cast.toNumber(stage.posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+        relCoord.Z = typeof args.STARTZ === 'string' ? Cast.toNumber(stage.posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
+        return relCoord;
+    }
 
-    _setBlockToRelativeCoord(args) {
+    async _setBlockToRelativeCoord(args) {
         const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
-        const ws1 = this._createWebSocket();
-        ws1.onopen = function (e) {
-            e.currentTarget.send("world.getPlayerIds()");
-        };
-        ws1.onmessage = function (e) {
-            const playerID = e.data.replace(/\r?\n/g, "");
-            const ws2 = this._createWebSocket();
-            ws2.onopen = function (e) {
-                e.currentTarget.send(`entity.getPos(${playerID})`);
-            };
-            ws2.onmessage = function (e) {
-                const posX = e.data.split(',')[0];
-                const posY = e.data.split(',')[1];
-                const posZ = e.data.split(',')[2];
-                const X = typeof args.STARTX === 'string' ? Cast.toNumber(posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
-                const Y = typeof args.STARTY === 'string' ? Cast.toNumber(posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
-                const Z = typeof args.STARTZ === 'string' ? Cast.toNumber(posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
-                const command = [`world.setBlock(${Math.trunc(X)},${Math.trunc(Y)},${Math.trunc(Z)},${blockID},${blockData})`];
-                this._sendCommand(command);
-                e.currentTarget.close();
-            }.bind(this);
-            ws2.onclose = function (e) {
-            };
-            e.currentTarget.close();
-        }.bind(this);
-        ws1.onclose = function (e) {
-        };
-        ws1.onerror = function (e) {
-        };
+        const playerID = await this.getPlayerIDAsync();
+        await this.getPlayerPosAsync();
+        const relCoord = this._convertPosToRelative(args);
+        const command = `world.setBlock(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${blockID},${blockData})`;
+        await this._sendCommand(command);
     }
 
     setBlocks(args) {
