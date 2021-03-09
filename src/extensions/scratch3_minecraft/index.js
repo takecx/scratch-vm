@@ -992,33 +992,40 @@ class Scratch3Minecraft {
     async searchBlock(args) {
         const coordinateMode = this._searchCoordinateMode(args);
         if (coordinateMode === this.absoluteStr) {
-            this._searchBlockToAbsCoord(args);
+            await this._searchBlockToAbsCoord(args);
         } else if (coordinateMode === this.relativeStr) {
             await this._searchBlockToRelativeCoord(args);
         }
     }
 
-    _searchBlockToAbsCoord(args) {
-        const ws = this._createWebSocket();
-        ws.onopen = function (e) {
-            e.currentTarget.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
-        };
-        ws.onmessage = function (e) {
-            const actualBlock = e.data.replace(/\r?\n/g, "");
-            this.searchBlockID = actualBlock.split(',')[0];
-            this.searchBlockData = actualBlock.split(',')[1];
-            e.currentTarget.close();
-        }.bind(this);
-        ws.onclose = function (e) {
-            this.blockSearching = false;
-        }.bind(this);
-        ws.onerror = function (e) {
-        };
+    async _searchBlockToAbsCoord(args) {
+        return new Promise(((resolve, reject) => {
+            const ws = this._createWebSocket();
+            ws.onopen = function (e) {
+                e.currentTarget.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
+            };
+            ws.onmessage = function (e) {
+                const actualBlock = e.data.replace(/\r?\n/g, "");
+                this.searchBlockID = actualBlock.split(',')[0];
+                this.searchBlockData = actualBlock.split(',')[1];
+                e.currentTarget.close();
+            }.bind(this);
+            ws.onclose = function (e) {
+                resolve();
+            }.bind(this);
+            ws.onerror = function (e) {
+                reject();
+            };
+        }));
     }
 
-    _searchBlockToRelativeCoord(args) {
+    async _searchBlockToRelativeCoord(args) {
         await this.updatePlayerPosAsync();
-
+        const relCoord = this._convertStartPosToRelative(args);
+        args.STARTX = Cast.toString(Math.trunc(relCoord.X));
+        args.STARTY = Cast.toString(Math.trunc(relCoord.Y));
+        args.STARTZ = Cast.toString(Math.trunc(relCoord.Z));
+        await this._searchBlockToAbsCoord(args);
     }
 
     checkBlockType(args) {
