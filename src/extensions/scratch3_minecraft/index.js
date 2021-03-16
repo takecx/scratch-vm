@@ -229,7 +229,7 @@ class Scratch3Minecraft {
                     opcode: 'getTransportationBlocks',
                     text: formatMessage({
                         id: 'minecraft.transportationBlockInfo',
-                        default: '移動[BLOCK]',
+                        default: '移動：[BLOCK]',
                         description: 'name of minecraft transportation blocks.'
                     }),
                     blockType: BlockType.REPORTER,
