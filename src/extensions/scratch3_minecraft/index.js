@@ -258,6 +258,70 @@ class Scratch3Minecraft {
                     }
                 },
                 {
+                    opcode: 'getFoodstuffsBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.foodstuffsBlockInfo',
+                        default: '食物：[BLOCK]',
+                        description: 'name of minecraft foodstuffs blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'FOODSTUFFSBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'getToolsBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.toolsBlockInfo',
+                        default: 'ツール：[BLOCK]',
+                        description: 'name of minecraft tools blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'TOOLSBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'getCombatBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.combatBlockInfo',
+                        default: '戦闘：[BLOCK]',
+                        description: 'name of minecraft combat blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'COMBATBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'getBrewingBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.brewingBlockInfo',
+                        default: '醸造：[BLOCK]',
+                        description: 'name of minecraft brewing blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'BREWINGBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
                     opcode: 'spawnEntity',
                     text: formatMessage({
                         id: 'minecraft.spawnEntity',
@@ -503,6 +567,22 @@ class Scratch3Minecraft {
                     acceptReporters: true,
                     items: this._buildMenu(this.MISCELLANEOUS_BLOCK_INFO)
                 },
+                FOODSTUFFSBLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.FOODSTUFFS_BLOCK_INFO)
+                },
+                TOOLSBLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.TOOLS_BLOCK_INFO)
+                },
+                COMBATBLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.COMBAT_BLOCK_INFO)
+                },
+                BREWINGBLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.BREWING_BLOCK_INFO)
+                },
                 ENTITY: {
                     acceptReporters: true,
                     items: this._buildMenu(this.ENTITY_INFO)
@@ -578,6 +658,18 @@ class Scratch3Minecraft {
 
     get MISCELLANEOUS_BLOCK_INFO() {
         return BlockInfo.genMiscellaneousBlockInfo();
+    }
+    get FOODSTUFFS_BLOCK_INFO() {
+        return BlockInfo.genFoodstuffsBlockInfo();
+    }
+    get TOOLS_BLOCK_INFO() {
+        return BlockInfo.genToolsBlockInfo();
+    }
+    get COMBAT_BLOCK_INFO() {
+        return BlockInfo.genCombatBlockInfo();
+    }
+    get BREWING_BLOCK_INFO() {
+        return BlockInfo.genBrewingBlockInfo();
     }
 
     get ENTITY_INFO() {
@@ -869,7 +961,18 @@ class Scratch3Minecraft {
 
     getMiscellaneousBlocks(args) {
         return this.MISCELLANEOUS_BLOCK_INFO[args.BLOCK];
-
+    }
+    getFoodstuffsBlocks(args) {
+        return this.FOODSTUFFS_BLOCK_INFO[args.BLOCK];
+    }
+    getToolsBlocks(args) {
+        return this.TOOLS_BLOCK_INFO[args.BLOCK];
+    }
+    getCombatBlocks(args) {
+        return this.COMBAT_BLOCK_INFO[args.BLOCK];
+    }
+    getBrewingBlocks(args) {
+        return this.BREWING_BLOCK_INFO[args.BLOCK];
     }
 
     getPosX() {
