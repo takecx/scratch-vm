@@ -242,6 +242,22 @@ class Scratch3Minecraft {
                     }
                 },
                 {
+                    opcode: 'getMiscellaneousBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.miscellaneousBlockInfo',
+                        default: 'その他：[BLOCK]',
+                        description: 'name of minecraft miscellaneous blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'MISCELLANEOUSBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
                     opcode: 'spawnEntity',
                     text: formatMessage({
                         id: 'minecraft.spawnEntity',
@@ -483,6 +499,10 @@ class Scratch3Minecraft {
                     acceptReporters: true,
                     items: this._buildMenu(this.TRANSPORTATION_BLOCK_INFO)
                 },
+                MISCELLANEOUSBLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.MISCELLANEOUS_BLOCK_INFO)
+                },
                 ENTITY: {
                     acceptReporters: true,
                     items: this._buildMenu(this.ENTITY_INFO)
@@ -554,6 +574,10 @@ class Scratch3Minecraft {
 
     get TRANSPORTATION_BLOCK_INFO() {
         return BlockInfo.genTransportationBlockInfo();
+    }
+
+    get MISCELLANEOUS_BLOCK_INFO() {
+        return BlockInfo.genMiscellaneousBlockInfo();
     }
 
     get ENTITY_INFO() {
@@ -841,6 +865,11 @@ class Scratch3Minecraft {
 
     getTransportationBlocks(args) {
         return this.TRANSPORTATION_BLOCK_INFO[args.BLOCK];
+    }
+
+    getMiscellaneousBlocks(args) {
+        return this.MISCELLANEOUS_BLOCK_INFO[args.BLOCK];
+
     }
 
     getPosX() {
