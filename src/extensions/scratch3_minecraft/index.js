@@ -132,51 +132,7 @@ class Scratch3Minecraft {
                     text: 'Z',
                     blockType: BlockType.REPORTER
                 },
-                {
-                    opcode: 'changePosX',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft.changePosX',
-                        default: 'Xを[VALUE]だけ変える',
-                        description: 'changePosX.'
-                    }),
-                    arguments: {
-                        VALUE: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 1
-                        }
-                    }
-                },
-                {
-                    opcode: 'changePosY',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft.changePosY',
-                        default: 'Yを[VALUE]だけ変える',
-                        description: 'changePosY.'
-                    }),
-                    arguments: {
-                        VALUE: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 1
-                        }
-                    }
-                },
-                {
-                    opcode: 'changePosZ',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft.changePosZ',
-                        default: 'Zを[VALUE]だけ変える',
-                        description: 'changePosZ.'
-                    }),
-                    arguments: {
-                        VALUE: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 1
-                        }
-                    }
-                },
+
                 {
                     opcode: 'getBuildingBlocks',
                     text: formatMessage({
@@ -1008,25 +964,6 @@ class Scratch3Minecraft {
     /* --------------------------------------
     *************** COMMAND ****************
     --------------------------------------- */
-    changePosX(args) {
-        const stage = this.runtime.getTargetForStage();
-        if (stage) {
-            stage.posX = stage.posX + Cast.toNumber(args.VALUE);
-        }
-    }
-    changePosY(args) {
-        const stage = this.runtime.getTargetForStage();
-        if (stage) {
-            stage.posY = stage.posY + Cast.toNumber(args.VALUE);
-        }
-    }
-    changePosZ(args) {
-        const stage = this.runtime.getTargetForStage();
-        if (stage) {
-            stage.posZ = stage.posZ + Cast.toNumber(args.VALUE);
-        }
-    }
-
     setHost(args) {
         this.host = args.TEXT;
     }
