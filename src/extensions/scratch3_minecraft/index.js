@@ -730,34 +730,19 @@ class Scratch3Minecraft {
     get LEVELS() {
         return [
             {
-                name: formatMessage({
-                    id: 'minecraft.firstlevel',
-                    default: '1'
-                })
+                name: '1'
             },
             {
-                name: formatMessage({
-                    id: 'minecraft.secondlevel',
-                    default: '2'
-                })
+                name: '2'
             },
             {
-                name: formatMessage({
-                    id: 'minecraft.thirdlevel',
-                    default: '3'
-                })
+                name: '3'
             },
             {
-                name: formatMessage({
-                    id: 'minecraft.fourthlevel',
-                    default: '4'
-                })
+                name: '4'
             },
             {
-                name: formatMessage({
-                    id: 'minecraft.fifthlevel',
-                    default: '5'
-                })
+                name: '5'
             }
         ];
     }
