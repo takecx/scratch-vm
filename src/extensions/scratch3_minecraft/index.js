@@ -803,15 +803,9 @@ class Scratch3Minecraft {
 
     async _sendCommand(command) {
         return new Promise(((resolve, reject) => {
-            const ws = this._createWebSocket();
-            ws.onopen = function (e) {
-                e.currentTarget.send(command);
-                e.currentTarget.close();
-            };
-            ws.onclose = function (e) {
-                resolve();
-            };
-            ws.onerror = function (e) {
+            this.ws.send(command);
+            resolve();
+            this.ws.onerror = function (e) {
                 reject();
             };
         }));
@@ -1058,32 +1052,27 @@ class Scratch3Minecraft {
 
     async _searchBlockToAbsCoord(args) {
         return new Promise(((resolve, reject) => {
-            const ws = this._createWebSocket();
-            ws.onopen = function (e) {
-                e.currentTarget.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
-            };
-            ws.onmessage = function (e) {
+            this.ws.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
+            this.ws.onmessage = function (e) {
                 const actualBlock = e.data.replace(/\r?\n/g, "");
                 this.searchBlockID = actualBlock.split(',')[0];
                 this.searchBlockData = actualBlock.split(',')[1];
-                e.currentTarget.close();
-            }.bind(this);
-            ws.onclose = function (e) {
                 resolve();
             }.bind(this);
-            ws.onerror = function (e) {
+            this.ws.onerror = function (e) {
                 reject();
-            };
+            }
         }));
     }
 
     async _searchBlockToRelativeCoord(args) {
         await this.updatePlayerPosAsync();
         const relCoord = this._convertStartPosToRelative(args);
-        args.STARTX = Cast.toString(Math.trunc(relCoord.X));
-        args.STARTY = Cast.toString(Math.trunc(relCoord.Y));
-        args.STARTZ = Cast.toString(Math.trunc(relCoord.Z));
-        await this._searchBlockToAbsCoord(args);
+        let newArgs = new Object();
+        newArgs.STARTX = Cast.toString(Math.trunc(relCoord.X));
+        newArgs.STARTY = Cast.toString(Math.trunc(relCoord.Y));
+        newArgs.STARTZ = Cast.toString(Math.trunc(relCoord.Z));
+        await this._searchBlockToAbsCoord(newArgs);
     }
 
     checkBlockType(args) {
