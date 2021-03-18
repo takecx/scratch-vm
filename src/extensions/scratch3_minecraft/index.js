@@ -758,7 +758,21 @@ class Scratch3Minecraft {
         return new WebSocket("ws://" + this.host + ":14711");
     }
 
+    async _checkWebsocketState() {
+        return new Promise(((resolve, reject) => {
+            if (this.ws.readyState === WebSocket.CLOSED || this.ws.readyState === WebSocket.CLOSING) {
+                this.ws = this._createWebSocket();
+                this.ws.onopen = function (e) {
+                    resolve();
+                }
+            } else {
+                resolve();
+            }
+        }));
+    }
+
     async getPlayerIDAsync() {
+        await this._checkWebsocketState();
         return new Promise(((resolve, reject) => {
             this.ws.send('world.getPlayerIds()');
             this.ws.onmessage = function (e) {
@@ -771,6 +785,7 @@ class Scratch3Minecraft {
         }));
     }
     async updatePlayerPosAsync() {
+        await this._checkWebsocketState();
         const playerID = await this.getPlayerIDAsync();
         return new Promise(((resolve, reject) => {
             this.ws.send(`entity.getPos(${playerID})`);
@@ -802,6 +817,7 @@ class Scratch3Minecraft {
     }
 
     async _sendCommand(command) {
+        await this._checkWebsocketState();
         return new Promise(((resolve, reject) => {
             this.ws.send(command);
             resolve();
@@ -1051,6 +1067,7 @@ class Scratch3Minecraft {
     }
 
     async _searchBlockToAbsCoord(args) {
+        await this._checkWebsocketState();
         return new Promise(((resolve, reject) => {
             this.ws.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
             this.ws.onmessage = function (e) {
