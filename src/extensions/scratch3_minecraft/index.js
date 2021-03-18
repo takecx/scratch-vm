@@ -765,6 +765,9 @@ class Scratch3Minecraft {
                 this.ws.onopen = function (e) {
                     resolve();
                 }
+                this.ws.onerror = function (e) {
+                    reject();
+                }
             } else {
                 resolve();
             }
