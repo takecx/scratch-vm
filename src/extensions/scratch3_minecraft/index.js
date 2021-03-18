@@ -27,6 +27,7 @@ class Scratch3Minecraft {
             name: 'Minecraft',
             blockIconURI: blockIconURI,
             blocks: [
+                // Command
                 {
                     opcode: 'chat',
                     blockType: BlockType.COMMAND,
@@ -109,6 +110,34 @@ class Scratch3Minecraft {
                     }
                 },
                 {
+                    opcode: 'spawnEntity',
+                    text: formatMessage({
+                        id: 'minecraft.command.spawnEntity',
+                        default: '([STARTX],[STARTY],[STARTZ])に[ENTITY]を召喚する',
+                        description: 'spawn entity'
+                    }),
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        STARTX: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTY: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTZ: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        ENTITY: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'ENTITY',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
                     opcode: 'getPlayerPosition',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
@@ -117,6 +146,195 @@ class Scratch3Minecraft {
                         description: 'getPlayerPosition.'
                     })
                 },
+                {
+                    opcode: 'teleport',
+                    text: formatMessage({
+                        id: 'minecraft.command.teleport',
+                        default: '([STARTX],[STARTY],[STARTZ])にテレポートする',
+                        description: 'teleport'
+                    }),
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        STARTX: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTY: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTZ: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        }
+                    }
+                },
+                {
+                    opcode: 'searchBlock',
+                    text: formatMessage({
+                        id: 'minecraft.command.searchBlock',
+                        default: '([STARTX],[STARTY],[STARTZ])のブロックを調べる'
+                    }),
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        STARTX: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTY: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTZ: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        }
+                    }
+                },
+                {
+                    opcode: 'changeWeather',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.command.changeWeather',
+                        default: '天気を[WEATHER]に変える'
+                    }),
+                    arguments: {
+                        WEATHER: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'WEATHER',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'changeGameMode',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.command.changeGameMode',
+                        default: '[GAMEMODE]にする'
+                    }),
+                    arguments: {
+                        GAMEMODE: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'GAMEMODE',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'changeDifficulty',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.command.changeDifficulty',
+                        default: '[DIFFICULTY]にする'
+                    }),
+                    arguments: {
+                        DIFFICULTY: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'DIFFICULTY',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'giveEnchant',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.command.giveEnchant',
+                        default: 'レベル[LEVEL]の[ENCHANT]を付与する'
+                    }),
+                    arguments: {
+                        LEVEL: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'LEVEL',
+                            defaultValue: 0
+                        },
+                        ENCHANT: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'ENCHANT',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'spawnParticle',
+                    text: formatMessage({
+                        id: 'minecraft.command.spawnParticle',
+                        default: '([STARTX],[STARTY],[STARTZ])から([ENDX],[ENDY],[ENDZ])まで速さ[SPEED]で[PARTICLE]を[COUNT]回発生させる',
+                        description: 'spawnParticle.'
+                    }),
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        STARTX: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTY: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        STARTZ: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '0'
+                        },
+                        ENDX: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '5'
+                        },
+                        ENDY: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '5'
+                        },
+                        ENDZ: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '5'
+                        },
+                        SPEED: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 1
+                        },
+                        PARTICLE: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'PARTICLE',
+                            defaultValue: 0
+                        },
+                        COUNT: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 1
+                        }
+                    }
+                },
+                {
+                    opcode: 'setHost',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.command.setHost',
+                        default: '[TEXT]に接続する',
+                        description: 'connection host.'
+                    }),
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 'localhost'
+                        }
+                    }
+                },
+                // Boolean
+                {
+                    opcode: 'checkBlockType',
+                    text: formatMessage({
+                        id: 'minecraft.boolean.checkBlockType',
+                        default: '調べたブロックが[TARGETBLOCK]である'
+                    }),
+                    blockType: BlockType.BOOLEAN,
+                    arguments: {
+                        TARGETBLOCK: {
+                            type: ArgumentType.STRING,
+                            defaultValue: this.BUILDING_BLOCK_INFO[0].name
+                        }
+                    }
+                },
+                // Reporter.Position
                 {
                     opcode: 'getPosX',
                     text: 'X',
@@ -132,7 +350,15 @@ class Scratch3Minecraft {
                     text: 'Z',
                     blockType: BlockType.REPORTER
                 },
-
+                {
+                    opcode: 'getSearchedBlock',
+                    text: formatMessage({
+                        id: 'minecraft.reporter.getSearchedBlock',
+                        default: '調べたブロック'
+                    }),
+                    blockType: BlockType.REPORTER
+                },
+                // Reporter.Blocks
                 {
                     opcode: 'getBuildingBlocks',
                     text: formatMessage({
@@ -274,230 +500,6 @@ class Scratch3Minecraft {
                             type: ArgumentType.NUMBER,
                             menu: 'BREWINGBLOCK',
                             defaultValue: 0
-                        }
-                    }
-                },
-                {
-                    opcode: 'spawnEntity',
-                    text: formatMessage({
-                        id: 'minecraft.command.spawnEntity',
-                        default: '([STARTX],[STARTY],[STARTZ])に[ENTITY]を召喚する',
-                        description: 'spawn entity'
-                    }),
-                    blockType: BlockType.COMMAND,
-                    arguments: {
-                        STARTX: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        STARTY: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        STARTZ: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        ENTITY: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'ENTITY',
-                            defaultValue: 0
-                        }
-                    }
-                },
-                {
-                    opcode: 'teleport',
-                    text: formatMessage({
-                        id: 'minecraft.command.teleport',
-                        default: '([STARTX],[STARTY],[STARTZ])にテレポートする',
-                        description: 'teleport'
-                    }),
-                    blockType: BlockType.COMMAND,
-                    arguments: {
-                        STARTX: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        STARTY: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        STARTZ: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        }
-                    }
-                },
-                {
-                    opcode: 'searchBlock',
-                    text: formatMessage({
-                        id: 'minecraft.command.searchBlock',
-                        default: '([STARTX],[STARTY],[STARTZ])のブロックを調べる'
-                    }),
-                    blockType: BlockType.COMMAND,
-                    arguments: {
-                        STARTX: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        STARTY: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        STARTZ: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        }
-                    }
-                },
-                {
-                    opcode: 'getSearchedBlock',
-                    text: formatMessage({
-                        id: 'minecraft.reporter.getSearchedBlock',
-                        default: '調べたブロック'
-                    }),
-                    blockType: BlockType.REPORTER
-                },
-                {
-                    opcode: 'checkBlockType',
-                    text: formatMessage({
-                        id: 'minecraft.boolean.checkBlockType',
-                        default: '調べたブロックが[TARGETBLOCK]である'
-                    }),
-                    blockType: BlockType.BOOLEAN,
-                    arguments: {
-                        TARGETBLOCK: {
-                            type: ArgumentType.STRING,
-                            defaultValue: this.BUILDING_BLOCK_INFO[0].name
-                        }
-                    }
-                },
-                {
-                    opcode: 'setHost',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft.command.setHost',
-                        default: '[TEXT]に接続する',
-                        description: 'connection host.'
-                    }),
-                    arguments: {
-                        TEXT: {
-                            type: ArgumentType.STRING,
-                            defaultValue: 'localhost'
-                        }
-                    }
-                },
-                {
-                    opcode: 'changeWeather',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft.command.changeWeather',
-                        default: '天気を[WEATHER]に変える'
-                    }),
-                    arguments: {
-                        WEATHER: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'WEATHER',
-                            defaultValue: 0
-                        }
-                    }
-                },
-                {
-                    opcode: 'changeGameMode',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft.command.changeGameMode',
-                        default: '[GAMEMODE]にする'
-                    }),
-                    arguments: {
-                        GAMEMODE: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'GAMEMODE',
-                            defaultValue: 0
-                        }
-                    }
-                },
-                {
-                    opcode: 'changeDifficulty',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft.command.changeDifficulty',
-                        default: '[DIFFICULTY]にする'
-                    }),
-                    arguments: {
-                        DIFFICULTY: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'DIFFICULTY',
-                            defaultValue: 0
-                        }
-                    }
-                },
-                {
-                    opcode: 'giveEnchant',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft.command.giveEnchant',
-                        default: 'レベル[LEVEL]の[ENCHANT]を付与する'
-                    }),
-                    arguments: {
-                        LEVEL: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'LEVEL',
-                            defaultValue: 0
-                        },
-                        ENCHANT: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'ENCHANT',
-                            defaultValue: 0
-                        }
-                    }
-                }
-                ,
-                {
-                    opcode: 'spawnParticle',
-                    text: formatMessage({
-                        id: 'minecraft.command.spawnParticle',
-                        default: '([STARTX],[STARTY],[STARTZ])から([ENDX],[ENDY],[ENDZ])まで速さ[SPEED]で[PARTICLE]を[COUNT]回発生させる',
-                        description: 'spawnParticle.'
-                    }),
-                    blockType: BlockType.COMMAND,
-                    arguments: {
-                        STARTX: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        STARTY: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        STARTZ: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '0'
-                        },
-                        ENDX: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '5'
-                        },
-                        ENDY: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '5'
-                        },
-                        ENDZ: {
-                            type: ArgumentType.STRING,
-                            defaultValue: '5'
-                        },
-                        SPEED: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 1
-                        },
-                        PARTICLE: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'PARTICLE',
-                            defaultValue: 0
-                        },
-                        COUNT: {
-                            type: ArgumentType.NUMBER,
-                            defaultValue: 1
                         }
                     }
                 }
