@@ -764,7 +764,7 @@ exports.genBuildingBlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.Stone Bricks',
+                id: 'minecraft.StoneBricks',
                 default: '石レンガ'
             }),
             blockID: '98',
