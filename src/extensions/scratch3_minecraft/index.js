@@ -31,7 +31,7 @@ class Scratch3Minecraft {
                     opcode: 'chat',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft.chat',
+                        id: 'minecraft.command.chat',
                         default: '[TEXT]と言う',
                         description: 'chat.'
                     }),
@@ -46,7 +46,7 @@ class Scratch3Minecraft {
                     opcode: 'setBlock',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft.setBlock',
+                        id: 'minecraft.command.setBlock',
                         default: '[BLOCK]ブロックを([STARTX],[STARTY],[STARTZ])に置く',
                         description: 'setBlock.'
                     }),
@@ -73,7 +73,7 @@ class Scratch3Minecraft {
                     opcode: 'setBlocks',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft.setBlocks',
+                        id: 'minecraft.command.setBlocks',
                         default: '[BLOCK]ブロックを([STARTX],[STARTY],[STARTZ])から([ENDX],[ENDY],[ENDZ])まで置く',
                         description: 'setBlocks.'
                     }),
@@ -112,7 +112,7 @@ class Scratch3Minecraft {
                     opcode: 'getPlayerPosition',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft.getPlayerPosition',
+                        id: 'minecraft.command.getPlayerPosition',
                         default: '現在位置を調べる',
                         description: 'getPlayerPosition.'
                     })
@@ -136,7 +136,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getBuildingBlocks',
                     text: formatMessage({
-                        id: 'minecraft.buildingBlockInfo',
+                        id: 'minecraft.reporter.buildingBlockInfo',
                         default: '建築ブロック：[BLOCK]',
                         description: 'name of minecraft blocks.'
                     }),
@@ -152,7 +152,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getDecorationBlocks',
                     text: formatMessage({
-                        id: 'minecraft.decorationBlockInfo',
+                        id: 'minecraft.reporter.decorationBlockInfo',
                         default: '装飾ブロック：[BLOCK]',
                         description: 'name of minecraft decoration blocks.'
                     }),
@@ -168,7 +168,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getRedstoneBlocks',
                     text: formatMessage({
-                        id: 'minecraft.redstoneBlockInfo',
+                        id: 'minecraft.reporter.redstoneBlockInfo',
                         default: 'レッドストーン：[BLOCK]',
                         description: 'name of minecraft decoration blocks.'
                     }),
@@ -184,7 +184,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getTransportationBlocks',
                     text: formatMessage({
-                        id: 'minecraft.transportationBlockInfo',
+                        id: 'minecraft.reporter.transportationBlockInfo',
                         default: '移動：[BLOCK]',
                         description: 'name of minecraft transportation blocks.'
                     }),
@@ -200,7 +200,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getMiscellaneousBlocks',
                     text: formatMessage({
-                        id: 'minecraft.miscellaneousBlockInfo',
+                        id: 'minecraft.reporter.miscellaneousBlockInfo',
                         default: 'その他：[BLOCK]',
                         description: 'name of minecraft miscellaneous blocks.'
                     }),
@@ -216,7 +216,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getFoodstuffsBlocks',
                     text: formatMessage({
-                        id: 'minecraft.foodstuffsBlockInfo',
+                        id: 'minecraft.reporter.foodstuffsBlockInfo',
                         default: '食物：[BLOCK]',
                         description: 'name of minecraft foodstuffs blocks.'
                     }),
@@ -232,7 +232,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getToolsBlocks',
                     text: formatMessage({
-                        id: 'minecraft.toolsBlockInfo',
+                        id: 'minecraft.reporter.toolsBlockInfo',
                         default: 'ツール：[BLOCK]',
                         description: 'name of minecraft tools blocks.'
                     }),
@@ -248,7 +248,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getCombatBlocks',
                     text: formatMessage({
-                        id: 'minecraft.combatBlockInfo',
+                        id: 'minecraft.reporter.combatBlockInfo',
                         default: '戦闘：[BLOCK]',
                         description: 'name of minecraft combat blocks.'
                     }),
@@ -264,7 +264,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getBrewingBlocks',
                     text: formatMessage({
-                        id: 'minecraft.brewingBlockInfo',
+                        id: 'minecraft.reporter.brewingBlockInfo',
                         default: '醸造：[BLOCK]',
                         description: 'name of minecraft brewing blocks.'
                     }),
@@ -280,7 +280,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'spawnEntity',
                     text: formatMessage({
-                        id: 'minecraft.spawnEntity',
+                        id: 'minecraft.command.spawnEntity',
                         default: '([STARTX],[STARTY],[STARTZ])に[ENTITY]を召喚する',
                         description: 'spawn entity'
                     }),
@@ -308,7 +308,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'teleport',
                     text: formatMessage({
-                        id: 'minecraft.teleport',
+                        id: 'minecraft.command.teleport',
                         default: '([STARTX],[STARTY],[STARTZ])にテレポートする',
                         description: 'teleport'
                     }),
@@ -331,7 +331,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'searchBlock',
                     text: formatMessage({
-                        id: 'minecraft.searchBlock',
+                        id: 'minecraft.command.searchBlock',
                         default: '([STARTX],[STARTY],[STARTZ])のブロックを調べる'
                     }),
                     blockType: BlockType.COMMAND,
@@ -353,7 +353,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'getSearchedBlock',
                     text: formatMessage({
-                        id: 'minecraft.getSearchedBlock',
+                        id: 'minecraft.reporter.getSearchedBlock',
                         default: '調べたブロック'
                     }),
                     blockType: BlockType.REPORTER
@@ -361,7 +361,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'checkBlockType',
                     text: formatMessage({
-                        id: 'minecraft.checkBlockType',
+                        id: 'minecraft.boolean.checkBlockType',
                         default: '調べたブロックが[TARGETBLOCK]である'
                     }),
                     blockType: BlockType.BOOLEAN,
@@ -376,7 +376,7 @@ class Scratch3Minecraft {
                     opcode: 'setHost',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft.setHost',
+                        id: 'minecraft.command.setHost',
                         default: '[TEXT]に接続する',
                         description: 'connection host.'
                     }),
@@ -391,7 +391,7 @@ class Scratch3Minecraft {
                     opcode: 'changeWeather',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft.changeWeather',
+                        id: 'minecraft.command.changeWeather',
                         default: '天気を[WEATHER]に変える'
                     }),
                     arguments: {
@@ -406,7 +406,7 @@ class Scratch3Minecraft {
                     opcode: 'changeGameMode',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft.changeGameMode',
+                        id: 'minecraft.command.changeGameMode',
                         default: '[GAMEMODE]にする'
                     }),
                     arguments: {
@@ -421,7 +421,7 @@ class Scratch3Minecraft {
                     opcode: 'changeDifficulty',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft.changeDifficulty',
+                        id: 'minecraft.command.changeDifficulty',
                         default: '[DIFFICULTY]にする'
                     }),
                     arguments: {
@@ -436,7 +436,7 @@ class Scratch3Minecraft {
                     opcode: 'giveEnchant',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft.giveEnchant',
+                        id: 'minecraft.command.giveEnchant',
                         default: 'レベル[LEVEL]の[ENCHANT]を付与する'
                     }),
                     arguments: {
@@ -456,7 +456,7 @@ class Scratch3Minecraft {
                 {
                     opcode: 'spawnParticle',
                     text: formatMessage({
-                        id: 'minecraft.spawnParticle',
+                        id: 'minecraft.command.spawnParticle',
                         default: '([STARTX],[STARTY],[STARTZ])から([ENDX],[ENDY],[ENDZ])まで速さ[SPEED]で[PARTICLE]を[COUNT]回発生させる',
                         description: 'spawnParticle.'
                     }),
