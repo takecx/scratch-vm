@@ -16,6 +16,7 @@ class Scratch3Minecraft {
         this.runtime = runtime;
 
         this.host = 'localhost';
+        this.ws = this._createWebSocket();
 
         this.absoluteStr = 'absolute';
         this.relativeStr = 'relative';
@@ -759,16 +760,12 @@ class Scratch3Minecraft {
 
     async getPlayerIDAsync() {
         return new Promise(((resolve, reject) => {
-            const server = this._createWebSocket();
-            server.onopen = function (e) {
-                e.currentTarget.send('world.getPlayerIds()');
-            };
-            server.onmessage = function (e) {
+            this.ws.send('world.getPlayerIds()');
+            this.ws.onmessage = function (e) {
                 const playerID = e.data.replace(/\r?\n/g, '');
-                e.currentTarget.close();
                 resolve(playerID);
             };
-            server.onerror = function (e) {
+            this.ws.onerror = function (e) {
                 reject();
             }
         }));
@@ -776,12 +773,8 @@ class Scratch3Minecraft {
     async updatePlayerPosAsync() {
         const playerID = await this.getPlayerIDAsync();
         return new Promise(((resolve, reject) => {
-            const server = this._createWebSocket();
-
-            server.onopen = function (e) {
-                e.currentTarget.send(`entity.getPos(${playerID})`);
-            };
-            server.onmessage = function (e) {
+            this.ws.send(`entity.getPos(${playerID})`);
+            this.ws.onmessage = function (e) {
                 const posX = e.data.split(',')[0];
                 const posY = e.data.split(',')[1];
                 const posZ = e.data.split(',')[2];
@@ -789,12 +782,9 @@ class Scratch3Minecraft {
                 stage.posX = Cast.toNumber(posX);
                 stage.posY = Cast.toNumber(posY);
                 stage.posZ = Cast.toNumber(posZ);
-                e.currentTarget.close();
-            }.bind(this);
-            server.onclose = function (e) {
                 resolve();
-            };
-            server.onerror = function (e) {
+            }.bind(this);
+            this.ws.onerror = function (e) {
                 reject();
             }
         }));
