@@ -17,9 +17,12 @@ class Scratch3Minecraft {
 
         this.host = 'localhost';
         this.ws = this._createWebSocket();
+        this.latestExecuteTime = Date.now();
 
+        // constants
         this.absoluteStr = 'absolute';
         this.relativeStr = 'relative';
+        this.commandIntervalMsec = 200;
     }
 
     getInfo() {
@@ -577,6 +580,12 @@ class Scratch3Minecraft {
     /* --------------------------------------
     *************** Utility ****************
     --------------------------------------- */
+    _sleep(msec) {
+        return new Promise(function (resolve) {
+            setTimeout(function () { resolve() }, msec);
+        })
+    }
+
     /**
      * Create data for a menu in scratch-blocks format, consisting of an array of objects with text and
      * value properties. The text is a translated string, and the value is one-indexed.
@@ -758,6 +767,18 @@ class Scratch3Minecraft {
         return new WebSocket("ws://" + this.host + ":14711");
     }
 
+    async _checkState() {
+        await this._checkWebsocketState();
+        await this._checkExecTime();
+    }
+
+    async _checkExecTime() {
+        const elapsedTime = Date.now() - this.latestExecuteTime;
+        if (elapsedTime < this.commandIntervalMsec) {
+            await this._sleep(this.commandIntervalMsec - elapsedTime);
+        }
+    }
+
     async _checkWebsocketState() {
         return new Promise(((resolve, reject) => {
             if (this.ws.readyState === WebSocket.CLOSED || this.ws.readyState === WebSocket.CLOSING) {
@@ -775,20 +796,22 @@ class Scratch3Minecraft {
     }
 
     async getPlayerIDAsync() {
-        await this._checkWebsocketState();
+        await this._checkState();
         return new Promise(((resolve, reject) => {
             this.ws.send('world.getPlayerIds()');
             this.ws.onmessage = function (e) {
                 const playerID = e.data.replace(/\r?\n/g, '');
+                this.latestExecuteTime = Date.now();
                 resolve(playerID);
             };
             this.ws.onerror = function (e) {
+                this.latestExecuteTime = Date.now();
                 reject();
             }
         }));
     }
     async updatePlayerPosAsync() {
-        await this._checkWebsocketState();
+        await this._checkState();
         const playerID = await this.getPlayerIDAsync();
         return new Promise(((resolve, reject) => {
             this.ws.send(`entity.getPos(${playerID})`);
@@ -800,9 +823,11 @@ class Scratch3Minecraft {
                 stage.posX = Cast.toNumber(posX);
                 stage.posY = Cast.toNumber(posY);
                 stage.posZ = Cast.toNumber(posZ);
+                this.latestExecuteTime = Date.now();
                 resolve();
             }.bind(this);
             this.ws.onerror = function (e) {
+                this.latestExecuteTime = Date.now();
                 reject();
             }
         }));
@@ -820,11 +845,13 @@ class Scratch3Minecraft {
     }
 
     async _sendCommand(command) {
-        await this._checkWebsocketState();
+        await this._checkState();
         return new Promise(((resolve, reject) => {
             this.ws.send(command);
+            this.latestExecuteTime = Date.now();
             resolve();
             this.ws.onerror = function (e) {
+                this.latestExecuteTime = Date.now();
                 reject();
             };
         }));
@@ -1070,16 +1097,18 @@ class Scratch3Minecraft {
     }
 
     async _searchBlockToAbsCoord(args) {
-        await this._checkWebsocketState();
+        await this._checkState();
         return new Promise(((resolve, reject) => {
             this.ws.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
             this.ws.onmessage = function (e) {
                 const actualBlock = e.data.replace(/\r?\n/g, "");
                 this.searchBlockID = actualBlock.split(',')[0];
                 this.searchBlockData = actualBlock.split(',')[1];
+                this.latestExecuteTime = Date.now();
                 resolve();
             }.bind(this);
             this.ws.onerror = function (e) {
+                this.latestExecuteTime = Date.now();
                 reject();
             }
         }));
