@@ -114,6 +114,21 @@ class Scratch3Minecraft {
                     }
                 },
                 {
+                    opcode: 'resetAroundHere',
+                    text: formatMessage({
+                        id: 'minecraft.command.resetAroundHere',
+                        default: '周辺をリセット 範囲：[AREA]',
+                        description: 'clear Around Area'
+                    }),
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        AREA: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '20'
+                        }
+                    }
+                },
+                {
                     opcode: 'spawnEntity',
                     text: formatMessage({
                         id: 'minecraft.command.spawnEntity',
@@ -1015,6 +1030,23 @@ class Scratch3Minecraft {
         } else if (coordinateMode === this.relativeStr) {
             await this._setBlocksToRelativeCoord(args);
         }
+    }
+
+    async resetAroundHere(args) {
+        await this.updatePlayerPosAsync();
+        let newArgs = new Object();
+        newArgs.STARTX = '~-' + args.AREA;
+        newArgs.STARTY = '~';
+        newArgs.STARTZ = '~-' + args.AREA;
+        newArgs.ENDX = '~' + args.AREA;
+        newArgs.ENDY = '~' + args.AREA;
+        newArgs.ENDZ = '~' + args.AREA;
+        // air
+        block = new Object();
+        block.blockID = 0;
+        block.blockData = 0;
+        newArgs.BLOCK = block;
+        await this._setBlocksToRelativeCoord(newArgs);
     }
 
     async _setBlocksToAbsCoord(args) {
