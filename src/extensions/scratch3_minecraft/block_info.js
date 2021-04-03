@@ -4517,6 +4517,14 @@ exports.genExtraBlockInfo = () => {
             }),
             blockID: '137',
             blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.barrierBlock',
+                default: 'バリアーブロック'
+            }),
+            blockID: '166',
+            blockData: '0'
         }
 
     ];
