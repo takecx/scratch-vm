@@ -521,6 +521,21 @@ class Scratch3Minecraft {
                             defaultValue: 0
                         }
                     }
+                },
+                {
+                    opcode: 'getExtraBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.reporter.extraBlockInfo',
+                        default: 'エクストラ：[BLOCK]'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'EXTRABLOCK',
+                            defaultValue: 0
+                        }
+                    }
                 }
             ],
             menus: {
@@ -559,6 +574,10 @@ class Scratch3Minecraft {
                 BREWINGBLOCK: {
                     acceptReporters: true,
                     items: this._buildMenu(this.BREWING_BLOCK_INFO)
+                },
+                EXTRABLOCK: {
+                    acceptReporters: true,
+                    items: this._buildMenu(this.EXTRA_BLOCK_INFO)
                 },
                 ENTITY: {
                     acceptReporters: true,
@@ -655,6 +674,9 @@ class Scratch3Minecraft {
         return BlockInfo.genBrewingBlockInfo();
     }
 
+    get EXTRA_BLOCK_INFO() {
+        return BlockInfo.genExtraBlockInfo();
+    }
     get ENTITY_INFO() {
         return EntityInfo.genEntityInfo();
     }
@@ -961,6 +983,9 @@ class Scratch3Minecraft {
     }
     getBrewingBlocks(args) {
         return this.BREWING_BLOCK_INFO[args.BLOCK];
+    }
+    getExtraBlocks(args) {
+        return this.EXTRA_BLOCK_INFO[args.BLOCK];
     }
 
     getPosX() {
