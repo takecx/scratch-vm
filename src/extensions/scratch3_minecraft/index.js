@@ -18,6 +18,10 @@ class Scratch3Minecraft {
 
         this.MinecraftUtils = new MinecraftUtils(this.runtime);
         this.ws = this.MinecraftUtils.getWebSocket();
+
+        this.posX = 0;
+        this.posY = 0;
+        this.posZ = 0;
     }
 
     getInfo() {
@@ -798,10 +802,9 @@ class Scratch3Minecraft {
                 const posX = e.data.split(',')[0];
                 const posY = e.data.split(',')[1];
                 const posZ = e.data.split(',')[2];
-                const stage = this.runtime.getTargetForStage();
-                stage.posX = Cast.toNumber(posX);
-                stage.posY = Cast.toNumber(posY);
-                stage.posZ = Cast.toNumber(posZ);
+                this.posX = Cast.toNumber(posX);
+                this.posY = Cast.toNumber(posY);
+                this.posZ = Cast.toNumber(posZ);
                 this.MinecraftUtils.setLatestExecuteTIme();
                 resolve();
             }.bind(this);
@@ -889,25 +892,13 @@ class Scratch3Minecraft {
     }
 
     getPosX() {
-        const stage = this.runtime.getTargetForStage();
-        if (stage) {
-            return stage.posX;
-        }
-        return 0;
+        return this.posX;
     }
     getPosY() {
-        const stage = this.runtime.getTargetForStage();
-        if (stage) {
-            return stage.posY;
-        }
-        return 0;
+        return this.posY;
     }
     getPosZ() {
-        const stage = this.runtime.getTargetForStage();
-        if (stage) {
-            return stage.posZ;
-        }
-        return 0;
+        return this.posZ;
     }
 
     getSearchedBlock() {

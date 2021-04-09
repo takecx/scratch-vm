@@ -106,19 +106,17 @@ class MinecraftUtils {
 
     _convertStartPosToRelative(args) {
         let startRelCoord = new Object();
-        const stage = this.runtime.getTargetForStage();
-        startRelCoord.X = typeof args.STARTX === 'string' ? Cast.toNumber(stage.posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
-        startRelCoord.Y = typeof args.STARTY === 'string' ? Cast.toNumber(stage.posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
-        startRelCoord.Z = typeof args.STARTZ === 'string' ? Cast.toNumber(stage.posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
+        startRelCoord.X = typeof args.STARTX === 'string' ? Cast.toNumber(this.posX) + Cast.toNumber(args.STARTX.split('~')[1]) : Cast.toNumber(args.STARTX);
+        startRelCoord.Y = typeof args.STARTY === 'string' ? Cast.toNumber(this.posY) + Cast.toNumber(args.STARTY.split('~')[1]) : Cast.toNumber(args.STARTY);
+        startRelCoord.Z = typeof args.STARTZ === 'string' ? Cast.toNumber(this.posZ) + Cast.toNumber(args.STARTZ.split('~')[1]) : Cast.toNumber(args.STARTZ);
         return startRelCoord;
     }
 
     _convertEndPosToRelative(args) {
         let endRelCoord = new Object();
-        const stage = this.runtime.getTargetForStage();
-        endRelCoord.X = typeof args.ENDX === 'string' ? Cast.toNumber(stage.posX) + Cast.toNumber(args.ENDX.split('~')[1]) : Cast.toNumber(args.ENDX);
-        endRelCoord.Y = typeof args.ENDY === 'string' ? Cast.toNumber(stage.posY) + Cast.toNumber(args.ENDY.split('~')[1]) : Cast.toNumber(args.ENDY);
-        endRelCoord.Z = typeof args.ENDZ === 'string' ? Cast.toNumber(stage.posZ) + Cast.toNumber(args.ENDZ.split('~')[1]) : Cast.toNumber(args.ENDZ);
+        endRelCoord.X = typeof args.ENDX === 'string' ? Cast.toNumber(this.posX) + Cast.toNumber(args.ENDX.split('~')[1]) : Cast.toNumber(args.ENDX);
+        endRelCoord.Y = typeof args.ENDY === 'string' ? Cast.toNumber(this.posY) + Cast.toNumber(args.ENDY.split('~')[1]) : Cast.toNumber(args.ENDY);
+        endRelCoord.Z = typeof args.ENDZ === 'string' ? Cast.toNumber(this.posZ) + Cast.toNumber(args.ENDZ.split('~')[1]) : Cast.toNumber(args.ENDZ);
         return endRelCoord;
     }
 
