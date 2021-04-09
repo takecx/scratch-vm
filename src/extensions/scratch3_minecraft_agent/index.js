@@ -42,6 +42,54 @@ class Scratch3MinecraftAgent {
                         }
                     }
                 },
+                {
+                    opcode: 'moveXPlus',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft_agent.command.moveXPlus',
+                        default: '+X方向にエージェントを動かす',
+                    })
+                },
+                {
+                    opcode: 'moveXMinus',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft_agent.command.moveXMinus',
+                        default: '-X方向にエージェントを動かす',
+                    })
+                },
+                {
+                    opcode: 'moveYPlus',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft_agent.command.moveYPlus',
+                        default: '+Y方向にエージェントを動かす',
+                    })
+                },
+                {
+                    opcode: 'moveYMinus',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft_agent.command.moveYMinus',
+                        default: '-Y方向にエージェントを動かす',
+                    })
+                },
+                {
+                    opcode: 'moveZPlus',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft_agent.command.moveZPlus',
+                        default: '+Z方向にエージェントを動かす',
+                    })
+                },
+                {
+                    opcode: 'moveZMinus',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft_agent.command.moveZMinus',
+                        default: '-Z方向にエージェントを動かす',
+                    })
+                },
             ],
             menus: {
 
@@ -91,6 +139,37 @@ class Scratch3MinecraftAgent {
             }.bind(this);
             this.ws.send(`player.getPos()`);
         }));
+    }
+
+    async moveXPlus(args) {
+        await this.MinecraftUtils._checkState();
+        const command = `agent.move(1,0,0)`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
+    }
+    async moveXMinus(args) {
+        await this.MinecraftUtils._checkState();
+        const command = `agent.move(-1,0,0)`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
+    }
+    async moveYPlus(args) {
+        await this.MinecraftUtils._checkState();
+        const command = `agent.move(0,1,0)`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
+    }
+    async moveYMinus(args) {
+        await this.MinecraftUtils._checkState();
+        const command = `agent.move(0,-1,0)`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
+    }
+    async moveZPlus(args) {
+        await this.MinecraftUtils._checkState();
+        const command = `agent.move(0,0,1)`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
+    }
+    async moveZMinus(args) {
+        await this.MinecraftUtils._checkState();
+        const command = `agent.move(0,0,-1)`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
 }
