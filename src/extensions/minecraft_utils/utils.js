@@ -8,41 +8,33 @@ class MinecraftUtils {
     commandIntervalMsec = 200;
     absoluteStr = 'absolute';
     relativeStr = 'relative';
-    ws = null;
     host = 'localhost';
+    agentEntityID = null;
 
-    constructor(runtime) {
-        this.runtime = runtime;
+    constructor() {
     }
 
     _createWebSocket() {
-        this.ws = new WebSocket("ws://" + this.host + ":" + this.port);
-    }
-
-    getWebSocket() {
-        if (this.ws === null) {
-            this._createWebSocket();
-        }
-        return this.ws;
+        return new WebSocket("ws://" + this.host + ":" + this.port);
     }
 
     setLatestExecuteTIme() {
         this.latestExecuteTime = Date.now();
     }
 
-    async _checkState() {
-        await this._checkWebsocketState.bind(this);
+    async _checkState(ws) {
+        await this._checkWebsocketState.bind(this, ws);
         await this._checkExecTime();
     }
 
-    async _checkWebsocketState() {
+    async _checkWebsocketState(ws) {
         return new Promise(((resolve, reject) => {
-            if (this.ws.readyState === WebSocket.CLOSED || this.ws.readyState === WebSocket.CLOSING) {
-                this.ws = this._createWebSocket(this.host);
-                this.ws.onopen = function (e) {
+            if (ws.readyState === WebSocket.CLOSED || ws.readyState === WebSocket.CLOSING) {
+                ws = this._createWebSocket(this.host);
+                ws.onopen = function (e) {
                     resolve();
                 }
-                this.ws.onerror = function (e) {
+                ws.onerror = function (e) {
                     reject();
                 }
             } else {
@@ -91,16 +83,16 @@ class MinecraftUtils {
         return this.absoluteStr;
     }
 
-    async _sendCommand(command) {
-        await this._checkState(this.host, this.ws, this.latestExecuteTime);
+    async _sendCommand(command, ws) {
+        await this._checkState(this.host, ws, this.latestExecuteTime);
         return new Promise(((resolve, reject) => {
-            this.ws.send(command);
+            ws.send(command);
             this.latestExecuteTime = Date.now();
             resolve();
-            this.ws.onerror = function (e) {
+            ws.onerror = function (e) {
                 this.latestExecuteTime = Date.now();
                 reject();
-            };
+            }.bind(this);
         }).bind(this));
     }
 
