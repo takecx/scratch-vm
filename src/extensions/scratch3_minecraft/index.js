@@ -934,7 +934,7 @@ class Scratch3Minecraft {
     async _setBlockToRelativeCoord(args) {
         const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
         await this.updatePlayerPosAsync();
-        const relCoord = this.MinecraftUtils._convertStartPosToRelative(args);
+        const relCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
         const command = `world.setBlock(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${blockID},${blockData})`;
         await this.MinecraftUtils._sendCommand(command);
     }
@@ -974,8 +974,8 @@ class Scratch3Minecraft {
     async _setBlocksToRelativeCoord(args) {
         const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
         await this.updatePlayerPosAsync();
-        const startRelCoord = this.MinecraftUtils._convertStartPosToRelative(args);
-        const endRelCoord = this.MinecraftUtils._convertEndPosToRelative(args);
+        const startRelCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
+        const endRelCoord = this.MinecraftUtils._convertEndPosToRelative.bind(this, args)();
         const command = `world.setBlocks(${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${blockID},${blockData})`;
         await this.MinecraftUtils._sendCommand(command);
     }
@@ -1007,7 +1007,7 @@ class Scratch3Minecraft {
     async _spawnEntityToRelativeCoord(args) {
         const entityName = this._findEntityInfo(args.ENTITY);
         await this.updatePlayerPosAsync();
-        const relCoord = this.MinecraftUtils._convertStartPosToRelative(args);
+        const relCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
         const command = `world.spawnEntity(${entityName},${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)})`;
         await this.MinecraftUtils._sendCommand(command);
     }
@@ -1030,7 +1030,7 @@ class Scratch3Minecraft {
     async _teleportToRelativeCoord(args) {
         const playerID = await this.getPlayerIDAsync();
         await this.updatePlayerPosAsync();
-        const relCoord = this.MinecraftUtils._convertStartPosToRelative(args);
+        const relCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
         const command = `entity.setPos(${playerID},${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)})`;
         await this.MinecraftUtils._sendCommand(command);
     }
@@ -1064,7 +1064,7 @@ class Scratch3Minecraft {
 
     async _searchBlockToRelativeCoord(args) {
         await this.updatePlayerPosAsync();
-        const relCoord = this.MinecraftUtils._convertStartPosToRelative(args);
+        const relCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
         let newArgs = new Object();
         newArgs.STARTX = Cast.toString(Math.trunc(relCoord.X));
         newArgs.STARTY = Cast.toString(Math.trunc(relCoord.Y));
@@ -1120,8 +1120,8 @@ class Scratch3Minecraft {
     async _spawnParticleToRelativeCoord(args) {
         const particleName = this._findParticleInfo(args.PARTICLE);
         await this.updatePlayerPosAsync();
-        const startRelCoord = this.MinecraftUtils._convertStartPosToRelative(args);
-        const endRelCoord = this.MinecraftUtils._convertEndPosToRelative(args);
+        const startRelCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
+        const endRelCoord = this.MinecraftUtils._convertEndPosToRelative.bind(this, args)();
         const command = `world.spawnParticle(${particleName},${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${args.SPEED},${args.COUNT})`;
         await this.MinecraftUtils._sendCommand(command);
     }
