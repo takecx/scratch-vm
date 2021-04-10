@@ -35,7 +35,6 @@ class MinecraftUtils {
                 ws.close();
                 ws = this._createWebSocket();
                 ws.onopen = function (e) {
-                    log.log('re-open!');
                     resolve(ws);
                 }
                 ws.onerror = function (e) {
@@ -43,7 +42,6 @@ class MinecraftUtils {
                     reject();
                 }
             } else {
-                log.log("already open!");
                 resolve(ws);
             }
         }));
