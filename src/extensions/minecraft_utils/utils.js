@@ -88,12 +88,12 @@ class MinecraftUtils {
     }
 
     async _sendCommand(command, ws) {
-        await this._checkState(this.host, ws, this.latestExecuteTime);
+        const newWs = await this._checkState(ws);
         return new Promise(((resolve, reject) => {
-            ws.send(command);
+            newWs.send(command);
             this.latestExecuteTime = Date.now();
             resolve();
-            ws.onerror = function (e) {
+            newWs.onerror = function (e) {
                 this.latestExecuteTime = Date.now();
                 reject();
             }.bind(this);
