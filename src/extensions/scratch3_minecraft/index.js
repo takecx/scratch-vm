@@ -17,7 +17,7 @@ class Scratch3Minecraft {
         this.runtime = runtime;
 
         this.MinecraftUtils = new MinecraftUtils(this.runtime);
-        this.ws = this.MinecraftUtils.getWebSocket();
+        this.ws = this.MinecraftUtils._createWebSocket();
 
         this.posX = 0;
         this.posY = 0;
@@ -779,7 +779,7 @@ class Scratch3Minecraft {
     }
 
     async getPlayerIDAsync() {
-        await this.MinecraftUtils._checkState(this.ws);
+        this.ws = await this.MinecraftUtils._checkState(this.ws);
         return new Promise(((resolve, reject) => {
             this.ws.send('world.getPlayerIds()');
             this.ws.onmessage = function (e) {
@@ -794,7 +794,7 @@ class Scratch3Minecraft {
         }));
     }
     async updatePlayerPosAsync() {
-        await this.MinecraftUtils._checkState(this.ws);
+        this.ws = await this.MinecraftUtils._checkState(this.ws);
         const playerID = await this.getPlayerIDAsync();
         return new Promise(((resolve, reject) => {
             this.ws.send(`entity.getPos(${playerID})`);
@@ -1045,7 +1045,7 @@ class Scratch3Minecraft {
     }
 
     async _searchBlockToAbsCoord(args) {
-        await this.MinecraftUtils._checkState(this.ws);
+        this.ws = await this.MinecraftUtils._checkState(this.ws);
         return new Promise(((resolve, reject) => {
             this.ws.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
             this.ws.onmessage = function (e) {
