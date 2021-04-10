@@ -98,7 +98,7 @@ class Scratch3MinecraftAgent {
     }
 
     async summonAgent(args) {
-        await this.MinecraftUtils._checkState();
+        await this.MinecraftUtils._checkState(this.ws);
         const coordinateMode = this.MinecraftUtils._searchCoordinateMode(args);
         if (coordinateMode === this.MinecraftUtils.absoluteStr) {
             await this._summonAgentToAbsCoord(args);
@@ -120,7 +120,7 @@ class Scratch3MinecraftAgent {
     }
 
     async updatePlayerPosAsync() {
-        await this.MinecraftUtils._checkState();
+        this.ws = await this.MinecraftUtils._checkState(this.ws);
         return new Promise(((resolve, reject) => {
             this.ws.onmessage = function (e) {
                 const posX = e.data.split(',')[0];
@@ -142,32 +142,32 @@ class Scratch3MinecraftAgent {
     }
 
     async moveXPlus(args) {
-        await this.MinecraftUtils._checkState();
+        await this.MinecraftUtils._checkState(this.ws);
         const command = `agent.move(1,0,0)`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
     async moveXMinus(args) {
-        await this.MinecraftUtils._checkState();
+        await this.MinecraftUtils._checkState(this.ws);
         const command = `agent.move(-1,0,0)`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
     async moveYPlus(args) {
-        await this.MinecraftUtils._checkState();
+        await this.MinecraftUtils._checkState(this.ws);
         const command = `agent.move(0,1,0)`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
     async moveYMinus(args) {
-        await this.MinecraftUtils._checkState();
+        await this.MinecraftUtils._checkState(this.ws);
         const command = `agent.move(0,-1,0)`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
     async moveZPlus(args) {
-        await this.MinecraftUtils._checkState();
+        await this.MinecraftUtils._checkState(this.ws);
         const command = `agent.move(0,0,1)`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
     async moveZMinus(args) {
-        await this.MinecraftUtils._checkState();
+        await this.MinecraftUtils._checkState(this.ws);
         const command = `agent.move(0,0,-1)`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }

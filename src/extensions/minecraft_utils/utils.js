@@ -23,22 +23,28 @@ class MinecraftUtils {
     }
 
     async _checkState(ws) {
-        await this._checkWebsocketState.bind(this, ws);
+        const newWs = await this._checkWebsocketState(ws);
         await this._checkExecTime();
+        return newWs;
     }
 
     async _checkWebsocketState(ws) {
         return new Promise(((resolve, reject) => {
             if (ws.readyState === WebSocket.CLOSED || ws.readyState === WebSocket.CLOSING) {
-                ws = this._createWebSocket(this.host);
+                log.log("closed! reopen!");
+                ws.close();
+                ws = this._createWebSocket();
                 ws.onopen = function (e) {
-                    resolve();
+                    log.log('re-open!');
+                    resolve(ws);
                 }
                 ws.onerror = function (e) {
+                    log.log('error!');
                     reject();
                 }
             } else {
-                resolve();
+                log.log("already open!");
+                resolve(ws);
             }
         }));
     }
