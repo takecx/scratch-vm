@@ -90,11 +90,49 @@ class Scratch3MinecraftAgent {
                         default: '-Z方向にエージェントを動かす',
                     })
                 },
+                {
+                    opcode: 'startStage',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft_agent.command.startStage',
+                        default: '[STAGE] スタート',
+                    }),
+                    arguments: {
+                        STAGE: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'STAGES',
+                            defaultValue: 0
+                        }
+                    }
+                }
             ],
             menus: {
-
+                STAGES: {
+                    acceptReporters: true,
+                    items: this.MinecraftUtils._buildMenu(this.STAGES)
+                }
             }
         };
+    }
+
+    get STAGES() {
+        return [
+            {
+                name: 'ステージ1'
+            },
+            {
+                name: 'ステージ2'
+            },
+            {
+                name: 'ステージ3'
+            },
+            {
+                name: 'ステージ4'
+            },
+            {
+                name: 'ステージ5'
+            }
+        ];
     }
 
     async summonAgent(args) {
@@ -169,6 +207,12 @@ class Scratch3MinecraftAgent {
     async moveZMinus(args) {
         this.ws = await this.MinecraftUtils._checkState(this.ws);
         const command = `agent.move(0,0,-1)`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
+    }
+
+    async startStage(args) {
+        this.ws = await this.MinecraftUtils._checkState(this.ws);
+        const command = 'startStage(' + args.STAGE + ')';
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
