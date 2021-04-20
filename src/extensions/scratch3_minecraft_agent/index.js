@@ -43,52 +43,27 @@ class Scratch3MinecraftAgent {
                     }
                 },
                 {
-                    opcode: 'moveXPlus',
+                    opcode: 'stepForward',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft_agent.command.moveXPlus',
-                        default: '+X方向にエージェントを動かす',
+                        id: 'minecraft_agent.command.stepForward',
+                        default: '進む'
                     })
                 },
                 {
-                    opcode: 'moveXMinus',
+                    opcode: 'rotate',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
-                        id: 'minecraft_agent.command.moveXMinus',
-                        default: '-X方向にエージェントを動かす',
-                    })
-                },
-                {
-                    opcode: 'moveYPlus',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft_agent.command.moveYPlus',
-                        default: '+Y方向にエージェントを動かす',
-                    })
-                },
-                {
-                    opcode: 'moveYMinus',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft_agent.command.moveYMinus',
-                        default: '-Y方向にエージェントを動かす',
-                    })
-                },
-                {
-                    opcode: 'moveZPlus',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft_agent.command.moveZPlus',
-                        default: '+Z方向にエージェントを動かす',
-                    })
-                },
-                {
-                    opcode: 'moveZMinus',
-                    blockType: BlockType.COMMAND,
-                    text: formatMessage({
-                        id: 'minecraft_agent.command.moveZMinus',
-                        default: '-Z方向にエージェントを動かす',
-                    })
+                        id: 'minecraft_agent.command.rotate',
+                        default: '[DIRECTION]を向く'
+                    }),
+                    arguments: {
+                        DIRECTION: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'DIRECTIONS',
+                            defaultValue: 0
+                        }
+                    }
                 },
                 {
                     opcode: 'startStage',
@@ -110,11 +85,16 @@ class Scratch3MinecraftAgent {
                 STAGES: {
                     acceptReporters: true,
                     items: this.MinecraftUtils._buildMenu(this.STAGES)
+                },
+                DIRECTIONS: {
+                    acceptReporters: true,
+                    items: this.MinecraftUtils._buildMenu(this.DIRECTIONS)
                 }
             }
         };
     }
 
+    // MENU
     get STAGES() {
         return [
             {
@@ -132,6 +112,23 @@ class Scratch3MinecraftAgent {
             {
                 name: 'ステージ5'
             }
+        ];
+    }
+
+    get DIRECTIONS() {
+        return [
+            {
+                name: '右',
+                id: 'right'
+            },
+            {
+                name: '左',
+                id: 'left'
+            },
+            {
+                name: '後ろ',
+                id: 'back'
+            },
         ];
     }
 
@@ -179,40 +176,14 @@ class Scratch3MinecraftAgent {
         }));
     }
 
-    async moveXPlus(args) {
-        this.ws = await this.MinecraftUtils._checkState(this.ws);
-        const command = `agent.move(1,0,0)`;
-        await this.MinecraftUtils._sendCommand(command, this.ws);
-    }
-    async moveXMinus(args) {
-        this.ws = await this.MinecraftUtils._checkState(this.ws);
-        const command = `agent.move(-1,0,0)`;
-        await this.MinecraftUtils._sendCommand(command, this.ws);
-    }
-    async moveYPlus(args) {
-        this.ws = await this.MinecraftUtils._checkState(this.ws);
-        const command = `agent.move(0,1,0)`;
-        await this.MinecraftUtils._sendCommand(command, this.ws);
-    }
-    async moveYMinus(args) {
-        this.ws = await this.MinecraftUtils._checkState(this.ws);
-        const command = `agent.move(0,-1,0)`;
-        await this.MinecraftUtils._sendCommand(command, this.ws);
-    }
-    async moveZPlus(args) {
-        this.ws = await this.MinecraftUtils._checkState(this.ws);
-        const command = `agent.move(0,0,1)`;
-        await this.MinecraftUtils._sendCommand(command, this.ws);
-    }
-    async moveZMinus(args) {
-        this.ws = await this.MinecraftUtils._checkState(this.ws);
-        const command = `agent.move(0,0,-1)`;
+    async stepForward(args) {
+        const command = `agent.stepForward()`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
-    async startStage(args) {
-        this.ws = await this.MinecraftUtils._checkState(this.ws);
-        const command = 'startStage(' + args.STAGE + ')';
+    async rotate(args) {
+        const direction = this.DIRECTIONS[Number(args.DIRECTION)].id;
+        const command = `agent.rotate(${direction})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
