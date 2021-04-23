@@ -98,19 +98,24 @@ class Scratch3MinecraftAgent {
     get STAGES() {
         return [
             {
-                name: 'ステージ1'
+                name: 'ステージ1',
+                id: '1_1'
             },
             {
-                name: 'ステージ2'
+                name: 'ステージ2',
+                id: '1_2'
             },
             {
-                name: 'ステージ3'
+                name: 'ステージ3',
+                id: '1_3'
             },
             {
-                name: 'ステージ4'
+                name: 'ステージ4',
+                id: '1_4'
             },
             {
-                name: 'ステージ5'
+                name: 'ステージ5',
+                id: '1_5'
             }
         ];
     }
@@ -184,6 +189,13 @@ class Scratch3MinecraftAgent {
     async rotate(args) {
         const direction = this.DIRECTIONS[Number(args.DIRECTION)].id;
         const command = `agent.rotate(${direction})`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
+    }
+
+    async startStage(args) {
+        this.ws = await this.MinecraftUtils._checkState(this.ws);
+        const stage = this.STAGES[Number(args.STAGE)].id;
+        const command = `startStage(${stage})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
