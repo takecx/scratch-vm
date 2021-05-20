@@ -66,6 +66,14 @@ class Scratch3MinecraftAgent {
                     }
                 },
                 {
+                    opcode: 'jumpForward',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft_agent.command.jumpForward',
+                        default: '登る'
+                    })
+                },
+                {
                     opcode: 'startStage',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
@@ -183,6 +191,8 @@ class Scratch3MinecraftAgent {
 
     async stepForward(args) {
         const command = `agent.stepForward()`;
+    async jumpForward(args) {
+        const command = `agent.jumpForward()`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
