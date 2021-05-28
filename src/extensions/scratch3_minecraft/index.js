@@ -818,15 +818,18 @@ class Scratch3Minecraft {
     _findBlockInfo(block) {
         let blockID = null;
         let blockData = null;
+        let itemID = null;
         if (typeof block === 'string') {
             const targetBlock = this.BUILDING_BLOCK_INFO.find((b) => b.name === block)
             blockID = targetBlock.blockID;
             blockData = targetBlock.blockData;
+            itemID = targetBlock.itemID;
         } else {
             blockID = block.blockID;
             blockData = block.blockData;
+            itemID = block.itemID;
         }
-        return [blockID, blockData];
+        return [blockID, blockData, itemID];
     }
 
     _findEntityInfo(entityName) {
@@ -926,16 +929,16 @@ class Scratch3Minecraft {
     }
 
     async _setBlockToAbsCoord(args) {
-        const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
-        const command = `world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData})`;
+        const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
+        const command = `world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
     async _setBlockToRelativeCoord(args) {
-        const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
+        const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
         await this.updatePlayerPosAsync();
         const relCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
-        const command = `world.setBlock(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${blockID},${blockData})`;
+        const command = `world.setBlock(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${blockID},${blockData},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
@@ -966,17 +969,17 @@ class Scratch3Minecraft {
     }
 
     async _setBlocksToAbsCoord(args) {
-        const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
-        const command = `world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`;
+        const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
+        const command = `world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
     async _setBlocksToRelativeCoord(args) {
-        const [blockID, blockData] = this._findBlockInfo(args.BLOCK);
+        const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
         await this.updatePlayerPosAsync();
         const startRelCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
         const endRelCoord = this.MinecraftUtils._convertEndPosToRelative.bind(this, args)();
-        const command = `world.setBlocks(${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${blockID},${blockData})`;
+        const command = `world.setBlocks(${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${blockID},${blockData},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
