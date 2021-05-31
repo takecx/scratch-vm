@@ -7,6 +7,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.stone',
                 default: '石'
             }),
+            itemID: 'minecraft:stone',
             blockID: '1',
             blockData: '0'
         },
@@ -69,6 +70,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.Grass',
                 default: '草'
             }),
+            itemID: 'minecraft:grass',
             blockID: '2',
             blockData: '0'
         },
@@ -77,6 +79,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.Dirt',
                 default: '土'
             }),
+            itemID: 'minecraft:dirt',
             blockID: '3',
             blockData: '0'
         },
@@ -103,6 +106,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.Cobblestone',
                 default: '丸石'
             }),
+            itemID: 'minecraft:cobblestone',
             blockID: '4',
             blockData: '0'
         },
@@ -165,6 +169,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.Bedrock',
                 default: '岩盤'
             }),
+            itemID: 'minecraft:bedrock',
             blockID: '7',
             blockData: '0'
         },
@@ -173,6 +178,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.Sand',
                 default: '砂'
             }),
+            itemID: 'minecraft:sand',
             blockID: '12',
             blockData: '0'
         },
@@ -190,6 +196,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.Gravel',
                 default: '砂利'
             }),
+            itemID: 'minecraft:gravel',
             blockID: '13',
             blockData: '0'
         },
@@ -198,6 +205,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.GoldOre',
                 default: '金鉱石'
             }),
+            itemID: 'minecraft:gold_ore',
             blockID: '14',
             blockData: '0'
         },
@@ -206,6 +214,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.IronOre',
                 default: '鉄鉱石'
             }),
+            itemID: 'minecraft:iron_ore',
             blockID: '15',
             blockData: '0'
         },
@@ -214,6 +223,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.CoalOre',
                 default: '石炭'
             }),
+            itemID: 'minecraft:coal_ore',
             blockID: '16',
             blockData: '0'
         },
@@ -285,6 +295,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.LapisLazuliOre',
                 default: 'ラピスラズリ鉱石'
             }),
+            itemID: 'minecraft:lapis_ore',
             blockID: '21',
             blockData: '0'
         },
@@ -329,6 +340,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.WhiteWool',
                 default: '白色の羊毛'
             }),
+            itemID: 'minecraft:white_wool',
             blockID: '35',
             blockData: '0'
         },
@@ -481,6 +493,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.BlockOfIron',
                 default: '鉄ブロック'
             }),
+            itemID: 'minecraft:iron_block',
             blockID: '42',
             blockData: '0'
         },
@@ -489,6 +502,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.StoneSlab',
                 default: '石のハーフブロック'
             }),
+            itemID: 'minecraft:stone_slab',
             blockID: '44',
             blockData: '0'
         },
@@ -650,6 +664,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.Clay',
                 default: '粘土'
             }),
+            itemID: 'minecraft:clay',
             blockID: '82',
             blockData: '0'
         },
@@ -1761,6 +1776,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.OakSapling',
                 default: 'オークの苗木'
             }),
+            itemID: 'minecraft:oak_sapling',
             blockID: '6',
             blockData: '0'
         },
@@ -1814,6 +1830,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.OakLeaves',
                 default: 'オークの葉'
             }),
+            itemID: 'minecraft:oak_leaves',
             blockID: '18',
             blockData: '0'
         },
@@ -1858,6 +1875,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.Grass',
                 default: '草'
             }),
+            itemID: 'minecraft:grass',
             blockID: '31',
             blockData: '1'
         },
@@ -1875,6 +1893,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.DeadShrub',
                 default: '枯れ木'
             }),
+            itemID: 'minecraft:dead_bush',
             blockID: '31',
             blockData: '0'
         },
@@ -1973,6 +1992,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.Mushroom',
                 default: 'マッシュルーム'
             }),
+            itemID: 'minecraft:brown_mushroom',
             blockID: '39',
             blockData: '0'
         },
@@ -1981,6 +2001,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.RedMushroom',
                 default: '赤いマッシュルーム'
             }),
+            itemID: 'minecraft:red_mushroom',
             blockID: '40',
             blockData: '0'
         },
@@ -2034,6 +2055,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.Snow',
                 default: '雪'
             }),
+            itemID: 'minecraft:snow',
             blockID: '78',
             blockData: '0'
         },
@@ -2672,6 +2694,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.OrangeShulkerBox',
                 default: '橙色のシュルカーボックス'
             }),
+            itemID: 'minecraft:orange_shulker_box',
             blockID: '219',
             blockData: '1'
         },
@@ -2680,6 +2703,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.MagentaShulkerBox',
                 default: '赤紫色のシュルカーボックス'
             }),
+            itemID: 'minecraft:magenta_shulker_box',
             blockID: '219',
             blockData: '2'
         },
@@ -2688,6 +2712,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.LightBlueShulkerBox',
                 default: '空色のシュルカーボックス'
             }),
+            itemID: 'minecraft:light_blue_shulker_box',
             blockID: '219',
             blockData: '3'
         },
@@ -2696,6 +2721,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.YellowShulkerBox',
                 default: '黃色のシュルカーボックス'
             }),
+            itemID: 'minecraft:yellow_shulker_box',
             blockID: '219',
             blockData: '4'
         },
@@ -2704,6 +2730,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.LimeShulkerBox',
                 default: '黄緑色のシュルカーボックス'
             }),
+            itemID: 'minecraft:lime_shulker_box',
             blockID: '219',
             blockData: '5'
         },
@@ -2712,6 +2739,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.PinkShulkerBox',
                 default: '桃色のシュルカーボックス'
             }),
+            itemID: 'minecraft:pink_shulker_box',
             blockID: '219',
             blockData: '6'
         },
@@ -2720,6 +2748,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.GrayShulkerBox',
                 default: '灰色のシュルカーボックス'
             }),
+            itemID: 'minecraft:gray_shulker_box',
             blockID: '219',
             blockData: '7'
         },
@@ -2728,6 +2757,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.LightGrayShulkerBox',
                 default: '薄灰色のシュルカーボックス'
             }),
+            itemID: 'minecraft:light_gray_shulker_box',
             blockID: '219',
             blockData: '8'
         },
@@ -2736,6 +2766,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.CyanShulkerBox',
                 default: '青緑色のシュルカーボックス'
             }),
+            itemID: 'minecraft:cyan_shulker_box',
             blockID: '219',
             blockData: '9'
         },
@@ -2744,6 +2775,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.PurpleShulkerBox',
                 default: '紫色のシュルカーボックス'
             }),
+            itemID: 'minecraft:purple_shulker_box',
             blockID: '219',
             blockData: '10'
         },
@@ -2752,6 +2784,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.BlueShulkerBox',
                 default: '青色のシュルカーボックス'
             }),
+            itemID: 'minecraft:blue_shulker_box',
             blockID: '219',
             blockData: '11'
         },
@@ -2760,6 +2793,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.BrownShulkerBox',
                 default: '茶色のシュルカーボックス'
             }),
+            itemID: 'minecraft:brown_shulker_box',
             blockID: '219',
             blockData: '12'
         },
@@ -2768,6 +2802,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.GreenShulkerBox',
                 default: '緑色のシュルカーボックス'
             }),
+            itemID: 'minecraft:green_shulker_box',
             blockID: '219',
             blockData: '13'
         },
@@ -2776,6 +2811,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.RedShulkerBox',
                 default: '赤色のシュルカーボックス'
             }),
+            itemID: 'minecraft:red_shulker_box',
             blockID: '219',
             blockData: '14'
         },
@@ -2784,6 +2820,7 @@ exports.genDecorationBlockInfo = () => {
                 id: 'minecraft.BlackShulkerBox',
                 default: '黒色のシュルカーボックス'
             }),
+            itemID: 'minecraft:black_shulker_box',
             blockID: '219',
             blockData: '15'
         },
@@ -3746,6 +3783,7 @@ exports.genMiscellaneousBlockInfo = () => {
             name: formatMessage({ id: 'minecraft.Coal', default: '石炭' })
         },
         {
+            itemID: 'minecraft:charcoal',
             blockData: 0,
             blockID: '263:1',
             name: formatMessage({ id: 'minecraft.Charcoal', default: '木炭' })
@@ -3908,76 +3946,91 @@ exports.genMiscellaneousBlockInfo = () => {
             name: formatMessage({ id: 'minecraft.Ink_Sac', default: 'イカスミ' })
         },
         {
+            itemID: 'minecraft:red_dye',
             blockData: 0,
             blockID: '351:1',
             name: formatMessage({ id: 'minecraft.Rose_Dye', default: '赤色の染料' })
         },
         {
+            itemID: 'minecraft:green_dye',
             blockData: 0,
             blockID: '351:2',
             name: formatMessage({ id: 'minecraft.Green_Dye', default: '緑色の染料' })
         },
         {
+            itemID: 'minecraft:brown_dye',
             blockData: 0,
             blockID: '351:3',
             name: formatMessage({ id: 'minecraft.Brown_Dye', default: '茶色の染料' })
         },
         {
+            itemID: 'minecraft:blue_dye',
             blockData: 0,
             blockID: '351:4',
             name: formatMessage({ id: 'minecraft.Blue_Dye', default: '青色の染料' })
         },
         {
+            itemID: 'minecraft:purple_dye',
             blockData: 0,
             blockID: '351:5',
             name: formatMessage({ id: 'minecraft.Purple_Dye', default: '紫色の染料' })
         },
         {
+            itemID: 'minecraft:cyan_dye',
             blockData: 0,
             blockID: '351:6',
             name: formatMessage({ id: 'minecraft.Cyan_Dye', default: '青緑色の染料' })
         },
         {
+            itemID: 'minecraft:light_gray_dye',
             blockData: 0,
             blockID: '351:7',
             name: formatMessage({ id: 'minecraft.LightGray_Dye', default: '薄灰色の染料' })
         },
         {
+            itemID: 'minecraft:gray_dye',
             blockData: 0,
             blockID: '351:8',
             name: formatMessage({ id: 'minecraft.Gray_Dye', default: '灰色の染料' })
         },
         {
+            itemID: 'minecraft:pink_dye',
             blockData: 0,
             blockID: '351:9',
             name: formatMessage({ id: 'minecraft.Pink_Dye', default: '桃色の染料' })
         },
         {
+            itemID: 'minecraft:lime_dye',
             blockData: 0,
             blockID: '351:10',
             name: formatMessage({ id: 'minecraft.Lime_Dye', default: '黄緑色の染料' })
         },
         {
+            itemID: 'minecraft:yellow_dye',
             blockData: 0,
             blockID: '351:11',
             name: formatMessage({ id: 'minecraft.Yellow_Dye', default: '黄色の染料' })
         },
         {
+            itemID: 'minecraft:light_blue_dye',
             blockData: 0,
             blockID: '351:12',
             name: formatMessage({ id: 'minecraft.LightBlue_Dye', default: '空色の染料' })
         },
         {
+            itemID: 'minecraft:magenta_dye',
             blockData: 0,
             blockID: '351:13',
             name: formatMessage({ id: 'minecraft.Magenta_Dye', default: '赤紫色の染料' })
         },
         {
+            itemID: 'minecraft:orange_dye',
             blockData: 0,
             blockID: '351:14',
             name: formatMessage({ id: 'minecraft.Orange_Dye', default: '橙色の染料' })
         },
         {
+            itemID: 'minecraft:white_dye',
             blockData: 0,
             blockID: '351:15',
             name: formatMessage({ id: 'minecraft.White_Dye', default: '白色の染料' })
@@ -4025,6 +4078,7 @@ exports.genMiscellaneousBlockInfo = () => {
             name: formatMessage({ id: 'minecraft.Gold_Nugget', default: '金塊' })
         },
         {
+            itemID: 'minecraft:nether_wart',
             blockData: 0,
             blockID: '115',
             name: formatMessage({ id: 'minecraft.Nether_Wart', default: 'ネザーウォート' })
@@ -4036,216 +4090,259 @@ exports.genMiscellaneousBlockInfo = () => {
             name: formatMessage({ id: 'minecraft.Eye_of_Ender', default: 'エンダーアイ' })
         },
         {
+            itemID: 'minecraft:bat_spawn_egg',
             blockData: 0,
             blockID: '383:65',
             name: formatMessage({ id: 'minecraft.Spawn_Bat', default: 'コウモリのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:blaze_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Blaze', default: 'ブレイズのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:cave_spider_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Cave_Spider', default: '洞窟グモのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:chiken_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Chicken', default: 'ニワトリのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:cow_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Cow', default: 'ウシのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:creeper_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Creeper', default: 'クリーパーのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:donkey_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Donkey', default: 'ロバのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:elder_guardian_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Elder_Guardian', default: 'エルダーガーディアンのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:enderman_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Enderman', default: 'エンダーマンのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:endermite_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Endermite', default: 'エンダーマイトのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:evoker_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Evoker', default: 'エヴォーカーのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:ghast_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Ghast', default: 'ガストのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:guardian_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Guardian', default: 'ガーディアンのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:horse_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Horse', default: 'ウマのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:husk_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Husk', default: 'ハスクのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:llama_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Llama', default: 'ラマのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:magmacube_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_MagmaCube', default: 'マグマキューブのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:mooshroom_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Mooshroom', default: 'ムーシュルームのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:mule_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Mule', default: 'ラバのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:ocelot_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Ocelot', default: 'ヤマネコのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:parrot_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Parrot', default: 'オウムのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:pig_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Pig', default: 'ブタのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:polarbear_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_PolarBear', default: 'シロクマのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:rabbit_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Rabbit', default: 'ウサギのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:sheep_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Sheep', default: '羊のスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:shulker_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Shulker', default: 'シュルカーのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:silverfish_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Silverfish', default: 'シルバーフィッシュのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:skeleton_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Skeleton', default: 'スケルトンのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:skeleton_horse_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_SkeletonHorse', default: 'スケルトンホースのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:slime_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Slime', default: 'スライムのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:spider_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Spider', default: 'クモのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:squid_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Squid', default: 'イカのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:stray_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Stray', default: 'ストレイのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:vex_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Vex', default: 'ヴェックスのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:villager_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Villager', default: '村人のスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:vindicator_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Vindicator', default: 'ヴィンディケーターのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:witch_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Witch', default: 'ウィッチのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:wither_skeleton_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_WitherSkeleton', default: 'ウィザースケルトンのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:wolf_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Wolf', default: 'オオカミのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:zombie_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_Zombie', default: 'ゾンビのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:zombie_horse_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_ZombieHorse', default: 'ゾンビホースのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:zombified_piglin_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_ZombiePigMan', default: 'ゾンビピッグマンのスポーンエッグ' })
         },
         {
+            itemID: 'minecraft:zombie_villager_spawn_egg',
             blockData: 0,
             blockID: '383',
             name: formatMessage({ id: 'minecraft.Spawn_VillagerZombie', default: '村人ゾンビのスポーンエッグ' })
@@ -4293,6 +4390,7 @@ exports.genMiscellaneousBlockInfo = () => {
             name: formatMessage({ id: 'minecraft.Firework_Star', default: '花火の星' })
         },
         {
+            itemID: 'minecraft:nether_brick',
             blockData: 0,
             blockID: '112',
             name: formatMessage({ id: 'minecraft.Nether_Brick', default: 'ネザーレンガ' })
@@ -5038,11 +5136,13 @@ exports.genBrewingBlockInfo = () => {
             name: formatMessage({ id: 'minecraft.Magma_Cream', default: 'マグマクリーム' })
         },
         {
+            itemID: 'minecraft:brewing_stand',
             blockData: 0,
             blockID: '117',
             name: formatMessage({ id: 'minecraft.Brewing_Stand', default: '醸造台' })
         },
         {
+            itemID: 'minecraft:cauldron',
             blockData: 0,
             blockID: '118',
             name: formatMessage({ id: 'minecraft.Cauldron', default: '大釜' })
@@ -5085,6 +5185,7 @@ exports.genExtraBlockInfo = () => {
                 id: 'minecraft.air',
                 default: '空気'
             }),
+            itemID: 'minecraft:air',
             blockID: '0',
             blockData: '0'
         },
