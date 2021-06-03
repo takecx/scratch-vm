@@ -1104,7 +1104,8 @@ class Scratch3Minecraft {
     async giveEnchant(args) {
         const level = this.LEVELS[args.LEVEL].name;
         const enchantId = this.ENCHANTS[args.ENCHANT].id;
-        const command = `giveEnchant(${enchantId},${level})`;
+        const enchantName = this.ENCHANTS[args.ENCHANT].name;
+        const command = `giveEnchant(${enchantId},${level},${enchantName})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
