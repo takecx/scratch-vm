@@ -24,8 +24,8 @@ const builtinExtensions = {
     makeymakey: () => require('../extensions/scratch3_makeymakey'),
     boost: () => require('../extensions/scratch3_boost'),
     gdxfor: () => require('../extensions/scratch3_gdx_for'),
-    minecraft: () => require('../extensions/scratch3_minecraft'),
-    minecraftAgent: () => require('../extensions/scratch3_minecraft_agent')
+    minecraft: () => require('../extensions/scratch3_minecraft')//,
+    //minecraftAgent: () => require('../extensions/scratch3_minecraft_agent')
 };
 
 /**
