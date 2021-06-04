@@ -70,7 +70,7 @@ exports.genBuildingBlockInfo = () => {
                 id: 'minecraft.Grass',
                 default: '草'
             }),
-            itemID: 'minecraft:grass',
+            itemID: 'minecraft:grass_block',
             blockID: '2',
             blockData: '0'
         },
@@ -3370,7 +3370,6 @@ exports.genDecorationBlockInfo = () => {
 exports.genRedStoneBlockInfo = () => {
     return [{
         itemID: 'minecraft:dispenser',
-        itemID: 'minecraft:grass_block',
         blockData: 0,
         blockID: 23,
         name: formatMessage({
