@@ -273,6 +273,40 @@ exports.getEnchantInfo = () => {
             }),
             id: 22,
             name: 'minecraft:sweeping'
+        },
+
+        // for 1.16.5
+        {
+            name: formatMessage({
+                id: 'minecraft.multishot',
+                default: 'マルチショット‌'
+            }),
+            id: -1,
+            name: 'minecraft:multishot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.piercing',
+                default: '貫通'
+            }),
+            id: -1,
+            name: 'minecraft:piercing'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.quick_charge',
+                default: 'クイックチャージ'
+            }),
+            id: -1,
+            name: 'minecraft:quick_charge'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_speed',
+                default: 'ソウルサンド上でのスピードアップ'
+            }),
+            id: -1,
+            name: 'minecraft:soul_speed'
         }
     ];
 };
