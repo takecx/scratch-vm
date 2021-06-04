@@ -908,7 +908,7 @@ class Scratch3Minecraft {
     }
 
     getSearchedBlock() {
-        const targetBlock = this.BUILDING_BLOCK_INFO.find(b => b.blockID === this.searchBlockID && b.blockData === this.searchBlockData);
+        const targetBlock = this.BUILDING_BLOCK_INFO.find(b => b.itemID.split(':')[1] === this.searchItemID);
         if (typeof targetBlock === 'undefined') {
             return '不明';
         }
@@ -1056,8 +1056,7 @@ class Scratch3Minecraft {
             this.ws.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
             this.ws.onmessage = function (e) {
                 const actualBlock = e.data.replace(/\r?\n/g, "");
-                this.searchBlockID = actualBlock.split(',')[0];
-                this.searchBlockData = actualBlock.split(',')[1];
+                this.searchItemID = actualBlock.split('.')[2];
                 this.MinecraftUtils.setLatestExecuteTIme();
                 resolve();
             }.bind(this);
