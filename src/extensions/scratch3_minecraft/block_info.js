@@ -5209,3 +5209,3805 @@ exports.genExtraBlockInfo = () => {
 
     ];
 }
+exports.gen1_16_5BlockInfo = () => {
+    return [
+        {
+            name: formatMessage({
+                id: 'minecraft.air',
+                default: 'air'
+            }),
+            itemID: 'minecraft:air',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_oak_log',
+                default: 'stripped_oak_log'
+            }),
+            itemID: 'minecraft:stripped_oak_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_spruce_log',
+                default: 'stripped_spruce_log'
+            }),
+            itemID: 'minecraft:stripped_spruce_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_birch_log',
+                default: 'stripped_birch_log'
+            }),
+            itemID: 'minecraft:stripped_birch_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_jungle_log',
+                default: 'stripped_jungle_log'
+            }),
+            itemID: 'minecraft:stripped_jungle_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_acacia_log',
+                default: 'stripped_acacia_log'
+            }),
+            itemID: 'minecraft:stripped_acacia_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_dark_oak_log',
+                default: 'stripped_dark_oak_log'
+            }),
+            itemID: 'minecraft:stripped_dark_oak_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_oak_wood',
+                default: 'stripped_oak_wood'
+            }),
+            itemID: 'minecraft:stripped_oak_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_spruce_wood',
+                default: 'stripped_spruce_wood'
+            }),
+            itemID: 'minecraft:stripped_spruce_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_birch_wood',
+                default: 'stripped_birch_wood'
+            }),
+            itemID: 'minecraft:stripped_birch_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_jungle_wood',
+                default: 'stripped_jungle_wood'
+            }),
+            itemID: 'minecraft:stripped_jungle_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_acacia_wood',
+                default: 'stripped_acacia_wood'
+            }),
+            itemID: 'minecraft:stripped_acacia_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_dark_oak_wood',
+                default: 'stripped_dark_oak_wood'
+            }),
+            itemID: 'minecraft:stripped_dark_oak_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_wood',
+                default: 'oak_wood'
+            }),
+            itemID: 'minecraft:oak_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_wood',
+                default: 'spruce_wood'
+            }),
+            itemID: 'minecraft:spruce_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_wood',
+                default: 'birch_wood'
+            }),
+            itemID: 'minecraft:birch_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_wood',
+                default: 'jungle_wood'
+            }),
+            itemID: 'minecraft:jungle_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_wood',
+                default: 'acacia_wood'
+            }),
+            itemID: 'minecraft:acacia_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_wood',
+                default: 'dark_oak_wood'
+            }),
+            itemID: 'minecraft:dark_oak_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.grass',
+                default: 'grass'
+            }),
+            itemID: 'minecraft:grass',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.seagrass',
+                default: 'seagrass'
+            }),
+            itemID: 'minecraft:seagrass',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sea_pickle',
+                default: 'sea_pickle'
+            }),
+            itemID: 'minecraft:sea_pickle',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.petrified_oak_slab',
+                default: 'petrified_oak_slab'
+            }),
+            itemID: 'minecraft:petrified_oak_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine_slab',
+                default: 'prismarine_slab'
+            }),
+            itemID: 'minecraft:prismarine_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine_brick_slab',
+                default: 'prismarine_brick_slab'
+            }),
+            itemID: 'minecraft:prismarine_brick_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_prismarine_slab',
+                default: 'dark_prismarine_slab'
+            }),
+            itemID: 'minecraft:dark_prismarine_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_red_sandstone',
+                default: 'smooth_red_sandstone'
+            }),
+            itemID: 'minecraft:smooth_red_sandstone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_sandstone',
+                default: 'smooth_sandstone'
+            }),
+            itemID: 'minecraft:smooth_sandstone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.air',
+                default: 'air'
+            }),
+            itemID: 'minecraft:air',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_oak_log',
+                default: 'stripped_oak_log'
+            }),
+            itemID: 'minecraft:stripped_oak_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_spruce_log',
+                default: 'stripped_spruce_log'
+            }),
+            itemID: 'minecraft:stripped_spruce_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_birch_log',
+                default: 'stripped_birch_log'
+            }),
+            itemID: 'minecraft:stripped_birch_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_jungle_log',
+                default: 'stripped_jungle_log'
+            }),
+            itemID: 'minecraft:stripped_jungle_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_acacia_log',
+                default: 'stripped_acacia_log'
+            }),
+            itemID: 'minecraft:stripped_acacia_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_dark_oak_log',
+                default: 'stripped_dark_oak_log'
+            }),
+            itemID: 'minecraft:stripped_dark_oak_log',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_oak_wood',
+                default: 'stripped_oak_wood'
+            }),
+            itemID: 'minecraft:stripped_oak_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_spruce_wood',
+                default: 'stripped_spruce_wood'
+            }),
+            itemID: 'minecraft:stripped_spruce_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_birch_wood',
+                default: 'stripped_birch_wood'
+            }),
+            itemID: 'minecraft:stripped_birch_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_jungle_wood',
+                default: 'stripped_jungle_wood'
+            }),
+            itemID: 'minecraft:stripped_jungle_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_acacia_wood',
+                default: 'stripped_acacia_wood'
+            }),
+            itemID: 'minecraft:stripped_acacia_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_dark_oak_wood',
+                default: 'stripped_dark_oak_wood'
+            }),
+            itemID: 'minecraft:stripped_dark_oak_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_wood',
+                default: 'oak_wood'
+            }),
+            itemID: 'minecraft:oak_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_wood',
+                default: 'spruce_wood'
+            }),
+            itemID: 'minecraft:spruce_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_wood',
+                default: 'birch_wood'
+            }),
+            itemID: 'minecraft:birch_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_wood',
+                default: 'jungle_wood'
+            }),
+            itemID: 'minecraft:jungle_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_wood',
+                default: 'acacia_wood'
+            }),
+            itemID: 'minecraft:acacia_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_wood',
+                default: 'dark_oak_wood'
+            }),
+            itemID: 'minecraft:dark_oak_wood',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.grass',
+                default: 'grass'
+            }),
+            itemID: 'minecraft:grass',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.seagrass',
+                default: 'seagrass'
+            }),
+            itemID: 'minecraft:seagrass',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sea_pickle',
+                default: 'sea_pickle'
+            }),
+            itemID: 'minecraft:sea_pickle',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.petrified_oak_slab',
+                default: 'petrified_oak_slab'
+            }),
+            itemID: 'minecraft:petrified_oak_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine_slab',
+                default: 'prismarine_slab'
+            }),
+            itemID: 'minecraft:prismarine_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine_brick_slab',
+                default: 'prismarine_brick_slab'
+            }),
+            itemID: 'minecraft:prismarine_brick_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_prismarine_slab',
+                default: 'dark_prismarine_slab'
+            }),
+            itemID: 'minecraft:dark_prismarine_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_red_sandstone',
+                default: 'smooth_red_sandstone'
+            }),
+            itemID: 'minecraft:smooth_red_sandstone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_sandstone',
+                default: 'smooth_sandstone'
+            }),
+            itemID: 'minecraft:smooth_sandstone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_pressure_plate',
+                default: 'spruce_pressure_plate'
+            }),
+            itemID: 'minecraft:spruce_pressure_plate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_pressure_plate',
+                default: 'birch_pressure_plate'
+            }),
+            itemID: 'minecraft:birch_pressure_plate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_pressure_plate',
+                default: 'jungle_pressure_plate'
+            }),
+            itemID: 'minecraft:jungle_pressure_plate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_pressure_plate',
+                default: 'acacia_pressure_plate'
+            }),
+            itemID: 'minecraft:acacia_pressure_plate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_pressure_plate',
+                default: 'dark_oak_pressure_plate'
+            }),
+            itemID: 'minecraft:dark_oak_pressure_plate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.carved_pumpkin',
+                default: 'carved_pumpkin'
+            }),
+            itemID: 'minecraft:carved_pumpkin',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_trapdoor',
+                default: 'spruce_trapdoor'
+            }),
+            itemID: 'minecraft:spruce_trapdoor',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_trapdoor',
+                default: 'birch_trapdoor'
+            }),
+            itemID: 'minecraft:birch_trapdoor',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_trapdoor',
+                default: 'jungle_trapdoor'
+            }),
+            itemID: 'minecraft:jungle_trapdoor',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_trapdoor',
+                default: 'acacia_trapdoor'
+            }),
+            itemID: 'minecraft:acacia_trapdoor',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_trapdoor',
+                default: 'dark_oak_trapdoor'
+            }),
+            itemID: 'minecraft:dark_oak_trapdoor',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mushroom_stem',
+                default: 'mushroom_stem'
+            }),
+            itemID: 'minecraft:mushroom_stem',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_button',
+                default: 'spruce_button'
+            }),
+            itemID: 'minecraft:spruce_button',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_button',
+                default: 'birch_button'
+            }),
+            itemID: 'minecraft:birch_button',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_button',
+                default: 'jungle_button'
+            }),
+            itemID: 'minecraft:jungle_button',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_button',
+                default: 'acacia_button'
+            }),
+            itemID: 'minecraft:acacia_button',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_button',
+                default: 'dark_oak_button'
+            }),
+            itemID: 'minecraft:dark_oak_button',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine_stairs',
+                default: 'prismarine_stairs'
+            }),
+            itemID: 'minecraft:prismarine_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine_brick_stairs',
+                default: 'prismarine_brick_stairs'
+            }),
+            itemID: 'minecraft:prismarine_brick_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_prismarine_stairs',
+                default: 'dark_prismarine_stairs'
+            }),
+            itemID: 'minecraft:dark_prismarine_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shulker_box',
+                default: 'shulker_box'
+            }),
+            itemID: 'minecraft:shulker_box',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.turtle_egg',
+                default: 'turtle_egg'
+            }),
+            itemID: 'minecraft:turtle_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_tube_coral_block',
+                default: 'dead_tube_coral_block'
+            }),
+            itemID: 'minecraft:dead_tube_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_brain_coral_block',
+                default: 'dead_brain_coral_block'
+            }),
+            itemID: 'minecraft:dead_brain_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_bubble_coral_block',
+                default: 'dead_bubble_coral_block'
+            }),
+            itemID: 'minecraft:dead_bubble_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_fire_coral_block',
+                default: 'dead_fire_coral_block'
+            }),
+            itemID: 'minecraft:dead_fire_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_horn_coral_block',
+                default: 'dead_horn_coral_block'
+            }),
+            itemID: 'minecraft:dead_horn_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tube_coral_block',
+                default: 'tube_coral_block'
+            }),
+            itemID: 'minecraft:tube_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brain_coral_block',
+                default: 'brain_coral_block'
+            }),
+            itemID: 'minecraft:brain_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_coral_block',
+                default: 'bubble_coral_block'
+            }),
+            itemID: 'minecraft:bubble_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fire_coral_block',
+                default: 'fire_coral_block'
+            }),
+            itemID: 'minecraft:fire_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.horn_coral_block',
+                default: 'horn_coral_block'
+            }),
+            itemID: 'minecraft:horn_coral_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tube_coral',
+                default: 'tube_coral'
+            }),
+            itemID: 'minecraft:tube_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brain_coral',
+                default: 'brain_coral'
+            }),
+            itemID: 'minecraft:brain_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_coral',
+                default: 'bubble_coral'
+            }),
+            itemID: 'minecraft:bubble_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fire_coral',
+                default: 'fire_coral'
+            }),
+            itemID: 'minecraft:fire_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.horn_coral',
+                default: 'horn_coral'
+            }),
+            itemID: 'minecraft:horn_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_brain_coral',
+                default: 'dead_brain_coral'
+            }),
+            itemID: 'minecraft:dead_brain_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_bubble_coral',
+                default: 'dead_bubble_coral'
+            }),
+            itemID: 'minecraft:dead_bubble_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_fire_coral',
+                default: 'dead_fire_coral'
+            }),
+            itemID: 'minecraft:dead_fire_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_horn_coral',
+                default: 'dead_horn_coral'
+            }),
+            itemID: 'minecraft:dead_horn_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_tube_coral',
+                default: 'dead_tube_coral'
+            }),
+            itemID: 'minecraft:dead_tube_coral',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tube_coral_fan',
+                default: 'tube_coral_fan'
+            }),
+            itemID: 'minecraft:tube_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brain_coral_fan',
+                default: 'brain_coral_fan'
+            }),
+            itemID: 'minecraft:brain_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_coral_fan',
+                default: 'bubble_coral_fan'
+            }),
+            itemID: 'minecraft:bubble_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fire_coral_fan',
+                default: 'fire_coral_fan'
+            }),
+            itemID: 'minecraft:fire_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.horn_coral_fan',
+                default: 'horn_coral_fan'
+            }),
+            itemID: 'minecraft:horn_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_tube_coral_fan',
+                default: 'dead_tube_coral_fan'
+            }),
+            itemID: 'minecraft:dead_tube_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_brain_coral_fan',
+                default: 'dead_brain_coral_fan'
+            }),
+            itemID: 'minecraft:dead_brain_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_bubble_coral_fan',
+                default: 'dead_bubble_coral_fan'
+            }),
+            itemID: 'minecraft:dead_bubble_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_fire_coral_fan',
+                default: 'dead_fire_coral_fan'
+            }),
+            itemID: 'minecraft:dead_fire_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_horn_coral_fan',
+                default: 'dead_horn_coral_fan'
+            }),
+            itemID: 'minecraft:dead_horn_coral_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_ice',
+                default: 'blue_ice'
+            }),
+            itemID: 'minecraft:blue_ice',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.conduit',
+                default: 'conduit'
+            }),
+            itemID: 'minecraft:conduit',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.turtle_helmet',
+                default: 'turtle_helmet'
+            }),
+            itemID: 'minecraft:turtle_helmet',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.scute',
+                default: 'scute'
+            }),
+            itemID: 'minecraft:scute',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pufferfish_bucket',
+                default: 'pufferfish_bucket'
+            }),
+            itemID: 'minecraft:pufferfish_bucket',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.salmon_bucket',
+                default: 'salmon_bucket'
+            }),
+            itemID: 'minecraft:salmon_bucket',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cod_bucket',
+                default: 'cod_bucket'
+            }),
+            itemID: 'minecraft:cod_bucket',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tropical_fish_bucket',
+                default: 'tropical_fish_bucket'
+            }),
+            itemID: 'minecraft:tropical_fish_bucket',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.kelp',
+                default: 'kelp'
+            }),
+            itemID: 'minecraft:kelp',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dried_kelp_block',
+                default: 'dried_kelp_block'
+            }),
+            itemID: 'minecraft:dried_kelp_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dried_kelp',
+                default: 'dried_kelp'
+            }),
+            itemID: 'minecraft:dried_kelp',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion{Potion',
+                default: 'potion{Potion'
+            }),
+            itemID: 'minecraft:potion{Potion:water}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion{Potion',
+                default: 'potion{Potion'
+            }),
+            itemID: 'minecraft:potion{Potion:empty}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion{Potion',
+                default: 'potion{Potion'
+            }),
+            itemID: 'minecraft:potion{Potion:turtle_master}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion{Potion',
+                default: 'potion{Potion'
+            }),
+            itemID: 'minecraft:potion{Potion:long_turtle_master}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion{Potion',
+                default: 'potion{Potion'
+            }),
+            itemID: 'minecraft:potion{Potion:strong_turtle_master}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion{Potion',
+                default: 'potion{Potion'
+            }),
+            itemID: 'minecraft:potion{Potion:slow_falling}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion{Potion',
+                default: 'potion{Potion'
+            }),
+            itemID: 'minecraft:potion{Potion:long_slow_falling}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion{Potion',
+                default: 'splash_potion{Potion'
+            }),
+            itemID: 'minecraft:splash_potion{Potion:turtle_master}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion{Potion',
+                default: 'splash_potion{Potion'
+            }),
+            itemID: 'minecraft:splash_potion{Potion:long_turtle_master}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion{Potion',
+                default: 'splash_potion{Potion'
+            }),
+            itemID: 'minecraft:splash_potion{Potion:strong_turtle_master}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion{Potion',
+                default: 'splash_potion{Potion'
+            }),
+            itemID: 'minecraft:splash_potion{Potion:slow_falling}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion{Potion',
+                default: 'splash_potion{Potion'
+            }),
+            itemID: 'minecraft:splash_potion{Potion:long_slow_falling}',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cod_spawn_egg',
+                default: 'cod_spawn_egg'
+            }),
+            itemID: 'minecraft:cod_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dolphin_spawn_egg',
+                default: 'dolphin_spawn_egg'
+            }),
+            itemID: 'minecraft:dolphin_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.drowned_spawn_egg',
+                default: 'drowned_spawn_egg'
+            }),
+            itemID: 'minecraft:drowned_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.parrot_spawn_egg',
+                default: 'parrot_spawn_egg'
+            }),
+            itemID: 'minecraft:parrot_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.phantom_spawn_egg',
+                default: 'phantom_spawn_egg'
+            }),
+            itemID: 'minecraft:phantom_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pufferfish_spawn_egg',
+                default: 'pufferfish_spawn_egg'
+            }),
+            itemID: 'minecraft:pufferfish_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.salmon_spawn_egg',
+                default: 'salmon_spawn_egg'
+            }),
+            itemID: 'minecraft:salmon_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.silverfish_spawn_egg',
+                default: 'silverfish_spawn_egg'
+            }),
+            itemID: 'minecraft:silverfish_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tropical_fish_spawn_egg',
+                default: 'tropical_fish_spawn_egg'
+            }),
+            itemID: 'minecraft:tropical_fish_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.turtle_spawn_egg',
+                default: 'turtle_spawn_egg'
+            }),
+            itemID: 'minecraft:turtle_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.knowledge_book',
+                default: 'knowledge_book'
+            }),
+            itemID: 'minecraft:knowledge_book',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.debug_stick',
+                default: 'debug_stick'
+            }),
+            itemID: 'minecraft:debug_stick',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.trident',
+                default: 'trident'
+            }),
+            itemID: 'minecraft:trident',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.phantom_membrane',
+                default: 'phantom_membrane'
+            }),
+            itemID: 'minecraft:phantom_membrane',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nautilus_shell',
+                default: 'nautilus_shell'
+            }),
+            itemID: 'minecraft:nautilus_shell',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.heart_of_the_sea',
+                default: 'heart_of_the_sea'
+            }),
+            itemID: 'minecraft:heart_of_the_sea',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tall_seagrass',
+                default: 'tall_seagrass'
+            }),
+            itemID: 'minecraft:tall_seagrass',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.moving_piston',
+                default: 'moving_piston'
+            }),
+            itemID: 'minecraft:moving_piston',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wall_torch',
+                default: 'wall_torch'
+            }),
+            itemID: 'minecraft:wall_torch',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone_wall_torch',
+                default: 'redstone_wall_torch'
+            }),
+            itemID: 'minecraft:redstone_wall_torch',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.attached_pumpkin_stem',
+                default: 'attached_pumpkin_stem'
+            }),
+            itemID: 'minecraft:attached_pumpkin_stem',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.attached_melon_stem',
+                default: 'attached_melon_stem'
+            }),
+            itemID: 'minecraft:attached_melon_stem',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_oak_sapling',
+                default: 'potted_oak_sapling'
+            }),
+            itemID: 'minecraft:potted_oak_sapling',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_spruce_sapling',
+                default: 'potted_spruce_sapling'
+            }),
+            itemID: 'minecraft:potted_spruce_sapling',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_birch_sapling',
+                default: 'potted_birch_sapling'
+            }),
+            itemID: 'minecraft:potted_birch_sapling',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_jungle_sapling',
+                default: 'potted_jungle_sapling'
+            }),
+            itemID: 'minecraft:potted_jungle_sapling',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_acacia_sapling',
+                default: 'potted_acacia_sapling'
+            }),
+            itemID: 'minecraft:potted_acacia_sapling',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_dark_oak_sapling',
+                default: 'potted_dark_oak_sapling'
+            }),
+            itemID: 'minecraft:potted_dark_oak_sapling',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_fern',
+                default: 'potted_fern'
+            }),
+            itemID: 'minecraft:potted_fern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_dandelion',
+                default: 'potted_dandelion'
+            }),
+            itemID: 'minecraft:potted_dandelion',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_poppy',
+                default: 'potted_poppy'
+            }),
+            itemID: 'minecraft:potted_poppy',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_blue_orchid',
+                default: 'potted_blue_orchid'
+            }),
+            itemID: 'minecraft:potted_blue_orchid',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_allium',
+                default: 'potted_allium'
+            }),
+            itemID: 'minecraft:potted_allium',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_azure_bluet',
+                default: 'potted_azure_bluet'
+            }),
+            itemID: 'minecraft:potted_azure_bluet',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_red_tulip',
+                default: 'potted_red_tulip'
+            }),
+            itemID: 'minecraft:potted_red_tulip',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_orange_tulip',
+                default: 'potted_orange_tulip'
+            }),
+            itemID: 'minecraft:potted_orange_tulip',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_white_tulip',
+                default: 'potted_white_tulip'
+            }),
+            itemID: 'minecraft:potted_white_tulip',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_pink_tulip',
+                default: 'potted_pink_tulip'
+            }),
+            itemID: 'minecraft:potted_pink_tulip',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_oxeye_daisy',
+                default: 'potted_oxeye_daisy'
+            }),
+            itemID: 'minecraft:potted_oxeye_daisy',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_red_mushroom',
+                default: 'potted_red_mushroom'
+            }),
+            itemID: 'minecraft:potted_red_mushroom',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_brown_mushroom',
+                default: 'potted_brown_mushroom'
+            }),
+            itemID: 'minecraft:potted_brown_mushroom',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_dead_bush',
+                default: 'potted_dead_bush'
+            }),
+            itemID: 'minecraft:potted_dead_bush',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_cactus',
+                default: 'potted_cactus'
+            }),
+            itemID: 'minecraft:potted_cactus',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.skeleton_wall_skull',
+                default: 'skeleton_wall_skull'
+            }),
+            itemID: 'minecraft:skeleton_wall_skull',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wither_skeleton_wall_skull',
+                default: 'wither_skeleton_wall_skull'
+            }),
+            itemID: 'minecraft:wither_skeleton_wall_skull',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.zombie_wall_head',
+                default: 'zombie_wall_head'
+            }),
+            itemID: 'minecraft:zombie_wall_head',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.player_wall_head',
+                default: 'player_wall_head'
+            }),
+            itemID: 'minecraft:player_wall_head',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.creeper_wall_head',
+                default: 'creeper_wall_head'
+            }),
+            itemID: 'minecraft:creeper_wall_head',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dragon_wall_head',
+                default: 'dragon_wall_head'
+            }),
+            itemID: 'minecraft:dragon_wall_head',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_wall_banner',
+                default: 'white_wall_banner'
+            }),
+            itemID: 'minecraft:white_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_wall_banner',
+                default: 'orange_wall_banner'
+            }),
+            itemID: 'minecraft:orange_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_wall_banner',
+                default: 'magenta_wall_banner'
+            }),
+            itemID: 'minecraft:magenta_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_wall_banner',
+                default: 'light_blue_wall_banner'
+            }),
+            itemID: 'minecraft:light_blue_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_wall_banner',
+                default: 'yellow_wall_banner'
+            }),
+            itemID: 'minecraft:yellow_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_wall_banner',
+                default: 'lime_wall_banner'
+            }),
+            itemID: 'minecraft:lime_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_wall_banner',
+                default: 'pink_wall_banner'
+            }),
+            itemID: 'minecraft:pink_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_wall_banner',
+                default: 'gray_wall_banner'
+            }),
+            itemID: 'minecraft:gray_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_wall_banner',
+                default: 'light_gray_wall_banner'
+            }),
+            itemID: 'minecraft:light_gray_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_wall_banner',
+                default: 'cyan_wall_banner'
+            }),
+            itemID: 'minecraft:cyan_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_wall_banner',
+                default: 'purple_wall_banner'
+            }),
+            itemID: 'minecraft:purple_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_wall_banner',
+                default: 'blue_wall_banner'
+            }),
+            itemID: 'minecraft:blue_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_wall_banner',
+                default: 'brown_wall_banner'
+            }),
+            itemID: 'minecraft:brown_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_wall_banner',
+                default: 'green_wall_banner'
+            }),
+            itemID: 'minecraft:green_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_wall_banner',
+                default: 'red_wall_banner'
+            }),
+            itemID: 'minecraft:red_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_wall_banner',
+                default: 'black_wall_banner'
+            }),
+            itemID: 'minecraft:black_wall_banner',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.kelp_plant',
+                default: 'kelp_plant'
+            }),
+            itemID: 'minecraft:kelp_plant',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_tube_coral_wall_fan',
+                default: 'dead_tube_coral_wall_fan'
+            }),
+            itemID: 'minecraft:dead_tube_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_brain_coral_wall_fan',
+                default: 'dead_brain_coral_wall_fan'
+            }),
+            itemID: 'minecraft:dead_brain_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_bubble_coral_wall_fan',
+                default: 'dead_bubble_coral_wall_fan'
+            }),
+            itemID: 'minecraft:dead_bubble_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_fire_coral_wall_fan',
+                default: 'dead_fire_coral_wall_fan'
+            }),
+            itemID: 'minecraft:dead_fire_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_horn_coral_wall_fan',
+                default: 'dead_horn_coral_wall_fan'
+            }),
+            itemID: 'minecraft:dead_horn_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tube_coral_wall_fan',
+                default: 'tube_coral_wall_fan'
+            }),
+            itemID: 'minecraft:tube_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brain_coral_wall_fan',
+                default: 'brain_coral_wall_fan'
+            }),
+            itemID: 'minecraft:brain_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_coral_wall_fan',
+                default: 'bubble_coral_wall_fan'
+            }),
+            itemID: 'minecraft:bubble_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fire_coral_wall_fan',
+                default: 'fire_coral_wall_fan'
+            }),
+            itemID: 'minecraft:fire_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.horn_coral_wall_fan',
+                default: 'horn_coral_wall_fan'
+            }),
+            itemID: 'minecraft:horn_coral_wall_fan',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.void_air',
+                default: 'void_air'
+            }),
+            itemID: 'minecraft:void_air',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cave_air',
+                default: 'cave_air'
+            }),
+            itemID: 'minecraft:cave_air',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_column',
+                default: 'bubble_column'
+            }),
+            itemID: 'minecraft:bubble_column',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cornflower',
+                default: 'cornflower'
+            }),
+            itemID: 'minecraft:cornflower',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lily_of_the_valley',
+                default: 'lily_of_the_valley'
+            }),
+            itemID: 'minecraft:lily_of_the_valley',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wither_rose',
+                default: 'wither_rose'
+            }),
+            itemID: 'minecraft:wither_rose',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_stone_slab',
+                default: 'smooth_stone_slab'
+            }),
+            itemID: 'minecraft:smooth_stone_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cut_sandstone_slab',
+                default: 'cut_sandstone_slab'
+            }),
+            itemID: 'minecraft:cut_sandstone_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cut_red_sandstone_slab',
+                default: 'cut_red_sandstone_slab'
+            }),
+            itemID: 'minecraft:cut_red_sandstone_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brick_wall',
+                default: 'brick_wall'
+            }),
+            itemID: 'minecraft:brick_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine_wall',
+                default: 'prismarine_wall'
+            }),
+            itemID: 'minecraft:prismarine_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_sandstone_wall',
+                default: 'red_sandstone_wall'
+            }),
+            itemID: 'minecraft:red_sandstone_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_stone_brick_wall',
+                default: 'mossy_stone_brick_wall'
+            }),
+            itemID: 'minecraft:mossy_stone_brick_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.granite_wall',
+                default: 'granite_wall'
+            }),
+            itemID: 'minecraft:granite_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_brick_wall',
+                default: 'stone_brick_wall'
+            }),
+            itemID: 'minecraft:stone_brick_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_brick_wall',
+                default: 'nether_brick_wall'
+            }),
+            itemID: 'minecraft:nether_brick_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.andesite_wall',
+                default: 'andesite_wall'
+            }),
+            itemID: 'minecraft:andesite_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_nether_brick_wall',
+                default: 'red_nether_brick_wall'
+            }),
+            itemID: 'minecraft:red_nether_brick_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sandstone_wall',
+                default: 'sandstone_wall'
+            }),
+            itemID: 'minecraft:sandstone_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_stone_brick_wall',
+                default: 'end_stone_brick_wall'
+            }),
+            itemID: 'minecraft:end_stone_brick_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diorite_wall',
+                default: 'diorite_wall'
+            }),
+            itemID: 'minecraft:diorite_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_granite_stairs',
+                default: 'polished_granite_stairs'
+            }),
+            itemID: 'minecraft:polished_granite_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_red_sandstone_stairs',
+                default: 'smooth_red_sandstone_stairs'
+            }),
+            itemID: 'minecraft:smooth_red_sandstone_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_stone_brick_stairs',
+                default: 'mossy_stone_brick_stairs'
+            }),
+            itemID: 'minecraft:mossy_stone_brick_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_diorite_stairs',
+                default: 'polished_diorite_stairs'
+            }),
+            itemID: 'minecraft:polished_diorite_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_cobblestone_stairs',
+                default: 'mossy_cobblestone_stairs'
+            }),
+            itemID: 'minecraft:mossy_cobblestone_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_stone_brick_stairs',
+                default: 'end_stone_brick_stairs'
+            }),
+            itemID: 'minecraft:end_stone_brick_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_stairs',
+                default: 'stone_stairs'
+            }),
+            itemID: 'minecraft:stone_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_sandstone_stairs',
+                default: 'smooth_sandstone_stairs'
+            }),
+            itemID: 'minecraft:smooth_sandstone_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_quartz_stairs',
+                default: 'smooth_quartz_stairs'
+            }),
+            itemID: 'minecraft:smooth_quartz_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.granite_stairs',
+                default: 'granite_stairs'
+            }),
+            itemID: 'minecraft:granite_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.andesite_stairs',
+                default: 'andesite_stairs'
+            }),
+            itemID: 'minecraft:andesite_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_nether_brick_stairs',
+                default: 'red_nether_brick_stairs'
+            }),
+            itemID: 'minecraft:red_nether_brick_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_andesite_stairs',
+                default: 'polished_andesite_stairs'
+            }),
+            itemID: 'minecraft:polished_andesite_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diorite_stairs',
+                default: 'diorite_stairs'
+            }),
+            itemID: 'minecraft:diorite_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_granite_slab',
+                default: 'polished_granite_slab'
+            }),
+            itemID: 'minecraft:polished_granite_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_red_sandstone_slab',
+                default: 'smooth_red_sandstone_slab'
+            }),
+            itemID: 'minecraft:smooth_red_sandstone_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_stone_brick_slab',
+                default: 'mossy_stone_brick_slab'
+            }),
+            itemID: 'minecraft:mossy_stone_brick_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_diorite_slab',
+                default: 'polished_diorite_slab'
+            }),
+            itemID: 'minecraft:polished_diorite_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_cobblestone_slab',
+                default: 'mossy_cobblestone_slab'
+            }),
+            itemID: 'minecraft:mossy_cobblestone_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_stone_brick_slab',
+                default: 'end_stone_brick_slab'
+            }),
+            itemID: 'minecraft:end_stone_brick_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_sandstone_slab',
+                default: 'smooth_sandstone_slab'
+            }),
+            itemID: 'minecraft:smooth_sandstone_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_quartz_slab',
+                default: 'smooth_quartz_slab'
+            }),
+            itemID: 'minecraft:smooth_quartz_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.granite_slab',
+                default: 'granite_slab'
+            }),
+            itemID: 'minecraft:granite_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.andesite_slab',
+                default: 'andesite_slab'
+            }),
+            itemID: 'minecraft:andesite_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_nether_brick_slab',
+                default: 'red_nether_brick_slab'
+            }),
+            itemID: 'minecraft:red_nether_brick_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_andesite_slab',
+                default: 'polished_andesite_slab'
+            }),
+            itemID: 'minecraft:polished_andesite_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diorite_slab',
+                default: 'diorite_slab'
+            }),
+            itemID: 'minecraft:diorite_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.scaffolding',
+                default: 'scaffolding'
+            }),
+            itemID: 'minecraft:scaffolding',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jigsaw',
+                default: 'jigsaw'
+            }),
+            itemID: 'minecraft:jigsaw',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.composter',
+                default: 'composter'
+            }),
+            itemID: 'minecraft:composter',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_sign',
+                default: 'oak_sign'
+            }),
+            itemID: 'minecraft:oak_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_sign',
+                default: 'spruce_sign'
+            }),
+            itemID: 'minecraft:spruce_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_sign',
+                default: 'birch_sign'
+            }),
+            itemID: 'minecraft:birch_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_sign',
+                default: 'jungle_sign'
+            }),
+            itemID: 'minecraft:jungle_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_sign',
+                default: 'acacia_sign'
+            }),
+            itemID: 'minecraft:acacia_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_sign',
+                default: 'dark_oak_sign'
+            }),
+            itemID: 'minecraft:dark_oak_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo',
+                default: 'bamboo'
+            }),
+            itemID: 'minecraft:bamboo',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_dye',
+                default: 'red_dye'
+            }),
+            itemID: 'minecraft:red_dye',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_dye',
+                default: 'green_dye'
+            }),
+            itemID: 'minecraft:green_dye',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_dye',
+                default: 'yellow_dye'
+            }),
+            itemID: 'minecraft:yellow_dye',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_dye',
+                default: 'blue_dye'
+            }),
+            itemID: 'minecraft:blue_dye',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_dye',
+                default: 'brown_dye'
+            }),
+            itemID: 'minecraft:brown_dye',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_dye',
+                default: 'black_dye'
+            }),
+            itemID: 'minecraft:black_dye',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_dye',
+                default: 'white_dye'
+            }),
+            itemID: 'minecraft:white_dye',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cat_spawn_egg',
+                default: 'cat_spawn_egg'
+            }),
+            itemID: 'minecraft:cat_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fox_spawn_egg',
+                default: 'fox_spawn_egg'
+            }),
+            itemID: 'minecraft:fox_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.panda_spawn_egg',
+                default: 'panda_spawn_egg'
+            }),
+            itemID: 'minecraft:panda_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pillager_spawn_egg',
+                default: 'pillager_spawn_egg'
+            }),
+            itemID: 'minecraft:pillager_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ravager_spawn_egg',
+                default: 'ravager_spawn_egg'
+            }),
+            itemID: 'minecraft:ravager_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.trader_llama_spawn_egg',
+                default: 'trader_llama_spawn_egg'
+            }),
+            itemID: 'minecraft:trader_llama_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wandering_trader_spawn_egg',
+                default: 'wandering_trader_spawn_egg'
+            }),
+            itemID: 'minecraft:wandering_trader_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.leather_horse_armor',
+                default: 'leather_horse_armor'
+            }),
+            itemID: 'minecraft:leather_horse_armor',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crossbow',
+                default: 'crossbow'
+            }),
+            itemID: 'minecraft:crossbow',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: 'suspicious_stew'
+            }),
+            itemID: 'minecraft:suspicious_stew',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.loom',
+                default: 'loom'
+            }),
+            itemID: 'minecraft:loom',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flower_banner_pattern',
+                default: 'flower_banner_pattern'
+            }),
+            itemID: 'minecraft:flower_banner_pattern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.creeper_banner_pattern',
+                default: 'creeper_banner_pattern'
+            }),
+            itemID: 'minecraft:creeper_banner_pattern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.skull_banner_pattern',
+                default: 'skull_banner_pattern'
+            }),
+            itemID: 'minecraft:skull_banner_pattern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mojang_banner_pattern',
+                default: 'mojang_banner_pattern'
+            }),
+            itemID: 'minecraft:mojang_banner_pattern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.globe_banner_pattern',
+                default: 'globe_banner_pattern'
+            }),
+            itemID: 'minecraft:globe_banner_pattern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.barrel',
+                default: 'barrel'
+            }),
+            itemID: 'minecraft:barrel',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smoker',
+                default: 'smoker'
+            }),
+            itemID: 'minecraft:smoker',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blast_furnace',
+                default: 'blast_furnace'
+            }),
+            itemID: 'minecraft:blast_furnace',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cartography_table',
+                default: 'cartography_table'
+            }),
+            itemID: 'minecraft:cartography_table',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fletching_table',
+                default: 'fletching_table'
+            }),
+            itemID: 'minecraft:fletching_table',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.grindstone',
+                default: 'grindstone'
+            }),
+            itemID: 'minecraft:grindstone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lectern',
+                default: 'lectern'
+            }),
+            itemID: 'minecraft:lectern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smithing_table',
+                default: 'smithing_table'
+            }),
+            itemID: 'minecraft:smithing_table',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stonecutter',
+                default: 'stonecutter'
+            }),
+            itemID: 'minecraft:stonecutter',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bell',
+                default: 'bell'
+            }),
+            itemID: 'minecraft:bell',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lantern',
+                default: 'lantern'
+            }),
+            itemID: 'minecraft:lantern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sweet_berries',
+                default: 'sweet_berries'
+            }),
+            itemID: 'minecraft:sweet_berries',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.campfire',
+                default: 'campfire'
+            }),
+            itemID: 'minecraft:campfire',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bee_spawn_egg',
+                default: 'bee_spawn_egg'
+            }),
+            itemID: 'minecraft:bee_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.honeycomb',
+                default: 'honeycomb'
+            }),
+            itemID: 'minecraft:honeycomb',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bee_nest',
+                default: 'bee_nest'
+            }),
+            itemID: 'minecraft:bee_nest',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.beehive',
+                default: 'beehive'
+            }),
+            itemID: 'minecraft:beehive',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.honey_bottle',
+                default: 'honey_bottle'
+            }),
+            itemID: 'minecraft:honey_bottle',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.honey_block',
+                default: 'honey_block'
+            }),
+            itemID: 'minecraft:honey_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.honeycomb_block',
+                default: 'honeycomb_block'
+            }),
+            itemID: 'minecraft:honeycomb_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_wall_sign',
+                default: 'oak_wall_sign'
+            }),
+            itemID: 'minecraft:oak_wall_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_wall_sign',
+                default: 'spruce_wall_sign'
+            }),
+            itemID: 'minecraft:spruce_wall_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_wall_sign',
+                default: 'birch_wall_sign'
+            }),
+            itemID: 'minecraft:birch_wall_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_wall_sign',
+                default: 'acacia_wall_sign'
+            }),
+            itemID: 'minecraft:acacia_wall_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_wall_sign',
+                default: 'jungle_wall_sign'
+            }),
+            itemID: 'minecraft:jungle_wall_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_wall_sign',
+                default: 'dark_oak_wall_sign'
+            }),
+            itemID: 'minecraft:dark_oak_wall_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_cornflower',
+                default: 'potted_cornflower'
+            }),
+            itemID: 'minecraft:potted_cornflower',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_lily_of_the_valley',
+                default: 'potted_lily_of_the_valley'
+            }),
+            itemID: 'minecraft:potted_lily_of_the_valley',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_wither_rose',
+                default: 'potted_wither_rose'
+            }),
+            itemID: 'minecraft:potted_wither_rose',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_sapling',
+                default: 'bamboo_sapling'
+            }),
+            itemID: 'minecraft:bamboo_sapling',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_bamboo',
+                default: 'potted_bamboo'
+            }),
+            itemID: 'minecraft:potted_bamboo',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sweet_berry_bush',
+                default: 'sweet_berry_bush'
+            }),
+            itemID: 'minecraft:sweet_berry_bush',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_nylium',
+                default: 'crimson_nylium'
+            }),
+            itemID: 'minecraft:crimson_nylium',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_nylium',
+                default: 'warped_nylium'
+            }),
+            itemID: 'minecraft:warped_nylium',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_planks',
+                default: 'crimson_planks'
+            }),
+            itemID: 'minecraft:crimson_planks',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_planks',
+                default: 'warped_planks'
+            }),
+            itemID: 'minecraft:warped_planks',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_gold_ore',
+                default: 'nether_gold_ore'
+            }),
+            itemID: 'minecraft:nether_gold_ore',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_stem',
+                default: 'crimson_stem'
+            }),
+            itemID: 'minecraft:crimson_stem',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_stem',
+                default: 'warped_stem'
+            }),
+            itemID: 'minecraft:warped_stem',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_crimson_stem',
+                default: 'stripped_crimson_stem'
+            }),
+            itemID: 'minecraft:stripped_crimson_stem',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_warped_stem',
+                default: 'stripped_warped_stem'
+            }),
+            itemID: 'minecraft:stripped_warped_stem',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_crimson_hyphae',
+                default: 'stripped_crimson_hyphae'
+            }),
+            itemID: 'minecraft:stripped_crimson_hyphae',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_warped_hyphae',
+                default: 'stripped_warped_hyphae'
+            }),
+            itemID: 'minecraft:stripped_warped_hyphae',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_hyphae',
+                default: 'crimson_hyphae'
+            }),
+            itemID: 'minecraft:crimson_hyphae',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_hyphae',
+                default: 'warped_hyphae'
+            }),
+            itemID: 'minecraft:warped_hyphae',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_fungus',
+                default: 'crimson_fungus'
+            }),
+            itemID: 'minecraft:crimson_fungus',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fungus',
+                default: 'warped_fungus'
+            }),
+            itemID: 'minecraft:warped_fungus',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_roots',
+                default: 'crimson_roots'
+            }),
+            itemID: 'minecraft:crimson_roots',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_roots',
+                default: 'warped_roots'
+            }),
+            itemID: 'minecraft:warped_roots',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_sprouts',
+                default: 'nether_sprouts'
+            }),
+            itemID: 'minecraft:nether_sprouts',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.weeping_vines',
+                default: 'weeping_vines'
+            }),
+            itemID: 'minecraft:weeping_vines',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.twisting_vines',
+                default: 'twisting_vines'
+            }),
+            itemID: 'minecraft:twisting_vines',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_slab',
+                default: 'crimson_slab'
+            }),
+            itemID: 'minecraft:crimson_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_slab',
+                default: 'warped_slab'
+            }),
+            itemID: 'minecraft:warped_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_pressure_plate',
+                default: 'crimson_pressure_plate'
+            }),
+            itemID: 'minecraft:crimson_pressure_plate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_pressure_plate',
+                default: 'warped_pressure_plate'
+            }),
+            itemID: 'minecraft:warped_pressure_plate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_pressure_plate',
+                default: 'polished_blackstone_pressure_plate'
+            }),
+            itemID: 'minecraft:polished_blackstone_pressure_plate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_fence',
+                default: 'crimson_fence'
+            }),
+            itemID: 'minecraft:crimson_fence',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fence',
+                default: 'warped_fence'
+            }),
+            itemID: 'minecraft:warped_fence',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_soil',
+                default: 'soul_soil'
+            }),
+            itemID: 'minecraft:soul_soil',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.basalt',
+                default: 'basalt'
+            }),
+            itemID: 'minecraft:basalt',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_basalt',
+                default: 'polished_basalt'
+            }),
+            itemID: 'minecraft:polished_basalt',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_torch',
+                default: 'soul_torch'
+            }),
+            itemID: 'minecraft:soul_torch',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_trapdoor',
+                default: 'crimson_trapdoor'
+            }),
+            itemID: 'minecraft:crimson_trapdoor',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_trapdoor',
+                default: 'warped_trapdoor'
+            }),
+            itemID: 'minecraft:warped_trapdoor',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chain',
+                default: 'chain'
+            }),
+            itemID: 'minecraft:chain',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_fence_gate',
+                default: 'crimson_fence_gate'
+            }),
+            itemID: 'minecraft:crimson_fence_gate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fence_gate',
+                default: 'warped_fence_gate'
+            }),
+            itemID: 'minecraft:warped_fence_gate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cracked_nether_bricks',
+                default: 'cracked_nether_bricks'
+            }),
+            itemID: 'minecraft:cracked_nether_bricks',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chiseled_nether_bricks',
+                default: 'chiseled_nether_bricks'
+            }),
+            itemID: 'minecraft:chiseled_nether_bricks',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_stairs',
+                default: 'crimson_stairs'
+            }),
+            itemID: 'minecraft:crimson_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_stairs',
+                default: 'warped_stairs'
+            }),
+            itemID: 'minecraft:warped_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blackstone_wall',
+                default: 'blackstone_wall'
+            }),
+            itemID: 'minecraft:blackstone_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_wall',
+                default: 'polished_blackstone_wall'
+            }),
+            itemID: 'minecraft:polished_blackstone_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_brick_wall',
+                default: 'polished_blackstone_brick_wall'
+            }),
+            itemID: 'minecraft:polished_blackstone_brick_wall',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_button',
+                default: 'crimson_button'
+            }),
+            itemID: 'minecraft:crimson_button',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_button',
+                default: 'warped_button'
+            }),
+            itemID: 'minecraft:warped_button',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_button',
+                default: 'polished_blackstone_button'
+            }),
+            itemID: 'minecraft:polished_blackstone_button',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.quartz_bricks',
+                default: 'quartz_bricks'
+            }),
+            itemID: 'minecraft:quartz_bricks',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_wart_block',
+                default: 'warped_wart_block'
+            }),
+            itemID: 'minecraft:warped_wart_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_door',
+                default: 'crimson_door'
+            }),
+            itemID: 'minecraft:crimson_door',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_door',
+                default: 'warped_door'
+            }),
+            itemID: 'minecraft:warped_door',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_ingot',
+                default: 'netherite_ingot'
+            }),
+            itemID: 'minecraft:netherite_ingot',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_scrap',
+                default: 'netherite_scrap'
+            }),
+            itemID: 'minecraft:netherite_scrap',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_sword',
+                default: 'netherite_sword'
+            }),
+            itemID: 'minecraft:netherite_sword',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_shovel',
+                default: 'netherite_shovel'
+            }),
+            itemID: 'minecraft:netherite_shovel',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_pickaxe',
+                default: 'netherite_pickaxe'
+            }),
+            itemID: 'minecraft:netherite_pickaxe',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_axe',
+                default: 'netherite_axe'
+            }),
+            itemID: 'minecraft:netherite_axe',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_hoe',
+                default: 'netherite_hoe'
+            }),
+            itemID: 'minecraft:netherite_hoe',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_helmet',
+                default: 'netherite_helmet'
+            }),
+            itemID: 'minecraft:netherite_helmet',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_chestplate',
+                default: 'netherite_chestplate'
+            }),
+            itemID: 'minecraft:netherite_chestplate',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_leggings',
+                default: 'netherite_leggings'
+            }),
+            itemID: 'minecraft:netherite_leggings',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_boots',
+                default: 'netherite_boots'
+            }),
+            itemID: 'minecraft:netherite_boots',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_sign',
+                default: 'crimson_sign'
+            }),
+            itemID: 'minecraft:crimson_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_sign',
+                default: 'warped_sign'
+            }),
+            itemID: 'minecraft:warped_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.hoglin_spawn_egg',
+                default: 'hoglin_spawn_egg'
+            }),
+            itemID: 'minecraft:hoglin_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.piglin_spawn_egg',
+                default: 'piglin_spawn_egg'
+            }),
+            itemID: 'minecraft:piglin_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.strider_spawn_egg',
+                default: 'strider_spawn_egg'
+            }),
+            itemID: 'minecraft:strider_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.zoglin_spawn_egg',
+                default: 'zoglin_spawn_egg'
+            }),
+            itemID: 'minecraft:zoglin_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.zombified_piglin_spawn_egg',
+                default: 'zombified_piglin_spawn_egg'
+            }),
+            itemID: 'minecraft:zombified_piglin_spawn_egg',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fungus_on_a_stick',
+                default: 'warped_fungus_on_a_stick'
+            }),
+            itemID: 'minecraft:warped_fungus_on_a_stick',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_pigstep',
+                default: 'music_disc_pigstep'
+            }),
+            itemID: 'minecraft:music_disc_pigstep',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.piglin_banner_pattern',
+                default: 'piglin_banner_pattern'
+            }),
+            itemID: 'minecraft:piglin_banner_pattern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_lantern',
+                default: 'soul_lantern'
+            }),
+            itemID: 'minecraft:soul_lantern',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_campfire',
+                default: 'soul_campfire'
+            }),
+            itemID: 'minecraft:soul_campfire',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shroomlight',
+                default: 'shroomlight'
+            }),
+            itemID: 'minecraft:shroomlight',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lodestone',
+                default: 'lodestone'
+            }),
+            itemID: 'minecraft:lodestone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_block',
+                default: 'netherite_block'
+            }),
+            itemID: 'minecraft:netherite_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ancient_debris',
+                default: 'ancient_debris'
+            }),
+            itemID: 'minecraft:ancient_debris',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.target',
+                default: 'target'
+            }),
+            itemID: 'minecraft:target',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crying_obsidian',
+                default: 'crying_obsidian'
+            }),
+            itemID: 'minecraft:crying_obsidian',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blackstone',
+                default: 'blackstone'
+            }),
+            itemID: 'minecraft:blackstone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blackstone_slab',
+                default: 'blackstone_slab'
+            }),
+            itemID: 'minecraft:blackstone_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blackstone_stairs',
+                default: 'blackstone_stairs'
+            }),
+            itemID: 'minecraft:blackstone_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gilded_blackstone',
+                default: 'gilded_blackstone'
+            }),
+            itemID: 'minecraft:gilded_blackstone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone',
+                default: 'polished_blackstone'
+            }),
+            itemID: 'minecraft:polished_blackstone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_slab',
+                default: 'polished_blackstone_slab'
+            }),
+            itemID: 'minecraft:polished_blackstone_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_stairs',
+                default: 'polished_blackstone_stairs'
+            }),
+            itemID: 'minecraft:polished_blackstone_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chiseled_polished_blackstone',
+                default: 'chiseled_polished_blackstone'
+            }),
+            itemID: 'minecraft:chiseled_polished_blackstone',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_bricks',
+                default: 'polished_blackstone_bricks'
+            }),
+            itemID: 'minecraft:polished_blackstone_bricks',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_brick_slab',
+                default: 'polished_blackstone_brick_slab'
+            }),
+            itemID: 'minecraft:polished_blackstone_brick_slab',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_brick_stairs',
+                default: 'polished_blackstone_brick_stairs'
+            }),
+            itemID: 'minecraft:polished_blackstone_brick_stairs',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cracked_polished_blackstone_bricks',
+                default: 'cracked_polished_blackstone_bricks'
+            }),
+            itemID: 'minecraft:cracked_polished_blackstone_bricks',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.respawn_anchor',
+                default: 'respawn_anchor'
+            }),
+            itemID: 'minecraft:respawn_anchor',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_fire',
+                default: 'soul_fire'
+            }),
+            itemID: 'minecraft:soul_fire',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_wall_torch',
+                default: 'soul_wall_torch'
+            }),
+            itemID: 'minecraft:soul_wall_torch',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.weeping_vines_plant',
+                default: 'weeping_vines_plant'
+            }),
+            itemID: 'minecraft:weeping_vines_plant',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.twisting_vines_plant',
+                default: 'twisting_vines_plant'
+            }),
+            itemID: 'minecraft:twisting_vines_plant',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_wall_sign',
+                default: 'crimson_wall_sign'
+            }),
+            itemID: 'minecraft:crimson_wall_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_wall_sign',
+                default: 'warped_wall_sign'
+            }),
+            itemID: 'minecraft:warped_wall_sign',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_crimson_fungus',
+                default: 'potted_crimson_fungus'
+            }),
+            itemID: 'minecraft:potted_crimson_fungus',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_warped_fungus',
+                default: 'potted_warped_fungus'
+            }),
+            itemID: 'minecraft:potted_warped_fungus',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_crimson_roots',
+                default: 'potted_crimson_roots'
+            }),
+            itemID: 'minecraft:potted_crimson_roots',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potted_warped_roots',
+                default: 'potted_warped_roots'
+            }),
+            itemID: 'minecraft:potted_warped_roots',
+            blockID: '-',
+            blockData: '-'
+        }
+    ]
+}
