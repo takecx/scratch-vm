@@ -6284,8 +6284,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.potion{Potion',
-                default: 'potion{Potion'
+                id: 'minecraft.potion_Potion',
+                default: 'potion_Potion_water'
             }),
             itemID: 'minecraft:potion{Potion:water}',
             blockID: '-',
@@ -6293,8 +6293,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.potion{Potion',
-                default: 'potion{Potion'
+                id: 'minecraft.potion_Potion',
+                default: 'potion_Potion_empty'
             }),
             itemID: 'minecraft:potion{Potion:empty}',
             blockID: '-',
@@ -6302,8 +6302,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.potion{Potion',
-                default: 'potion{Potion'
+                id: 'minecraft.potion_Potion',
+                default: 'potion_Potion_turtle_master'
             }),
             itemID: 'minecraft:potion{Potion:turtle_master}',
             blockID: '-',
@@ -6311,8 +6311,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.potion{Potion',
-                default: 'potion{Potion'
+                id: 'minecraft.potion_Potion',
+                default: 'potion_Potion_long_turtle_master'
             }),
             itemID: 'minecraft:potion{Potion:long_turtle_master}',
             blockID: '-',
@@ -6320,8 +6320,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.potion{Potion',
-                default: 'potion{Potion'
+                id: 'minecraft.potion_Potion',
+                default: 'potion_Potion_strong_turtle_master'
             }),
             itemID: 'minecraft:potion{Potion:strong_turtle_master}',
             blockID: '-',
@@ -6329,8 +6329,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.potion{Potion',
-                default: 'potion{Potion'
+                id: 'minecraft.potion_Potion',
+                default: 'potion_Potion_slow_falling'
             }),
             itemID: 'minecraft:potion{Potion:slow_falling}',
             blockID: '-',
@@ -6338,8 +6338,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.potion{Potion',
-                default: 'potion{Potion'
+                id: 'minecraft.potion_Potion',
+                default: 'potion_Potion_long_slow_falling'
             }),
             itemID: 'minecraft:potion{Potion:long_slow_falling}',
             blockID: '-',
@@ -6347,8 +6347,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.splash_potion{Potion',
-                default: 'splash_potion{Potion'
+                id: 'minecraft.splash_potion_Potion',
+                default: 'splash_potion_Potion_turtle_master'
             }),
             itemID: 'minecraft:splash_potion{Potion:turtle_master}',
             blockID: '-',
@@ -6356,8 +6356,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.splash_potion{Potion',
-                default: 'splash_potion{Potion'
+                id: 'minecraft.splash_potion_Potion',
+                default: 'splash_potion_Potion_long_turtle_master'
             }),
             itemID: 'minecraft:splash_potion{Potion:long_turtle_master}',
             blockID: '-',
@@ -6365,8 +6365,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.splash_potion{Potion',
-                default: 'splash_potion{Potion'
+                id: 'minecraft.splash_potion_Potion',
+                default: 'splash_potion_Potion_strong_turtle_master'
             }),
             itemID: 'minecraft:splash_potion{Potion:strong_turtle_master}',
             blockID: '-',
@@ -6374,8 +6374,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.splash_potion{Potion',
-                default: 'splash_potion{Potion'
+                id: 'minecraft.splash_potion_Potion',
+                default: 'splash_potion_Potion_slow_falling'
             }),
             itemID: 'minecraft:splash_potion{Potion:slow_falling}',
             blockID: '-',
@@ -6383,8 +6383,8 @@ exports.gen1_16_5BlockInfo = () => {
         },
         {
             name: formatMessage({
-                id: 'minecraft.splash_potion{Potion',
-                default: 'splash_potion{Potion'
+                id: 'minecraft.splash_potion_Potion',
+                default: 'splash_potion_Potion_long_slow_falling'
             }),
             itemID: 'minecraft:splash_potion{Potion:long_slow_falling}',
             blockID: '-',
@@ -9009,5 +9009,5 @@ exports.gen1_16_5BlockInfo = () => {
             blockID: '-',
             blockData: '-'
         }
-    ]
+    ];
 }
