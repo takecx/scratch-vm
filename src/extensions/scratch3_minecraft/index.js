@@ -378,6 +378,22 @@ class Scratch3Minecraft {
                 },
                 // Reporter.Blocks
                 {
+                    opcode: 'get1_16_5Blocks',
+                    text: formatMessage({
+                        id: 'minecraft.reporter.new1_16_5BlockInfo',
+                        default: '新ブロック：[BLOCK]',
+                        description: 'name of minecraft 1.16.5 new blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'NEW1165BLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
                     opcode: 'getBuildingBlocks',
                     text: formatMessage({
                         id: 'minecraft.reporter.buildingBlockInfo',
@@ -538,6 +554,10 @@ class Scratch3Minecraft {
                 }
             ],
             menus: {
+                NEW1165BLOCK: {
+                    acceptReporters: true,
+                    items: this.MinecraftUtils._buildMenu(this.NEW_1_16_5_BLOCK_INFO)
+                },
                 BUILDINGBLOCK: {
                     acceptReporters: true,
                     items: this.MinecraftUtils._buildMenu(this.BUILDING_BLOCK_INFO)
@@ -654,6 +674,9 @@ class Scratch3Minecraft {
 
     get EXTRA_BLOCK_INFO() {
         return BlockInfo.genExtraBlockInfo();
+    }
+    get NEW_1_16_5_BLOCK_INFO() {
+        return BlockInfo.gen1_16_5BlockInfo();
     }
     get ENTITY_INFO() {
         return EntityInfo.genEntityInfo();
@@ -895,6 +918,9 @@ class Scratch3Minecraft {
     }
     getExtraBlocks(args) {
         return this.EXTRA_BLOCK_INFO[args.BLOCK];
+    }
+    get1_16_5Blocks(args) {
+        return this.NEW_1_16_5_BLOCK_INFO[args.BLOCK];
     }
 
     getPosX() {
