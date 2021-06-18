@@ -32,6 +32,7 @@ class MinecraftUtils {
         return new Promise(((resolve, reject) => {
             if (ws.readyState === WebSocket.CLOSED || ws.readyState === WebSocket.CLOSING) {
                 log.log("closed! reopen!");
+                ws = this._createWebSocket();
                 ws.onopen = function (e) {
                     resolve(ws);
                 }
@@ -39,7 +40,6 @@ class MinecraftUtils {
                     log.log('error!');
                     reject();
                 }
-                ws = this._createWebSocket();
             } else {
                 resolve(ws);
             }
