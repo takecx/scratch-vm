@@ -4525,6 +4525,38 @@ exports.genExtraBlockInfo = () => {
             }),
             blockID: '166',
             blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flowing_lava',
+                default: '溶岩流'
+            }),
+            blockID: '10',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lava',
+                default: '溶岩'
+            }),
+            blockID: '11',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flowing_water',
+                default: '流水'
+            }),
+            blockID: '8',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.water',
+                default: '水'
+            }),
+            blockID: '9',
+            blockData: '0'
         }
 
     ];
