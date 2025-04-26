@@ -8032,6 +8032,24 @@ exports.genExtraBlockInfo = () => {
             itemID: 'minecraft:barrier',
             blockID: '166',
             blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lava',
+                default: '溶岩'
+            }),
+            itemID: 'minecraft:lava',
+            blockID: '11',
+            blockData: '0'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.water',
+                default: '水'
+            }),
+            itemID: 'minecraft:water',
+            blockID: '9',
+            blockData: '0'
         }
 
     ];
