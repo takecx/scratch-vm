@@ -908,7 +908,7 @@ class Scratch3Minecraft {
     }
 
     getSearchedBlock() {
-        const targetBlock = this.BUILDING_BLOCK_INFO.find(b => b.blockID === this.searchBlockID && b.blockData === this.searchBlockData);
+        const targetBlock = this.BUILDING_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
         if (typeof targetBlock === 'undefined') {
             return '不明';
         }
@@ -933,7 +933,7 @@ class Scratch3Minecraft {
 
     async _setBlockToAbsCoord(args) {
         const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
-        const command = `world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${blockID},${blockData})`;
+        const command = `world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
@@ -941,7 +941,7 @@ class Scratch3Minecraft {
         const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
         await this.updatePlayerPosAsync();
         const relCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
-        const command = `world.setBlock(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${blockID},${blockData})`;
+        const command = `world.setBlock(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
@@ -967,13 +967,14 @@ class Scratch3Minecraft {
         block = new Object();
         block.blockID = 0;
         block.blockData = 0;
+        block.itemID = "minecraft:air";
         newArgs.BLOCK = block;
         await this._setBlocksToRelativeCoord(newArgs);
     }
 
     async _setBlocksToAbsCoord(args) {
         const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
-        const command = `world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${blockID},${blockData})`;
+        const command = `world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
@@ -982,7 +983,7 @@ class Scratch3Minecraft {
         await this.updatePlayerPosAsync();
         const startRelCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
         const endRelCoord = this.MinecraftUtils._convertEndPosToRelative.bind(this, args)();
-        const command = `world.setBlocks(${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${blockID},${blockData})`;
+        const command = `world.setBlocks(${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
@@ -1006,7 +1007,7 @@ class Scratch3Minecraft {
 
     async _spawnEntityToAbsCoord(args) {
         const entityName = this._findEntityInfo(args.ENTITY);
-        const command = `world.spawnEntity(${entityName},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`;
+        const command = `world.spawnEntity(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${entityName})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
@@ -1014,7 +1015,7 @@ class Scratch3Minecraft {
         const entityName = this._findEntityInfo(args.ENTITY);
         await this.updatePlayerPosAsync();
         const relCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
-        const command = `world.spawnEntity(${entityName},${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)})`;
+        const command = `world.spawnEntity(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${entityName})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
@@ -1028,16 +1029,14 @@ class Scratch3Minecraft {
     }
 
     async _teleportToAbsCoord(args) {
-        const playerID = await this.getPlayerIDAsync();
-        const command = `entity.setPos(${playerID},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`;
+        const command = `entity.setPos(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
     async _teleportToRelativeCoord(args) {
-        const playerID = await this.getPlayerIDAsync();
         await this.updatePlayerPosAsync();
         const relCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
-        const command = `entity.setPos(${playerID},${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)})`;
+        const command = `entity.setPos(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
@@ -1055,13 +1054,18 @@ class Scratch3Minecraft {
         return new Promise(((resolve, reject) => {
             this.ws.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
             this.ws.onmessage = function (e) {
-                const actualBlock = e.data.replace(/\r?\n/g, "");
-                this.searchBlockID = actualBlock.split(',')[0];
-                this.searchBlockData = actualBlock.split(',')[1];
+                console.log(e.data);
+                const actualBlock = e.data.replace("block.", "").replace(".",":");
+                console.log("actualBlock : " + actualBlock);
+                this.searchBlockName = actualBlock;
+                // this.searchBlockID = actualBlock.split(',')[0];
+                // this.searchBlockData = actualBlock.split(',')[1];
                 this.MinecraftUtils.setLatestExecuteTIme();
                 resolve();
             }.bind(this);
             this.ws.onerror = function (e) {
+                console.log("searchBlock Error");
+                console.log(e);
                 this.MinecraftUtils.setLatestExecuteTIme();
                 reject();
             }
@@ -1119,7 +1123,7 @@ class Scratch3Minecraft {
 
     async _spawnParticleToAbsCoord(args) {
         const [particleName, particleName_1165] = this._findParticleInfo(args.PARTICLE);
-        const command = `world.spawnParticle(${particleName},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${args.SPEED},${args.COUNT})`;
+        const command = `world.spawnParticle(${particleName_1165},${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${args.SPEED},${args.COUNT})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
@@ -1128,7 +1132,7 @@ class Scratch3Minecraft {
         await this.updatePlayerPosAsync();
         const startRelCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
         const endRelCoord = this.MinecraftUtils._convertEndPosToRelative.bind(this, args)();
-        const command = `world.spawnParticle(${particleName},${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${args.SPEED},${args.COUNT})`;
+        const command = `world.spawnParticle(${particleName_1165},${Math.trunc(startRelCoord.X)},${Math.trunc(startRelCoord.Y)},${Math.trunc(startRelCoord.Z)},${Math.trunc(endRelCoord.X)},${Math.trunc(endRelCoord.Y)},${Math.trunc(endRelCoord.Z)},${args.SPEED},${args.COUNT})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
