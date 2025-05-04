@@ -20,3 +20,6 @@ npm-*
 
 # Localization
 /translations
+src/extensions/scratch3_minecraft/block_info_.txt
+src/extensions/scratch3_minecraft/block_info.txt
+1-20-1_blocks.xml

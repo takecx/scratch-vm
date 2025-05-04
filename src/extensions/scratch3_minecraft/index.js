@@ -394,17 +394,49 @@ class Scratch3Minecraft {
                     }
                 },
                 {
-                    opcode: 'getDecorationBlocks',
+                    opcode: 'getColoredBlocks',
                     text: formatMessage({
-                        id: 'minecraft.reporter.decorationBlockInfo',
-                        default: '装飾ブロック：[BLOCK]',
-                        description: 'name of minecraft decoration blocks.'
+                        id: 'minecraft.reporter.coloredBlockInfo',
+                        default: '色付きブロック：[BLOCK]',
+                        description: 'name of minecraft colored blocks.'
                     }),
                     blockType: BlockType.REPORTER,
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.NUMBER,
-                            menu: 'DECORATIONBLOCK',
+                            menu: 'COLOREDBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'getNaturalBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.reporter.naturalBlockInfo',
+                        default: '天然ブロック：[BLOCK]',
+                        description: 'name of minecraft natural blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'NATURALBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'getFunctionalBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.reporter.functionalBlockInfo',
+                        default: '機能ブロック：[BLOCK]',
+                        description: 'name of minecraft functional blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'FUNCTIONALBLOCK',
                             defaultValue: 0
                         }
                     }
@@ -414,7 +446,7 @@ class Scratch3Minecraft {
                     text: formatMessage({
                         id: 'minecraft.reporter.redstoneBlockInfo',
                         default: 'レッドストーン：[BLOCK]',
-                        description: 'name of minecraft decoration blocks.'
+                        description: 'name of minecraft redstone blocks.'
                     }),
                     blockType: BlockType.REPORTER,
                     arguments: {
@@ -426,65 +458,17 @@ class Scratch3Minecraft {
                     }
                 },
                 {
-                    opcode: 'getTransportationBlocks',
+                    opcode: 'getToolsUtilityBlocks',
                     text: formatMessage({
-                        id: 'minecraft.reporter.transportationBlockInfo',
-                        default: '移動：[BLOCK]',
-                        description: 'name of minecraft transportation blocks.'
+                        id: 'minecraft.reporter.toolsUtilityBlockInfo',
+                        default: '道具と実用品：[BLOCK]',
+                        description: 'name of minecraft Tools&Utility blocks.'
                     }),
                     blockType: BlockType.REPORTER,
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.NUMBER,
-                            menu: 'TRANSPORTATIONBLOCK',
-                            defaultValue: 0
-                        }
-                    }
-                },
-                {
-                    opcode: 'getMiscellaneousBlocks',
-                    text: formatMessage({
-                        id: 'minecraft.reporter.miscellaneousBlockInfo',
-                        default: 'その他：[BLOCK]',
-                        description: 'name of minecraft miscellaneous blocks.'
-                    }),
-                    blockType: BlockType.REPORTER,
-                    arguments: {
-                        BLOCK: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'MISCELLANEOUSBLOCK',
-                            defaultValue: 0
-                        }
-                    }
-                },
-                {
-                    opcode: 'getFoodstuffsBlocks',
-                    text: formatMessage({
-                        id: 'minecraft.reporter.foodstuffsBlockInfo',
-                        default: '食物：[BLOCK]',
-                        description: 'name of minecraft foodstuffs blocks.'
-                    }),
-                    blockType: BlockType.REPORTER,
-                    arguments: {
-                        BLOCK: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'FOODSTUFFSBLOCK',
-                            defaultValue: 0
-                        }
-                    }
-                },
-                {
-                    opcode: 'getToolsBlocks',
-                    text: formatMessage({
-                        id: 'minecraft.reporter.toolsBlockInfo',
-                        default: 'ツール：[BLOCK]',
-                        description: 'name of minecraft tools blocks.'
-                    }),
-                    blockType: BlockType.REPORTER,
-                    arguments: {
-                        BLOCK: {
-                            type: ArgumentType.NUMBER,
-                            menu: 'TOOLSBLOCK',
+                            menu: 'TOOLSUTILITYBLOCK',
                             defaultValue: 0
                         }
                     }
@@ -506,17 +490,49 @@ class Scratch3Minecraft {
                     }
                 },
                 {
-                    opcode: 'getBrewingBlocks',
+                    opcode: 'getFoodDrinkBlocks',
                     text: formatMessage({
-                        id: 'minecraft.reporter.brewingBlockInfo',
-                        default: '醸造：[BLOCK]',
-                        description: 'name of minecraft brewing blocks.'
+                        id: 'minecraft.reporter.foodDrinkBlockInfo',
+                        default: '食べ物と飲み物：[BLOCK]',
+                        description: 'name of minecraft Food&Drink blocks.'
                     }),
                     blockType: BlockType.REPORTER,
                     arguments: {
                         BLOCK: {
                             type: ArgumentType.NUMBER,
-                            menu: 'BREWINGBLOCK',
+                            menu: 'FOODDRINKBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'getIngredientsBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.reporter.ingredientsBlockInfo',
+                        default: '材料：[BLOCK]',
+                        description: 'name of minecraft ingredients blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'INGREDIENTSBLOCK',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
+                    opcode: 'getSpawnEggBlocks',
+                    text: formatMessage({
+                        id: 'minecraft.reporter.spawnEggBlockInfo',
+                        default: 'スポーンエッグ：[BLOCK]',
+                        description: 'name of minecraft spawnEgg blocks.'
+                    }),
+                    blockType: BlockType.REPORTER,
+                    arguments: {
+                        BLOCK: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'SPAWNEGGBLOCK',
                             defaultValue: 0
                         }
                     }
@@ -542,37 +558,41 @@ class Scratch3Minecraft {
                     acceptReporters: true,
                     items: this.MinecraftUtils._buildMenu(this.BUILDING_BLOCK_INFO)
                 },
-                DECORATIONBLOCK: {
+                COLOREDBLOCK: {
                     acceptReporters: true,
-                    items: this.MinecraftUtils._buildMenu(this.DECORATION_BLOCK_INFO)
+                    items: this.MinecraftUtils._buildMenu(this.COLORED_BLOCK_INFO)
+                },
+                NATURALBLOCK: {
+                    acceptReporters: true,
+                    items: this.MinecraftUtils._buildMenu(this.NATURAL_BLOCK_INFO)
+                },
+                FUNCTIONALBLOCK: {
+                    acceptReporters: true,
+                    items: this.MinecraftUtils._buildMenu(this.FUNCTIONAL_BLOCK_INFO)
                 },
                 REDSTONEBLOCK: {
                     acceptReporters: true,
                     items: this.MinecraftUtils._buildMenu(this.REDSTONE_BLOCK_INFO)
                 },
-                TRANSPORTATIONBLOCK: {
+                TOOLSUTILITYBLOCK: {
                     acceptReporters: true,
-                    items: this.MinecraftUtils._buildMenu(this.TRANSPORTATION_BLOCK_INFO)
-                },
-                MISCELLANEOUSBLOCK: {
-                    acceptReporters: true,
-                    items: this.MinecraftUtils._buildMenu(this.MISCELLANEOUS_BLOCK_INFO)
-                },
-                FOODSTUFFSBLOCK: {
-                    acceptReporters: true,
-                    items: this.MinecraftUtils._buildMenu(this.FOODSTUFFS_BLOCK_INFO)
-                },
-                TOOLSBLOCK: {
-                    acceptReporters: true,
-                    items: this.MinecraftUtils._buildMenu(this.TOOLS_BLOCK_INFO)
+                    items: this.MinecraftUtils._buildMenu(this.TOOLSUTILITY_BLOCK_INFO)
                 },
                 COMBATBLOCK: {
                     acceptReporters: true,
                     items: this.MinecraftUtils._buildMenu(this.COMBAT_BLOCK_INFO)
                 },
-                BREWINGBLOCK: {
+                FOODDRINKBLOCK: {
                     acceptReporters: true,
-                    items: this.MinecraftUtils._buildMenu(this.BREWING_BLOCK_INFO)
+                    items: this.MinecraftUtils._buildMenu(this.FOODDRINK_BLOCK_INFO)
+                },
+                INGREDIENTSBLOCK: {
+                    acceptReporters: true,
+                    items: this.MinecraftUtils._buildMenu(this.INGREDIENTS_BLOCK_INFO)
+                },
+                SPAWNEGGBLOCK: {
+                    acceptReporters: true,
+                    items: this.MinecraftUtils._buildMenu(this.SPAWNEGG_BLOCK_INFO)
                 },
                 EXTRABLOCK: {
                     acceptReporters: true,
@@ -624,36 +644,44 @@ class Scratch3Minecraft {
         return BlockInfo.genBuildingBlockInfo();
     }
 
-    get DECORATION_BLOCK_INFO() {
-        return BlockInfo.genDecorationBlockInfo();
+    get COLORED_BLOCK_INFO() {
+        return BlockInfo.genColoredBlockInfo();
+    }
+
+    get NATURAL_BLOCK_INFO() {
+        return BlockInfo.genNaturalBlockInfo();
+    }
+
+    get FUNCTIONAL_BLOCK_INFO() {
+        return BlockInfo.genFunctionalBlockInfo();
     }
 
     get REDSTONE_BLOCK_INFO() {
         return BlockInfo.genRedStoneBlockInfo();
     }
 
-    get TRANSPORTATION_BLOCK_INFO() {
-        return BlockInfo.genTransportationBlockInfo();
+    get TOOLSUTILITY_BLOCK_INFO() {
+        return BlockInfo.genToolsUtilityBlockInfo();
     }
 
     get MISCELLANEOUS_BLOCK_INFO() {
         return BlockInfo.genMiscellaneousBlockInfo();
     }
-    get FOODSTUFFS_BLOCK_INFO() {
-        return BlockInfo.genFoodstuffsBlockInfo();
+    get FOODDRINK_BLOCK_INFO() {
+        return BlockInfo.genFoodDrinkBlockInfo();
     }
-    get TOOLS_BLOCK_INFO() {
-        return BlockInfo.genToolsBlockInfo();
+    get INGREDIENTS_BLOCK_INFO() {
+        return BlockInfo.genIngredientsInfo();
     }
     get COMBAT_BLOCK_INFO() {
         return BlockInfo.genCombatBlockInfo();
     }
-    get BREWING_BLOCK_INFO() {
-        return BlockInfo.genBrewingBlockInfo();
+    get SPAWNEGG_BLOCK_INFO() {
+        return BlockInfo.genSpawnEggInfo();
     }
 
     get EXTRA_BLOCK_INFO() {
-        return BlockInfo.genExtraBlockInfo();
+        return BlockInfo.genHiddenInfo();
     }
     get ENTITY_INFO() {
         return EntityInfo.genEntityInfo();
@@ -816,20 +844,14 @@ class Scratch3Minecraft {
     }
 
     _findBlockInfo(block) {
-        let blockID = null;
-        let blockData = null;
         let itemID = null;
         if (typeof block === 'string') {
             const targetBlock = this.BUILDING_BLOCK_INFO.find((b) => b.name === block)
-            blockID = targetBlock.blockID;
-            blockData = targetBlock.blockData;
             itemID = targetBlock.itemID;
         } else {
-            blockID = block.blockID;
-            blockData = block.blockData;
             itemID = block.itemID;
         }
-        return [blockID, blockData, itemID];
+        return itemID;
     }
 
     _findEntityInfo(entityName) {
@@ -866,35 +888,40 @@ class Scratch3Minecraft {
         return this.BUILDING_BLOCK_INFO[args.BLOCK];
     }
 
-    getDecorationBlocks(args) {
-        return this.DECORATION_BLOCK_INFO[args.BLOCK];
+    getColoredBlocks(args) {
+        return this.COLORED_BLOCK_INFO[args.BLOCK];
+    }
+
+    getNaturalBlocks(args) {
+        return this.NATURAL_BLOCK_INFO[args.BLOCK];
+    }
+
+    getFunctionalBlocks(args) {
+        return this.FUNCTIONAL_BLOCK_INFO[args.BLOCK];
     }
 
     getRedstoneBlocks(args) {
         return this.REDSTONE_BLOCK_INFO[args.BLOCK];
     }
 
-    getTransportationBlocks(args) {
-        return this.TRANSPORTATION_BLOCK_INFO[args.BLOCK];
+    getToolsUtilityBlocks(args) {
+        return this.TOOLSUTILITY_BLOCK_INFO[args.BLOCK];
     }
 
-    getMiscellaneousBlocks(args) {
-        return this.MISCELLANEOUS_BLOCK_INFO[args.BLOCK];
-    }
-    getFoodstuffsBlocks(args) {
-        return this.FOODSTUFFS_BLOCK_INFO[args.BLOCK];
-    }
-    getToolsBlocks(args) {
-        return this.TOOLS_BLOCK_INFO[args.BLOCK];
+    getFoodDrinkBlocks(args) {
+        return this.FOODDRINK_BLOCK_INFO[args.BLOCK];
     }
     getCombatBlocks(args) {
         return this.COMBAT_BLOCK_INFO[args.BLOCK];
     }
-    getBrewingBlocks(args) {
-        return this.BREWING_BLOCK_INFO[args.BLOCK];
-    }
     getExtraBlocks(args) {
         return this.EXTRA_BLOCK_INFO[args.BLOCK];
+    }
+    getIngredientsBlocks(args) {
+        return this.INGREDIENTS_BLOCK_INFO[args.BLOCK];
+    }
+    getSpawnEggBlocks(args) {
+        return this.SPAWNEGG_BLOCK_INFO[args.BLOCK];
     }
 
     getPosX() {
@@ -908,11 +935,55 @@ class Scratch3Minecraft {
     }
 
     getSearchedBlock() {
-        const targetBlock = this.BUILDING_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        var targetBlock = this.BUILDING_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.COLORED_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.NATURAL_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.FUNCTIONAL_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.REDSTONE_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.TOOLSUTILITY_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.FOODDRINK_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.COMBAT_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.EXTRA_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.INGREDIENTS_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+        targetBlock = this.SPAWNEGG_BLOCK_INFO.find(b => b.itemID === this.searchBlockName);
+        if(typeof targetBlock !== 'undefined'){
+            return targetBlock.name;
+        }
+
+        // どれにも合致しなかった場合
         if (typeof targetBlock === 'undefined') {
             return '不明';
         }
-        return targetBlock.name;
     }
 
     /* --------------------------------------
@@ -932,13 +1003,13 @@ class Scratch3Minecraft {
     }
 
     async _setBlockToAbsCoord(args) {
-        const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
+        const itemID = this._findBlockInfo(args.BLOCK);
         const command = `world.setBlock(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
     async _setBlockToRelativeCoord(args) {
-        const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
+        const itemID = this._findBlockInfo(args.BLOCK);
         await this.updatePlayerPosAsync();
         const relCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
         const command = `world.setBlock(${Math.trunc(relCoord.X)},${Math.trunc(relCoord.Y)},${Math.trunc(relCoord.Z)},${itemID})`;
@@ -965,21 +1036,19 @@ class Scratch3Minecraft {
         newArgs.ENDZ = '~' + args.AREA;
         // air
         block = new Object();
-        block.blockID = 0;
-        block.blockData = 0;
         block.itemID = "minecraft:air";
         newArgs.BLOCK = block;
         await this._setBlocksToRelativeCoord(newArgs);
     }
 
     async _setBlocksToAbsCoord(args) {
-        const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
+        const itemID = this._findBlockInfo(args.BLOCK);
         const command = `world.setBlocks(${Math.trunc(args.STARTX)},${Math.trunc(args.STARTY)},${Math.trunc(args.STARTZ)},${Math.trunc(args.ENDX)},${Math.trunc(args.ENDY)},${Math.trunc(args.ENDZ)},${itemID})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
     async _setBlocksToRelativeCoord(args) {
-        const [blockID, blockData, itemID] = this._findBlockInfo(args.BLOCK);
+        const itemID = this._findBlockInfo(args.BLOCK);
         await this.updatePlayerPosAsync();
         const startRelCoord = this.MinecraftUtils._convertStartPosToRelative.bind(this, args)();
         const endRelCoord = this.MinecraftUtils._convertEndPosToRelative.bind(this, args)();
@@ -1058,8 +1127,6 @@ class Scratch3Minecraft {
                 const actualBlock = e.data.replace("block.", "").replace(".",":");
                 console.log("actualBlock : " + actualBlock);
                 this.searchBlockName = actualBlock;
-                // this.searchBlockID = actualBlock.split(',')[0];
-                // this.searchBlockData = actualBlock.split(',')[1];
                 this.MinecraftUtils.setLatestExecuteTIme();
                 resolve();
             }.bind(this);

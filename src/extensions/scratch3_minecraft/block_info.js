@@ -4,5241 +4,16144 @@ exports.genBuildingBlockInfo = () => {
     return [
         {
             name: formatMessage({
+                id: 'minecraft.oak_log',
+                default: 'オークの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_wood',
+                default: 'オークの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_oak_log',
+                default: '樹皮を剥いだオークの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_oak_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_oak_wood',
+                default: '樹皮を剥いだオークの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_oak_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_planks',
+                default: 'オークの板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_stairs',
+                default: 'オークの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_slab',
+                default: 'オークのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_fence',
+                default: 'オークのフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_fence_gate',
+                default: 'オークのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_door',
+                default: 'オークのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_trapdoor',
+                default: 'オークのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_pressure_plate',
+                default: 'オークの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_button',
+                default: 'オークのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_log',
+                default: 'トウヒの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_wood',
+                default: 'トウヒの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_spruce_log',
+                default: '樹皮を剥いだトウヒの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_spruce_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_spruce_wood',
+                default: '樹皮を剥いだトウヒの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_spruce_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_planks',
+                default: 'トウヒの板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_stairs',
+                default: 'トウヒの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_slab',
+                default: 'トウヒのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_fence',
+                default: 'トウヒのフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_fence_gate',
+                default: 'トウヒのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_door',
+                default: 'トウヒのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_trapdoor',
+                default: 'トウヒのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_pressure_plate',
+                default: 'トウヒの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_button',
+                default: 'トウヒのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_log',
+                default: 'シラカバの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_wood',
+                default: 'シラカバの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_birch_log',
+                default: '樹皮を剥いだシラカバの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_birch_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_birch_wood',
+                default: '樹皮を剥いだシラカバの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_birch_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_planks',
+                default: 'シラカバの板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_stairs',
+                default: 'シラカバの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_slab',
+                default: 'シラカバのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_fence',
+                default: 'シラカバのフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_fence_gate',
+                default: 'シラカバのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_door',
+                default: 'シラカバのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_trapdoor',
+                default: 'シラカバのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_pressure_plate',
+                default: 'シラカバの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_button',
+                default: 'シラカバのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_log',
+                default: 'ジャングルの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_wood',
+                default: 'ジャングルの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_jungle_log',
+                default: '樹皮を剥いだジャングルの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_jungle_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_jungle_wood',
+                default: '樹皮を剥いだジャングルの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_jungle_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_planks',
+                default: 'ジャングルの板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_stairs',
+                default: 'ジャングルの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_slab',
+                default: 'ジャングルのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_fence',
+                default: 'ジャングルのフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_fence_gate',
+                default: 'ジャングルのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_door',
+                default: 'ジャングルのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_trapdoor',
+                default: 'ジャングルのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_pressure_plate',
+                default: 'ジャングルの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_button',
+                default: 'ジャングルのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_log',
+                default: 'アカシアの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_wood',
+                default: 'アカシアの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_acacia_log',
+                default: '樹皮を剥いだアカシアの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_acacia_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_acacia_wood',
+                default: '樹皮を剥いだアカシアの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_acacia_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_planks',
+                default: 'アカシアの板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_stairs',
+                default: 'アカシアの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_slab',
+                default: 'アカシアのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_fence',
+                default: 'アカシアのフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_fence_gate',
+                default: 'アカシアのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_door',
+                default: 'アカシアのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_trapdoor',
+                default: 'アカシアのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_pressure_plate',
+                default: 'アカシアの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_button',
+                default: 'アカシアのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_log',
+                default: 'ダークオークの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_wood',
+                default: 'ダークオークの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_dark_oak_log',
+                default: '樹皮を剥いだダークオークの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_dark_oak_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_dark_oak_wood',
+                default: '樹皮を剥いだダークオークの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_dark_oak_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_planks',
+                default: 'ダークオークの板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_stairs',
+                default: 'ダークオークの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_slab',
+                default: 'ダークオークのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_fence',
+                default: 'ダークオークのフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_fence_gate',
+                default: 'ダークオークのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_door',
+                default: 'ダークオークのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_trapdoor',
+                default: 'ダークオークのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_pressure_plate',
+                default: 'ダークオークの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_button',
+                default: 'ダークオークのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_log',
+                default: 'マングローブの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_wood',
+                default: 'マングローブの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_mangrove_log',
+                default: '樹皮を剥いだマングローブの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_mangrove_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_mangrove_wood',
+                default: '樹皮を剥いだマングローブの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_mangrove_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_planks',
+                default: 'マングローブの板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_stairs',
+                default: 'マングローブの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_slab',
+                default: 'マングローブのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_fence',
+                default: 'マングローブのフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_fence_gate',
+                default: 'マングローブのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_door',
+                default: 'マングローブのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_trapdoor',
+                default: 'マングローブのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_pressure_plate',
+                default: 'マングローブの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_button',
+                default: 'マングローブのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_log',
+                default: 'サクラの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_wood',
+                default: 'サクラの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_cherry_log',
+                default: '樹皮を剥いだサクラの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_cherry_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_cherry_wood',
+                default: '樹皮を剥いだサクラの木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_cherry_wood'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_planks',
+                default: 'サクラの板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_stairs',
+                default: 'サクラの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_slab',
+                default: 'サクラのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_fence',
+                default: 'サクラのフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_fence_gate',
+                default: 'サクラのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_door',
+                default: 'サクラのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_trapdoor',
+                default: 'サクラのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_pressure_plate',
+                default: 'サクラの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_button',
+                default: 'サクラのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_block',
+                default: '竹ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_bamboo_block',
+                default: '表皮を剥いだ竹ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_bamboo_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_planks',
+                default: '竹の板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_mosaic',
+                default: '竹細工'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_mosaic'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_stairs',
+                default: '竹の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_mosaic_stairs',
+                default: '竹細工の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_mosaic_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_slab',
+                default: '竹のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_mosaic_slab',
+                default: '竹細工のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_mosaic_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_fence',
+                default: '竹のフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_fence_gate',
+                default: '竹のフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_door',
+                default: '竹のドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_trapdoor',
+                default: '竹のトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_pressure_plate',
+                default: '竹の感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_button',
+                default: '竹のボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_stem',
+                default: '真紅の幹'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_stem'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_hyphae',
+                default: '真紅の菌糸'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_hyphae'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_crimson_stem',
+                default: '表皮を剥いだ真紅の幹'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_crimson_stem'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_warped_hyphae',
+                default: '表皮を剥いだ真紅の菌糸'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_warped_hyphae'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_planks',
+                default: '真紅の板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_stairs',
+                default: '真紅の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_slab',
+                default: '真紅のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_fence',
+                default: '真紅のフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_fence_gate',
+                default: '真紅のフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_door',
+                default: '真紅のドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_trapdoor',
+                default: '真紅のトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_pressure_plate',
+                default: '真紅の感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_button',
+                default: '真紅のボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_stem',
+                default: '歪んだ幹'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_stem'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_hyphae',
+                default: '歪んだ菌糸'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_hyphae'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_warped_stem',
+                default: '表皮を剥いだ歪んだ幹'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_warped_stem'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stripped_crimson_hyphae',
+                default: '表皮を剥いだ歪んだ菌糸'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stripped_crimson_hyphae'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_planks',
+                default: '歪んだ板材'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_planks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_stairs',
+                default: '歪んだ階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_slab',
+                default: '歪んだハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fence',
+                default: '歪んだフェンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_fence'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fence_gate',
+                default: '歪んだフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_door',
+                default: '歪んだドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_trapdoor',
+                default: '歪んだトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_pressure_plate',
+                default: '歪んだ感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_button',
+                default: '歪んだボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_button'
+        },
+        {
+            name: formatMessage({
                 id: 'minecraft.stone',
                 default: '石'
             }),
-            itemID: 'minecraft:stone',
-            blockID: '1',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_stairs',
+                default: '石の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_slab',
+                default: '石のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_pressure_plate',
+                default: '石の感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_button',
+                default: '石のボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cobblestone',
+                default: '丸石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cobblestone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cobblestone_stairs',
+                default: '丸石の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cobblestone_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cobblestone_slab',
+                default: '丸石のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cobblestone_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cobblestone_wall',
+                default: '丸石の塀'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cobblestone_wall'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_cobblestone',
+                default: '苔むした丸石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mossy_cobblestone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_cobblestone_stairs',
+                default: '苔むした丸石の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mossy_cobblestone_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_cobblestone_slab',
+                default: '苔むした丸石のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mossy_cobblestone_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_cobblestone_wall',
+                default: '苔むした丸石の塀'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mossy_cobblestone_wall'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_stone',
+                default: '滑らかな石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_stone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_stone_slab',
+                default: '滑らかな石のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_stone_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_bricks',
+                default: '石レンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cracked_stone_bricks',
+                default: 'ひび割れた石レンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cracked_stone_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_brick_stairs',
+                default: '石レンガの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_brick_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_brick_slab',
+                default: '石レンガのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_brick_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_brick_wall',
+                default: '石レンガの塀'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_brick_wall'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chiseled_stone_bricks',
+                default: '模様入りの石レンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chiseled_stone_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_stone_bricks',
+                default: '苔むした石レンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mossy_stone_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_stone_brick_stairs',
+                default: '苔むした石レンガの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mossy_stone_brick_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_stone_brick_slab',
+                default: '苔むした石レンガのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mossy_stone_brick_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mossy_stone_brick_wall',
+                default: '苔むした石レンガの塀'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mossy_stone_brick_wall'
         },
         {
             name: formatMessage({
                 id: 'minecraft.granite',
                 default: '花崗岩'
             }),
-            itemID: 'minecraft:granite',
-            blockID: '1',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:granite'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.granite_stairs',
+                default: '花崗岩の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:granite_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.granite_slab',
+                default: '花崗岩のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:granite_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.granite_wall',
+                default: '花崗岩の塀'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:granite_wall'
         },
         {
             name: formatMessage({
                 id: 'minecraft.polished_granite',
                 default: '磨かれた花崗岩'
             }),
-            itemID: 'minecraft:polished_granite',
-            blockID: '1',
-            blockData: '2'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_granite'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Diorite',
+                id: 'minecraft.polished_granite_stairs',
+                default: '磨かれた花崗岩の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_granite_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_granite_slab',
+                default: '磨かれた花崗岩のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_granite_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diorite',
                 default: '閃緑岩'
             }),
-            itemID: 'minecraft:diorite',
-            blockID: '1',
-            blockData: '3'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diorite'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PolishedDiorite',
+                id: 'minecraft.diorite_stairs',
+                default: '閃緑岩の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diorite_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diorite_slab',
+                default: '閃緑岩のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diorite_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diorite_wall',
+                default: '閃緑岩の塀'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diorite_wall'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_diorite',
                 default: '磨かれた閃緑岩'
             }),
-            itemID: 'minecraft:polished_diorite',
-            blockID: '1',
-            blockData: '4'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_diorite'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Andesite',
+                id: 'minecraft.polished_diorite_stairs',
+                default: '磨かれた閃緑岩の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_diorite_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_diorite_slab',
+                default: '磨かれた閃緑岩のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_diorite_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.andesite',
                 default: '安山岩'
             }),
-            itemID: 'minecraft:andesite',
-            blockID: '1',
-            blockData: '5'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:andesite'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PolishedAndesite',
+                id: 'minecraft.andesite_stairs',
+                default: '安山岩の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:andesite_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.andesite_slab',
+                default: '安山岩のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:andesite_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.andesite_wall',
+                default: '安山岩の塀'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:andesite_wall'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_andesite',
                 default: '磨かれた安山岩'
             }),
-            itemID: 'minecraft:polished_andesite',
-            blockID: '1',
-            blockData: '6'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_andesite'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Grass',
-                default: '草'
+                id: 'minecraft.polished_andesite_stairs',
+                default: '磨かれた安山岩の階段'
             }),
-            itemID: 'minecraft:grass',
-            blockID: '2',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_andesite_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Dirt',
-                default: '土'
+                id: 'minecraft.polished_andesite_slab',
+                default: '磨かれた安山岩のハーフブロック'
             }),
-            itemID: 'minecraft:dirt',
-            blockID: '3',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_andesite_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CoarseDirt',
-                default: '粗い土'
+                id: 'minecraft.deepslate',
+                default: '深層岩'
             }),
-            itemID: 'minecraft:coarse_dirt',
-            blockID: '3',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Podzol',
-                default: 'ポドゾル'
+                id: 'minecraft.cobbled_deepslate',
+                default: '深層岩の丸石'
             }),
-            itemID: 'minecraft:podzol',
-            blockID: '3',
-            blockData: '2'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cobbled_deepslate'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Cobblestone',
-                default: '丸石'
+                id: 'minecraft.cobbled_deepslate_stairs',
+                default: '深層岩の丸石の階段'
             }),
-            itemID: 'minecraft:cobblestone',
-            blockID: '4',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cobbled_deepslate_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OakWoodPlank',
-                default: 'オークの板材'
+                id: 'minecraft.cobbled_deepslate_slab',
+                default: '深層岩の丸石のハーフブロック'
             }),
-            itemID: 'minecraft:oak_planks',
-            blockID: '5',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cobbled_deepslate_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.SpruceWoodPlank',
-                default: 'トウヒの板材'
+                id: 'minecraft.cobbled_deepslate_wall',
+                default: '深層岩の丸石の塀'
             }),
-            itemID: 'minecraft:spruce_planks',
-            blockID: '5',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cobbled_deepslate_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BirchWoodPlank',
-                default: 'シラカバの板材'
+                id: 'minecraft.chiseled_deepslate',
+                default: '模様入りの深層岩'
             }),
-            itemID: 'minecraft:birch_planks',
-            blockID: '5',
-            blockData: '2'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chiseled_deepslate'
         },
         {
             name: formatMessage({
-                id: 'minecraft.JungleWoodPlank',
-                default: 'ジャングルの板材'
+                id: 'minecraft.polished_deepslate',
+                default: '磨かれた深層岩'
             }),
-            itemID: 'minecraft:jungle_planks',
-            blockID: '5',
-            blockData: '3'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_deepslate'
         },
         {
             name: formatMessage({
-                id: 'minecraft.AcaciaWoodPlank',
-                default: 'アカシアの板材'
+                id: 'minecraft.polished_deepslate_stairs',
+                default: '磨かれた深層岩の階段'
             }),
-            itemID: 'minecraft:acacia_planks',
-            blockID: '5',
-            blockData: '4'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_deepslate_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.DarkOakWoodPlank',
-                default: 'ダークオークの板材'
+                id: 'minecraft.polished_deepslate_slab',
+                default: '磨かれた深層岩のハーフブロック'
             }),
-            itemID: 'minecraft:dark_oak_planks',
-            blockID: '5',
-            blockData: '5'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_deepslate_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Bedrock',
-                default: '岩盤'
+                id: 'minecraft.polished_deepslate_wall',
+                default: '磨かれた深層岩の塀'
             }),
-            itemID: 'minecraft:bedrock',
-            blockID: '7',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_deepslate_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Sand',
-                default: '砂'
+                id: 'minecraft.deepslate_bricks',
+                default: '深層岩レンガ'
             }),
-            itemID: 'minecraft:sand',
-            blockID: '12',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.RedSand',
-                default: '赤い砂'
+                id: 'minecraft.cracked_deepslate_bricks',
+                default: 'ひび割れた深層岩レンガ'
             }),
-            itemID: 'minecraft:red_sand',
-            blockID: '12',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cracked_deepslate_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Gravel',
-                default: '砂利'
+                id: 'minecraft.deepslate_brick_stairs',
+                default: '深層岩レンガの階段'
             }),
-            itemID: 'minecraft:gravel',
-            blockID: '13',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_brick_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.GoldOre',
-                default: '金鉱石'
+                id: 'minecraft.deepslate_brick_slab',
+                default: '深層岩レンガのハーフブロック'
             }),
-            itemID: 'minecraft:gold_ore',
-            blockID: '14',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_brick_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.IronOre',
-                default: '鉄鉱石'
+                id: 'minecraft.deepslate_brick_wall',
+                default: '深層岩レンガの塀'
             }),
-            itemID: 'minecraft:iron_ore',
-            blockID: '15',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_brick_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CoalOre',
-                default: '石炭'
+                id: 'minecraft.deepslate_tiles',
+                default: '深層岩タイル'
             }),
-            itemID: 'minecraft:coal_ore',
-            blockID: '16',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_tiles'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OakWood',
-                default: 'オークの木'
+                id: 'minecraft.cracked_deepslate_tiles',
+                default: 'ひび割れた深層岩タイル'
             }),
-            itemID: 'minecraft:oak_log',
-            blockID: '17',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cracked_deepslate_tiles'
         },
         {
             name: formatMessage({
-                id: 'minecraft.SpruceWood',
-                default: 'トウヒの木'
+                id: 'minecraft.deepslate_tile_stairs',
+                default: '深層岩タイルの階段'
             }),
-            itemID: 'minecraft:spruce_log',
-            blockID: '17',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_tile_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BirchWood',
-                default: 'シラカバの木'
+                id: 'minecraft.deepslate_tile_slab',
+                default: '深層岩タイルのハーフブロック'
             }),
-            itemID: 'minecraft:birch_log',
-            blockID: '17',
-            blockData: '2'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_tile_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.JungleWood',
-                default: 'ジャングルの木'
+                id: 'minecraft.deepslate_tile_wall',
+                default: '深層岩タイルの塀'
             }),
-            itemID: 'minecraft:jungle_log',
-            blockID: '17',
-            blockData: '3'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_tile_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Sponge',
-                default: 'スポンジ'
+                id: 'minecraft.reinforced_deepslate',
+                default: '強化された深層岩'
             }),
-            itemID: 'minecraft:sponge',
-            blockID: '19',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:reinforced_deepslate'
         },
         {
             name: formatMessage({
-                id: 'minecraft.WetSponge',
-                default: '濡れたスポンジ'
+                id: 'minecraft.bricks',
+                default: 'レンガブロック'
             }),
-            itemID: 'minecraft:wet_sponge',
-            blockID: '19',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Glass',
-                default: 'ガラス'
-            }),
-            itemID: 'minecraft:glass',
-            blockID: '20',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LapisLazuliOre',
-                default: 'ラピスラズリ鉱石'
-            }),
-            itemID: 'minecraft:lapis_ore',
-            blockID: '21',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LapisLazuliBlock',
-                default: 'ラピスラズリブロック'
-            }),
-            itemID: 'minecraft:lapis_block',
-            blockID: '22',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Sandstone',
-                default: '砂岩'
-            }),
-            itemID: 'minecraft:sandstone',
-            blockID: '24',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.ChiseledSandstone',
-                default: '模様入りの砂岩'
-            }),
-            itemID: 'minecraft:chiseled_sandstone',
-            blockID: '24',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.SmoothSandstone',
-                default: '滑らかな砂岩'
-            }),
-            itemID: 'minecraft:cut_sandstone',
-            blockID: '24',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.WhiteWool',
-                default: '白色の羊毛'
-            }),
-            itemID: 'minecraft:white_wool',
-            blockID: '35',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.OrangeWool',
-                default: 'オレンジの羊毛'
-            }),
-            itemID: 'minecraft:orange_wool',
-            blockID: '35',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Magenta',
-                default: '赤紫色の羊毛'
-            }),
-            itemID: 'minecraft:magenta_wool',
-            blockID: '35',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightBlueWool',
-                default: '空色の羊毛'
-            }),
-            itemID: 'minecraft:light_blue_wool',
-            blockID: '35',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.YellowWool',
-                default: '黄色の羊毛'
-            }),
-            itemID: 'minecraft:yellow_wool',
-            blockID: '35',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LimeWool',
-                default: '黄緑色の羊毛'
-            }),
-            itemID: 'minecraft:lime_wool',
-            blockID: '35',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PinkWool',
-                default: '桃色の羊毛'
-            }),
-            itemID: 'minecraft:pink_wool',
-            blockID: '35',
-            blockData: '6'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GrayWool',
-                default: '灰色の羊毛'
-            }),
-            itemID: 'minecraft:gray_wool',
-            blockID: '35',
-            blockData: '7'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightGrayWool',
-                default: '薄灰色の羊毛'
-            }),
-            itemID: 'minecraft:light_gray_wool',
-            blockID: '35',
-            blockData: '8'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CyanWool',
-                default: '青緑色の羊毛'
-            }),
-            itemID: 'minecraft:cyan_wool',
-            blockID: '35',
-            blockData: '9'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PurpleWool',
-                default: '紫色の羊毛'
-            }),
-            itemID: 'minecraft:purple_wool',
-            blockID: '35',
-            blockData: '10'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlueWool',
-                default: '青色の羊毛'
-            }),
-            itemID: 'minecraft:blue_wool',
-            blockID: '35',
-            blockData: '11'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BrownWool',
-                default: '茶色の羊毛'
-            }),
-            itemID: 'minecraft:brown_wool',
-            blockID: '35',
-            blockData: '12'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GreenWool',
-                default: '緑色の羊毛'
-            }),
-            itemID: 'minecraft:green_wool',
-            blockID: '35',
-            blockData: '13'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedWool',
-                default: '赤色の羊毛'
-            }),
-            itemID: 'minecraft:red_wool',
-            blockID: '35',
-            blockData: '14'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlackWool',
-                default: '黒色の羊毛'
-            }),
-            itemID: 'minecraft:black_wool',
-            blockID: '35',
-            blockData: '15'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlockOfGold',
-                default: '金ブロック'
-            }),
-            itemID: 'minecraft:gold_block',
-            blockID: '41',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlockOfIron',
-                default: '鉄ブロック'
-            }),
-            itemID: 'minecraft:iron_block',
-            blockID: '42',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.StoneSlab',
-                default: '石のハーフブロック'
-            }),
-            itemID: 'minecraft:stone_slab',
-            blockID: '44',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.SandstoneSlab',
-                default: '砂岩のハーフブロック'
-            }),
-            itemID: 'minecraft:sandstone_slab',
-            blockID: '44',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CobblestoneSlab',
-                default: '丸石のハーフブロック'
-            }),
-            itemID: 'minecraft:cobblestone_slab',
-            blockID: '44',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BricksSlab',
-                default: 'レンガのハーフブロック'
-            }),
-            itemID: 'minecraft:brick_slab',
-            blockID: '44',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.StoneBrickSlab',
-                default: '石レンガのハーフブロック'
-            }),
-            itemID: 'minecraft:stone_brick_slab',
-            blockID: '44',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.NetherBrickSlab',
-                default: 'ネザーレンガのハーフブロック'
-            }),
-            itemID: 'minecraft:nether_brick_slab',
-            blockID: '44',
-            blockData: '6'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.QuartzSlab',
-                default: 'クォーツのハーフブロック'
-            }),
-            itemID: 'minecraft:quartz_slab',
-            blockID: '44',
-            blockData: '7'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Bricks',
-                default: 'レンガ'
-            }),
-            itemID: 'minecraft:bricks',
-            blockID: '45',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Bookshelf',
-                default: '本棚'
-            }),
-            itemID: 'minecraft:bookshelf',
-            blockID: '47',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MossStone',
-                default: '苔むした丸石'
-            }),
-            itemID: 'minecraft:mossy_cobblestone',
-            blockID: '48',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Obsidian',
-                default: '黒曜石'
-            }),
-            itemID: 'minecraft:obsidian',
-            blockID: '49',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.OakWoodStairs',
-                default: 'オークの木の階段'
-            }),
-            itemID: 'minecraft:oak_stairs',
-            blockID: '53',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.DiamondOre',
-                default: 'ダイアモンド鉱石'
-            }),
-            itemID: 'minecraft:diamond_ore',
-            blockID: '56',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.DiamondBlock',
-                default: 'ダイアモンドブロック'
-            }),
-            itemID: 'minecraft:diamond_block',
-            blockID: '57',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CobblestoneStairs',
-                default: '丸石の階段'
-            }),
-            itemID: 'minecraft:cobblestone_stairs',
-            blockID: '67',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedstoneOre',
-                default: 'レッドストーン鉱石'
-            }),
-            itemID: 'minecraft:redstone_ore',
-            blockID: '73',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Ice',
-                default: '氷'
-            }),
-            itemID: 'minecraft:ice',
-            blockID: '79',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Snow',
-                default: '雪'
-            }),
-            itemID: 'minecraft:snow',
-            blockID: '78',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Clay',
-                default: '粘土'
-            }),
-            itemID: 'minecraft:clay',
-            blockID: '82',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Pumpkin',
-                default: 'カボチャ'
-            }),
-            itemID: 'minecraft:pumpkin',
-            blockID: '86',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Netherrack',
-                default: 'ネザーラック'
-            }),
-            itemID: 'minecraft:netherrack',
-            blockID: '87',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.SoulSand',
-                default: 'ソウルサンド'
-            }),
-            itemID: 'minecraft:soul_sand',
-            blockID: '88',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Glowstone',
-                default: 'グロウストーン'
-            }),
-            itemID: 'minecraft:glowstone',
-            blockID: '89',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.JackoLantern',
-                default: 'ジャック・オー・ランタン'
-            }),
-            itemID: 'minecraft:jack_o_lantern',
-            blockID: '91',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.WhiteStainedGlass',
-                default: '白色の色付きガラス'
-            }),
-            itemID: 'minecraft:white_stained_glass',
-            blockID: '95',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.OrangeStainedGlass',
-                default: '橙色の色付きガラス'
-            }),
-            itemID: 'minecraft:orange_stained_glass',
-            blockID: '95',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MagentaStainedGlass',
-                default: '赤紫色の色付きガラス'
-            }),
-            itemID: 'minecraft:magenta_stained_glass',
-            blockID: '95',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightBlueStainedGlass',
-                default: '空色の色付きガラス'
-            }),
-            itemID: 'minecraft:light_blue_stained_glass',
-            blockID: '95',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.YellowStainedGlass',
-                default: '黄色の色付きガラス'
-            }),
-            itemID: 'minecraft:yellow_stained_glass',
-            blockID: '95',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LimeStainedGlass',
-                default: '黄緑色の色付きガラス'
-            }),
-            itemID: 'minecraft:lime_stained_glass',
-            blockID: '95',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PinkStainedGlass',
-                default: '桃色の色付きガラス'
-            }),
-            itemID: 'minecraft:pink_stained_glass',
-            blockID: '95',
-            blockData: '6'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GrayStainedGlass',
-                default: '灰色の色付きガラス'
-            }),
-            itemID: 'minecraft:gray_stained_glass',
-            blockID: '95',
-            blockData: '7'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightGrayStainedGlass',
-                default: '薄灰色の色付きガラス'
-            }),
-            itemID: 'minecraft:light_gray_stained_glass',
-            blockID: '95',
-            blockData: '8'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CyanStainedGlass',
-                default: '青緑色の色付きガラス'
-            }),
-            itemID: 'minecraft:cyan_stained_glass',
-            blockID: '95',
-            blockData: '9'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PurpleStainedGlass',
-                default: '紫色の色付きガラス'
-            }),
-            itemID: 'minecraft:purple_stained_glass',
-            blockID: '95',
-            blockData: '10'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlueStainedGlass',
-                default: '青色の色付きガラス'
-            }),
-            itemID: 'minecraft:blue_stained_glass',
-            blockID: '95',
-            blockData: '11'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BrownStainedGlass',
-                default: '茶色の色付きガラス'
-            }),
-            itemID: 'minecraft:brown_stained_glass',
-            blockID: '95',
-            blockData: '12'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GreenStainedGlass',
-                default: '緑色の色付きガラス'
-            }),
-            itemID: 'minecraft:green_stained_glass',
-            blockID: '95',
-            blockData: '13'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedStainedGlass',
-                default: '赤色の色付きガラス'
-            }),
-            itemID: 'minecraft:red_stained_glass',
-            blockID: '95',
-            blockData: '14'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlackStainedGlass',
-                default: '黒色の色付きガラス'
-            }),
-            itemID: 'minecraft:black_stained_glass',
-            blockID: '95',
-            blockData: '15'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.StoneBricks',
-                default: '石レンガ'
-            }),
-            itemID: 'minecraft:stone_bricks',
-            blockID: '98',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MossyStoneBricks',
-                default: '苔むした石レンガ'
-            }),
-            itemID: 'minecraft:mossy_stone_bricks',
-            blockID: '98',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CrackedStoneBricks',
-                default: 'ひび割れた石レンガ'
-            }),
-            itemID: 'minecraft:cracked_stone_bricks',
-            blockID: '98',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.ChiseledStoneBricks',
-                default: '模様入りの石レンガ'
-            }),
-            itemID: 'minecraft:chiseled_stone_bricks',
-            blockID: '98',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MelonBlock',
-                default: 'メロン'
-            }),
-            itemID: 'minecraft:melon',
-            blockID: '103',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BrickStairs',
+                id: 'minecraft.brick_stairs',
                 default: 'レンガの階段'
             }),
-            itemID: 'minecraft:brick_stairs',
-            blockID: '108',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brick_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.StoneBrickStairs',
-                default: '石レンガの階段'
+                id: 'minecraft.brick_slab',
+                default: 'レンガのハーフブロック'
             }),
-            itemID: 'minecraft:stone_brick_stairs',
-            blockID: '109',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brick_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Mycelium',
-                default: '菌糸'
+                id: 'minecraft.brick_wall',
+                default: 'レンガの塀'
             }),
-            itemID: 'minecraft:mycelium',
-            blockID: '110',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brick_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.NetherBrick',
-                default: 'ネザーレンガ'
+                id: 'minecraft.packed_mud',
+                default: '泥塊'
             }),
-            itemID: 'minecraft:nether_bricks',
-            blockID: '112',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:packed_mud'
         },
         {
             name: formatMessage({
-                id: 'minecraft.NetherBrickStairs',
-                default: 'ネザーレンガの階段'
+                id: 'minecraft.mud_bricks',
+                default: '泥レンガ'
             }),
-            itemID: 'minecraft:nether_brick_stairs',
-            blockID: '114',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mud_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.EndStone',
-                default: 'エンドストーン'
+                id: 'minecraft.mud_brick_stairs',
+                default: '泥レンガの階段'
             }),
-            itemID: 'minecraft:end_stone',
-            blockID: '121',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mud_brick_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OakWoodSlab',
-                default: 'オークの木のハーフブロック'
+                id: 'minecraft.mud_brick_slab',
+                default: '泥レンガのハーフブロック'
             }),
-            itemID: 'minecraft:oak_slab',
-            blockID: '126',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mud_brick_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.SpruceWoodSlab',
-                default: 'トウヒの木のハーフブロック'
+                id: 'minecraft.mud_brick_wall',
+                default: '泥レンガの塀'
             }),
-            itemID: 'minecraft:spruce_slab',
-            blockID: '126',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mud_brick_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.JungleWoodSlab',
-                default: 'ジャングルの木のハーフブロック'
+                id: 'minecraft.sandstone',
+                default: '砂岩'
             }),
-            itemID: 'minecraft:jungle_slab',
-            blockID: '126',
-            blockData: '3'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sandstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.AcaciaWoodSlab',
-                default: 'アカシアの木のハーフブロック'
+                id: 'minecraft.sandstone_stairs',
+                default: '砂岩の階段'
             }),
-            itemID: 'minecraft:acacia_slab',
-            blockID: '126',
-            blockData: '4'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sandstone_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.DarkOakWoodSlab',
-                default: 'ダークオークの木のハーフブロック'
+                id: 'minecraft.sandstone_slab',
+                default: '砂岩のハーフブロック'
             }),
-            itemID: 'minecraft:dark_oak_slab',
-            blockID: '126',
-            blockData: '5'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sandstone_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.SandstoneStairs',
-                default: 'サンドストーンの階段'
+                id: 'minecraft.sandstone_wall',
+                default: '砂岩の塀'
             }),
-            itemID: 'minecraft:sandstone_stairs',
-            blockID: '128',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sandstone_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.EmeraldOre',
-                default: 'エメラルド鉱石'
+                id: 'minecraft.chiseled_sandstone',
+                default: '模様入りの砂岩'
             }),
-            itemID: 'minecraft:emerald_ore',
-            blockID: '129',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chiseled_sandstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.EmeraldBlock',
-                default: 'エメラルドブロック'
+                id: 'minecraft.smooth_sandstone',
+                default: '滑らかな砂岩'
             }),
-            itemID: 'minecraft:emerald_block',
-            blockID: '133',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_sandstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.SpruceWoodStairs',
-                default: 'トウヒの木の階段'
+                id: 'minecraft.smooth_sandstone_stairs',
+                default: '滑らかな砂岩の階段'
             }),
-            itemID: 'minecraft:spruce_stairs',
-            blockID: '134',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_sandstone_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BirchWoodStairs',
-                default: 'シラカバの木の階段'
+                id: 'minecraft.smooth_sandstone_slab',
+                default: '滑らかな砂岩のハーフブロック'
             }),
-            itemID: 'minecraft:birch_stairs',
-            blockID: '135',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_sandstone_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.JungleWoodStairs',
-                default: 'ジャングルの木の階段'
+                id: 'minecraft.cut_sandstone',
+                default: '研がれた砂岩'
             }),
-            itemID: 'minecraft:jungle_stairs',
-            blockID: '136',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cut_sandstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.NetherQuartzOre',
-                default: 'ネザークォーツ鉱石'
+                id: 'minecraft.cut_sandstone_slab',
+                default: '研がれた砂岩のハーフブロック'
             }),
-            itemID: 'minecraft:nether_quartz_ore',
-            blockID: '153',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cut_sandstone_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.QuartzBlock',
-                default: 'クォーツブロック'
-            }),
-            itemID: 'minecraft:quartz_block',
-            blockID: '155',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.ChiseledQuartzBlock',
-                default: '模様入りクォーツブロック'
-            }),
-            itemID: 'minecraft:chiseled_quartz_block',
-            blockID: '155',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PillarQuartzBlock',
-                default: 'クォーツの柱'
-            }),
-            itemID: 'minecraft:quartz_pillar',
-            blockID: '155',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.QuartzStairs',
-                default: 'クォーツの階段'
-            }),
-            itemID: 'minecraft:quartz_stairs',
-            blockID: '156',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.WhiteTerracotta',
-                default: '白色のテラコッタ'
-            }),
-            itemID: 'minecraft:white_terracotta',
-            blockID: '159',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.OrangeTerracotta',
-                default: '橙色のテラコッタ'
-            }),
-            itemID: 'minecraft:orange_terracotta',
-            blockID: '159',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MagentaTerracotta',
-                default: '赤紫色のテラコッタ'
-            }),
-            itemID: 'minecraft:magenta_terracotta',
-            blockID: '159',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightBlueTerracotta',
-                default: '空色のテラコッタ'
-            }),
-            itemID: 'minecraft:light_blue_terracotta',
-            blockID: '159',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.YellowTerracotta',
-                default: '黃色のテラコッタ'
-            }),
-            itemID: 'minecraft:yellow_terracotta',
-            blockID: '159',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LimeTerracotta',
-                default: '黄緑色のテラコッタ'
-            }),
-            itemID: 'minecraft:lime_terracotta',
-            blockID: '159',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PinkTerracotta',
-                default: '桃色のテラコッタ'
-            }),
-            itemID: 'minecraft:pink_terracotta',
-            blockID: '159',
-            blockData: '6'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GrayTerracotta',
-                default: '灰色のテラコッタ'
-            }),
-            itemID: 'minecraft:gray_terracotta',
-            blockID: '159',
-            blockData: '7'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightGrayTerracotta',
-                default: '薄灰色のテラコッタ'
-            }),
-            itemID: 'minecraft:light_gray_terracotta',
-            blockID: '159',
-            blockData: '8'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CyanTerracotta',
-                default: '青緑色のテラコッタ'
-            }),
-            itemID: 'minecraft:cyan_terracotta',
-            blockID: '159',
-            blockData: '9'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PurpleTerracotta',
-                default: '紫色のテラコッタ'
-            }),
-            itemID: 'minecraft:purple_terracotta',
-            blockID: '159',
-            blockData: '10'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlueTerracotta',
-                default: '青色のテラコッタ'
-            }),
-            itemID: 'minecraft:blue_terracotta',
-            blockID: '159',
-            blockData: '11'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BrownTerracotta',
-                default: '茶色のテラコッタ'
-            }),
-            itemID: 'minecraft:brown_terracotta',
-            blockID: '159',
-            blockData: '12'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GreenTerracotta',
-                default: '緑色のテラコッタ'
-            }),
-            itemID: 'minecraft:green_terracotta',
-            blockID: '159',
-            blockData: '13'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedTerracotta',
-                default: '赤色のテラコッタ'
-            }),
-            itemID: 'minecraft:red_terracotta',
-            blockID: '159',
-            blockData: '14'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlackTerracotta',
-                default: '黒色のテラコッタ'
-            }),
-            itemID: 'minecraft:black_terracotta',
-            blockID: '159',
-            blockData: '15'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.AcaciaWood',
-                default: 'アカシアの木'
-            }),
-            itemID: 'minecraft:acacia_log',
-            blockID: '162',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.DarkOakWood',
-                default: 'ダークオークの木'
-            }),
-            itemID: 'minecraft:dark_oak_log',
-            blockID: '162',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.AcaciaWoodStairs',
-                default: 'アカシアの木の階段'
-            }),
-            itemID: 'minecraft:acacia_stairs',
-            blockID: '163',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.DarkOakWoodStairs',
-                default: 'ダークオークの木の階段'
-            }),
-            itemID: 'minecraft:dark_oak_stairs',
-            blockID: '164',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Prismarine',
-                default: '海晶ブロック'
-            }),
-            itemID: 'minecraft:prismarine',
-            blockID: '168',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PrismarineBricks',
-                default: '海晶レンガ'
-            }),
-            itemID: 'minecraft:prismarine_bricks',
-            blockID: '168',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.DarkPrismarine',
-                default: '暗海晶ブロック'
-            }),
-            itemID: 'minecraft:dark_prismarine',
-            blockID: '168',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.SeaLantern',
-                default: 'シーランタン'
-            }),
-            itemID: 'minecraft:sea_lantern',
-            blockID: '169',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.HayBale',
-                default: '干草の俵'
-            }),
-            itemID: 'minecraft:hay_block',
-            blockID: '170',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.HardenedClay',
-                default: 'テラコッタ'
-            }),
-            itemID: 'minecraft:terracotta',
-            blockID: '172',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlockofCoal',
-                default: '石炭ブロック'
-            }),
-            itemID: 'minecraft:coal_block',
-            blockID: '173',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PackedIce',
-                default: '氷塊'
-            }),
-            itemID: 'minecraft:packed_ice',
-            blockID: '174',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedSandstone',
+                id: 'minecraft.red_sandstone',
                 default: '赤い砂岩'
             }),
-            itemID: 'minecraft:red_sandstone',
-            blockID: '179',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_sandstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.ChiseledRedSandstone',
-                default: '模様入りの赤い砂岩'
-            }),
-            itemID: 'minecraft:chiseled_red_sandstone',
-            blockID: '179',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.SmoothRedSandstone',
-                default: '滑らかな赤い砂岩'
-            }),
-            itemID: 'minecraft:cut_red_sandstone',
-            blockID: '179',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedSandstoneStairs',
+                id: 'minecraft.red_sandstone_stairs',
                 default: '赤い砂岩の階段'
             }),
-            itemID: 'minecraft:red_sandstone_stairs',
-            blockID: '180',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_sandstone_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.RedSandstoneSlab',
+                id: 'minecraft.red_sandstone_slab',
                 default: '赤い砂岩のハーフブロック'
             }),
-            itemID: 'minecraft:red_sandstone_slab',
-            blockID: '182',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_sandstone_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpurBlock',
-                default: 'プルプァブロック'
+                id: 'minecraft.red_sandstone_wall',
+                default: '赤い砂岩の塀'
             }),
-            itemID: 'minecraft:purpur_block',
-            blockID: '201',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_sandstone_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpurPillar',
-                default: 'プルプァの柱'
+                id: 'minecraft.chiseled_red_sandstone',
+                default: '模様入りの赤い砂岩'
             }),
-            itemID: 'minecraft:purpur_pillar',
-            blockID: '202',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chiseled_red_sandstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpurStairs',
-                default: 'プルプァの階段'
+                id: 'minecraft.smooth_red_sandstone',
+                default: '滑らかな赤い砂岩'
             }),
-            itemID: 'minecraft:purpur_stairs',
-            blockID: '203',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_red_sandstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpurSlab',
-                default: 'プルプァのハーフブロック'
+                id: 'minecraft.smooth_red_sandstone_stairs',
+                default: '滑らかな赤い砂岩の階段'
             }),
-            itemID: 'minecraft:purpur_slab',
-            blockID: '205',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_red_sandstone_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.EndStoneBricks',
-                default: 'エンドストーンレンガ'
+                id: 'minecraft.smooth_red_sandstone_slab',
+                default: '滑らかな赤い砂岩のハーフブロック'
             }),
-            itemID: 'minecraft:end_stone_bricks',
-            blockID: '206',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_red_sandstone_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.MagmaBlock',
-                default: 'マグマブロック'
+                id: 'minecraft.cut_red_sandstone',
+                default: '研がれた赤い砂岩'
             }),
-            itemID: 'minecraft:magma_block',
-            blockID: '213',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cut_red_sandstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.NetherWartBlock',
-                default: 'ネザーウォートブロック'
+                id: 'minecraft.cut_red_sandstone_slab',
+                default: '研がれた赤い砂岩のハーフブロック'
             }),
-            itemID: 'minecraft:nether_wart_block',
-            blockID: '214',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cut_red_sandstone_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.RedNetherBrick',
-                default: '赤いネザーレンガ'
+                id: 'minecraft.sea_lantern',
+                default: 'シーランタン'
             }),
-            itemID: 'minecraft:red_nether_bricks',
-            blockID: '215',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sea_lantern'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BoneBlock',
-                default: '骨ブロック'
+                id: 'minecraft.prismarine',
+                default: 'プリズマリン'
             }),
-            itemID: 'minecraft:bone_block',
-            blockID: '216',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine'
         },
         {
             name: formatMessage({
-                id: 'minecraft.WhiteConcrete',
-                default: '白色のコンクリート'
+                id: 'minecraft.prismarine_stairs',
+                default: 'プリズマリンの階段'
             }),
-            itemID: 'minecraft:white_concrete',
-            blockID: '251',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OrangeConcrete',
-                default: '橙色のコンクリート'
+                id: 'minecraft.prismarine_slab',
+                default: 'プリズマリンのハーフブロック'
             }),
-            itemID: 'minecraft:orange_concrete',
-            blockID: '251',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.MagentaConcrete',
-                default: '赤紫色のコンクリート'
+                id: 'minecraft.prismarine_wall',
+                default: 'プリズマリンの塀'
             }),
-            itemID: 'minecraft:magenta_concrete',
-            blockID: '251',
-            blockData: '2'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LightBlueConcrete',
-                default: '空色色のコンクリート'
+                id: 'minecraft.prismarine_bricks',
+                default: 'プリズマリンレンガ'
             }),
-            itemID: 'minecraft:light_blue_concrete',
-            blockID: '251',
-            blockData: '3'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.YellowConcrete',
-                default: '黄色のコンクリート'
+                id: 'minecraft.prismarine_brick_stairs',
+                default: 'プリズマリンレンガの階段'
             }),
-            itemID: 'minecraft:yellow_concrete',
-            blockID: '251',
-            blockData: '4'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine_brick_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LimeConcrete',
-                default: '黄緑色のコンクリート'
+                id: 'minecraft.prismarine_brick_slab',
+                default: 'プリズマリンレンガのハーフブロック'
             }),
-            itemID: 'minecraft:lime_concrete',
-            blockID: '251',
-            blockData: '5'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine_brick_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PinkConcrete',
-                default: '桃色のコンクリート'
+                id: 'minecraft.dark_prismarine',
+                default: 'ダークプリズマリン'
             }),
-            itemID: 'minecraft:pink_concrete',
-            blockID: '251',
-            blockData: '6'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_prismarine'
         },
         {
             name: formatMessage({
-                id: 'minecraft.GrayConcrete',
-                default: '灰色のコンクリート'
+                id: 'minecraft.dark_prismarine_stairs',
+                default: 'ダークプリズマリンの階段'
             }),
-            itemID: 'minecraft:gray_concrete',
-            blockID: '251',
-            blockData: '7'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_prismarine_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LightGrayConcrete',
-                default: '薄灰色のコンクリート'
+                id: 'minecraft.dark_prismarine_slab',
+                default: 'ダークプリズマリンのハーフブロック'
             }),
-            itemID: 'minecraft:light_gray_concrete',
-            blockID: '251',
-            blockData: '8'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_prismarine_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CyanConcrete',
-                default: '青緑色のコンクリート'
+                id: 'minecraft.netherrack',
+                default: 'ネザーラック'
             }),
-            itemID: 'minecraft:cyan_concrete',
-            blockID: '251',
-            blockData: '9'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherrack'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpleConcrete',
-                default: '紫色のコンクリート'
+                id: 'minecraft.nether_bricks',
+                default: 'ネザーレンガブロック'
             }),
-            itemID: 'minecraft:purple_concrete',
-            blockID: '251',
-            blockData: '10'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BlueConcrete',
-                default: '青色のコンクリート'
+                id: 'minecraft.cracked_nether_bricks',
+                default: 'ひび割れたネザーレンガ'
             }),
-            itemID: 'minecraft:blue_concrete',
-            blockID: '251',
-            blockData: '11'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cracked_nether_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BrownConcrete',
-                default: '茶色のコンクリート'
+                id: 'minecraft.nether_brick_stairs',
+                default: 'ネザーレンガの階段'
             }),
-            itemID: 'minecraft:brown_concrete',
-            blockID: '251',
-            blockData: '12'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_brick_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.GreenConcrete',
-                default: '緑色のコンクリート'
+                id: 'minecraft.nether_brick_slab',
+                default: 'ネザーレンガのハーフブロック'
             }),
-            itemID: 'minecraft:green_concrete',
-            blockID: '251',
-            blockData: '13'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_brick_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.RedConcrete',
-                default: '赤色のコンクリート'
+                id: 'minecraft.nether_brick_wall',
+                default: 'ネザーレンガの塀'
             }),
-            itemID: 'minecraft:red_concrete',
-            blockID: '251',
-            blockData: '14'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_brick_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BlackConcrete',
-                default: '黒色のコンクリート'
-            }),
-            itemID: 'minecraft:black_concrete',
-            blockID: '251',
-            blockData: '15'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.WhiteConcretePowder',
-                default: '白色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:white_concrete_powder',
-            blockID: '252',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.OrangeConcretePowder',
-                default: '橙色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:orange_concrete_powder',
-            blockID: '252',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MagentaConcretePowder',
-                default: '赤紫色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:magenta_concrete_powder',
-            blockID: '252',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightBlueConcretePowder',
-                default: '空色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:light_blue_concrete_powder',
-            blockID: '252',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.YellowConcretePowder',
-                default: '黃色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:yellow_concrete_powder',
-            blockID: '252',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LimeConcretePowder',
-                default: '黄緑色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:lime_concrete_powder',
-            blockID: '252',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PinkConcretePowder',
-                default: '桃色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:pink_concrete_powder',
-            blockID: '252',
-            blockData: '6'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GrayConcretePowder',
-                default: '灰色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:gray_concrete_powder',
-            blockID: '252',
-            blockData: '7'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightGrayConcretePowder',
-                default: '薄灰色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:light_gray_concrete_powder',
-            blockID: '252',
-            blockData: '8'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CyanConcretePowder',
-                default: '青緑色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:cyan_concrete_powder',
-            blockID: '252',
-            blockData: '9'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PurpleConcretePowder',
-                default: '紫色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:purple_concrete_powder',
-            blockID: '252',
-            blockData: '10'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlueConcretePowder',
-                default: '青色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:blue_concrete_powder',
-            blockID: '252',
-            blockData: '11'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BrownConcretePowder',
-                default: '茶色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:brown_concrete_powder',
-            blockID: '252',
-            blockData: '12'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GreenConcretePowder',
-                default: '緑色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:green_concrete_powder',
-            blockID: '252',
-            blockData: '13'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedConcretePowder',
-                default: '赤色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:red_concrete_powder',
-            blockID: '252',
-            blockData: '14'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlackConcretePowder',
-                default: '黒色のコンクリートパウダー'
-            }),
-            itemID: 'minecraft:black_concrete_powder',
-            blockID: '252',
-            blockData: '15'
-        }
-    ];
-};
-
-exports.genDecorationBlockInfo = () => {
-    return [
-        {
-            name: formatMessage({
-                id: 'minecraft.OakSapling',
-                default: 'オークの苗木'
-            }),
-            itemID: 'minecraft:oak_sapling',
-            blockID: '6',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.SpruceSapling',
-                default: 'トウヒの苗木'
-            }),
-            itemID: 'minecraft:spruce_sapling',
-            blockID: '6',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BirchSapling',
-                default: 'シラカバの苗木'
-            }),
-            itemID: 'minecraft:birch_sapling',
-            blockID: '6',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.JungleSapling',
-                default: 'ジャングルの苗木'
-            }),
-            itemID: 'minecraft:jungle_sapling',
-            blockID: '6',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.AcaciaSapling',
-                default: 'アカシアの苗木'
-            }),
-            itemID: 'minecraft:acacia_sapling',
-            blockID: '6',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.DarkOakSapling',
-                default: 'ダークオークの苗木'
-            }),
-            itemID: 'minecraft:dark_oak_sapling',
-            blockID: '6',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.OakLeaves',
-                default: 'オークの葉'
-            }),
-            itemID: 'minecraft:oak_leaves',
-            blockID: '18',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.SpruceLeaves',
-                default: 'トウヒの葉'
-            }),
-            itemID: 'minecraft:spruce_leaves',
-            blockID: '18',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BirchLeaves',
-                default: 'シラカバの葉'
-            }),
-            itemID: 'minecraft:birch_leaves',
-            blockID: '18',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.JungleLeaves',
-                default: 'ジャングルの葉'
-            }),
-            itemID: 'minecraft:jungle_leaves',
-            blockID: '18',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Cobweb',
-                default: '蜘蛛の巣'
-            }),
-            itemID: 'minecraft:cobweb',
-            blockID: '30',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Grass',
-                default: '草'
-            }),
-            itemID: 'minecraft:grass',
-            blockID: '31',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Fern',
-                default: 'シダ'
-            }),
-            itemID: 'minecraft:fern',
-            blockID: '31',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.DeadShrub',
-                default: '枯れ木'
-            }),
-            itemID: 'minecraft:dead_bush',
-            blockID: '31',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Dandelion',
-                default: 'タンポポ'
-            }),
-            itemID: 'minecraft:dandelion',
-            blockID: '37',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Poppy',
-                default: 'ポピー'
-            }),
-            itemID: 'minecraft:poppy',
-            blockID: '38',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlueOrchid',
-                default: 'ヒスイラン'
-            }),
-            itemID: 'minecraft:blue_orchid',
-            blockID: '38',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Allium',
-                default: 'アリウム'
-            }),
-            itemID: 'minecraft:allium',
-            blockID: '38',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.AzureBluet',
-                default: 'ヒナソウ'
-            }),
-            itemID: 'minecraft:azure_bluet',
-            blockID: '38',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedTulip',
-                default: '赤色のチューリップ'
-            }),
-            itemID: 'minecraft:red_tulip',
-            blockID: '38',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.OrangeTulip',
-                default: '橙色のチューリップ'
-            }),
-            itemID: 'minecraft:orange_tulip',
-            blockID: '38',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.WhiteTulip',
-                default: '白色のチューリップ'
-            }),
-            itemID: 'minecraft:white_tulip',
-            blockID: '38',
-            blockData: '6'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PinkTulip',
-                default: '桃色のチューリップ'
-            }),
-            itemID: 'minecraft:pink_tulip',
-            blockID: '38',
-            blockData: '7'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.OxeyeDaisy',
-                default: 'フランスギク'
-            }),
-            itemID: 'minecraft:oxeye_daisy',
-            blockID: '38',
-            blockData: '8'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Mushroom',
-                default: 'マッシュルーム'
-            }),
-            itemID: 'minecraft:brown_mushroom',
-            blockID: '39',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedMushroom',
-                default: '赤いマッシュルーム'
-            }),
-            itemID: 'minecraft:red_mushroom',
-            blockID: '40',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Torch',
-                default: 'たいまつ'
-            }),
-            itemID: 'minecraft:torch',
-            blockID: '50',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Chest',
-                default: 'チェスト'
-            }),
-            itemID: 'minecraft:chest',
-            blockID: '54',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CraftingTable',
-                default: '作業台'
-            }),
-            itemID: 'minecraft:crafting_table',
-            blockID: '58',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Furnace',
-                default: 'かまど'
-            }),
-            itemID: 'minecraft:furnace',
-            blockID: '61',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Ladder',
-                default: 'はしご'
-            }),
-            itemID: 'minecraft:ladder',
-            blockID: '65',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Snow',
-                default: '雪'
-            }),
-            itemID: 'minecraft:snow',
-            blockID: '78',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Cactus',
-                default: 'サボテン'
-            }),
-            itemID: 'minecraft:cactus',
-            blockID: '81',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Jukebox',
-                default: 'ジュークボックス'
-            }),
-            itemID: 'minecraft:jukebox',
-            blockID: '84',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.OakFence',
-                default: 'オークのフェンス'
-            }),
-            itemID: 'minecraft:oak_fence',
-            blockID: '85',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.StoneMonsterEgg',
-                default: 'シルバーフィッシュ入りの石'
-            }),
-            itemID: 'minecraft:infested_stone',
-            blockID: '97',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CobblestoneMonsterEgg',
-                default: 'シルバーフィッシュ入りの丸石'
-            }),
-            itemID: 'minecraft:infested_cobblestone',
-            blockID: '97',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.StoneBrickMonsterEgg',
-                default: 'シルバーフィッシュ入りの石レンガ'
-            }),
-            itemID: 'minecraft:infested_stone_bricks',
-            blockID: '97',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MossyStoneBrickMonsterEgg',
-                default: 'シルバーフィッシュ入り苔むした石レンガ'
-            }),
-            itemID: 'minecraft:infested_mossy_stone_bricks',
-            blockID: '97',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.CrackedStoneBrickMonsterEgg',
-                default: 'シルバーフィッシュ入りのひび割れた石レンガ'
-            }),
-            itemID: 'minecraft:infested_cracked_stone_bricks',
-            blockID: '97',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.ChiseledStoneBrickMonsterEgg',
-                default: 'シルバーフィッシュ入りの模様入り石レンガ'
-            }),
-            itemID: 'minecraft:infested_chiseled_stone_bricks',
-            blockID: '97',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.IronBars',
-                default: '鉄格子'
-            }),
-            itemID: 'minecraft:iron_bars',
-            blockID: '101',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GlassPane',
-                default: '板ガラス'
-            }),
-            itemID: 'minecraft:glass_pane',
-            blockID: '102',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.Vines',
-                default: 'ツタ'
-            }),
-            itemID: 'minecraft:vine',
-            blockID: '106',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LilyPad',
-                default: 'スイレンの葉'
-            }),
-            itemID: 'minecraft:lily_pad',
-            blockID: '111',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.NetherBrickFence',
+                id: 'minecraft.nether_brick_fence',
                 default: 'ネザーレンガのフェンス'
             }),
-            itemID: 'minecraft:nether_brick_fence',
-            blockID: '113',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_brick_fence'
         },
         {
             name: formatMessage({
-                id: 'minecraft.EnchantmentTable',
-                default: 'エンチャントテーブル'
+                id: 'minecraft.chiseled_nether_bricks',
+                default: '模様入りのネザーレンガ'
             }),
-            itemID: 'minecraft:enchanting_table',
-            blockID: '116',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chiseled_nether_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.EndPortalFrame',
-                default: 'エンドポータル'
+                id: 'minecraft.red_nether_bricks',
+                default: '赤いネザーレンガ'
             }),
-            itemID: 'minecraft:end_portal_frame',
-            blockID: '120',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_nether_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.EnderChest',
-                default: 'エンダーチェスト'
+                id: 'minecraft.red_nether_brick_stairs',
+                default: '赤いネザーレンガの階段'
             }),
-            itemID: 'minecraft:ender_chest',
-            blockID: '130',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_nether_brick_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CobblestoneWall',
-                default: '丸石の壁'
+                id: 'minecraft.red_nether_brick_slab',
+                default: '赤いネザーレンガのハーフブロック'
             }),
-            itemID: 'minecraft:cobblestone_wall',
-            blockID: '139',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_nether_brick_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.MossyCobblestoneWall',
-                default: '苔むした丸石の壁'
+                id: 'minecraft.red_nether_brick_wall',
+                default: '赤いネザーレンガの塀'
             }),
-            itemID: 'minecraft:mossy_cobblestone_wall',
-            blockID: '139',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_nether_brick_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Anvil',
-                default: '金床'
+                id: 'minecraft.basalt',
+                default: '玄武岩'
             }),
-            itemID: 'minecraft:anvil',
-            blockID: '145',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:basalt'
         },
         {
             name: formatMessage({
-                id: 'minecraft.WhiteStainedGlassPane',
-                default: '白色の板ガラス'
+                id: 'minecraft.smooth_basalt',
+                default: '滑らかな玄武岩'
             }),
-            itemID: 'minecraft:white_stained_glass_pane',
-            blockID: '160',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_basalt'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OrangeStainedGlassPane',
-                default: '橙色の板ガラス'
+                id: 'minecraft.polished_basalt',
+                default: '磨かれた玄武岩'
             }),
-            itemID: 'minecraft:orange_stained_glass_pane',
-            blockID: '160',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_basalt'
         },
         {
             name: formatMessage({
-                id: 'minecraft.MagentaStainedGlassPane',
-                default: '赤紫色の板ガラス'
+                id: 'minecraft.blackstone',
+                default: 'ブラックストーン'
             }),
-            itemID: 'minecraft:magenta_stained_glass_pane',
-            blockID: '160',
-            blockData: '2'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blackstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LightBlueStainedGlassPane',
-                default: '空色の板ガラス'
+                id: 'minecraft.gilded_blackstone',
+                default: 'きらめくブラックストーン'
             }),
-            itemID: 'minecraft:light_blue_stained_glass_pane',
-            blockID: '160',
-            blockData: '3'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gilded_blackstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.YellowStainedGlassPane',
-                default: '黃色の板ガラス'
+                id: 'minecraft.blackstone_stairs',
+                default: 'ブラックストーンの階段'
             }),
-            itemID: 'minecraft:yellow_stained_glass_pane',
-            blockID: '160',
-            blockData: '4'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blackstone_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LimeStainedGlassPane',
-                default: '黄緑色の板ガラス'
+                id: 'minecraft.blackstone_wall',
+                default: 'ブラックストーンの塀'
             }),
-            itemID: 'minecraft:lime_stained_glass_pane',
-            blockID: '160',
-            blockData: '5'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blackstone_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PinkStainedGlassPane',
-                default: '桃色の板ガラス'
+                id: 'minecraft.blackstone_slab',
+                default: 'ブラックストーンのハーフブロック'
             }),
-            itemID: 'minecraft:pink_stained_glass_pane',
-            blockID: '160',
-            blockData: '6'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blackstone_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.GrayStainedGlassPane',
-                default: '灰色の板ガラス'
+                id: 'minecraft.chiseled_polished_blackstone',
+                default: '模様入りの磨かれたブラックストーン'
             }),
-            itemID: 'minecraft:gray_stained_glass_pane',
-            blockID: '160',
-            blockData: '7'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chiseled_polished_blackstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LightGrayStainedGlassPane',
-                default: '薄灰色の板ガラス'
+                id: 'minecraft.polished_blackstone',
+                default: '磨かれたブラックストーン'
             }),
-            itemID: 'minecraft:light_gray_stained_glass_pane',
-            blockID: '160',
-            blockData: '8'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CyanStainedGlassPane',
-                default: '青緑色の板ガラス'
+                id: 'minecraft.polished_blackstone_stairs',
+                default: '磨かれたブラックストーンの階段'
             }),
-            itemID: 'minecraft:cyan_stained_glass_pane',
-            blockID: '160',
-            blockData: '9'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpleStainedGlassPane',
-                default: '紫色の板ガラス'
+                id: 'minecraft.polished_blackstone_slab',
+                default: '磨かれたブラックストーンのハーフブロック'
             }),
-            itemID: 'minecraft:purple_stained_glass_pane',
-            blockID: '160',
-            blockData: '10'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BlueStainedGlassPane',
-                default: '青色の板ガラス'
+                id: 'minecraft.polished_blackstone_wall',
+                default: '磨かれたブラックストーンの塀'
             }),
-            itemID: 'minecraft:blue_stained_glass_pane',
-            blockID: '160',
-            blockData: '11'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BrownStainedGlassPane',
-                default: '茶色の板ガラス'
+                id: 'minecraft.polished_blackstone_pressure_plate',
+                default: '磨かれたブラックストーンの感圧板'
             }),
-            itemID: 'minecraft:brown_stained_glass_pane',
-            blockID: '160',
-            blockData: '12'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_pressure_plate'
         },
         {
             name: formatMessage({
-                id: 'minecraft.GreenStainedGlassPane',
-                default: '緑色の板ガラス'
+                id: 'minecraft.polished_blackstone_button',
+                default: '磨かれたブラックストーンのボタン'
             }),
-            itemID: 'minecraft:green_stained_glass_pane',
-            blockID: '160',
-            blockData: '13'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_button'
         },
         {
             name: formatMessage({
-                id: 'minecraft.RedStainedGlassPane',
-                default: '赤色の板ガラス'
+                id: 'minecraft.polished_blackstone_bricks',
+                default: '磨かれたブラックストーンレンガ'
             }),
-            itemID: 'minecraft:red_stained_glass_pane',
-            blockID: '160',
-            blockData: '14'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BlackStainedGlassPane',
-                default: '黒色の板ガラス'
+                id: 'minecraft.cracked_polished_blackstone_bricks',
+                default: 'ひび割れたブラックストーンレンガ'
             }),
-            itemID: 'minecraft:black_stained_glass_pane',
-            blockID: '160',
-            blockData: '15'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cracked_polished_blackstone_bricks'
         },
         {
             name: formatMessage({
-                id: 'minecraft.AcaciaLeaves',
-                default: 'アカシアの葉'
+                id: 'minecraft.polished_blackstone_brick_stairs',
+                default: '磨かれたブラックストーンレンガの階段'
             }),
-            itemID: 'minecraft:acacia_leaves',
-            blockID: '161',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_brick_stairs'
         },
         {
             name: formatMessage({
-                id: 'minecraft.DarkOakLeaves',
-                default: 'ダークオークの葉'
+                id: 'minecraft.polished_blackstone_brick_slab',
+                default: '磨かれたブラックストーンレンガのハーフブロック'
             }),
-            itemID: 'minecraft:dark_oak_leaves',
-            blockID: '161',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_brick_slab'
         },
         {
             name: formatMessage({
-                id: 'minecraft.SlimeBlock',
-                default: 'スライムブロック'
+                id: 'minecraft.polished_blackstone_brick_wall',
+                default: '磨かれたブラックストーンレンガの塀'
             }),
-            itemID: 'minecraft:slime_block',
-            blockID: '165',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_brick_wall'
         },
         {
             name: formatMessage({
-                id: 'minecraft.WhiteCarpet',
+                id: 'minecraft.end_stone',
+                default: 'エンドストーン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_stone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_stone_bricks',
+                default: 'エンドストーンレンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_stone_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_stone_brick_stairs',
+                default: 'エンドストーンレンガの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_stone_brick_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_stone_brick_slab',
+                default: 'エンドストーンレンガのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_stone_brick_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_stone_brick_wall',
+                default: 'エンドストーンレンガの塀'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_stone_brick_wall'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purpur_block',
+                default: 'プルプァブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purpur_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purpur_pillar',
+                default: 'プルプァの柱'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purpur_pillar'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purpur_stairs',
+                default: 'プルプァの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purpur_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purpur_slab',
+                default: 'プルプァのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purpur_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.coal_block',
+                default: '石炭ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:coal_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_block',
+                default: '鉄ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_bars',
+                default: '鉄格子'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_bars'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_door',
+                default: '鉄のドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_trapdoor',
+                default: '鉄のトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.heavy_weighted_pressure_plate',
+                default: '重量用感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:heavy_weighted_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chain',
+                default: '鎖'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chain'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gold_block',
+                default: '金ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gold_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_weighted_pressure_plate',
+                default: '軽量用感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_weighted_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone_block',
+                default: 'レッドストーンブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.emerald_block',
+                default: 'エメラルドブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:emerald_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lapis_block',
+                default: 'ラピスラズリブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lapis_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_block',
+                default: 'ダイヤモンドブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_block',
+                default: 'ネザライトブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.quartz_block',
+                default: 'クォーツブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:quartz_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.quartz_stairs',
+                default: 'クォーツの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:quartz_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.quartz_slab',
+                default: 'クォーツのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:quartz_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chiseled_quartz_block',
+                default: '模様入りのクォーツブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chiseled_quartz_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.quartz_bricks',
+                default: 'クォーツレンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:quartz_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.quartz_pillar',
+                default: 'クォーツの柱'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:quartz_pillar'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_quartz',
+                default: '滑らかなクォーツブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_quartz'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_quartz_stairs',
+                default: '滑らかなクォーツの階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_quartz_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_quartz_slab',
+                default: '滑らかなクォーツのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_quartz_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.amethyst_block',
+                default: 'アメジストブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:amethyst_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.copper_block',
+                default: '銅ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:copper_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cut_copper',
+                default: '切り込み入りの銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cut_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cut_copper_stairs',
+                default: '切り込み入りの銅の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cut_copper_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cut_copper_slab',
+                default: '切り込み入りの銅のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cut_copper_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.exposed_copper',
+                default: '風化した銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:exposed_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.exposed_cut_copper',
+                default: '風化した切り込み入りの銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:exposed_cut_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.exposed_cut_copper_stairs',
+                default: '風化した切り込み入りの銅の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:exposed_cut_copper_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.exposed_cut_copper_slab',
+                default: '風化した切り込み入りの銅のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:exposed_cut_copper_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.weathered_copper',
+                default: '錆びた銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:weathered_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.weathered_cut_copper',
+                default: '錆びた切り込み入りの銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:weathered_cut_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.weathered_cut_copper_stairs',
+                default: '錆びた切り込み入りの銅の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:weathered_cut_copper_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.weathered_cut_copper_slab',
+                default: '錆びた切り込み入りの銅のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:weathered_cut_copper_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oxidized_copper',
+                default: '酸化した銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oxidized_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oxidized_cut_copper',
+                default: '酸化した切り込み入りの銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oxidized_cut_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oxidized_cut_copper_stairs',
+                default: '酸化した切り込み入りの銅の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oxidized_cut_copper_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oxidized_cut_copper_slab',
+                default: '酸化した切り込み入りの銅のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oxidized_cut_copper_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_copper_block',
+                default: '錆止めされた銅ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_copper_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_cut_copper',
+                default: '錆止めされた切り込み入りの銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_cut_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_cut_copper_stairs',
+                default: '錆止めされた切り込み入りの銅の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_cut_copper_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_cut_copper_slab',
+                default: '錆止めされた切り込み入りの銅のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_cut_copper_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_exposed_copper',
+                default: '錆止めされた風化した銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_exposed_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_exposed_cut_copper',
+                default: '錆止めされた風化した切り込み入りの銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_exposed_cut_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_exposed_cut_copper_stairs',
+                default: '錆止めされた風化した切り込み入りの銅の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_exposed_cut_copper_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_exposed_cut_copper_slab',
+                default: '錆止めされた風化した切り込み入りの銅のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_exposed_cut_copper_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_weathered_copper',
+                default: '錆止めされた錆びた銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_weathered_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_weathered_cut_copper',
+                default: '錆止めされた錆びた切り込み入りの銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_weathered_cut_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_weathered_cut_copper_stairs',
+                default: '錆止めされた錆びた切り込み入りの銅の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_weathered_cut_copper_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_weathered_cut_copper_slab',
+                default: '錆止めされた錆びた切り込み入りの銅のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_weathered_cut_copper_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_oxidized_copper',
+                default: '錆止めされた酸化した銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_oxidized_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_oxidized_cut_copper',
+                default: '錆止めされた酸化した切り込み入りの銅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_oxidized_cut_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_oxidized_cut_copper_stairs',
+                default: '錆止めされた酸化した切り込み入りの銅の階段'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_oxidized_cut_copper_stairs'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.waxed_oxidized_cut_copper_slab',
+                default: '錆止めされた酸化した切り込み入りの銅のハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:waxed_oxidized_cut_copper_slab'
+        }
+    ];
+}
+exports.genColoredBlockInfo = () => {
+    return [
+        {
+            name: formatMessage({
+                id: 'minecraft.white_wool',
+                default: '白色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_wool',
+                default: '薄灰色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_wool',
+                default: '灰色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_wool',
+                default: '黒色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_wool',
+                default: '茶色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_wool',
+                default: '赤色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_wool',
+                default: '橙色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_wool',
+                default: '黄色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_wool',
+                default: '黄緑色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_wool',
+                default: '緑色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_wool',
+                default: '青緑色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_wool',
+                default: '空色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_wool',
+                default: '青色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_wool',
+                default: '紫色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_wool',
+                default: '赤紫色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_wool',
+                default: '桃色の羊毛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_wool'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_carpet',
                 default: '白色のカーペット'
             }),
-            itemID: 'minecraft:white_carpet',
-            blockID: '171',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OrangeCarpet',
-                default: '橙色のカーペット'
-            }),
-            itemID: 'minecraft:orange_carpet',
-            blockID: '171',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MagentaCarpet',
-                default: '赤紫色のカーペット'
-            }),
-            itemID: 'minecraft:magenta_carpet',
-            blockID: '171',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightBlueCarpet',
-                default: '空色のカーペット'
-            }),
-            itemID: 'minecraft:light_blue_carpet',
-            blockID: '171',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.YellowCarpet',
-                default: '黃色のカーペット'
-            }),
-            itemID: 'minecraft:yellow_carpet',
-            blockID: '171',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LimeCarpet',
-                default: '黄緑色のカーペット'
-            }),
-            itemID: 'minecraft:lime_carpet',
-            blockID: '171',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PinkCarpet',
-                default: '桃色のカーペット'
-            }),
-            itemID: 'minecraft:pink_carpet',
-            blockID: '171',
-            blockData: '6'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GrayCarpet',
-                default: '灰色のカーペット'
-            }),
-            itemID: 'minecraft:gray_carpet',
-            blockID: '171',
-            blockData: '7'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightGrayCarpet',
+                id: 'minecraft.light_gray_carpet',
                 default: '薄灰色のカーペット'
             }),
-            itemID: 'minecraft:light_gray_carpet',
-            blockID: '171',
-            blockData: '8'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CyanCarpet',
-                default: '青緑色のカーペット'
+                id: 'minecraft.gray_carpet',
+                default: '灰色のカーペット'
             }),
-            itemID: 'minecraft:cyan_carpet',
-            blockID: '171',
-            blockData: '9'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpleCarpet',
-                default: '紫色のカーペット'
-            }),
-            itemID: 'minecraft:purple_carpet',
-            blockID: '171',
-            blockData: '10'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlueCarpet',
-                default: '青色のカーペット'
-            }),
-            itemID: 'minecraft:blue_carpet',
-            blockID: '171',
-            blockData: '11'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BrownCarpet',
-                default: '茶色のカーペット'
-            }),
-            itemID: 'minecraft:brown_carpet',
-            blockID: '171',
-            blockData: '12'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GreenCarpet',
-                default: '緑色のカーペット'
-            }),
-            itemID: 'minecraft:green_carpet',
-            blockID: '171',
-            blockData: '13'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedCarpet',
-                default: '赤色のカーペット'
-            }),
-            itemID: 'minecraft:red_carpet',
-            blockID: '171',
-            blockData: '14'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlackCarpet',
+                id: 'minecraft.black_carpet',
                 default: '黒色のカーペット'
             }),
-            itemID: 'minecraft:black_carpet',
-            blockID: '171',
-            blockData: '15'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Sunflower',
-                default: 'ひまわり'
+                id: 'minecraft.brown_carpet',
+                default: '茶色のカーペット'
             }),
-            itemID: 'minecraft:sunflower',
-            blockID: '175',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Lilac',
-                default: 'ライラック'
+                id: 'minecraft.red_carpet',
+                default: '赤色のカーペット'
             }),
-            itemID: 'minecraft:lilac',
-            blockID: '175',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.DoubleTallgrass',
-                default: '高い草'
+                id: 'minecraft.orange_carpet',
+                default: '橙色のカーペット'
             }),
-            itemID: 'minecraft:tall_grass',
-            blockID: '175',
-            blockData: '2'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LargeFern',
-                default: '大きなシダ'
+                id: 'minecraft.yellow_carpet',
+                default: '黄色のカーペット'
             }),
-            itemID: 'minecraft:large_fern',
-            blockID: '175',
-            blockData: '3'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.RoseBush',
-                default: 'バラの低木'
+                id: 'minecraft.lime_carpet',
+                default: '黄緑色のカーペット'
             }),
-            itemID: 'minecraft:rose_bush',
-            blockID: '175',
-            blockData: '4'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Peony',
-                default: 'ボタン'
+                id: 'minecraft.green_carpet',
+                default: '緑色のカーペット'
             }),
-            itemID: 'minecraft:peony',
-            blockID: '175',
-            blockData: '5'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.SpruceFence',
-                default: 'トウヒのフェンス'
+                id: 'minecraft.cyan_carpet',
+                default: '青緑色のカーペット'
             }),
-            itemID: 'minecraft:spruce_fence',
-            blockID: '188',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BirchFence',
-                default: 'シラカバのフェンス'
+                id: 'minecraft.light_blue_carpet',
+                default: '空色のカーペット'
             }),
-            itemID: 'minecraft:birch_fence',
-            blockID: '189',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.JungleFence',
-                default: 'ジャングルのフェンス'
+                id: 'minecraft.blue_carpet',
+                default: '青色のカーペット'
             }),
-            itemID: 'minecraft:jungle_fence',
-            blockID: '190',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.DarkOakFence',
-                default: 'ダークオークのフェンス'
+                id: 'minecraft.purple_carpet',
+                default: '紫色のカーペット'
             }),
-            itemID: 'minecraft:dark_oak_fence',
-            blockID: '191',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.AcaciaFence',
-                default: 'アカシアのフェンス'
+                id: 'minecraft.magenta_carpet',
+                default: '赤紫色のカーペット'
             }),
-            itemID: 'minecraft:acacia_fence',
-            blockID: '192',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.EndRod',
-                default: 'エンドロッド'
+                id: 'minecraft.pink_carpet',
+                default: '桃色のカーペット'
             }),
-            itemID: 'minecraft:end_rod',
-            blockID: '198',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_carpet'
         },
         {
             name: formatMessage({
-                id: 'minecraft.ChorusPlant',
-                default: 'コーラスプラント'
+                id: 'minecraft.terracotta',
+                default: 'テラコッタ'
             }),
-            itemID: 'minecraft:chorus_plant',
-            blockID: '199',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.ChorusFlower',
-                default: 'コーラスフラワー'
+                id: 'minecraft.white_terracotta',
+                default: '白色のテラコッタ'
             }),
-            itemID: 'minecraft:chorus_flower',
-            blockID: '200',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.WhiteShulkerBox',
-                default: '白色のシュルカーボックス'
+                id: 'minecraft.light_gray_terracotta',
+                default: '薄灰色のテラコッタ'
             }),
-            itemID: 'minecraft:white_shulker_box',
-            blockID: '219',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OrangeShulkerBox',
-                default: '橙色のシュルカーボックス'
+                id: 'minecraft.gray_terracotta',
+                default: '灰色のテラコッタ'
             }),
-            itemID: 'minecraft:orange_shulker_box',
-            blockID: '219',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.MagentaShulkerBox',
-                default: '赤紫色のシュルカーボックス'
+                id: 'minecraft.black_terracotta',
+                default: '黒色のテラコッタ'
             }),
-            itemID: 'minecraft:magenta_shulker_box',
-            blockID: '219',
-            blockData: '2'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LightBlueShulkerBox',
-                default: '空色のシュルカーボックス'
+                id: 'minecraft.brown_terracotta',
+                default: '茶色のテラコッタ'
             }),
-            itemID: 'minecraft:light_blue_shulker_box',
-            blockID: '219',
-            blockData: '3'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.YellowShulkerBox',
-                default: '黃色のシュルカーボックス'
+                id: 'minecraft.red_terracotta',
+                default: '赤色のテラコッタ'
             }),
-            itemID: 'minecraft:yellow_shulker_box',
-            blockID: '219',
-            blockData: '4'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LimeShulkerBox',
-                default: '黄緑色のシュルカーボックス'
+                id: 'minecraft.orange_terracotta',
+                default: '橙色のテラコッタ'
             }),
-            itemID: 'minecraft:lime_shulker_box',
-            blockID: '219',
-            blockData: '5'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PinkShulkerBox',
-                default: '桃色のシュルカーボックス'
+                id: 'minecraft.yellow_terracotta',
+                default: '黄色のテラコッタ'
             }),
-            itemID: 'minecraft:pink_shulker_box',
-            blockID: '219',
-            blockData: '6'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.GrayShulkerBox',
-                default: '灰色のシュルカーボックス'
+                id: 'minecraft.lime_terracotta',
+                default: '黄緑色のテラコッタ'
             }),
-            itemID: 'minecraft:gray_shulker_box',
-            blockID: '219',
-            blockData: '7'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.LightGrayShulkerBox',
-                default: '薄灰色のシュルカーボックス'
+                id: 'minecraft.green_terracotta',
+                default: '緑色のテラコッタ'
             }),
-            itemID: 'minecraft:light_gray_shulker_box',
-            blockID: '219',
-            blockData: '8'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CyanShulkerBox',
-                default: '青緑色のシュルカーボックス'
+                id: 'minecraft.cyan_terracotta',
+                default: '青緑色のテラコッタ'
             }),
-            itemID: 'minecraft:cyan_shulker_box',
-            blockID: '219',
-            blockData: '9'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpleShulkerBox',
-                default: '紫色のシュルカーボックス'
+                id: 'minecraft.light_blue_terracotta',
+                default: '空色のテラコッタ'
             }),
-            itemID: 'minecraft:purple_shulker_box',
-            blockID: '219',
-            blockData: '10'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BlueShulkerBox',
-                default: '青色のシュルカーボックス'
+                id: 'minecraft.blue_terracotta',
+                default: '青色のテラコッタ'
             }),
-            itemID: 'minecraft:blue_shulker_box',
-            blockID: '219',
-            blockData: '11'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BrownShulkerBox',
-                default: '茶色のシュルカーボックス'
+                id: 'minecraft.purple_terracotta',
+                default: '紫色のテラコッタ'
             }),
-            itemID: 'minecraft:brown_shulker_box',
-            blockID: '219',
-            blockData: '12'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.GreenShulkerBox',
-                default: '緑色のシュルカーボックス'
+                id: 'minecraft.magenta_terracotta',
+                default: '赤紫色のテラコッタ'
             }),
-            itemID: 'minecraft:green_shulker_box',
-            blockID: '219',
-            blockData: '13'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.RedShulkerBox',
-                default: '赤色のシュルカーボックス'
+                id: 'minecraft.pink_terracotta',
+                default: '桃色のテラコッタ'
             }),
-            itemID: 'minecraft:red_shulker_box',
-            blockID: '219',
-            blockData: '14'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.BlackShulkerBox',
-                default: '黒色のシュルカーボックス'
+                id: 'minecraft.white_concrete',
+                default: '白色のコンクリート'
             }),
-            itemID: 'minecraft:black_shulker_box',
-            blockID: '219',
-            blockData: '15'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_concrete'
         },
         {
             name: formatMessage({
-                id: 'minecraft.WhiteGlazedTerracotta',
+                id: 'minecraft.light_gray_concrete',
+                default: '薄灰色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_concrete',
+                default: '灰色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_concrete',
+                default: '黒色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_concrete',
+                default: '茶色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_concrete',
+                default: '赤色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_concrete',
+                default: '橙色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_concrete',
+                default: '黄色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_concrete',
+                default: '黄緑色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_concrete',
+                default: '緑色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_concrete',
+                default: '青緑色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_concrete',
+                default: '空色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_concrete',
+                default: '青色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_concrete',
+                default: '紫色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_concrete',
+                default: '赤紫色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_concrete',
+                default: '桃色のコンクリート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_concrete'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_concrete_powder',
+                default: '白色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_concrete_powder',
+                default: '薄灰色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_concrete_powder',
+                default: '灰色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_concrete_powder',
+                default: '黒色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_concrete_powder',
+                default: '茶色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_concrete_powder',
+                default: '赤色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_concrete_powder',
+                default: '橙色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_concrete_powder',
+                default: '黄色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_concrete_powder',
+                default: '黄緑色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_concrete_powder',
+                default: '緑色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_concrete_powder',
+                default: '青緑色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_concrete_powder',
+                default: '空色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_concrete_powder',
+                default: '青色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_concrete_powder',
+                default: '紫色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_concrete_powder',
+                default: '赤紫色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_concrete_powder',
+                default: '桃色のコンクリートパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_concrete_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_glazed_terracotta',
                 default: '白色の彩釉テラコッタ'
             }),
-            itemID: 'minecraft:white_glazed_terracotta',
-            blockID: '235',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_glazed_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OrangeGlazedTerracotta',
-                default: '橙色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:orange_glazed_terracotta',
-            blockID: '236',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MagentaGlazedTerracotta',
-                default: '赤紫色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:magenta_glazed_terracotta',
-            blockID: '237',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightBlueGlazedTerracotta',
-                default: '空色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:light_blue_glazed_terracotta',
-            blockID: '238',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.YellowGlazedTerracotta',
-                default: '黃色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:yellow_glazed_terracotta',
-            blockID: '239',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LimeGlazedTerracotta',
-                default: '黄緑色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:lime_glazed_terracotta',
-            blockID: '240',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PinkGlazedTerracotta',
-                default: '桃色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:pink_glazed_terracotta',
-            blockID: '241',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GrayGlazedTerracotta',
-                default: '灰色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:gray_glazed_terracotta',
-            blockID: '242',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightGrayGlazedTerracotta',
+                id: 'minecraft.light_gray_glazed_terracotta',
                 default: '薄灰色の彩釉テラコッタ'
             }),
-            itemID: 'minecraft:light_gray_glazed_terracotta',
-            blockID: '243',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_glazed_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CyanGlazedTerracotta',
-                default: '青緑色の彩釉テラコッタ'
+                id: 'minecraft.gray_glazed_terracotta',
+                default: '灰色の彩釉テラコッタ'
             }),
-            itemID: 'minecraft:cyan_glazed_terracotta',
-            blockID: '244',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_glazed_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpleGlazedTerracotta',
-                default: '紫色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:purple_glazed_terracotta',
-            blockID: '245',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlueGlazedTerracotta',
-                default: '青色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:blue_glazed_terracotta',
-            blockID: '246',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BrownGlazedTerracotta',
-                default: '茶色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:brown_glazed_terracotta',
-            blockID: '247',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GreenGlazedTerracotta',
-                default: '緑色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:green_glazed_terracotta',
-            blockID: '248',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedGlazedTerracotta',
-                default: '赤色の彩釉テラコッタ'
-            }),
-            itemID: 'minecraft:red_glazed_terracotta',
-            blockID: '249',
-            blockData: '0'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlackGlazedTerracotta',
+                id: 'minecraft.black_glazed_terracotta',
                 default: '黒色の彩釉テラコッタ'
             }),
-            itemID: 'minecraft:black_glazed_terracotta',
-            blockID: '250',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_glazed_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Painting',
-                default: '絵画'
+                id: 'minecraft.brown_glazed_terracotta',
+                default: '茶色の彩釉テラコッタ'
             }),
-            itemID: 'minecraft:painting',
-            blockID: '321',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_glazed_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.Sign',
-                default: '看板'
+                id: 'minecraft.red_glazed_terracotta',
+                default: '赤色の彩釉テラコッタ'
             }),
-            itemID: 'minecraft:sign',
-            blockID: '323',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_glazed_terracotta'
         },
         {
             name: formatMessage({
-                id: 'minecraft.WhiteBed',
+                id: 'minecraft.orange_glazed_terracotta',
+                default: '橙色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_glazed_terracotta',
+                default: '黄色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_glazed_terracotta',
+                default: '黄緑色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_glazed_terracotta',
+                default: '緑色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_glazed_terracotta',
+                default: '青緑色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_glazed_terracotta',
+                default: '空色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_glazed_terracotta',
+                default: '青色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_glazed_terracotta',
+                default: '紫色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_glazed_terracotta',
+                default: '赤紫色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_glazed_terracotta',
+                default: '桃色の彩釉テラコッタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_glazed_terracotta'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glass',
+                default: 'ガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tinted_glass',
+                default: '遮光ガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tinted_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_stained_glass',
+                default: '白色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_stained_glass',
+                default: '薄灰色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_stained_glass',
+                default: '灰色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_stained_glass',
+                default: '黒色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_stained_glass',
+                default: '茶色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_stained_glass',
+                default: '赤色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_stained_glass',
+                default: '橙色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_stained_glass',
+                default: '黄色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_stained_glass',
+                default: '黄緑色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_stained_glass',
+                default: '緑色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_stained_glass',
+                default: '青緑色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_stained_glass',
+                default: '空色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_stained_glass',
+                default: '青色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_stained_glass',
+                default: '紫色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_stained_glass',
+                default: '赤紫色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_stained_glass',
+                default: '桃色の色付きガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_stained_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glass_pane',
+                default: 'ガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_stained_glass_pane',
+                default: '白色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_stained_glass_pane',
+                default: '薄灰色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_stained_glass_pane',
+                default: '灰色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_stained_glass_pane',
+                default: '黒色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_stained_glass_pane',
+                default: '茶色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_stained_glass_pane',
+                default: '赤色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_stained_glass_pane',
+                default: '橙色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_stained_glass_pane',
+                default: '黄色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_stained_glass_pane',
+                default: '黄緑色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_stained_glass_pane',
+                default: '緑色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_stained_glass_pane',
+                default: '青緑色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_stained_glass_pane',
+                default: '空色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_stained_glass_pane',
+                default: '青色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_stained_glass_pane',
+                default: '紫色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_stained_glass_pane',
+                default: '赤紫色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_stained_glass_pane',
+                default: '桃色の色付きガラス板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_stained_glass_pane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shulker_box',
+                default: 'シュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_shulker_box',
+                default: '白色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_shulker_box',
+                default: '薄灰色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_shulker_box',
+                default: '灰色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_shulker_box',
+                default: '黒色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_shulker_box',
+                default: '茶色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_shulker_box',
+                default: '赤色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_shulker_box',
+                default: '橙色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_shulker_box',
+                default: '黄色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_shulker_box',
+                default: '黄緑色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_shulker_box',
+                default: '緑色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_shulker_box',
+                default: '青緑色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_shulker_box',
+                default: '空色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_shulker_box',
+                default: '青色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_shulker_box',
+                default: '紫色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_shulker_box',
+                default: '赤紫色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_shulker_box',
+                default: '桃色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_bed',
                 default: '白色のベッド'
             }),
-            itemID: 'minecraft:white_bed',
-            blockID: '355',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OrangeBed',
-                default: '橙色のベッド'
-            }),
-            itemID: 'minecraft:orange_bed',
-            blockID: '355',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MagentaBed',
-                default: '赤紫色のベッド'
-            }),
-            itemID: 'minecraft:magenta_bed',
-            blockID: '355',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightBlueBed',
-                default: '空色のベッド'
-            }),
-            itemID: 'minecraft:light_blue_bed',
-            blockID: '355',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.YellowBed',
-                default: '黃色のベッド'
-            }),
-            itemID: 'minecraft:yellow_bed',
-            blockID: '355',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LimeBed',
-                default: '黄緑色のベッド'
-            }),
-            itemID: 'minecraft:lime_bed',
-            blockID: '355',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PinkBed',
-                default: '桃色のベッド'
-            }),
-            itemID: 'minecraft:pink_bed',
-            blockID: '355',
-            blockData: '6'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GrayBed',
-                default: '灰色のベッド'
-            }),
-            itemID: 'minecraft:gray_bed',
-            blockID: '355',
-            blockData: '7'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightGrayBed',
+                id: 'minecraft.light_gray_bed',
                 default: '薄灰色のベッド'
             }),
-            itemID: 'minecraft:light_gray_bed',
-            blockID: '355',
-            blockData: '8'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CyanBed',
-                default: '青緑色のベッド'
+                id: 'minecraft.gray_bed',
+                default: '灰色のベッド'
             }),
-            itemID: 'minecraft:cyan_bed',
-            blockID: '355',
-            blockData: '9'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpleBed',
-                default: '紫色のベッド'
-            }),
-            itemID: 'minecraft:purple_bed',
-            blockID: '355',
-            blockData: '10'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlueBed',
-                default: '青色のベッド'
-            }),
-            itemID: 'minecraft:blue_bed',
-            blockID: '355',
-            blockData: '11'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BrownBed',
-                default: '茶色のベッド'
-            }),
-            itemID: 'minecraft:brown_bed',
-            blockID: '355',
-            blockData: '12'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GreenBed',
-                default: '緑色のベッド'
-            }),
-            itemID: 'minecraft:green_bed',
-            blockID: '355',
-            blockData: '13'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedBed',
-                default: '赤色のベッド'
-            }),
-            itemID: 'minecraft:red_bed',
-            blockID: '355',
-            blockData: '14'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlackBed',
+                id: 'minecraft.black_bed',
                 default: '黒色のベッド'
             }),
-            itemID: 'minecraft:black_bed',
-            blockID: '355',
-            blockData: '15'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.ItemFrame',
-                default: '額縁'
+                id: 'minecraft.brown_bed',
+                default: '茶色のベッド'
             }),
-            itemID: 'minecraft:item_frame',
-            blockID: '389',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.FlowerPot',
-                default: '植木鉢'
+                id: 'minecraft.red_bed',
+                default: '赤色のベッド'
             }),
-            itemID: 'minecraft:flower_pot',
-            blockID: '390',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.SkeletonSkull',
-                default: 'スケルトンの頭'
+                id: 'minecraft.orange_bed',
+                default: '橙色のベッド'
             }),
-            itemID: 'minecraft:skeleton_skull',
-            blockID: '397',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.WitherSkeletonSkull',
-                default: 'ウィザースケルトンの頭'
+                id: 'minecraft.yellow_bed',
+                default: '黄色のベッド'
             }),
-            itemID: 'minecraft:wither_skeleton_skull',
-            blockID: '397',
-            blockData: '1'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.ZombieSkull',
-                default: 'ゾンビの頭'
+                id: 'minecraft.lime_bed',
+                default: '黄緑色のベッド'
             }),
-            itemID: 'minecraft:zombie_head',
-            blockID: '397',
-            blockData: '2'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.HumanSkull',
-                default: 'プレイヤーの頭'
+                id: 'minecraft.green_bed',
+                default: '緑色のベッド'
             }),
-            itemID: 'minecraft:player_head',
-            blockID: '397',
-            blockData: '3'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CreeperSkull',
-                default: 'クリーパーの頭'
+                id: 'minecraft.cyan_bed',
+                default: '青緑色のベッド'
             }),
-            itemID: 'minecraft:creeper_head',
-            blockID: '397',
-            blockData: '4'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.DragonSkull',
-                default: 'ドラゴンの頭'
+                id: 'minecraft.light_blue_bed',
+                default: '空色のベッド'
             }),
-            itemID: 'minecraft:dragon_head',
-            blockID: '397',
-            blockData: '5'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.ArmorStand',
-                default: '防具立て'
+                id: 'minecraft.blue_bed',
+                default: '青色のベッド'
             }),
-            itemID: 'minecraft:armor_stand',
-            blockID: '416',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_bed'
         },
         {
             name: formatMessage({
-                id: 'minecraft.WhiteBanner',
+                id: 'minecraft.purple_bed',
+                default: '紫色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_bed',
+                default: '赤紫色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_bed',
+                default: '桃色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.candle',
+                default: 'ろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_candle',
+                default: '白色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_candle',
+                default: '薄灰色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_candle',
+                default: '灰色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_candle',
+                default: '黒色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_candle',
+                default: '茶色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_candle',
+                default: '赤色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_candle',
+                default: '橙色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_candle',
+                default: '黄色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_candle',
+                default: '黄緑色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_candle',
+                default: '緑色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_candle',
+                default: '青緑色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_candle',
+                default: '空色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_candle',
+                default: '青色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_candle',
+                default: '紫色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_candle',
+                default: '赤紫色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_candle',
+                default: '桃色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_banner',
                 default: '白色の旗'
             }),
-            itemID: 'minecraft:black_banner',
-            blockID: '425',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_banner'
         },
         {
             name: formatMessage({
-                id: 'minecraft.OrangeBanner',
-                default: '橙色の旗'
-            }),
-            itemID: 'minecraft:red_banner',
-            blockID: '425',
-            blockData: '1'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.MagentaBanner',
-                default: '赤紫色の旗'
-            }),
-            itemID: 'minecraft:green_banner',
-            blockID: '425',
-            blockData: '2'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightBlueBanner',
-                default: '空色の旗'
-            }),
-            itemID: 'minecraft:brown_banner',
-            blockID: '425',
-            blockData: '3'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.YellowBanner',
-                default: '黃色の旗'
-            }),
-            itemID: 'minecraft:blue_banner',
-            blockID: '425',
-            blockData: '4'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LimeBanner',
-                default: '黄緑色の旗'
-            }),
-            itemID: 'minecraft:purple_banner',
-            blockID: '425',
-            blockData: '5'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.PinkBanner',
-                default: '桃色の旗'
-            }),
-            itemID: 'minecraft:cyan_banner',
-            blockID: '425',
-            blockData: '6'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GrayBanner',
-                default: '灰色の旗'
-            }),
-            itemID: 'minecraft:light_gray_banner',
-            blockID: '425',
-            blockData: '7'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.LightGrayBanner',
+                id: 'minecraft.light_gray_banner',
                 default: '薄灰色の旗'
             }),
-            itemID: 'minecraft:gray_banner',
-            blockID: '425',
-            blockData: '8'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_banner'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CyanBanner',
-                default: '青緑色の旗'
+                id: 'minecraft.gray_banner',
+                default: '灰色の旗'
             }),
-            itemID: 'minecraft:pink_banner',
-            blockID: '425',
-            blockData: '9'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_banner'
         },
         {
             name: formatMessage({
-                id: 'minecraft.PurpleBanner',
-                default: '紫色の旗'
-            }),
-            itemID: 'minecraft:lime_banner',
-            blockID: '425',
-            blockData: '10'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlueBanner',
-                default: '青色の旗'
-            }),
-            itemID: 'minecraft:yellow_banner',
-            blockID: '425',
-            blockData: '11'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BrownBanner',
-                default: '茶色の旗'
-            }),
-            itemID: 'minecraft:light_blue_banner',
-            blockID: '425',
-            blockData: '12'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.GreenBanner',
-                default: '緑色の旗'
-            }),
-            itemID: 'minecraft:magenta_banner',
-            blockID: '425',
-            blockData: '13'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.RedBanner',
-                default: '赤色の旗'
-            }),
-            itemID: 'minecraft:orange_banner',
-            blockID: '425',
-            blockData: '14'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.BlackBanner',
+                id: 'minecraft.black_banner',
                 default: '黒色の旗'
             }),
-            itemID: 'minecraft:white_banner',
-            blockID: '425',
-            blockData: '15'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_banner'
         },
         {
             name: formatMessage({
-                id: 'minecraft.EndCrystal',
+                id: 'minecraft.brown_banner',
+                default: '茶色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_banner',
+                default: '赤色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_banner',
+                default: '橙色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_banner',
+                default: '黄色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_banner',
+                default: '黄緑色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_banner',
+                default: '緑色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_banner',
+                default: '青緑色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_banner',
+                default: '空色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_banner',
+                default: '青色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_banner',
+                default: '紫色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_banner',
+                default: '赤紫色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_banner',
+                default: '桃色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_banner'
+        }
+    ];
+}
+exports.genNaturalBlockInfo = () => {
+    return [
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_log',
+                default: 'オークの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_log',
+                default: 'トウヒの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_log',
+                default: 'シラカバの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_log',
+                default: 'ジャングルの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_log',
+                default: 'アカシアの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_log',
+                default: 'ダークオークの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_log',
+                default: 'マングローブの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_log',
+                default: 'サクラの原木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_log'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_stem',
+                default: '真紅の幹'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_stem'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_stem',
+                default: '歪んだ幹'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_stem'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone',
+                default: '石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.granite',
+                default: '花崗岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:granite'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diorite',
+                default: '閃緑岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diorite'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.andesite',
+                default: '安山岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:andesite'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.deepslate',
+                default: '深層岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sandstone',
+                default: '砂岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sandstone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_sandstone',
+                default: '赤い砂岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_sandstone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine',
+                default: 'プリズマリン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherrack',
+                default: 'ネザーラック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherrack'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.basalt',
+                default: '玄武岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:basalt'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smooth_basalt',
+                default: '滑らかな玄武岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smooth_basalt'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_basalt',
+                default: '磨かれた玄武岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_basalt'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_stone',
+                default: 'エンドストーン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_stone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.amethyst_block',
+                default: 'アメジストブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:amethyst_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.grass_block',
+                default: '草ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:grass_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.podzol',
+                default: 'ポドゾル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:podzol'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mycelium',
+                default: '菌糸'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mycelium'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dirt_path',
+                default: '土の道'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dirt_path'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dirt',
+                default: '土'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dirt'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.coarse_dirt',
+                default: '粗い土'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:coarse_dirt'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rooted_dirt',
+                default: '根付いた土'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rooted_dirt'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.farmland',
+                default: '耕地'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:farmland'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mud',
+                default: '泥'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mud'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.clay',
+                default: '粘土'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:clay'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gravel',
+                default: '砂利'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gravel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sand',
+                default: '砂'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sand'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_sand',
+                default: '赤い砂'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_sand'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ice',
+                default: '氷'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ice'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.packed_ice',
+                default: '氷塊'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:packed_ice'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_ice',
+                default: '青氷'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_ice'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.snow_block',
+                default: '雪ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:snow_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.snow',
+                default: '雪'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:snow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.moss_block',
+                default: '苔ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:moss_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.moss_carpet',
+                default: '苔のカーペット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:moss_carpet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.calcite',
+                default: '方解石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:calcite'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tuff',
+                default: '凝灰岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tuff'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dripstone_block',
+                default: '鍾乳石ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dripstone_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pointed_dripstone',
+                default: '鍾乳石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pointed_dripstone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magma_block',
+                default: 'マグマブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magma_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.obsidian',
+                default: '黒曜石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:obsidian'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crying_obsidian',
+                default: '泣く黒曜石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crying_obsidian'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_nylium',
+                default: '真紅のナイリウム'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_nylium'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_nylium',
+                default: '歪んだナイリウム'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_nylium'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_sand',
+                default: 'ソウルサンド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:soul_sand'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_soil',
+                default: 'ソウルソイル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:soul_soil'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bone_block',
+                default: '骨ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bone_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.coal_ore',
+                default: '石炭鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:coal_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.deepslate_coal_ore',
+                default: '深層石炭鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_coal_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_ore',
+                default: '鉄鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.deepslate_iron_ore',
+                default: '深層鉄鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_iron_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.copper_ore',
+                default: '銅鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:copper_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.deepslate_copper_ore',
+                default: '深層銅鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_copper_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gold_ore',
+                default: '金鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gold_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.deepslate_gold_ore',
+                default: '深層金鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_gold_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone_ore',
+                default: 'レッドストーン鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.deepslate_redstone_ore',
+                default: '深層レッドストーン鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_redstone_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.emerald_ore',
+                default: 'エメラルド鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:emerald_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.deepslate_emerald_ore',
+                default: '深層エメラルド鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_emerald_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lapis_ore',
+                default: 'ラピスラズリ鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lapis_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.deepslate_lapis_ore',
+                default: '深層ラピスラズリ鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_lapis_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_ore',
+                default: 'ダイヤモンド鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.deepslate_diamond_ore',
+                default: '深層ダイヤモンド鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:deepslate_diamond_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_gold_ore',
+                default: 'ネザー金鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_gold_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_quartz_ore',
+                default: 'ネザークォーツ鉱石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_quartz_ore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ancient_debris',
+                default: '古代の残骸'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ancient_debris'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.raw_iron_block',
+                default: '鉄の原石ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:raw_iron_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.raw_copper_block',
+                default: '銅の原石ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:raw_copper_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.raw_gold_block',
+                default: '金の原石ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:raw_gold_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glowstone',
+                default: 'グロウストーン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glowstone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.budding_amethyst',
+                default: '芽生えたアメジスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:budding_amethyst'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.small_amethyst_bud',
+                default: '小さなアメジストの芽'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:small_amethyst_bud'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.medium_amethyst_bud',
+                default: '中くらいのアメジストの芽'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:medium_amethyst_bud'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.large_amethyst_bud',
+                default: '大きなアメジストの芽'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:large_amethyst_bud'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.amethyst_cluster',
+                default: 'アメジストの塊'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:amethyst_cluster'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mushroom_stem',
+                default: 'キノコの柄'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mushroom_stem'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_leaves',
+                default: 'オークの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_leaves',
+                default: 'トウヒの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_leaves',
+                default: 'シラカバの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_leaves',
+                default: 'ジャングルの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_leaves',
+                default: 'アカシアの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_leaves',
+                default: 'ダークオークの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_leaves',
+                default: 'マングローブの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_roots',
+                default: 'マングローブの根'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_roots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.muddy_mangrove_roots',
+                default: '泥だらけのマングローブの根'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:muddy_mangrove_roots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_leaves',
+                default: 'サクラの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.azalea_leaves',
+                default: 'ツツジの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:azalea_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flowering_azalea_leaves',
+                default: '開花したツツジの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:flowering_azalea_leaves'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_mushroom_block',
+                default: '茶色のキノコブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_mushroom_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_mushroom_block',
+                default: '赤色のキノコブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_mushroom_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_wart_block',
+                default: 'ネザーウォートブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_wart_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_wart_block',
+                default: '歪んだウォートブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_wart_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shroomlight',
+                default: 'シュルームライト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shroomlight'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_sapling',
+                default: 'オークの苗木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_sapling'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_sapling',
+                default: 'トウヒの苗木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_sapling'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_sapling',
+                default: 'シラカバの苗木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_sapling'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_sapling',
+                default: 'ジャングルの苗木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_sapling'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_sapling',
+                default: 'アカシアの苗木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_sapling'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_sapling',
+                default: 'ダークオークの苗木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_sapling'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_propagule',
+                default: 'マングローブの芽'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_propagule'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_sapling',
+                default: 'サクラの苗木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_sapling'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.azalea',
+                default: 'ツツジ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:azalea'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flowering_azalea',
+                default: '開花したツツジ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:flowering_azalea'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_mushroom',
+                default: '茶色のキノコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_mushroom'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_mushroom',
+                default: '赤色のキノコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_mushroom'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_fungus',
+                default: '真紅のキノコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_fungus'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fungus',
+                default: '歪んだキノコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_fungus'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.grass',
+                default: '草'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:grass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fern',
+                default: 'シダ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_bush',
+                default: '枯れ木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_bush'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dandelion',
+                default: 'タンポポ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dandelion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.poppy',
+                default: 'ポピー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:poppy'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_orchid',
+                default: 'ヒスイラン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_orchid'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.allium',
+                default: 'アリウム'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:allium'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.azure_bluet',
+                default: 'ヒナソウ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:azure_bluet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_tulip',
+                default: '赤色のチューリップ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_tulip'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_tulip',
+                default: '橙色のチューリップ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_tulip'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_tulip',
+                default: '白色のチューリップ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_tulip'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_tulip',
+                default: '桃色のチューリップ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_tulip'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oxeye_daisy',
+                default: 'フランスギク'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oxeye_daisy'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cornflower',
+                default: 'ヤグルマギク'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cornflower'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lily_of_the_valley',
+                default: 'スズラン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lily_of_the_valley'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.torchflower',
+                default: 'トーチフラワー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:torchflower'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_petals',
+                default: '桜色の花びら'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_petals'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spore_blossom',
+                default: '胞子の花'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spore_blossom'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo',
+                default: '竹'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sugar_cane',
+                default: 'サトウキビ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sugar_cane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cactus',
+                default: 'サボテン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cactus'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wither_rose',
+                default: 'ウィザーローズ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wither_rose'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_roots',
+                default: '真紅の根'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_roots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_roots',
+                default: '歪んだ根'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_roots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_sprouts',
+                default: 'ネザースプラウト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_sprouts'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.weeping_vines',
+                default: 'しだれツタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:weeping_vines'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.twisting_vines',
+                default: 'ねじれツタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:twisting_vines'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.vine',
+                default: 'ツタ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:vine'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tall_grass',
+                default: '背の高い草'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tall_grass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.large_fern',
+                default: '大きなシダ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:large_fern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sunflower',
+                default: 'ヒマワリ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sunflower'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lilac',
+                default: 'ライラック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lilac'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rose_bush',
+                default: 'バラの低木'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rose_bush'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.peony',
+                default: 'ボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:peony'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pitcher_plant',
+                default: 'ウツボカズラ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pitcher_plant'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.big_dripleaf',
+                default: '大きなドリップリーフ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:big_dripleaf'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.small_dripleaf',
+                default: '小さなドリップリーフ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:small_dripleaf'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chorus_plant',
+                default: 'コーラスプラント'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chorus_plant'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chorus_flower',
+                default: 'コーラスフラワー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chorus_flower'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glow_lichen',
+                default: 'ヒカリゴケ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glow_lichen'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.hanging_roots',
+                default: '垂れ根'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:hanging_roots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.frogspawn',
+                default: 'カエルの卵'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:frogspawn'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.turtle_egg',
+                default: 'カメの卵'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:turtle_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sniffer_egg',
+                default: 'スニッファーの卵'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sniffer_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wheat_seeds',
+                default: '小麦の種'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wheat_seeds'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cocoa_beans',
+                default: 'カカオ豆'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cocoa_beans'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pumpkin_seeds',
+                default: 'カボチャの種'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pumpkin_seeds'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.melon_seeds',
+                default: 'スイカの種'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:melon_seeds'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.beetroot_seeds',
+                default: 'ビートルートの種'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:beetroot_seeds'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.torchflower_seeds',
+                default: 'トーチフラワーの種'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:torchflower_seeds'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pitcher_pod',
+                default: 'ウツボカズラのさや'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pitcher_pod'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glow_berries',
+                default: 'グロウベリー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glow_berries'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sweet_berries',
+                default: 'スイートベリー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sweet_berries'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_wart',
+                default: 'ネザーウォート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_wart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lily_pad',
+                default: 'スイレンの葉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lily_pad'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.seagrass',
+                default: '海草'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:seagrass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sea_pickle',
+                default: 'シーピクルス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sea_pickle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.kelp',
+                default: 'コンブ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:kelp'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dried_kelp_block',
+                default: '乾燥した昆布ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dried_kelp_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tube_coral_block',
+                default: 'クダサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tube_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brain_coral_block',
+                default: 'ノウサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brain_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_coral_block',
+                default: 'ミズタマサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bubble_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fire_coral_block',
+                default: 'ミレポラサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fire_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.horn_coral_block',
+                default: 'シカツノサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:horn_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_tube_coral_block',
+                default: '死んだクダサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_tube_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_brain_coral_block',
+                default: '死んだノウサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_brain_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_bubble_coral_block',
+                default: '死んだミズタマサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_bubble_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_fire_coral_block',
+                default: '死んだミレポラサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_fire_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_horn_coral_block',
+                default: '死んだシカツノサンゴブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_horn_coral_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tube_coral',
+                default: 'クダサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tube_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brain_coral',
+                default: 'ノウサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brain_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_coral',
+                default: 'ミズタマサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bubble_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fire_coral',
+                default: 'ミレポラサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fire_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.horn_coral',
+                default: 'シカツノサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:horn_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_brain_coral',
+                default: '死んだノウサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_brain_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_bubble_coral',
+                default: '死んだミズタマサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_bubble_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_fire_coral',
+                default: '死んだミレポラサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_fire_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_horn_coral',
+                default: '死んだシカツノサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_horn_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_tube_coral',
+                default: '死んだクダサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_tube_coral'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tube_coral_fan',
+                default: 'クダウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tube_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brain_coral_fan',
+                default: 'ノウウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brain_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_coral_fan',
+                default: 'ミズタマウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bubble_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fire_coral_fan',
+                default: 'ミレポラウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fire_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.horn_coral_fan',
+                default: 'シカツノウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:horn_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_tube_coral_fan',
+                default: '死んだクダウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_tube_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_brain_coral_fan',
+                default: '死んだノウウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_brain_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_bubble_coral_fan',
+                default: '死んだミズタマウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_bubble_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_fire_coral_fan',
+                default: '死んだミレポラウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_fire_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dead_horn_coral_fan',
+                default: '死んだシカツノウチワサンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dead_horn_coral_fan'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sponge',
+                default: 'スポンジ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sponge'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wet_sponge',
+                default: '濡れたスポンジ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wet_sponge'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.melon',
+                default: 'スイカ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:melon'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pumpkin',
+                default: 'カボチャ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pumpkin'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.carved_pumpkin',
+                default: 'くり抜かれたカボチャ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:carved_pumpkin'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jack_o_lantern',
+                default: 'ジャック・オ・ランタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jack_o_lantern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.hay_block',
+                default: '干草の俵'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:hay_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bee_nest',
+                default: 'ミツバチの巣'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bee_nest'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.honeycomb_block',
+                default: 'ハニカムブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:honeycomb_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.slime_block',
+                default: 'スライムブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:slime_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.honey_block',
+                default: 'ハチミツブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:honey_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ochre_froglight',
+                default: '黄土色のフロッグライト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ochre_froglight'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.verdant_froglight',
+                default: '新緑色のフロッグライト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:verdant_froglight'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pearlescent_froglight',
+                default: '真珠色のフロッグライト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pearlescent_froglight'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sculk',
+                default: 'スカルク'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sculk'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sculk_vein',
+                default: 'スカルクヴェイン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sculk_vein'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sculk_catalyst',
+                default: 'スカルクカタリスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sculk_catalyst'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sculk_shrieker',
+                default: 'スカルクシュリーカー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sculk_shrieker'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sculk_sensor',
+                default: 'スカルクセンサー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sculk_sensor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cobweb',
+                default: 'クモの巣'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cobweb'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bedrock',
+                default: '岩盤'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bedrock'
+        }
+    ];
+}
+exports.genFunctionalBlockInfo = () => {
+    return [
+        {
+            name: formatMessage({
+                id: 'minecraft.sea_lantern',
+                default: 'シーランタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sea_lantern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chain',
+                default: '鎖'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chain'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tinted_glass',
+                default: '遮光ガラス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tinted_glass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shulker_box',
+                default: 'シュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_shulker_box',
+                default: '白色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_shulker_box',
+                default: '薄灰色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_shulker_box',
+                default: '灰色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_shulker_box',
+                default: '黒色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_shulker_box',
+                default: '茶色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_shulker_box',
+                default: '赤色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_shulker_box',
+                default: '橙色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_shulker_box',
+                default: '黄色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_shulker_box',
+                default: '黄緑色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_shulker_box',
+                default: '緑色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_shulker_box',
+                default: '青緑色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_shulker_box',
+                default: '空色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_shulker_box',
+                default: '青色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_shulker_box',
+                default: '紫色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_shulker_box',
+                default: '赤紫色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_shulker_box',
+                default: '桃色のシュルカーボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_shulker_box'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_bed',
+                default: '白色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_bed',
+                default: '薄灰色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_bed',
+                default: '灰色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_bed',
+                default: '黒色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_bed',
+                default: '茶色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_bed',
+                default: '赤色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_bed',
+                default: '橙色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_bed',
+                default: '黄色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_bed',
+                default: '黄緑色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_bed',
+                default: '緑色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_bed',
+                default: '青緑色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_bed',
+                default: '空色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_bed',
+                default: '青色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_bed',
+                default: '紫色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_bed',
+                default: '赤紫色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_bed',
+                default: '桃色のベッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_bed'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.candle',
+                default: 'ろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_candle',
+                default: '白色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_candle',
+                default: '薄灰色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_candle',
+                default: '灰色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_candle',
+                default: '黒色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_candle',
+                default: '茶色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_candle',
+                default: '赤色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_candle',
+                default: '橙色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_candle',
+                default: '黄色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_candle',
+                default: '黄緑色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_candle',
+                default: '緑色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_candle',
+                default: '青緑色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_candle',
+                default: '空色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_candle',
+                default: '青色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_candle',
+                default: '紫色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_candle',
+                default: '赤紫色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_candle',
+                default: '桃色のろうそく'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_candle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_banner',
+                default: '白色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_banner',
+                default: '薄灰色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_banner',
+                default: '灰色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_banner',
+                default: '黒色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_banner',
+                default: '茶色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_banner',
+                default: '赤色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_banner',
+                default: '橙色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_banner',
+                default: '黄色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_banner',
+                default: '黄緑色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_banner',
+                default: '緑色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_banner',
+                default: '青緑色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_banner',
+                default: '空色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_banner',
+                default: '青色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_banner',
+                default: '紫色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_banner',
+                default: '赤紫色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_banner',
+                default: '桃色の旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magma_block',
+                default: 'マグマブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magma_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crying_obsidian',
+                default: '泣く黒曜石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crying_obsidian'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glowstone',
+                default: 'グロウストーン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glowstone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shroomlight',
+                default: 'シュルームライト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shroomlight'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glow_lichen',
+                default: 'ヒカリゴケ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glow_lichen'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bee_nest',
+                default: 'ミツバチの巣'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bee_nest'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ochre_froglight',
+                default: '黄土色のフロッグライト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ochre_froglight'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.verdant_froglight',
+                default: '新緑色のフロッグライト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:verdant_froglight'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pearlescent_froglight',
+                default: '真珠色のフロッグライト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pearlescent_froglight'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.torch',
+                default: '松明'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:torch'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_torch',
+                default: '魂の松明'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:soul_torch'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone_torch',
+                default: 'レッドストーントーチ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone_torch'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lantern',
+                default: 'ランタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lantern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_lantern',
+                default: '魂のランタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:soul_lantern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_rod',
+                default: 'エンドロッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_rod'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone_lamp',
+                default: 'レッドストーンランプ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone_lamp'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crafting_table',
+                default: '作業台'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crafting_table'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stonecutter',
+                default: '石切台'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stonecutter'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cartography_table',
+                default: '製図台'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cartography_table'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fletching_table',
+                default: '矢細工台'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fletching_table'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smithing_table',
+                default: '鍛冶台'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smithing_table'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.grindstone',
+                default: '砥石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:grindstone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.loom',
+                default: '機織り機'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:loom'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.furnace',
+                default: 'かまど'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:furnace'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.smoker',
+                default: '燻製器'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:smoker'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blast_furnace',
+                default: '溶鉱炉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blast_furnace'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.campfire',
+                default: '焚き火'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:campfire'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_campfire',
+                default: '魂の焚き火'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:soul_campfire'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.anvil',
+                default: '金床'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:anvil'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chipped_anvil',
+                default: '欠けた金床'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chipped_anvil'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.damaged_anvil',
+                default: '壊れかけの金床'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:damaged_anvil'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.composter',
+                default: 'コンポスター'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:composter'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.note_block',
+                default: '音符ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:note_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jukebox',
+                default: 'ジュークボックス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jukebox'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanting_table',
+                default: 'エンチャントテーブル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanting_table'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_crystal',
                 default: 'エンドクリスタル'
             }),
-            itemID: 'minecraft:end_crystal',
-            blockID: '426',
-            blockData: '0'
-        }
-    ];
-}
-
-exports.genRedStoneBlockInfo = () => {
-    return [{
-        itemID: 'minecraft:dispenser',
-        itemID: 'minecraft:grass_block',
-        blockData: 0,
-        blockID: 23,
-        name: formatMessage({
-            id: 'minecraft.Dispenser',
-            default: 'ディスペンサー'
-        })
-    },
-    {
-        itemID: 'minecraft:note_block',
-        blockData: 0,
-        blockID: 25,
-        name: formatMessage({
-            id: 'minecraft.NoteBlock',
-            default: '音符ブロック'
-        })
-    },
-    {
-        itemID: 'minecraft:dirt',
-        itemID: 'minecraft:piston',
-        blockData: 0,
-        blockID: 33,
-        name: formatMessage({
-            id: 'minecraft.Piston',
-            default: 'ピストン'
-        })
-    },
-    {
-        itemID: 'minecraft:sticky_piston',
-        blockData: 0,
-        blockID: 29,
-        name: formatMessage({
-            id: 'minecraft.StickyPiston',
-            default: '粘着ピストン'
-        })
-    },
-    {
-        itemID: 'minecraft:cobblestone',
-        itemID: 'minecraft:tnt',
-        blockData: 0,
-        blockID: 46,
-        name: formatMessage({
-            id: 'minecraft.TNT',
-            default: 'TNT'
-        })
-    },
-    {
-        itemID: 'minecraft:lever',
-        itemID: 'minecraft:oak_sapling',
-        blockData: 0,
-        blockID: 69,
-        name: formatMessage({
-            id: 'minecraft.Lever',
-            default: 'レバー'
-        })
-    },
-    {
-        itemID: 'minecraft:bedrock',
-        itemID: 'minecraft:stone_pressure_plate',
-        blockData: 0,
-        blockID: 70,
-        name: formatMessage({
-            id: 'minecraft.StonePressurePlate',
-            default: '石の感圧板'
-        })
-    },
-    {
-        itemID: 'minecraft:oak_pressure_plate',
-        blockData: 0,
-        blockID: 72,
-        name: formatMessage({ id: 'minecraft.WoodenPressurePlate', default: '木の感圧板' })
-    },
-    {
-        blockData: 0,
-        blockID: 75,
-        name: formatMessage({ id: 'minecraft.RedstoneTorch(off)', default: 'レッドストーントーチ(off)' })
-    },
-    {
-        itemID: 'minecraft:redstone_torch',
-        blockData: 0,
-        blockID: 76,
-        name: formatMessage({ id: 'minecraft.RedstoneTorch(on)', default: 'レッドストーントーチ(on)' })
-    },
-    {
-        itemID: 'minecraft:stone_button',
-        blockData: 0,
-        blockID: 77,
-        name: formatMessage({ id: 'minecraft.StoneButton', default: '石のボタン' })
-    },
-    {
-        itemID: 'minecraft:oak_trapdoor',
-        blockData: 0,
-        blockID: 96,
-        name: formatMessage({ id: 'minecraft.WoodenTrapdoor', default: '木のトラップドア' })
-    },
-    {
-        itemID: 'minecraft:oak_fence_gate',
-        itemID: 'minecraft:stone',
-        blockData: 0,
-        blockID: 107,
-        name: formatMessage({ id: 'minecraft.OakFenceGate', default: 'オークのフェンスゲート' })
-    },
-    {
-        itemID: 'minecraft:oak_leaves',
-        itemID: 'minecraft:spruce_fence_gate',
-        blockData: 0,
-        blockID: 183,
-        name: formatMessage({ id: 'minecraft.SpruceFenceGate', default: 'トウヒのフェンスゲート' })
-    },
-    {
-        itemID: 'minecraft:birch_fence_gate',
-        blockData: 0,
-        blockID: 184,
-        name: formatMessage({ id: 'minecraft.BirchFenceGate', default: 'シラカバのフェンスゲート' })
-    },
-    {
-        itemID: 'minecraft:jungle_fence_gate',
-        blockData: 0,
-        blockID: 185,
-        name: formatMessage({ id: 'minecraft.JungleFenceGate', default: 'ジャングルのフェンスゲート' })
-    },
-    {
-        itemID: 'minecraft:dark_oak_fence_gate',
-        blockData: 0,
-        blockID: 186,
-        name: formatMessage({ id: 'minecraft.DarkOakFenceGate', default: 'ダークオークのフェンスゲート' })
-    },
-    {
-        itemID: 'minecraft:acacia_fence_gate',
-        blockData: 0,
-        blockID: 187,
-        name: formatMessage({ id: 'minecraft.AcaciaFenceGate', default: 'アカシアのフェンスゲート' })
-    },
-    {
-        itemID: 'minecraft:redstone_lamp',
-        itemID: 'minecraft:sand',
-        blockData: 0,
-        blockID: 123,
-        name: formatMessage({ id: 'minecraft.RedstoneLamp(inactive)', default: 'レッドストーンランプ(inactive)' })
-    },
-    {
-        blockData: 0,
-        blockID: 124,
-        name: formatMessage({ id: 'minecraft.RedstoneLamp(active)', default: 'レッドストーンランプ(active)' })
-    },
-    {
-        itemID: 'minecraft:gravel',
-        itemID: 'minecraft:tripwire_hook',
-        blockData: 0,
-        blockID: 131,
-        name: formatMessage({ id: 'minecraft.TripwireHook', default: 'トリップワイヤーフック' })
-    },
-    {
-        itemID: 'minecraft:gold_ore',
-        itemID: 'minecraft:oak_button',
-        blockData: 0,
-        blockID: 143,
-        name: formatMessage({ id: 'minecraft.WoodenButtons', default: '木のボタン' })
-    },
-    {
-        itemID: 'minecraft:trapped_chest',
-        blockData: 0,
-        blockID: 146,
-        name: formatMessage({ id: 'minecraft.TrappedChest', default: 'トラップチェスト' })
-    },
-    {
-        itemID: 'minecraft:light_weighted_pressure_plate',
-        blockData: 0,
-        blockID: 147,
-        name: formatMessage({ id: 'minecraft.WeightedPressurePlate(light)', default: '重量感圧板(軽)' })
-    },
-    {
-        itemID: 'minecraft:heavy_weighted_pressure_plate',
-        blockData: 0,
-        blockID: 148,
-        name: formatMessage({ id: 'minecraft.WeightedPressurePlate(heavy)', default: '重量感圧板(重)' })
-    },
-    {
-        itemID: 'minecraft:daylight_detector',
-        itemID: 'minecraft:iron_ore',
-        blockData: 0,
-        blockID: 151,
-        name: formatMessage({ id: 'minecraft.DaylightDetector', default: '日照センサー' })
-    },
-    {
-        itemID: 'minecraft:redstone_block',
-        blockData: 0,
-        blockID: 152,
-        name: formatMessage({ id: 'minecraft.BlockofRedstone', default: 'レッドストーンブロック' })
-    },
-    {
-        itemID: 'minecraft:hopper',
-        blockData: 0,
-        blockID: 154,
-        name: formatMessage({ id: 'minecraft.Hopper', default: 'ホッパー' })
-    },
-    {
-        itemID: 'minecraft:dropper',
-        blockData: 0,
-        blockID: 158,
-        name: formatMessage({ id: 'minecraft.Dropper', default: 'ドロッパー' })
-    },
-    {
-        itemID: 'minecraft:coal_ore',
-        itemID: 'minecraft:iron_trapdoor',
-        blockData: 0,
-        blockID: 167,
-        name: formatMessage({ id: 'minecraft.IronTrapdoor', default: '鉄のトラップドア' })
-    },
-    {
-        itemID: 'minecraft:lapis_ore',
-        itemID: 'minecraft:observer',
-        blockData: 0,
-        blockID: 218,
-        name: formatMessage({ id: 'minecraft.Observer', default: 'オブザーバー' })
-    },
-    {
-        itemID: 'minecraft:iron_door',
-        blockData: 0,
-        blockID: 330,
-        name: formatMessage({ id: 'minecraft.IronDoor', default: '鉄のドア' })
-    },
-    {
-        itemID: 'minecraft:oak_door',
-        blockData: 0,
-        blockID: 324,
-        name: formatMessage({ id: 'minecraft.OakDoor', default: 'オークのドア' })
-    },
-    {
-        blockData: 0,
-        blockID: 330,
-        name: formatMessage({ id: 'minecraft.IronDoor', default: '鉄のドア' })
-    },
-    {
-        itemID: 'minecraft:iron_block',
-        itemID: 'minecraft:spruce_door',
-        blockData: 0,
-        blockID: 427,
-        name: formatMessage({ id: 'minecraft.SpruceDoor', default: 'トウヒのドア' })
-    },
-    {
-        itemID: 'minecraft:birch_door',
-        blockData: 0,
-        blockID: 428,
-        name: formatMessage({ id: 'minecraft.BirchDoor', default: 'シラカバのドア' })
-    },
-    {
-        itemID: 'minecraft:jungle_door',
-        blockData: 0,
-        blockID: 429,
-        name: formatMessage({ id: 'minecraft.JungleDoor', default: 'ジャングルのドア' })
-    },
-    {
-        itemID: 'minecraft:acacia_door',
-        blockData: 0,
-        blockID: 430,
-        name: formatMessage({ id: 'minecraft.AcaciaDoor', default: 'アカシアのドア' })
-    },
-    {
-        itemID: 'minecraft:dark_oak_door',
-        blockData: 0,
-        blockID: 431,
-        name: formatMessage({ id: 'minecraft.DarkOakDoor', default: 'ダークオークのドア' })
-    },
-    {
-        itemID: 'minecraft:repeater',
-        itemID: 'minecraft:white_wool',
-        blockData: 0,
-        blockID: 356,
-        name: formatMessage({ id: 'minecraft.RedstoneRepeater', default: 'レッドストーンリピーター' })
-    },
-    {
-        itemID: 'minecraft:comparator',
-        itemID: 'minecraft:red_mushroom',
-        blockData: 0,
-        blockID: 404,
-        name: formatMessage({ id: 'minecraft.RedstoneComparator', default: 'レッドストーンコンパレーター' })
-    },
-    {
-        itemID: 'minecraft:redstone',
-        blockData: 0,
-        blockID: 331,
-        name: formatMessage({ id: 'minecraft.RedstoneDust', default: 'レッドストーンダスト' })
-    }];
-}
-
-exports.genTransportationBlockInfo = () => {
-    return [{
-        itemID: 'minecraft:powered_rail',
-        blockData: 0,
-        blockID: 27,
-        name: formatMessage({ id: 'minecraft.PoweredRail', default: 'パワードレール' })
-    },
-    {
-        itemID: 'minecraft:detector_rail',
-        blockData: 0,
-        blockID: 28,
-        name: formatMessage({ id: 'minecraft.DetectorRail', default: 'ディテクターレール' })
-    },
-    {
-        itemID: 'minecraft:rail',
-        blockData: 0,
-        blockID: 66,
-        name: formatMessage({ id: 'minecraft.Rail', default: 'レール' })
-    },
-    {
-        itemID: 'minecraft:activator_rail',
-        blockData: 0,
-        blockID: 157,
-        name: formatMessage({ id: 'minecraft.ActivatorRail', default: 'アクティベーターレール' })
-    },
-    {
-        itemID: 'minecraft:minecart',
-        blockData: 0,
-        blockID: 328,
-        name: formatMessage({ id: 'minecraft.Minecart', default: 'トロッコ' })
-    },
-    {
-        itemID: 'minecraft:saddle',
-        blockData: 0,
-        blockID: 329,
-        name: formatMessage({ id: 'minecraft.Saddle', default: '鞍' })
-    },
-    {
-        itemID: 'minecraft:chest_minecart',
-        blockData: 0,
-        blockID: 342,
-        name: formatMessage({ id: 'minecraft.MinecartwithChest', default: 'チェスト付きトロッコ' })
-    },
-    {
-        itemID: 'minecraft:furnace_minecart',
-        blockData: 0,
-        blockID: 343,
-        name: formatMessage({ id: 'minecraft.MinecartwithFurnace', default: 'かまど付きトロッコ' })
-    },
-    {
-        itemID: 'minecraft:tnt_minecart',
-        blockData: 0,
-        blockID: 407,
-        name: formatMessage({ id: 'minecraft.MinecartwithTNT', default: 'TNT付きトロッコ ' })
-    },
-    {
-        itemID: 'minecraft:hopper_minecart',
-        blockData: 0,
-        blockID: 408,
-        name: formatMessage({ id: 'minecraft.MinecartwithHopper', default: 'ホッパー付きトロッコ' })
-    },
-    {
-        itemID: 'minecraft:brown_mushroom',
-        itemID: 'minecraft:carrot_on_a_stick',
-        blockData: 0,
-        blockID: 398,
-        name: formatMessage({ id: 'minecraft.CarrotonaStick', default: 'ニンジン付きの棒' })
-    },
-    {
-        itemID: 'minecraft:elytra',
-        blockData: 0,
-        blockID: 443,
-        name: formatMessage({ id: 'minecraft.Elytra', default: 'エリトラ' })
-    },
-    {
-        itemID: 'minecraft:oak_boat',
-        blockData: 0,
-        blockID: 333,
-        name: formatMessage({ id: 'minecraft.OakBoat', default: 'オークのボート' })
-    },
-    {
-        itemID: 'minecraft:spruce_boat',
-        blockData: 0,
-        blockID: 444,
-        name: formatMessage({ id: 'minecraft.SpruceBoat', default: 'トウヒのボート' })
-    },
-    {
-        itemID: 'minecraft:birch_boat',
-        blockData: 0,
-        blockID: 445,
-        name: formatMessage({ id: 'minecraft.BirchBoat', default: 'シラカバのボート' })
-    },
-    {
-        itemID: 'minecraft:jungle_boat',
-        blockData: 0,
-        blockID: 446,
-        name: formatMessage({ id: 'minecraft.JungleBoat', default: 'ジャングルのボート' })
-    },
-    {
-        itemID: 'minecraft:acacia_boat',
-        blockData: 0,
-        blockID: 447,
-        name: formatMessage({ id: 'minecraft.AcaciaBoat', default: 'アカシアのボート' })
-    },
-    {
-        itemID: 'minecraft:dark_oak_boat',
-        blockData: 0,
-        blockID: 448,
-        name: formatMessage({ id: 'minecraft.DarkOakBoat', default: 'ダークオークボート' })
-    }];
-}
-
-exports.genMiscellaneousBlockInfo = () => {
-    return [
-        {
-            itemID: 'minecraft:beacon',
-            blockData: 0,
-            blockID: '138',
-            name: formatMessage({ id: 'minecraft.Beacon', default: 'ビーコン' })
-        },
-        {
-            itemID: 'minecraft:coal',
-            blockData: 0,
-            blockID: '263',
-            name: formatMessage({ id: 'minecraft.Coal', default: '石炭' })
-        },
-        {
-            itemID: 'minecraft:charcoal',
-            blockData: 0,
-            blockID: '263:1',
-            name: formatMessage({ id: 'minecraft.Charcoal', default: '木炭' })
-        },
-        {
-            itemID: 'minecraft:diamond',
-            blockData: 0,
-            blockID: '264',
-            name: formatMessage({ id: 'minecraft.Diamond', default: 'ダイヤモンド' })
-        },
-        {
-            itemID: 'minecraft:iron_ingot',
-            blockData: 0,
-            blockID: '265',
-            name: formatMessage({ id: 'minecraft.Iron_Ingot', default: '鉄インゴット' })
-        },
-        {
-            itemID: 'minecraft:gold_ingot',
-            blockData: 0,
-            blockID: '266',
-            name: formatMessage({ id: 'minecraft.Gold_Ingot', default: '金インゴット' })
-        },
-        {
-            itemID: 'minecraft:stick',
-            blockData: 0,
-            blockID: '280',
-            name: formatMessage({ id: 'minecraft.Stick', default: '棒' })
-        },
-        {
-            itemID: 'minecraft:bowl',
-            blockData: 0,
-            blockID: '281',
-            name: formatMessage({ id: 'minecraft.Bowl', default: 'ボウル' })
-        },
-        {
-            itemID: 'minecraft:string',
-            blockData: 0,
-            blockID: '287',
-            name: formatMessage({ id: 'minecraft.String', default: '糸' })
-        },
-        {
-            itemID: 'minecraft:feather',
-            blockData: 0,
-            blockID: '288',
-            name: formatMessage({ id: 'minecraft.Feather', default: '羽根' })
-        },
-        {
-            itemID: 'minecraft:gunpowder',
-            blockData: 0,
-            blockID: '289',
-            name: formatMessage({ id: 'minecraft.Gunpowder', default: '火薬' })
-        },
-        {
-            itemID: 'minecraft:wheat_seeds',
-            blockData: 0,
-            blockID: '295',
-            name: formatMessage({ id: 'minecraft.Wheat_Seeds', default: '小麦の種' })
-        },
-        {
-            itemID: 'minecraft:wheat',
-            blockData: 0,
-            blockID: '296',
-            name: formatMessage({ id: 'minecraft.Wheat', default: '小麦' })
-        },
-        {
-            itemID: 'minecraft:flint',
-            blockData: 0,
-            blockID: '318',
-            name: formatMessage({ id: 'minecraft.Flint', default: '火打石' })
-        },
-        {
-            itemID: 'minecraft:bucket',
-            blockData: 0,
-            blockID: '325',
-            name: formatMessage({ id: 'minecraft.Bucket', default: 'バケツ' })
-        },
-        {
-            itemID: 'minecraft:water_bucket',
-            blockData: 0,
-            blockID: '326',
-            name: formatMessage({ id: 'minecraft.Water_Bucket', default: '水入りバケツ' })
-        },
-        {
-            itemID: 'minecraft:lava_bucket',
-            blockData: 0,
-            blockID: '327',
-            name: formatMessage({ id: 'minecraft.Lava_Bucket', default: '溶岩入りバケツ' })
-        },
-        {
-            itemID: 'minecraft:snowball',
-            blockData: 0,
-            blockID: '332',
-            name: formatMessage({ id: 'minecraft.Snowball', default: '雪玉' })
-        },
-        {
-            itemID: 'minecraft:leather',
-            blockData: 0,
-            blockID: '334',
-            name: formatMessage({ id: 'minecraft.Leather', default: '革' })
-        },
-        {
-            itemID: 'minecraft:milk_bucket',
-            blockData: 0,
-            blockID: '335',
-            name: formatMessage({ id: 'minecraft.Milk_Bucket', default: '牛乳入りバケツ' })
-        },
-        {
-            itemID: 'minecraft:brick',
-            blockData: 0,
-            blockID: '336',
-            name: formatMessage({ id: 'minecraft.Brick', default: 'レンガ' })
-        },
-        {
-            itemID: 'minecraft:clay',
-            itemID: 'minecraft:clay_ball',
-            blockData: 0,
-            blockID: '337',
-            name: formatMessage({ id: 'minecraft.Clay', default: '粘土玉' })
-        },
-        {
-            itemID: 'minecraft:sugar_cane',
-            blockData: 0,
-            blockID: '338',
-            name: formatMessage({ id: 'minecraft.Sugar_canes', default: 'サトウキビ' })
-        },
-        {
-            itemID: 'minecraft:paper',
-            blockData: 0,
-            blockID: '339',
-            name: formatMessage({ id: 'minecraft.Paper', default: '紙' })
-        },
-        {
-            itemID: 'minecraft:book',
-            blockData: 0,
-            blockID: '340',
-            name: formatMessage({ id: 'minecraft.Book', default: '本' })
-        },
-        {
-            itemID: 'minecraft:slime_ball',
-            blockData: 0,
-            blockID: '341',
-            name: formatMessage({ id: 'minecraft.Slimeball', default: 'スライムボール' })
-        },
-        {
-            itemID: 'minecraft:egg',
-            blockData: 0,
-            blockID: '344',
-            name: formatMessage({ id: 'minecraft.Egg', default: '卵' })
-        },
-        {
-            itemID: 'minecraft:glowstone_dust',
-            blockData: 0,
-            blockID: '348',
-            name: formatMessage({ id: 'minecraft.Glowstone_Dust', default: 'グロウストーンダスト' })
-        },
-        {
-            itemID: 'minecraft:ink_sac',
-            blockData: 0,
-            blockID: '351',
-            name: formatMessage({ id: 'minecraft.Ink_Sac', default: 'イカスミ' })
-        },
-        {
-            itemID: 'minecraft:red_dye',
-            blockData: 0,
-            blockID: '351:1',
-            name: formatMessage({ id: 'minecraft.Rose_Dye', default: '赤色の染料' })
-        },
-        {
-            itemID: 'minecraft:green_dye',
-            blockData: 0,
-            blockID: '351:2',
-            name: formatMessage({ id: 'minecraft.Green_Dye', default: '緑色の染料' })
-        },
-        {
-            itemID: 'minecraft:brown_dye',
-            blockData: 0,
-            blockID: '351:3',
-            name: formatMessage({ id: 'minecraft.Brown_Dye', default: '茶色の染料' })
-        },
-        {
-            itemID: 'minecraft:blue_dye',
-            blockData: 0,
-            blockID: '351:4',
-            name: formatMessage({ id: 'minecraft.Blue_Dye', default: '青色の染料' })
-        },
-        {
-            itemID: 'minecraft:purple_dye',
-            blockData: 0,
-            blockID: '351:5',
-            name: formatMessage({ id: 'minecraft.Purple_Dye', default: '紫色の染料' })
-        },
-        {
-            itemID: 'minecraft:cyan_dye',
-            blockData: 0,
-            blockID: '351:6',
-            name: formatMessage({ id: 'minecraft.Cyan_Dye', default: '青緑色の染料' })
-        },
-        {
-            itemID: 'minecraft:light_gray_dye',
-            blockData: 0,
-            blockID: '351:7',
-            name: formatMessage({ id: 'minecraft.LightGray_Dye', default: '薄灰色の染料' })
-        },
-        {
-            itemID: 'minecraft:gray_dye',
-            blockData: 0,
-            blockID: '351:8',
-            name: formatMessage({ id: 'minecraft.Gray_Dye', default: '灰色の染料' })
-        },
-        {
-            itemID: 'minecraft:pink_dye',
-            blockData: 0,
-            blockID: '351:9',
-            name: formatMessage({ id: 'minecraft.Pink_Dye', default: '桃色の染料' })
-        },
-        {
-            itemID: 'minecraft:lime_dye',
-            blockData: 0,
-            blockID: '351:10',
-            name: formatMessage({ id: 'minecraft.Lime_Dye', default: '黄緑色の染料' })
-        },
-        {
-            itemID: 'minecraft:yellow_dye',
-            blockData: 0,
-            blockID: '351:11',
-            name: formatMessage({ id: 'minecraft.Yellow_Dye', default: '黄色の染料' })
-        },
-        {
-            itemID: 'minecraft:light_blue_dye',
-            blockData: 0,
-            blockID: '351:12',
-            name: formatMessage({ id: 'minecraft.LightBlue_Dye', default: '空色の染料' })
-        },
-        {
-            itemID: 'minecraft:magenta_dye',
-            blockData: 0,
-            blockID: '351:13',
-            name: formatMessage({ id: 'minecraft.Magenta_Dye', default: '赤紫色の染料' })
-        },
-        {
-            itemID: 'minecraft:orange_dye',
-            blockData: 0,
-            blockID: '351:14',
-            name: formatMessage({ id: 'minecraft.Orange_Dye', default: '橙色の染料' })
-        },
-        {
-            itemID: 'minecraft:white_dye',
-            blockData: 0,
-            blockID: '351:15',
-            name: formatMessage({ id: 'minecraft.White_Dye', default: '白色の染料' })
-        },
-        {
-            itemID: 'minecraft:bone',
-            blockData: 0,
-            blockID: '352',
-            name: formatMessage({ id: 'minecraft.Bone', default: '骨' })
-        },
-        {
-            itemID: 'minecraft:sugar',
-            blockData: 0,
-            blockID: '353',
-            name: formatMessage({ id: 'minecraft.Sugar', default: '砂糖' })
-        },
-        {
-            itemID: 'minecraft:pumpkin_seeds',
-            blockData: 0,
-            blockID: '361',
-            name: formatMessage({ id: 'minecraft.Pumpkin_Seeds', default: 'カボチャの種' })
-        },
-        {
-            itemID: 'minecraft:melon_seeds',
-            blockData: 0,
-            blockID: '362',
-            name: formatMessage({ id: 'minecraft.Melon_Seeds', default: 'スイカの種' })
-        },
-        {
-            itemID: 'minecraft:ender_pearl',
-            blockData: 0,
-            blockID: '368',
-            name: formatMessage({ id: 'minecraft.Ender_Pearl', default: 'エンダーパール' })
-        },
-        {
-            itemID: 'minecraft:blaze_rod',
-            blockData: 0,
-            blockID: '369',
-            name: formatMessage({ id: 'minecraft.Blaze_Rod', default: 'ブレイズロッド' })
-        },
-        {
-            itemID: 'minecraft:gold_nugget',
-            blockData: 0,
-            blockID: '371',
-            name: formatMessage({ id: 'minecraft.Gold_Nugget', default: '金塊' })
-        },
-        {
-            itemID: 'minecraft:nether_wart',
-            blockData: 0,
-            blockID: '115',
-            name: formatMessage({ id: 'minecraft.Nether_Wart', default: 'ネザーウォート' })
-        },
-        {
-            itemID: 'minecraft:ender_eye',
-            blockData: 0,
-            blockID: '381',
-            name: formatMessage({ id: 'minecraft.Eye_of_Ender', default: 'エンダーアイ' })
-        },
-        {
-            itemID: 'minecraft:bat_spawn_egg',
-            blockData: 0,
-            blockID: '383:65',
-            name: formatMessage({ id: 'minecraft.Spawn_Bat', default: 'コウモリのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:blaze_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Blaze', default: 'ブレイズのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:cave_spider_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Cave_Spider', default: '洞窟グモのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:chiken_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Chicken', default: 'ニワトリのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:cow_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Cow', default: 'ウシのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:creeper_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Creeper', default: 'クリーパーのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:donkey_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Donkey', default: 'ロバのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:elder_guardian_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Elder_Guardian', default: 'エルダーガーディアンのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:enderman_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Enderman', default: 'エンダーマンのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:endermite_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Endermite', default: 'エンダーマイトのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:evoker_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Evoker', default: 'エヴォーカーのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:ghast_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Ghast', default: 'ガストのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:guardian_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Guardian', default: 'ガーディアンのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:horse_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Horse', default: 'ウマのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:husk_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Husk', default: 'ハスクのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:llama_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Llama', default: 'ラマのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:magmacube_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_MagmaCube', default: 'マグマキューブのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:mooshroom_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Mooshroom', default: 'ムーシュルームのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:mule_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Mule', default: 'ラバのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:ocelot_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Ocelot', default: 'ヤマネコのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:parrot_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Parrot', default: 'オウムのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:pig_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Pig', default: 'ブタのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:polarbear_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_PolarBear', default: 'シロクマのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:rabbit_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Rabbit', default: 'ウサギのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:sheep_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Sheep', default: '羊のスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:shulker_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Shulker', default: 'シュルカーのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:silverfish_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Silverfish', default: 'シルバーフィッシュのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:skeleton_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Skeleton', default: 'スケルトンのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:skeleton_horse_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_SkeletonHorse', default: 'スケルトンホースのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:slime_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Slime', default: 'スライムのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:spider_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Spider', default: 'クモのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:squid_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Squid', default: 'イカのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:stray_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Stray', default: 'ストレイのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:vex_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Vex', default: 'ヴェックスのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:villager_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Villager', default: '村人のスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:vindicator_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Vindicator', default: 'ヴィンディケーターのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:witch_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Witch', default: 'ウィッチのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:wither_skeleton_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_WitherSkeleton', default: 'ウィザースケルトンのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:wolf_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Wolf', default: 'オオカミのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:zombie_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_Zombie', default: 'ゾンビのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:zombie_horse_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_ZombieHorse', default: 'ゾンビホースのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:zombified_piglin_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_ZombiePigMan', default: 'ゾンビピッグマンのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:zombie_villager_spawn_egg',
-            blockData: 0,
-            blockID: '383',
-            name: formatMessage({ id: 'minecraft.Spawn_VillagerZombie', default: '村人ゾンビのスポーンエッグ' })
-        },
-        {
-            itemID: 'minecraft:experience_bottle',
-            blockData: 0,
-            blockID: '384',
-            name: formatMessage({ id: 'minecraft.Bottle_o_Enchanting', default: 'エンチャントの瓶' })
-        },
-        {
-            itemID: 'minecraft:fire_charge',
-            blockData: 0,
-            blockID: '385',
-            name: formatMessage({ id: 'minecraft.Fire_Charge', default: 'ファイヤーチャージ' })
-        },
-        {
-            itemID: 'minecraft:writable_book',
-            blockData: 0,
-            blockID: '386',
-            name: formatMessage({ id: 'minecraft.Book_and_Quill', default: '本と羽根ペン' })
-        },
-        {
-            itemID: 'minecraft:emerald',
-            blockData: 0,
-            blockID: '388',
-            name: formatMessage({ id: 'minecraft.Emerald', default: 'エメラルド' })
-        },
-        {
-            itemID: 'minecraft:map',
-            blockData: 0,
-            blockID: '395',
-            name: formatMessage({ id: 'minecraft.Empty_Map', default: '白紙の地図' })
-        },
-        {
-            itemID: 'minecraft:nether_star',
-            blockData: 0,
-            blockID: '399',
-            name: formatMessage({ id: 'minecraft.Nether_Star', default: 'ネザースター' })
-        },
-        {
-            itemID: 'minecraft:firework_star',
-            blockData: 0,
-            blockID: '402',
-            name: formatMessage({ id: 'minecraft.Firework_Star', default: '花火の星' })
-        },
-        {
-            itemID: 'minecraft:nether_brick',
-            blockData: 0,
-            blockID: '112',
-            name: formatMessage({ id: 'minecraft.Nether_Brick', default: 'ネザーレンガ' })
-        },
-        {
-            itemID: 'minecraft:quartz',
-            blockData: 0,
-            blockID: '406',
-            name: formatMessage({ id: 'minecraft.Nether_Quartz', default: 'ネザークォーツ' })
-        },
-        {
-            itemID: 'minecraft:prismarine_shard',
-            blockData: 0,
-            blockID: '409',
-            name: formatMessage({ id: 'minecraft.Prismarine_Shard', default: 'プリズマリンの欠片' })
-        },
-        {
-            itemID: 'minecraft:prismarine_crystals',
-            blockData: 0,
-            blockID: '410',
-            name: formatMessage({ id: 'minecraft.Prismarine_Crystals', default: 'プリズマリンクリスタル' })
-        },
-        {
-            itemID: 'minecraft:rabbit_hide',
-            blockData: 0,
-            blockID: '415',
-            name: formatMessage({ id: 'minecraft.Rabbit_Hide', default: 'ウサギの皮' })
-        },
-        {
-            itemID: 'minecraft:iron_horse_armor',
-            blockData: 0,
-            blockID: '417',
-            name: formatMessage({ id: 'minecraft.Iron_Horse_Armor', default: '鉄の馬鎧' })
-        },
-        {
-            itemID: 'minecraft:golden_horse_armor',
-            blockData: 0,
-            blockID: '418',
-            name: formatMessage({ id: 'minecraft.Gold_Horse_Armor', default: '金の馬鎧' })
-        },
-        {
-            itemID: 'minecraft:diamond_horse_armor',
-            blockData: 0,
-            blockID: '419',
-            name: formatMessage({ id: 'minecraft.Diamond_Horse_Armor', default: 'ダイヤモンドの馬鎧' })
-        },
-        {
-            itemID: 'minecraft:chorus_fruit',
-            blockData: 0,
-            blockID: '432',
-            name: formatMessage({ id: 'minecraft.Chorus_Fruit', default: 'コーラスフルーツ' })
-        },
-        {
-            itemID: 'minecraft:popped_chorus_fruit',
-            blockData: 0,
-            blockID: '433',
-            name: formatMessage({ id: 'minecraft.Popped_Chorus_Fruit', default: '焼いたコーラスフルーツ' })
-        },
-        {
-            itemID: 'minecraft:beetroot_seeds',
-            blockData: 0,
-            blockID: '435',
-            name: formatMessage({ id: 'minecraft.Beetroot_Seeds', default: 'ビートルートの種' })
-        },
-        {
-            itemID: 'minecraft:shulker_shell',
-            blockData: 0,
-            blockID: '450',
-            name: formatMessage({ id: 'minecraft.Shulker_Shell', default: 'シュルカーの殻' })
-        },
-        {
-            itemID: 'minecraft:iron_nugget',
-            blockData: 0,
-            blockID: '452',
-            name: formatMessage({ id: 'minecraft.Iron_Nugget', default: '鉄塊' })
-        },
-        {
-            itemID: 'minecraft:music_disc_13',
-            blockData: 0,
-            blockID: '2256',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_13', default: 'レコード_C418_13' })
-        },
-        {
-            itemID: 'minecraft:music_disc_cat',
-            blockData: 0,
-            blockID: '2257',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_cat', default: 'レコード_C418_cat' })
-        },
-        {
-            itemID: 'minecraft:music_disc_blocks',
-            blockData: 0,
-            blockID: '2258',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_blocks', default: 'レコード_C418_blocks' })
-        },
-        {
-            itemID: 'minecraft:music_disc_chirp',
-            blockData: 0,
-            blockID: '2259',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_chirp', default: 'レコード_C418_chirp' })
-        },
-        {
-            itemID: 'minecraft:music_disc_far',
-            blockData: 0,
-            blockID: '2260',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_far', default: 'レコード_C418_far' })
-        },
-        {
-            itemID: 'minecraft:music_disc_mall',
-            blockData: 0,
-            blockID: '2261',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_mall', default: 'レコード_C418_mall' })
-        },
-        {
-            itemID: 'minecraft:music_disc_mellohi',
-            blockData: 0,
-            blockID: '2262',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_mellohi', default: 'レコード_C418_mellohi' })
-        },
-        {
-            itemID: 'minecraft:music_disc_stal',
-            blockData: 0,
-            blockID: '2263',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_stal', default: 'レコード_C418_stal' })
-        },
-        {
-            itemID: 'minecraft:music_disc_strad',
-            blockData: 0,
-            blockID: '2264',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_strad', default: 'レコード_C418_strad' })
-        },
-        {
-            itemID: 'minecraft:music_disc_ward',
-            blockData: 0,
-            blockID: '2265',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_ward', default: 'レコード_C418_ward' })
-        },
-        {
-            itemID: 'minecraft:music_disc_11',
-            blockData: 0,
-            blockID: '2266',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_11', default: 'レコード_C418_11' })
-        },
-        {
-            itemID: 'minecraft:music_disc_wait',
-            blockData: 0,
-            blockID: '2267',
-            name: formatMessage({ id: 'minecraft.Music_Disc_C418_wait', default: 'レコード_C418_wait' })
-        }
-    ];
-}
-
-exports.genFoodstuffsBlockInfo = () => {
-    return [
-        {
-            itemID: 'minecraft:apple',
-            blockData: 0,
-            blockID: '260',
-            name: formatMessage({ id: 'minecraft.Apple', default: 'リンゴ' })
-        },
-        {
-            itemID: 'minecraft:mushroom_stew',
-            blockData: 0,
-            blockID: '282',
-            name: formatMessage({ id: 'minecraft.Mushroom_Stew', default: 'キノコシチュー' })
-        },
-        {
-            itemID: 'minecraft:bread',
-            blockData: 0,
-            blockID: '297',
-            name: formatMessage({ id: 'minecraft.Bread', default: 'パン' })
-        },
-        {
-            itemID: 'minecraft:porkchop',
-            blockData: 0,
-            blockID: '319',
-            name: formatMessage({ id: 'minecraft.Raw_Porkchop', default: '生の豚肉' })
-        },
-        {
-            itemID: 'minecraft:cooked_porkchop',
-            blockData: 0,
-            blockID: '320',
-            name: formatMessage({ id: 'minecraft.Cooked_Porkchop', default: '焼き豚' })
-        },
-        {
-            itemID: 'minecraft:golden_apple',
-            blockData: 0,
-            blockID: '322',
-            name: formatMessage({ id: 'minecraft.Golden_Apple', default: '金のリンゴ' })
-        },
-        {
-            itemID: 'minecraft:enchanted_golden_apple',
-            blockData: '1',
-            blockID: '322',
-            name: formatMessage({ id: 'minecraft.Enchanted_Golden_Apple', default: 'エンチャントされた金のリンゴ' })
-        },
-        {
-            itemID: 'minecraft:cod',
-            blockData: 0,
-            blockID: '349',
-            name: formatMessage({ id: 'minecraft.Raw_Fish', default: '生魚' })
-        },
-        {
-            itemID: 'minecraft:salmon',
-            blockData: '1',
-            blockID: '349',
-            name: formatMessage({ id: 'minecraft.Raw_Salmon', default: '生鮭' })
-        },
-        {
-            itemID: 'minecraft:tropical_fish',
-            blockData: '2',
-            blockID: '349',
-            name: formatMessage({ id: 'minecraft.Clownfish', default: '熱帯魚' })
-        },
-        {
-            itemID: 'minecraft:pufferfish',
-            blockData: '3',
-            blockID: '349',
-            name: formatMessage({ id: 'minecraft.Pufferfish', default: 'フグ' })
-        },
-        {
-            itemID: 'minecraft:cooked_cod',
-            blockData: 0,
-            blockID: '350',
-            name: formatMessage({ id: 'minecraft.Cooked_Fish', default: '焼き魚' })
-        },
-        {
-            itemID: 'minecraft:cooked_salmon',
-            blockData: '1',
-            blockID: '350',
-            name: formatMessage({ id: 'minecraft.Cooked_Salmon', default: '焼き鮭' })
-        },
-        {
-            itemID: 'minecraft:cake',
-            blockData: 0,
-            blockID: '354',
-            name: formatMessage({ id: 'minecraft.Cake', default: 'ケーキ' })
-        },
-        {
-            itemID: 'minecraft:cookie',
-            blockData: 0,
-            blockID: '357',
-            name: formatMessage({ id: 'minecraft.Cookie', default: 'クッキー' })
-        },
-        {
-            itemID: 'minecraft:melon_slice',
-            blockData: 0,
-            blockID: '360',
-            name: formatMessage({ id: 'minecraft.Melon_Slice', default: 'スイカの薄切り' })
-        },
-        {
-            itemID: 'minecraft:beef',
-            blockData: 0,
-            blockID: '363',
-            name: formatMessage({ id: 'minecraft.Raw_Beef', default: '生の牛肉' })
-        },
-        {
-            itemID: 'minecraft:cooked_beef',
-            blockData: 0,
-            blockID: '364',
-            name: formatMessage({ id: 'minecraft.Steak', default: 'ステーキ' })
-        },
-        {
-            itemID: 'minecraft:chicken',
-            blockData: 0,
-            blockID: '365',
-            name: formatMessage({ id: 'minecraft.Raw_Chicken', default: '生の鶏肉' })
-        },
-        {
-            itemID: 'minecraft:cooked_chicken',
-            blockData: 0,
-            blockID: '366',
-            name: formatMessage({ id: 'minecraft.Cooked_Chicken', default: '焼き鳥' })
-        },
-        {
-            itemID: 'minecraft:rotten_flesh',
-            blockData: 0,
-            blockID: '367',
-            name: formatMessage({ id: 'minecraft.Rotten_Flesh', default: '腐った肉' })
-        },
-        {
-            itemID: 'minecraft:spider_eye',
-            blockData: 0,
-            blockID: '375',
-            name: formatMessage({ id: 'minecraft.Spider_Eye', default: 'クモの目' })
-        },
-        {
-            itemID: 'minecraft:carrot',
-            blockData: 0,
-            blockID: '391',
-            name: formatMessage({ id: 'minecraft.Carrot', default: 'ニンジン' })
-        },
-        {
-            itemID: 'minecraft:potato',
-            blockData: 0,
-            blockID: '392',
-            name: formatMessage({ id: 'minecraft.Potato', default: 'ジャガイモ' })
-        },
-        {
-            itemID: 'minecraft:baked_potato',
-            blockData: 0,
-            blockID: '393',
-            name: formatMessage({ id: 'minecraft.Baked_Potato', default: 'ベイクドポテト' })
-        },
-        {
-            itemID: 'minecraft:poisonous_potato',
-            blockData: 0,
-            blockID: '394',
-            name: formatMessage({ id: 'minecraft.Poisonous_Potato', default: '青くなったジャガイモ' })
-        },
-        {
-            itemID: 'minecraft:pumpkin_pie',
-            blockData: 0,
-            blockID: '400',
-            name: formatMessage({ id: 'minecraft.Pumpkin_Pie', default: 'パンプキンパイ' })
-        },
-        {
-            itemID: 'minecraft:rabbit',
-            blockData: 0,
-            blockID: '411',
-            name: formatMessage({ id: 'minecraft.Raw_Rabbit', default: '生の兎肉' })
-        },
-        {
-            itemID: 'minecraft:cooked_rabbit',
-            blockData: 0,
-            blockID: '412',
-            name: formatMessage({ id: 'minecraft.Cooked_Rabbit', default: '焼き兎肉' })
-        },
-        {
-            itemID: 'minecraft:rabbit_stew',
-            blockData: 0,
-            blockID: '413',
-            name: formatMessage({ id: 'minecraft.Rabbit_Stew', default: 'ウサギシチュー' })
-        },
-        {
-            itemID: 'minecraft:mutton',
-            blockData: 0,
-            blockID: '423',
-            name: formatMessage({ id: 'minecraft.Raw_Mutton', default: '生の羊肉' })
-        },
-        {
-            itemID: 'minecraft:cooked_mutton',
-            blockData: 0,
-            blockID: '424',
-            name: formatMessage({ id: 'minecraft.Cooked_Mutton', default: '焼き羊肉' })
-        },
-        {
-            itemID: 'minecraft:beetroot',
-            blockData: 0,
-            blockID: '434',
-            name: formatMessage({ id: 'minecraft.Beetroot', default: 'ビートルート' })
-        },
-        {
-            itemID: 'minecraft:beetroot_soup',
-            blockData: 0,
-            blockID: '436',
-            name: formatMessage({ id: 'minecraft.Beetroot_Soup', default: 'ビートルートスープ' })
-        }
-    ];
-}
-
-exports.genToolsBlockInfo = () => {
-    return [
-        {
-            itemID: 'minecraft:wooden_shovel',
-            blockData: 0,
-            blockID: '269',
-            name: formatMessage({ id: 'minecraft.WoodenShovel', default: '木のシャベル' })
-        },
-        {
-            itemID: 'minecraft:stone_shovel',
-            blockData: 0,
-            blockID: '273',
-            name: formatMessage({ id: 'minecraft.StoneShovel', default: '石のシャベル' })
-        },
-        {
-            itemID: 'minecraft:iron_shovel',
-            blockData: 0,
-            blockID: '256',
-            name: formatMessage({ id: 'minecraft.IronShovel', default: '鉄のシャベル' })
-        },
-        {
-            itemID: 'minecraft:golden_shovel',
-            blockData: 0,
-            blockID: '284',
-            name: formatMessage({ id: 'minecraft.GoldShovel', default: '金のシャベル' })
-        },
-        {
-            itemID: 'minecraft:diamond_shovel',
-            blockData: 0,
-            blockID: '277',
-            name: formatMessage({ id: 'minecraft.DiamondShovel', default: 'ダイヤモンドのシャベル' })
-        },
-        {
-            itemID: 'minecraft:wooden_pickaxe',
-            blockData: 0,
-            blockID: '270',
-            name: formatMessage({ id: 'minecraft.WoodenPickaxe', default: '木のツルハシ' })
-        },
-        {
-            itemID: 'minecraft:stone_pickaxe',
-            blockData: 0,
-            blockID: '274',
-            name: formatMessage({ id: 'minecraft.StonePickaxe', default: '石のツルハシ' })
-        },
-        {
-            itemID: 'minecraft:iron_pickaxe',
-            blockData: 0,
-            blockID: '257',
-            name: formatMessage({ id: 'minecraft.IronPickaxe', default: '鉄のツルハシ' })
-        },
-        {
-            itemID: 'minecraft:golden_pickaxe',
-            blockData: 0,
-            blockID: '285',
-            name: formatMessage({ id: 'minecraft.GoldPickaxe', default: '金のツルハシ' })
-        },
-        {
-            itemID: 'minecraft:diamond_pickaxe',
-            blockData: 0,
-            blockID: '278',
-            name: formatMessage({ id: 'minecraft.DiamondPickaxe', default: 'ダイヤモンドのツルハシ' })
-        },
-        {
-            itemID: 'minecraft:wooden_axe',
-            blockData: 0,
-            blockID: '271',
-            name: formatMessage({ id: 'minecraft.WoodenAxe', default: '木の斧' })
-        },
-        {
-            itemID: 'minecraft:stone_axe',
-            blockData: 0,
-            blockID: '275',
-            name: formatMessage({ id: 'minecraft.StoneAxe', default: '石の斧' })
-        },
-        {
-            itemID: 'minecraft:iron_axe',
-            blockData: 0,
-            blockID: '258',
-            name: formatMessage({ id: 'minecraft.IronAxe', default: '鉄の斧' })
-        },
-        {
-            itemID: 'minecraft:golden_axe',
-            blockData: 0,
-            blockID: '286',
-            name: formatMessage({ id: 'minecraft.GoldAxe', default: '金の斧' })
-        },
-        {
-            itemID: 'minecraft:diamond_axe',
-            blockData: 0,
-            blockID: '279',
-            name: formatMessage({ id: 'minecraft.DiamondAxe', default: 'ダイヤモンドの斧' })
-        },
-        {
-            itemID: 'minecraft:wooden_hoe',
-            blockData: 0,
-            blockID: '290',
-            name: formatMessage({ id: 'minecraft.WoodenHoe', default: '木のクワ' })
-        },
-        {
-            itemID: 'minecraft:stone_hoe',
-            blockData: 0,
-            blockID: '291',
-            name: formatMessage({ id: 'minecraft.StoneHoe', default: '石のクワ' })
-        },
-        {
-            itemID: 'minecraft:iron_hoe',
-            blockData: 0,
-            blockID: '292',
-            name: formatMessage({ id: 'minecraft.IronHoe', default: '鉄のクワ' })
-        },
-        {
-            itemID: 'minecraft:golden_hoe',
-            blockData: 0,
-            blockID: '294',
-            name: formatMessage({ id: 'minecraft.GoldHoe', default: '金のクワ' })
-        },
-        {
-            itemID: 'minecraft:diamond_hoe',
-            blockData: 0,
-            blockID: '293',
-            name: formatMessage({ id: 'minecraft.DiamondHoe', default: 'ダイヤモンドのクワ' })
-        },
-        {
-            itemID: 'minecraft:flint_and_steel',
-            blockData: 0,
-            blockID: '259',
-            name: formatMessage({ id: 'minecraft.Flint_and_Steel', default: '火打石と打ち金' })
-        },
-        {
-            itemID: 'minecraft:compass',
-            blockData: 0,
-            blockID: '345',
-            name: formatMessage({ id: 'minecraft.Compass', default: 'コンパス' })
-        },
-        {
-            itemID: 'minecraft:fishing_rod',
-            blockData: 0,
-            blockID: '346',
-            name: formatMessage({ id: 'minecraft.Fishing_Rod', default: '釣竿' })
-        },
-        {
-            itemID: 'minecraft:clock',
-            blockData: 0,
-            blockID: '347',
-            name: formatMessage({ id: 'minecraft.Clock', default: '時計' })
-        },
-        {
-            itemID: 'minecraft:shears',
-            blockData: 0,
-            blockID: '359',
-            name: formatMessage({ id: 'minecraft.Shears', default: 'ハサミ' })
-        },
-        {
-            itemID: 'minecraft:lead',
-            blockData: 0,
-            blockID: '420',
-            name: formatMessage({ id: 'minecraft.Lead', default: 'リード' })
-        },
-        {
-            itemID: 'minecraft:name_tag',
+            blockID: '0',
             blockData: '0',
-            blockID: '421',
-            name: formatMessage({ id: 'minecraft.Name_Tag', default: '名札' })
+            itemID: 'minecraft:end_crystal'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brewing_stand',
+                default: '醸造台'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brewing_stand'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cauldron',
+                default: '大釜'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cauldron'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bell',
+                default: '鐘'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bell'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.beacon',
+                default: 'ビーコン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:beacon'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.conduit',
+                default: 'コンジット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:conduit'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lodestone',
+                default: 'ロードストーン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lodestone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ladder',
+                default: 'はしご'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ladder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.scaffolding',
+                default: '足場'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:scaffolding'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.beehive',
+                default: '養蜂箱'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:beehive'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_sand',
+                default: '怪しげな砂'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_sand'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_gravel',
+                default: '怪しげな砂利'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_gravel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lightning_rod',
+                default: '避雷針'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lightning_rod'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flower_pot',
+                default: '植木鉢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:flower_pot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.decorated_pot',
+                default: '飾り壺'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:decorated_pot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.armor_stand',
+                default: '防具立て'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:armor_stand'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.item_frame',
+                default: '額縁'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:item_frame'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glow_item_frame',
+                default: '輝く額縁'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glow_item_frame'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.painting',
+                default: '絵画'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:painting'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bookshelf',
+                default: '本棚'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bookshelf'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chiseled_bookshelf',
+                default: '模様入りの本棚'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chiseled_bookshelf'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lectern',
+                default: '書見台'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lectern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_sign',
+                default: 'オークの看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_hanging_sign',
+                default: 'オークの吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_sign',
+                default: 'トウヒの看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_hanging_sign',
+                default: 'トウヒの吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_sign',
+                default: 'シラカバの看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_hanging_sign',
+                default: 'シラカバの吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_sign',
+                default: 'ジャングルの看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_hanging_sign',
+                default: 'ジャングルの吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_sign',
+                default: 'アカシアの看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_hanging_sign',
+                default: 'アカシアの吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_sign',
+                default: 'ダークオークの看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_hanging_sign',
+                default: 'ダークオークの吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_sign',
+                default: 'マングローブの看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_hanging_sign',
+                default: 'マングローブの吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_sign',
+                default: 'サクラの看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_hanging_sign',
+                default: 'サクラの吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_sign',
+                default: '竹の看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_hanging_sign',
+                default: '竹の吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_sign',
+                default: '真紅の看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_hanging_sign',
+                default: '真紅の吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_sign',
+                default: '歪んだ看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_hanging_sign',
+                default: '歪んだ吊り看板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_hanging_sign'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chest',
+                default: 'チェスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chest'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.barrel',
+                default: '樽'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:barrel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ender_chest',
+                default: 'エンダーチェスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ender_chest'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.respawn_anchor',
+                default: 'リスポーンアンカー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:respawn_anchor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ominous_banner',
+                default: '不吉な旗'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ominous_banner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.skeleton_skull',
+                default: 'スケルトンの頭蓋骨'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:skeleton_skull'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wither_skeleton_skull',
+                default: 'ウィザースケルトンの頭蓋骨'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wither_skeleton_skull'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.player_head',
+                default: 'プレイヤーの頭'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:player_head'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.zombie_head',
+                default: 'ゾンビの頭'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:zombie_head'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.creeper_head',
+                default: 'クリーパーの頭'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:creeper_head'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.piglin_head',
+                default: 'ピグリンの頭'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:piglin_head'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dragon_head',
+                default: 'ドラゴンの頭'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dragon_head'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dragon_egg',
+                default: 'ドラゴンの卵'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dragon_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_portal_frame',
+                default: 'エンドポータルフレーム'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_portal_frame'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ender_eye',
+                default: 'エンダーアイ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ender_eye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.infested_stone',
+                default: '虫食い石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:infested_stone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.infested_cobblestone',
+                default: '虫食い丸石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:infested_cobblestone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.infested_stone_bricks',
+                default: '虫食い石レンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:infested_stone_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.infested_mossy_stone_bricks',
+                default: '苔むした虫食い石レンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:infested_mossy_stone_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.infested_cracked_stone_bricks',
+                default: 'ひび割れた虫食い石レンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:infested_cracked_stone_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.infested_chiseled_stone_bricks',
+                default: '模様入りの虫食い石レンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:infested_chiseled_stone_bricks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.infested_deepslate',
+                default: '虫食い深層岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:infested_deepslate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone',
+                default: 'レッドストーンダスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.repeater',
+                default: 'レッドストーンリピーター'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:repeater'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.comparator',
+                default: 'レッドストーンコンパレーター'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:comparator'
         }
     ];
 }
-
+exports.genRedStoneBlockInfo = () => {
+    return [
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_fence_gate',
+                default: 'オークのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_door',
+                default: 'オークのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_trapdoor',
+                default: 'オークのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_pressure_plate',
+                default: 'オークの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_button',
+                default: 'オークのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_fence_gate',
+                default: 'トウヒのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_door',
+                default: 'トウヒのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_trapdoor',
+                default: 'トウヒのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_pressure_plate',
+                default: 'トウヒの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_button',
+                default: 'トウヒのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_fence_gate',
+                default: 'シラカバのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_door',
+                default: 'シラカバのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_trapdoor',
+                default: 'シラカバのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_pressure_plate',
+                default: 'シラカバの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_button',
+                default: 'シラカバのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_fence_gate',
+                default: 'ジャングルのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_door',
+                default: 'ジャングルのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_trapdoor',
+                default: 'ジャングルのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_pressure_plate',
+                default: 'ジャングルの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_button',
+                default: 'ジャングルのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_fence_gate',
+                default: 'アカシアのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_door',
+                default: 'アカシアのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_trapdoor',
+                default: 'アカシアのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_pressure_plate',
+                default: 'アカシアの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_button',
+                default: 'アカシアのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_fence_gate',
+                default: 'ダークオークのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_door',
+                default: 'ダークオークのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_trapdoor',
+                default: 'ダークオークのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_pressure_plate',
+                default: 'ダークオークの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_button',
+                default: 'ダークオークのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_fence_gate',
+                default: 'マングローブのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_door',
+                default: 'マングローブのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_trapdoor',
+                default: 'マングローブのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_pressure_plate',
+                default: 'マングローブの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_button',
+                default: 'マングローブのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_fence_gate',
+                default: 'サクラのフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_door',
+                default: 'サクラのドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_trapdoor',
+                default: 'サクラのトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_pressure_plate',
+                default: 'サクラの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_button',
+                default: 'サクラのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_fence_gate',
+                default: '竹のフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_door',
+                default: '竹のドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_trapdoor',
+                default: '竹のトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_pressure_plate',
+                default: '竹の感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_button',
+                default: '竹のボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_fence_gate',
+                default: '真紅のフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_door',
+                default: '真紅のドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_trapdoor',
+                default: '真紅のトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_pressure_plate',
+                default: '真紅の感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_button',
+                default: '真紅のボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crimson_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fence_gate',
+                default: '歪んだフェンスゲート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_fence_gate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_door',
+                default: '歪んだドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_trapdoor',
+                default: '歪んだトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_pressure_plate',
+                default: '歪んだ感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_button',
+                default: '歪んだボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_pressure_plate',
+                default: '石の感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_button',
+                default: '石のボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_pressure_plate',
+                default: '磨かれたブラックストーンの感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polished_blackstone_button',
+                default: '磨かれたブラックストーンのボタン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polished_blackstone_button'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_door',
+                default: '鉄のドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_door'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_trapdoor',
+                default: '鉄のトラップドア'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_trapdoor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.heavy_weighted_pressure_plate',
+                default: '重量用感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:heavy_weighted_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_weighted_pressure_plate',
+                default: '軽量用感圧板'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_weighted_pressure_plate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone_block',
+                default: 'レッドストーンブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.big_dripleaf',
+                default: '大きなドリップリーフ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:big_dripleaf'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.slime_block',
+                default: 'スライムブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:slime_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.honey_block',
+                default: 'ハチミツブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:honey_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sculk_sensor',
+                default: 'スカルクセンサー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sculk_sensor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone_torch',
+                default: 'レッドストーントーチ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone_torch'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone_lamp',
+                default: 'レッドストーンランプ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone_lamp'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.furnace',
+                default: 'かまど'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:furnace'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.composter',
+                default: 'コンポスター'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:composter'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.note_block',
+                default: '音符ブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:note_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cauldron',
+                default: '大釜'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cauldron'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bell',
+                default: '鐘'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bell'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.beehive',
+                default: '養蜂箱'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:beehive'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.armor_stand',
+                default: '防具立て'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:armor_stand'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chiseled_bookshelf',
+                default: '模様入りの本棚'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chiseled_bookshelf'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lectern',
+                default: '書見台'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lectern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chest',
+                default: 'チェスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chest'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.barrel',
+                default: '樽'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:barrel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ender_chest',
+                default: 'エンダーチェスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ender_chest'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone',
+                default: 'レッドストーンダスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.repeater',
+                default: 'レッドストーンリピーター'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:repeater'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.comparator',
+                default: 'レッドストーンコンパレーター'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:comparator'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.target',
+                default: '的'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:target'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lever',
+                default: 'レバー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lever'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.calibrated_sculk_sensor',
+                default: '調律されたスカルクセンサー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:calibrated_sculk_sensor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tripwire_hook',
+                default: 'トリップワイヤーフック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tripwire_hook'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.string',
+                default: '糸'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:string'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.daylight_detector',
+                default: '日照センサー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:daylight_detector'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.piston',
+                default: 'ピストン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:piston'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sticky_piston',
+                default: '粘着ピストン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sticky_piston'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dispenser',
+                default: 'ディスペンサー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dispenser'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dropper',
+                default: 'ドロッパー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dropper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.hopper',
+                default: 'ホッパー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:hopper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.trapped_chest',
+                default: 'トラップチェスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:trapped_chest'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.observer',
+                default: 'オブザーバー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:observer'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.powered_rail',
+                default: 'パワードレール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:powered_rail'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.detector_rail',
+                default: 'ディテクターレール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:detector_rail'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rail',
+                default: 'レール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rail'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.activator_rail',
+                default: 'アクティベーターレール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:activator_rail'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.minecart',
+                default: 'トロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:minecart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fungus_on_a_stick',
+                default: '歪んだキノコ付きの棒'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_fungus_on_a_stick'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chest_minecart',
+                default: 'チェスト付きトロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chest_minecart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.furnace_minecart',
+                default: 'かまど付きトロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:furnace_minecart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.carrot_on_a_stick',
+                default: 'TNT付きのトロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:carrot_on_a_stick'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_chest_boat',
+                default: 'チェスト付きのオークのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_chest_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_chest_raft',
+                default: 'チェスト付きの竹のイカダ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_chest_raft'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tnt',
+                default: 'TNT'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tnt'
+        }
+    ];
+}
+exports.genToolsUtilityBlockInfo = () => {
+    return [
+        {
+            name: formatMessage({
+                id: 'minecraft.ender_eye',
+                default: 'エンダーアイ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ender_eye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.observer',
+                default: 'オブザーバー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:observer'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.powered_rail',
+                default: 'パワードレール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:powered_rail'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.detector_rail',
+                default: 'ディテクターレール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:detector_rail'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rail',
+                default: 'レール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rail'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.activator_rail',
+                default: 'アクティベーターレール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:activator_rail'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.minecart',
+                default: 'トロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:minecart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warped_fungus_on_a_stick',
+                default: '歪んだキノコ付きの棒'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warped_fungus_on_a_stick'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chest_minecart',
+                default: 'チェスト付きトロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chest_minecart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.furnace_minecart',
+                default: 'かまど付きトロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:furnace_minecart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.carrot_on_a_stick',
+                default: 'TNT付きのトロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:carrot_on_a_stick'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_chest_boat',
+                default: 'チェスト付きのオークのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_chest_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_chest_raft',
+                default: 'チェスト付きの竹のイカダ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_chest_raft'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wooden_shovel',
+                default: '木のシャベル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wooden_shovel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wooden_pickaxe',
+                default: '木のツルハシ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wooden_pickaxe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wooden_axe',
+                default: '木の斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wooden_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wooden_hoe',
+                default: '木のクワ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wooden_hoe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_shovel',
+                default: '石のシャベル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_shovel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_pickaxe',
+                default: '石のツルハシ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_pickaxe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_axe',
+                default: '石の斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_hoe',
+                default: '石のクワ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_hoe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_shovel',
+                default: '鉄のシャベル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_shovel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_pickaxe',
+                default: '鉄のツルハシ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_pickaxe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_axe',
+                default: '鉄の斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_hoe',
+                default: '鉄のクワ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_hoe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_shovel',
+                default: '金のシャベル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_shovel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_pickaxe',
+                default: '金のツルハシ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_pickaxe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_axe',
+                default: '金の斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_hoe',
+                default: '金のクワ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_hoe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_shovel',
+                default: 'ダイヤモンドのシャベル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_shovel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_pickaxe',
+                default: 'ダイヤモンドのツルハシ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_pickaxe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_axe',
+                default: 'ダイヤモンドの斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_hoe',
+                default: 'ダイヤモンドのクワ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_hoe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_shovel',
+                default: 'ネザライトのシャベル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_shovel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_pickaxe',
+                default: 'ネザライトのツルハシ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_pickaxe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_axe',
+                default: 'ネザライトの斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_hoe',
+                default: 'ネザライトのクワ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_hoe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bucket',
+                default: 'バケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.water_bucket',
+                default: '水入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:water_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pufferfish_bucket',
+                default: 'フグ入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pufferfish_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.salmon_bucket',
+                default: 'サケ入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:salmon_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cod_bucket',
+                default: 'タラ入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cod_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tropical_fish_bucket',
+                default: '熱帯魚入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tropical_fish_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.axolotl_bucket',
+                default: 'ウーパールーパー入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:axolotl_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tadpole_bucket',
+                default: 'オタマジャクシ入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tadpole_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lava_bucket',
+                default: '溶岩入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lava_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.powder_snow_bucket',
+                default: '粉雪入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:powder_snow_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.milk_bucket',
+                default: 'ミルク入りバケツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:milk_bucket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fishing_rod',
+                default: '釣竿'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fishing_rod'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flint_and_steel',
+                default: '火打石と打ち金'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:flint_and_steel'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fire_charge',
+                default: 'ファイヤーチャージ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fire_charge'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bone_meal',
+                default: '骨粉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bone_meal'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shears',
+                default: 'ハサミ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shears'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brush',
+                default: 'ブラシ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brush'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.name_tag',
+                default: '名札'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:name_tag'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lead',
+                default: 'リード'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lead'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.compass',
+                default: 'コンパス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:compass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.recovery_compass',
+                default: 'リカバリーコンパス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:recovery_compass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.clock',
+                default: '時計'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:clock'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spyglass',
+                default: '望遠鏡'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spyglass'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.map',
+                default: '白紙の地図'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:map'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.writable_book',
+                default: '本と羽根ペン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:writable_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ender_pearl',
+                default: 'エンダーパール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ender_pearl'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.elytra',
+                default: 'エリトラ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:elytra'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.firework_rocket',
+                default: 'ロケット花火-飛翔時間：1'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:firework_rocket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.firework_rocket',
+                default: 'ロケット花火-飛翔時間：2'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:firework_rocket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.firework_rocket',
+                default: 'ロケット花火-飛翔時間：3'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:firework_rocket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.saddle',
+                default: '鞍'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:saddle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tnt_minecart',
+                default: 'TNT付きのトロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tnt_minecart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.hopper_minecart',
+                default: 'ホッパー付きトロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:hopper_minecart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.oak_boat',
+                default: 'オークのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:oak_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_boat',
+                default: 'トウヒのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spruce_chest_boat',
+                default: 'チェスト付きのトウヒのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spruce_chest_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_boat',
+                default: 'シラカバのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.birch_chest_boat',
+                default: 'チェスト付きのシラカバのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:birch_chest_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_boat',
+                default: 'ジャングルのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jungle_chest_boat',
+                default: 'チェスト付きのジャングルのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jungle_chest_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_boat',
+                default: 'アカシアのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.acacia_chest_boat',
+                default: 'チェスト付きのアカシアのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:acacia_chest_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_boat',
+                default: 'ダークオークのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dark_oak_chest_boat',
+                default: 'チェスト付きのダークオークのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dark_oak_chest_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_boat',
+                default: 'マングローブのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mangrove_chest_boat',
+                default: 'チェスト付きのマングローブのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mangrove_chest_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_boat',
+                default: 'サクラのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_chest_boat',
+                default: 'チェスト付きのサクラのボート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cherry_chest_boat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bamboo_raft',
+                default: '竹のイカダ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bamboo_raft'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.goat_horn',
+                default: 'ヤギの角笛-沈思'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:goat_horn'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.goat_horn',
+                default: 'ヤギの角笛-歌声'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:goat_horn'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.goat_horn',
+                default: 'ヤギの角笛-深求'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:goat_horn'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.goat_horn',
+                default: 'ヤギの角笛-感覚'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:goat_horn'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.goat_horn',
+                default: 'ヤギの角笛-称賛'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:goat_horn'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.goat_horn',
+                default: 'ヤギの角笛-号令'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:goat_horn'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.goat_horn',
+                default: 'ヤギの角笛-憧憬'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:goat_horn'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.goat_horn',
+                default: 'ヤギの角笛-夢思'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:goat_horn'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_13',
+                default: 'レコード-C418-13'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_13'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_cat',
+                default: 'レコード-C418-cat'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_cat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_blocks',
+                default: 'レコード-C418-blocks'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_blocks'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_chirp',
+                default: 'レコード-C418-chirp'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_chirp'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_far',
+                default: 'レコード-C418-far'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_far'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_mall',
+                default: 'レコード-C418-mall'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_mall'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_mellohi',
+                default: 'レコード-C418-mellohi'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_mellohi'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_stal',
+                default: 'レコード-C418-stal'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_stal'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_strad',
+                default: 'レコード-C418-strad'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_strad'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_ward',
+                default: 'レコード-C418-ward'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_ward'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_11',
+                default: 'レコード-C418-11'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_11'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_wait',
+                default: 'レコード-C418-wait'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_wait'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_otherside',
+                default: 'レコード-レナ・レーン-otherside'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_otherside'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_5',
+                default: 'レコード-サミュエル・オーベリ-5'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_5'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_pigstep',
+                default: 'レコード-レナ・レーン-Pigstep'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_pigstep'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.music_disc_relic',
+                default: 'レコード-AaronCherof-Relic'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:music_disc_relic'
+        }
+    ];
+}
 exports.genCombatBlockInfo = () => {
     return [
         {
-            itemID: 'minecraft:bow',
-            blockData: 0,
-            blockID: '261',
-            name: formatMessage({ id: 'minecraft.Bow', default: '弓' })
-        },
-        {
-            itemID: 'minecraft:arrow',
-            blockData: 0,
-            blockID: '262',
-            name: formatMessage({ id: 'minecraft.Arrow', default: '矢' })
-        },
-        {
-            itemID: 'minecraft:wooden_sword',
-            blockData: 0,
-            blockID: '268',
-            name: formatMessage({ id: 'minecraft.WoodenSword', default: '木の剣' })
-        },
-        {
-            itemID: 'minecraft:stone_sword',
-            blockData: 0,
-            blockID: '272',
-            name: formatMessage({ id: 'minecraft.StoneSword', default: '石の剣' })
-        },
-        {
-            itemID: 'minecraft:iron_sword',
-            blockData: 0,
-            blockID: '267',
-            name: formatMessage({ id: 'minecraft.IronSword', default: '鉄の剣' })
-        },
-        {
-            itemID: 'minecraft:golden_sword',
-            blockData: 0,
-            blockID: '283',
-            name: formatMessage({ id: 'minecraft.GoldSword', default: '金の剣' })
-        },
-        {
-            itemID: 'minecraft:diamond_sword',
-            blockData: 0,
-            blockID: '276',
-            name: formatMessage({ id: 'minecraft.DiamondSword', default: 'ダイヤモンドの剣' })
-        },
-        {
-            itemID: 'minecraft:leather_helmet',
-            blockData: 0,
-            blockID: '298',
-            name: formatMessage({ id: 'minecraft.LeatherCap', default: '革の帽子' })
-        },
-        {
-            itemID: 'minecraft:chainmail_helmet',
-            blockData: 0,
-            blockID: '302',
-            name: formatMessage({ id: 'minecraft.ChainHelmet', default: 'チェーンのヘルメット' })
-        },
-        {
-            itemID: 'minecraft:iron_helmet',
-            blockData: 0,
-            blockID: '306',
-            name: formatMessage({ id: 'minecraft.IronHelmet', default: '鉄のヘルメット' })
-        },
-        {
-            itemID: 'minecraft:golden_helmet',
-            blockData: 0,
-            blockID: '314',
-            name: formatMessage({ id: 'minecraft.GoldHelmet', default: '金のヘルメット' })
-        },
-        {
-            itemID: 'minecraft:diamond_helmet',
-            blockData: 0,
-            blockID: '310',
-            name: formatMessage({ id: 'minecraft.DiamondHelmet', default: 'ダイヤモンドのヘルメット' })
-        },
-        {
-            itemID: 'minecraft:leather_chestplate',
-            blockData: 0,
-            blockID: '299',
-            name: formatMessage({ id: 'minecraft.LeatherTunic', default: '革の上着' })
-        },
-        {
-            itemID: 'minecraft:chainmail_chestplate',
-            blockData: 0,
-            blockID: '303',
-            name: formatMessage({ id: 'minecraft.ChainChestplate', default: 'チェーンのチェストプレート' })
-        },
-        {
-            itemID: 'minecraft:iron_chestplate',
-            blockData: 0,
-            blockID: '307',
-            name: formatMessage({ id: 'minecraft.IronChestplate', default: '鉄のチェストプレート' })
-        },
-        {
-            itemID: 'minecraft:golden_chestplate',
-            blockData: 0,
-            blockID: '315',
-            name: formatMessage({ id: 'minecraft.GoldChestplate', default: '金のチェストプレート' })
-        },
-        {
-            itemID: 'minecraft:diamond_chestplate',
-            blockData: 0,
-            blockID: '311',
-            name: formatMessage({ id: 'minecraft.DiamondChestplate', default: 'ダイヤモンドのチェストプレート' })
-        },
-        {
-            itemID: 'minecraft:leather_leggings',
-            blockData: 0,
-            blockID: '300',
-            name: formatMessage({ id: 'minecraft.LeatherPants', default: '革のズボン' })
-        },
-        {
-            itemID: 'minecraft:chainmail_leggings',
-            blockData: 0,
-            blockID: '304',
-            name: formatMessage({ id: 'minecraft.ChainLeggings', default: 'チェーンのレギンス' })
-        },
-        {
-            itemID: 'minecraft:iron_leggings',
-            blockData: 0,
-            blockID: '308',
-            name: formatMessage({ id: 'minecraft.IronLeggings', default: '鉄のレギンス' })
-        },
-        {
-            itemID: 'minecraft:golden_leggings',
-            blockData: 0,
-            blockID: '316',
-            name: formatMessage({ id: 'minecraft.GoldLeggings', default: '金のレギンス' })
-        },
-        {
-            itemID: 'minecraft:diamond_leggings',
-            blockData: 0,
-            blockID: '312',
-            name: formatMessage({ id: 'minecraft.DiamondLeggings', default: 'ダイヤモンドのレギンス' })
-        },
-        {
-            itemID: 'minecraft:leather_boots',
-            blockData: 0,
-            blockID: '301',
-            name: formatMessage({ id: 'minecraft.LeatherBoots', default: '革のブーツ' })
-        },
-        {
-            itemID: 'minecraft:chainmail_boots',
-            blockData: 0,
-            blockID: '305',
-            name: formatMessage({ id: 'minecraft.ChainBoots', default: 'チェーンのブーツ' })
-        },
-        {
-            itemID: 'minecraft:iron_boots',
-            blockData: 0,
-            blockID: '309',
-            name: formatMessage({ id: 'minecraft.IronBoots', default: '鉄のブーツ' })
-        },
-        {
-            itemID: 'minecraft:golden_boots',
-            blockData: 0,
-            blockID: '317',
-            name: formatMessage({ id: 'minecraft.GoldBoots', default: '金のブーツ' })
-        },
-        {
-            itemID: 'minecraft:diamond_boots',
-            blockData: 0,
-            blockID: '313',
-            name: formatMessage({ id: 'minecraft.DiamondBoots', default: 'ダイヤモンドのブーツ' })
-        },
-        {
-            itemID: 'minecraft:shield',
-            blockData: 0,
-            blockID: '442',
-            name: formatMessage({ id: 'minecraft.Shield', default: '盾' })
-        },
-        {
-            itemID: 'minecraft:totem_of_undying',
-            blockData: 0,
-            blockID: '449',
-            name: formatMessage({ id: 'minecraft.Totem_of_Undying', default: '不死のトーテム' })
-        },
-        {
-            itemID: 'minecraft:spectral_arrow',
+            name: formatMessage({
+                id: 'minecraft.end_crystal',
+                default: 'エンドクリスタル'
+            }),
+            blockID: '0',
             blockData: '0',
-            blockID: '439',
-            name: formatMessage({ id: 'minecraft.SpectralArrow', default: '光の矢' })
+            itemID: 'minecraft:end_crystal'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tnt',
+                default: 'TNT'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tnt'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wooden_axe',
+                default: '木の斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wooden_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_axe',
+                default: '石の斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_axe',
+                default: '鉄の斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_axe',
+                default: '金の斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_axe',
+                default: 'ダイヤモンドの斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_axe',
+                default: 'ネザライトの斧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_axe'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.firework_rocket',
+                default: 'ロケット花火-飛翔時間：1'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:firework_rocket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.firework_rocket',
+                default: 'ロケット花火-飛翔時間：2'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:firework_rocket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.firework_rocket',
+                default: 'ロケット花火-飛翔時間：3'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:firework_rocket'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wooden_sword',
+                default: '木の剣'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wooden_sword'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stone_sword',
+                default: '石の剣'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stone_sword'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_sword',
+                default: '金の剣'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_sword'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_sword',
+                default: '鉄の剣'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_sword'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_sword',
+                default: 'ダイヤモンドの剣'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_sword'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_sword',
+                default: 'ネザライトの剣'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_sword'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.trident',
+                default: 'トライデント'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:trident'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shield',
+                default: '盾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shield'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.leather_helmet',
+                default: '革の帽子'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:leather_helmet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.leather_chestplate',
+                default: '革の上着'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:leather_chestplate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.leather_leggings',
+                default: '革のズボン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:leather_leggings'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.leather_boots',
+                default: '革のブーツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:leather_boots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chainmail_helmet',
+                default: 'チェーンのヘルメット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chainmail_helmet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chainmail_chestplate',
+                default: 'チェーンのチェストプレート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chainmail_chestplate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chainmail_leggings',
+                default: 'チェーンのレギンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chainmail_leggings'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chainmail_boots',
+                default: 'チェーンのブーツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chainmail_boots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_helmet',
+                default: '鉄のヘルメット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_helmet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_chestplate',
+                default: '鉄のチェストプレート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_chestplate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_leggings',
+                default: '鉄のレギンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_leggings'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_boots',
+                default: '鉄のブーツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_boots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_helmet',
+                default: 'ダイヤモンドのヘルメット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_helmet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_chestplate',
+                default: 'ダイヤモンドのチェストプレート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_chestplate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_leggings',
+                default: 'ダイヤモンドのレギンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_leggings'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_boots',
+                default: 'ダイヤモンドのブーツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_boots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_helmet',
+                default: '金のヘルメット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_helmet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_chestplate',
+                default: '金のチェストプレート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_chestplate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_leggings',
+                default: '金のレギンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_leggings'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_boots',
+                default: '金のブーツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_boots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_helmet',
+                default: 'ネザライトのヘルメット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_helmet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_chestplate',
+                default: 'ネザライトのチェストプレート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_chestplate'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_leggings',
+                default: 'ネザライトのレギンス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_leggings'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_boots',
+                default: 'ネザライトのブーツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_boots'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.turtle_helmet',
+                default: 'カメの甲羅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:turtle_helmet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.leather_horse_armor',
+                default: '革の馬鎧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:leather_horse_armor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_horse_armor',
+                default: '鉄の馬鎧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_horse_armor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_horse_armor',
+                default: '金の馬鎧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_horse_armor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond_horse_armor',
+                default: 'ダイヤモンドの馬鎧'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond_horse_armor'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.totem_of_undying',
+                default: '不死のトーテム'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:totem_of_undying'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.snowball',
+                default: '雪玉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:snowball'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.egg',
+                default: '卵'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bow',
+                default: '弓'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crossbow',
+                default: 'クロスボウ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:crossbow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.arrow',
+                default: '矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spectral_arrow',
+                default: '光の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spectral_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '水の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: 'ありふれた矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '濃厚な矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '奇妙な矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '暗視の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '暗視の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '透明化の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '透明化の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '跳躍の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '跳躍の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '跳躍の矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '耐火の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '耐火の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '俊敏の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '俊敏の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '俊敏の矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '鈍化の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '鈍化の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '鈍化の矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: 'タートルマスターの矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: 'タートルマスターの矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: 'タートルマスターの矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '水中呼吸の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '水中呼吸の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '治癒の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '治癒の矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '負傷の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '負傷の矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '毒の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '毒の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '毒の矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '再生の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '再生の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '再生の矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '力の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '力の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '力の矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '弱化の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '弱化の矢-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '幸運の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '低速落下の矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: '低速落下の矢-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
         }
     ];
 }
-
-exports.genBrewingBlockInfo = () => {
+exports.genFoodDrinkBlockInfo = () => {
     return [
         {
-            itemID: 'minecraft:ghast_tear',
-            blockData: 0,
-            blockID: '370',
-            name: formatMessage({ id: 'minecraft.Ghast_Tear', default: 'ガストの涙' })
-        },
-        {
-            itemID: 'minecraft:glass_bottle',
-            blockData: 0,
-            blockID: '374',
-            name: formatMessage({ id: 'minecraft.Glass_Bottle', default: 'ガラス瓶' })
-        },
-        {
-            itemID: 'minecraft:fermented_spider_eye',
-            blockData: 0,
-            blockID: '376',
-            name: formatMessage({ id: 'minecraft.Fermented_Spider_Eye', default: '発酵したクモの目' })
-        },
-        {
-            itemID: 'minecraft:blaze_powder',
-            blockData: 0,
-            blockID: '377',
-            name: formatMessage({ id: 'minecraft.Blaze_Powder', default: 'ブレイズパウダー' })
-        },
-        {
-            itemID: 'minecraft:magma_cream',
-            blockData: 0,
-            blockID: '378',
-            name: formatMessage({ id: 'minecraft.Magma_Cream', default: 'マグマクリーム' })
-        },
-        {
-            itemID: 'minecraft:brewing_stand',
-            blockData: 0,
-            blockID: '117',
-            name: formatMessage({ id: 'minecraft.Brewing_Stand', default: '醸造台' })
-        },
-        {
-            itemID: 'minecraft:cauldron',
-            blockData: 0,
-            blockID: '118',
-            name: formatMessage({ id: 'minecraft.Cauldron', default: '大釜' })
-        },
-        {
-            itemID: 'minecraft:glistering_melon_slice',
-            blockData: 0,
-            blockID: '382',
-            name: formatMessage({ id: 'minecraft.Glistering_Melon_Slice', default: 'きらめくスイカの薄切り' })
-        },
-        {
-            itemID: 'minecraft:golden_carrot',
-            blockData: 0,
-            blockID: '396',
-            name: formatMessage({ id: 'minecraft.Golden_Carrot', default: '金のニンジン' })
-        },
-        {
-            itemID: 'minecraft:rabbit_foot',
-            blockData: 0,
-            blockID: '414',
             name: formatMessage({
-                id: 'minecraft.Rabbits_Foot', default: 'ウサギの足'
-            })
-        },
-        {
-            itemID: 'minecraft:dragon_breath',
+                id: 'minecraft.glow_berries',
+                default: 'グロウベリー'
+            }),
+            blockID: '0',
             blockData: '0',
-            blockID: '437',
+            itemID: 'minecraft:glow_berries'
+        },
+        {
             name: formatMessage({
-                id: 'minecraft.Dragons_Breath', default: 'ドラゴンブレス'
-            })
+                id: 'minecraft.sweet_berries',
+                default: 'スイートベリー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sweet_berries'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.apple',
+                default: 'リンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:apple'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_apple',
+                default: '金のリンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_apple'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_golden_apple',
+                default: 'エンチャントされた金のリンゴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_golden_apple'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.melon_slice',
+                default: 'スイカの薄切り'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:melon_slice'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chorus_fruit',
+                default: 'コーラスフルーツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chorus_fruit'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.carrot',
+                default: 'ニンジン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:carrot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_carrot',
+                default: '金のニンジン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_carrot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potato',
+                default: 'ジャガイモ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potato'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.baked_potato',
+                default: 'ベイクドポテト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:baked_potato'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.poisonous_potato',
+                default: '青くなったジャガイモ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:poisonous_potato'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.beetroot',
+                default: 'ビートルート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:beetroot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dried_kelp',
+                default: '乾燥した昆布'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dried_kelp'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.beef',
+                default: '生の牛肉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:beef'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cooked_beef',
+                default: 'ステーキ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cooked_beef'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.porkchop',
+                default: '生の豚肉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:porkchop'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cooked_porkchop',
+                default: '焼き豚'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cooked_porkchop'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mutton',
+                default: '生の羊肉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mutton'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cooked_mutton',
+                default: '焼き羊肉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cooked_mutton'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chicken',
+                default: '生の鶏肉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chicken'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cooked_chicken',
+                default: '焼き鳥'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cooked_chicken'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rabbit',
+                default: '生の兎肉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rabbit'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cooked_rabbit',
+                default: '焼き兎肉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cooked_rabbit'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cod',
+                default: '生鱈'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cod'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cooked_cod',
+                default: '焼き鱈'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cooked_cod'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.salmon',
+                default: '生鮭'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:salmon'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cooked_salmon',
+                default: '焼き鮭'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cooked_salmon'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tropical_fish',
+                default: '熱帯魚'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tropical_fish'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pufferfish',
+                default: 'フグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pufferfish'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bread',
+                default: 'パン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bread'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cookie',
+                default: 'クッキー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cookie'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cake',
+                default: 'ケーキ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cake'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pumpkin_pie',
+                default: 'パンプキンパイ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pumpkin_pie'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rotten_flesh',
+                default: '腐った肉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rotten_flesh'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spider_eye',
+                default: 'クモの目'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spider_eye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mushroom_stew',
+                default: 'キノコシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mushroom_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.beetroot_soup',
+                default: 'ビートルートスープ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:beetroot_soup'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rabbit_stew',
+                default: 'ウサギシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rabbit_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: '怪しげなシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: '怪しげなシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: '怪しげなシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: '怪しげなシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: '怪しげなシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: '怪しげなシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: '怪しげなシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: '怪しげなシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.suspicious_stew',
+                default: '怪しげなシチュー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:suspicious_stew'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.honey_bottle',
+                default: 'ハチミツ入りの瓶'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:honey_bottle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '水入り瓶'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: 'ありふれたポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '濃厚なポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '奇妙なポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '暗視のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '暗視のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '透明化のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '透明化のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '跳躍のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '跳躍のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '跳躍のポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '耐火のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '耐火のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '俊敏のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '俊敏のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '俊敏のポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '鈍化のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '鈍化のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '鈍化のポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: 'タートルマスターのポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: 'タートルマスターのポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: 'タートルマスターのポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '水中呼吸のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '水中呼吸のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '治癒のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '治癒のポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '負傷のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '負傷のポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '毒のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '毒のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '毒のポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '再生のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '再生のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '再生のポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '力のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '力のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '力のポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '弱化のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '弱化のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '幸運のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '低速落下のポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: '低速落下のポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '水入りスプラッシュ瓶'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: 'ありふれたスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '濃厚なスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '奇妙なスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '暗視のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '暗視のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '透明化のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '透明化のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '跳躍のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '跳躍のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '跳躍のスプラッシュポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '耐火のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '耐火のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '俊敏のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '俊敏のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '俊敏のスプラッシュポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '鈍化のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '鈍化のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '鈍化のスプラッシュポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: 'タートルマスターのスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: 'タートルマスターのスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: 'タートルマスターのスプラッシュポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '水中呼吸のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '水中呼吸のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '治癒のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '治癒のスプラッシュポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '負傷のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '負傷のスプラッシュポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '毒のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '毒のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '毒のスプラッシュポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '再生のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '再生のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '再生のスプラッシュポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '力のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '力のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '力のスプラッシュポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '弱化のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '弱化のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '幸運のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '低速落下のスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: '低速落下のスプラッシュポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '水入り残留瓶'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: 'ありふれた残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '濃厚な残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '奇妙な残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '暗視の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '暗視の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '透明化の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '透明化の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '跳躍の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '跳躍の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '跳躍の残留ポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '耐火の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '耐火の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '俊敏の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '俊敏の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '俊敏の残留ポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '鈍化の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '鈍化の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '鈍化の残留ポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: 'タートルマスターの残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: 'タートルマスターの残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: 'タートルマスターの残留ポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '水中呼吸の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '水中呼吸の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '治癒の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '治癒の残留ポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '負傷の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '負傷の残留ポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '毒の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '毒の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '毒の残留ポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '再生の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '再生の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '再生の残留ポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '力の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '力の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '力の残留ポーション-強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '弱化の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '弱化の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '幸運の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '低速落下の残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: '低速落下の残留ポーション-延長'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
         }
     ];
 }
-
-exports.genExtraBlockInfo = () => {
+exports.genIngredientsInfo = () => {
     return [
+        {
+            name: formatMessage({
+                id: 'minecraft.ancient_debris',
+                default: '古代の残骸'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ancient_debris'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_wart',
+                default: 'ネザーウォート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_wart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ender_eye',
+                default: 'エンダーアイ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ender_eye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.string',
+                default: '糸'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:string'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bone_meal',
+                default: '骨粉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bone_meal'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ender_pearl',
+                default: 'エンダーパール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ender_pearl'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.turtle_helmet',
+                default: 'カメの甲羅'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:turtle_helmet'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.snowball',
+                default: '雪玉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:snowball'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.egg',
+                default: '卵'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.golden_carrot',
+                default: '金のニンジン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:golden_carrot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pufferfish',
+                default: 'フグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pufferfish'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spider_eye',
+                default: 'クモの目'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spider_eye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.coal',
+                default: '石炭'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:coal'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.charcoal',
+                default: '木炭'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:charcoal'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.raw_iron',
+                default: '鉄の原石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:raw_iron'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.raw_copper',
+                default: '銅の原石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:raw_copper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.raw_gold',
+                default: '金の原石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:raw_gold'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.emerald',
+                default: 'エメラルド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:emerald'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lapis_lazuli',
+                default: 'ラピスラズリ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lapis_lazuli'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.diamond',
+                default: 'ダイヤモンド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:diamond'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.quartz',
+                default: 'ネザークォーツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:quartz'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.amethyst_shard',
+                default: 'アメジストの欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:amethyst_shard'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_nugget',
+                default: '鉄塊'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_nugget'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gold_nugget',
+                default: '金塊'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gold_nugget'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_ingot',
+                default: '鉄インゴット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_ingot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.copper_ingot',
+                default: '銅インゴット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:copper_ingot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gold_ingot',
+                default: '金インゴット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gold_ingot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_scrap',
+                default: 'ネザライトの欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_scrap'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_ingot',
+                default: 'ネザライトインゴット'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_ingot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stick',
+                default: '棒'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stick'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flint',
+                default: '火打石'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:flint'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wheat',
+                default: '小麦'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wheat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bone',
+                default: '骨'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.feather',
+                default: '羽根'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:feather'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.leather',
+                default: '革'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:leather'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rabbit_hide',
+                default: 'ウサギの皮'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rabbit_hide'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.honeycomb',
+                default: 'ハニカム'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:honeycomb'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ink_sac',
+                default: 'イカスミ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ink_sac'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glow_ink_sac',
+                default: '輝くイカスミ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glow_ink_sac'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.scute',
+                default: 'カメのウロコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:scute'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.slime_ball',
+                default: 'スライムボール'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:slime_ball'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.clay_ball',
+                default: '粘土玉'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:clay_ball'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine_shard',
+                default: 'プリズマリンの欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine_shard'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prismarine_crystals',
+                default: 'プリズマリンクリスタル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prismarine_crystals'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nautilus_shell',
+                default: 'オウムガイの殻'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nautilus_shell'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.heart_of_the_sea',
+                default: '海洋の心'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:heart_of_the_sea'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blaze_rod',
+                default: 'ブレイズロッド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blaze_rod'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_star',
+                default: 'ネザースター'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_star'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shulker_shell',
+                default: 'シュルカーの殻'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shulker_shell'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.popped_chorus_fruit',
+                default: '焼いたコーラスフルーツ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:popped_chorus_fruit'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.echo_shard',
+                default: '残響の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:echo_shard'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.disc_fragment_5',
+                default: 'レコードの破片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:disc_fragment_5'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_dye',
+                default: '白色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:white_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_gray_dye',
+                default: '薄灰色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_gray_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gray_dye',
+                default: '灰色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gray_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.black_dye',
+                default: '黒色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:black_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_dye',
+                default: '茶色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brown_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.red_dye',
+                default: '赤色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:red_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.orange_dye',
+                default: '橙色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:orange_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.yellow_dye',
+                default: '黄色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:yellow_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lime_dye',
+                default: '黄緑色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lime_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.green_dye',
+                default: '緑色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:green_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cyan_dye',
+                default: '青緑色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cyan_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light_blue_dye',
+                default: '空色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light_blue_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blue_dye',
+                default: '青色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blue_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.purple_dye',
+                default: '紫色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:purple_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magenta_dye',
+                default: '赤紫色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magenta_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pink_dye',
+                default: '桃色の染料'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pink_dye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bowl',
+                default: 'ボウル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bowl'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brick',
+                default: 'レンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brick'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.nether_brick',
+                default: 'ネザーレンガ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:nether_brick'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.paper',
+                default: '紙'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:paper'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.book',
+                default: '本'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.firework_star',
+                default: '花火の星'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:firework_star'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glass_bottle',
+                default: 'ガラス瓶'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glass_bottle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glowstone_dust',
+                default: 'グロウストーンダスト'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glowstone_dust'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.gunpowder',
+                default: '火薬'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:gunpowder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dragon_breath',
+                default: 'ドラゴンブレス'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dragon_breath'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fermented_spider_eye',
+                default: '発酵したクモの目'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fermented_spider_eye'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blaze_powder',
+                default: 'ブレイズパウダー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blaze_powder'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sugar',
+                default: '砂糖'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sugar'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rabbit_foot',
+                default: 'ウサギの足'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rabbit_foot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glistering_melon_slice',
+                default: 'きらめくスイカの薄切り'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glistering_melon_slice'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magma_cream',
+                default: 'マグマクリーム'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magma_cream'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ghast_tear',
+                default: 'ガストの涙'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ghast_tear'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.phantom_membrane',
+                default: 'ファントムの皮膜'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:phantom_membrane'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flower_banner_pattern',
+                default: '旗の模様-花模様'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:flower_banner_pattern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.creeper_banner_pattern',
+                default: '旗の模様-クリーパー模様'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:creeper_banner_pattern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.skull_banner_pattern',
+                default: '旗の模様-骸骨模様'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:skull_banner_pattern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mojang_banner_pattern',
+                default: '旗の模様-何かの模様'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mojang_banner_pattern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.globe_banner_pattern',
+                default: '旗の模様-地球の模様'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:globe_banner_pattern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.piglin_banner_pattern',
+                default: '旗の模様-豚の鼻の模様'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:piglin_banner_pattern'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.angler_pottery_sherd',
+                default: '釣り人の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:angler_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.archer_pottery_sherd',
+                default: '射手の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:archer_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.arms_up_pottery_sherd',
+                default: '両腕を上げた人の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:arms_up_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blade_pottery_sherd',
+                default: '剣の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blade_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brewer_pottery_sherd',
+                default: '醸造家の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:brewer_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.burn_pottery_sherd',
+                default: '炎の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:burn_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.danger_pottery_sherd',
+                default: '脅威の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:danger_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.explorer_pottery_sherd',
+                default: '探検家の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:explorer_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.friend_pottery_sherd',
+                default: '友の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:friend_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.heart_pottery_sherd',
+                default: 'ハートの壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:heart_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.heartbreak_pottery_sherd',
+                default: '割れたハートの壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:heartbreak_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.howl_pottery_sherd',
+                default: '遠吠えの壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:howl_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.miner_pottery_sherd',
+                default: '鉱夫の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:miner_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mourner_pottery_sherd',
+                default: '哀悼者の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mourner_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.plenty_pottery_sherd',
+                default: '富の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:plenty_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.prize_pottery_sherd',
+                default: '宝物の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:prize_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sheaf_pottery_sherd',
+                default: '麦束の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sheaf_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shelter_pottery_sherd',
+                default: '木陰の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shelter_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.skull_pottery_sherd',
+                default: '頭蓋骨の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:skull_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.snort_pottery_sherd',
+                default: '鼻を鳴らす動物の壺の欠片'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:snort_pottery_sherd'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.netherite_upgrade_smithing_template',
+                default: '鍛冶型-ネザライト強化'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:netherite_upgrade_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sentry_armor_trim_smithing_template',
+                default: '鍛冶型-略奪者風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sentry_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.vex_armor_trim_smithing_template',
+                default: '鍛冶型-ヴェックス風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:vex_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wild_armor_trim_smithing_template',
+                default: '鍛冶型-密林風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wild_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.coast_armor_trim_smithing_template',
+                default: '鍛冶型-海洋風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:coast_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dune_armor_trim_smithing_template',
+                default: '鍛冶型-砂丘風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dune_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wayfinder_armor_trim_smithing_template',
+                default: '鍛冶型-先駆者風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wayfinder_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.raiser_armor_trim_smithing_template',
+                default: '鍛冶型-牧者風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:raiser_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shaper_armor_trim_smithing_template',
+                default: '鍛冶型-職人風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shaper_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.host_armor_trim_smithing_template',
+                default: '鍛冶型-主人風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:host_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ward_armor_trim_smithing_template',
+                default: '鍛冶型-藍獄風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ward_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.silence_armor_trim_smithing_template',
+                default: '鍛冶型-静寂の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:silence_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tide_armor_trim_smithing_template',
+                default: '鍛冶型-潮流風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tide_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.snout_armor_trim_smithing_template',
+                default: '鍛冶型-ブタの鼻風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:snout_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rib_armor_trim_smithing_template',
+                default: '鍛冶型-あばら模様の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rib_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.eye_armor_trim_smithing_template',
+                default: '鍛冶型-要塞風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:eye_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spire_armor_trim_smithing_template',
+                default: '鍛冶型-尖塔風の装飾'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spire_armor_trim_smithing_template'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.experience_bottle',
+                default: 'エンチャントの瓶'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:experience_bottle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ダメージ軽減Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ダメージ軽減Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ダメージ軽減Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ダメージ軽減Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-火炎耐性Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-火炎耐性Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-火炎耐性Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-火炎耐性Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-落下耐性Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-落下耐性Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-落下耐性Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-落下耐性Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-爆発耐性Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-爆発耐性Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-爆発耐性Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-爆発耐性Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-飛び道具耐性Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-飛び道具耐性Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-飛び道具耐性Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-飛び道具耐性Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水中呼吸Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水中呼吸Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水中呼吸Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水中採掘'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-棘の鎧Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-棘の鎧Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-棘の鎧Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水中歩行Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水中歩行Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水中歩行Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-氷渡りⅠ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-氷渡りⅡ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-束縛の呪い '
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ソウルスピードⅠ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ソウルスピードⅡ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ソウルスピードⅢ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-スニーク速度上昇Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-スニーク速度上昇Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-スニーク速度上昇Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ダメージ増加Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ダメージ増加Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ダメージ増加Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ダメージ増加Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ダメージ増加Ⅴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-アンデッド特効Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-アンデッド特効Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-アンデッド特効Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-アンデッド特効Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-アンデッド特効Ⅴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-虫特効Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-虫特効Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-虫特効Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-虫特効Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-虫特効Ⅴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ノックバックⅠ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ノックバックⅡ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-火属性Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-火属性Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ドロップ増加Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ドロップ増加Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-ドロップ増加Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-範囲ダメージ増加Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-範囲ダメージ増加Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-範囲ダメージ増加Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-効率強化Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-効率強化Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-効率強化Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-効率強化Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-効率強化Ⅴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-シルクタッチ '
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-幸運Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-幸運Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-幸運Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-耐久力Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-耐久力Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-耐久力Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-射撃ダメージ増加Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-射撃ダメージ増加Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-射撃ダメージ増加Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-射撃ダメージ増加Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-射撃ダメージ増加Ⅴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-パンチⅠ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-パンチⅡ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-フレイム '
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-無限 '
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-宝釣りⅠ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-宝釣りⅡ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-宝釣りⅢ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-入れ食いⅠ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-入れ食いⅡ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-入れ食いⅢ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-忠誠Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-忠誠Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-忠誠Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水生特攻Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水生特攻Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水生特攻Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水生特攻Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-水生特攻Ⅴ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-激流Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-激流Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-激流Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-召雷 '
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-拡散 '
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-高速装填Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-高速装填Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-高速装填Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-貫通Ⅰ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-貫通Ⅱ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-貫通Ⅲ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-貫通Ⅳ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-修繕 '
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本-消滅の呪い '
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        }
+    ];
+}
+exports.genSpawnEggInfo = () => {
+    return [
+        {
+            name: formatMessage({
+                id: 'minecraft.spawner',
+                default: 'モンスタースポナー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spawner'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.allay_spawn_egg',
+                default: 'アレイのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:allay_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.axolotl_spawn_egg',
+                default: 'ウーパールーパーのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:axolotl_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bat_spawn_egg',
+                default: 'コウモリのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bat_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bee_spawn_egg',
+                default: 'ミツバチのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bee_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.blaze_spawn_egg',
+                default: 'ブレイズのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:blaze_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.camel_spawn_egg',
+                default: 'ラクダのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:camel_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cat_spawn_egg',
+                default: 'ネコのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cat_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cave_spider_spawn_egg',
+                default: '洞窟グモのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cave_spider_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chicken_spawn_egg',
+                default: 'ニワトリのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chicken_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cod_spawn_egg',
+                default: 'タラのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cod_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cow_spawn_egg',
+                default: 'ウシのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cow_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.creeper_spawn_egg',
+                default: 'クリーパーのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:creeper_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dolphin_spawn_egg',
+                default: 'イルカのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:dolphin_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.donkey_spawn_egg',
+                default: 'ロバのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:donkey_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.drowned_spawn_egg',
+                default: 'ドラウンドのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:drowned_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.elder_guardian_spawn_egg',
+                default: 'エルダーガーディアンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:elder_guardian_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enderman_spawn_egg',
+                default: 'エンダーマンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enderman_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.endermite_spawn_egg',
+                default: 'エンダーマイトのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:endermite_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.evoker_spawn_egg',
+                default: 'エヴォーカーのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:evoker_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fox_spawn_egg',
+                default: 'キツネのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fox_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.frog_spawn_egg',
+                default: 'カエルのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:frog_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ghast_spawn_egg',
+                default: 'ガストのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ghast_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glow_squid_spawn_egg',
+                default: 'ヒカリイカのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:glow_squid_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.goat_spawn_egg',
+                default: 'ヤギのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:goat_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.guardian_spawn_egg',
+                default: 'ガーディアンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:guardian_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.hoglin_spawn_egg',
+                default: 'ホグリンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:hoglin_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.horse_spawn_egg',
+                default: 'ウマのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:horse_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.husk_spawn_egg',
+                default: 'ハスクのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:husk_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.iron_golem_spawn_egg',
+                default: 'アイアンゴーレムのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:iron_golem_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.llama_spawn_egg',
+                default: 'ラマのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:llama_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.magma_cube_spawn_egg',
+                default: 'マグマキューブのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:magma_cube_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mooshroom_spawn_egg',
+                default: 'ムーシュルームのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mooshroom_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.mule_spawn_egg',
+                default: 'ラバのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:mule_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ocelot_spawn_egg',
+                default: 'ヤマネコのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ocelot_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.panda_spawn_egg',
+                default: 'パンダのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:panda_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.parrot_spawn_egg',
+                default: 'オウムのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:parrot_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.phantom_spawn_egg',
+                default: 'ファントムのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:phantom_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pig_spawn_egg',
+                default: 'ブタのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pig_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.piglin_spawn_egg',
+                default: 'ピグリンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:piglin_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.piglin_brute_spawn_egg',
+                default: 'ピグリンブルートのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:piglin_brute_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pillager_spawn_egg',
+                default: 'ピリジャーのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pillager_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.polar_bear_spawn_egg',
+                default: 'シロクマのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:polar_bear_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pufferfish_spawn_egg',
+                default: 'フグのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pufferfish_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.rabbit_spawn_egg',
+                default: 'ウサギのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:rabbit_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.ravager_spawn_egg',
+                default: 'ラヴェジャーのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:ravager_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.salmon_spawn_egg',
+                default: 'サケのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:salmon_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sheep_spawn_egg',
+                default: 'ヒツジのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sheep_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shulker_spawn_egg',
+                default: 'シュルカーのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:shulker_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.silverfish_spawn_egg',
+                default: 'シルバーフィッシュのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:silverfish_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.skeleton_spawn_egg',
+                default: 'スケルトンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:skeleton_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.skeleton_horse_spawn_egg',
+                default: 'スケルトンホースのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:skeleton_horse_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.slime_spawn_egg',
+                default: 'スライムのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:slime_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sniffer_spawn_egg',
+                default: 'スニッファーのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:sniffer_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.snow_golem_spawn_egg',
+                default: 'スノウゴーレムのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:snow_golem_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.spider_spawn_egg',
+                default: 'クモのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:spider_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.squid_spawn_egg',
+                default: 'イカのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:squid_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.stray_spawn_egg',
+                default: 'ストレイのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:stray_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.strider_spawn_egg',
+                default: 'ストライダーのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:strider_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tadpole_spawn_egg',
+                default: 'オタマジャクシのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tadpole_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.trader_llama_spawn_egg',
+                default: '商人のラマのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:trader_llama_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tropical_fish_spawn_egg',
+                default: '熱帯魚のスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tropical_fish_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.turtle_spawn_egg',
+                default: 'カメのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:turtle_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.vex_spawn_egg',
+                default: 'ヴェックスのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:vex_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.villager_spawn_egg',
+                default: '村人のスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:villager_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.vindicator_spawn_egg',
+                default: 'ヴィンディケーターのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:vindicator_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wandering_trader_spawn_egg',
+                default: '行商人のスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wandering_trader_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.warden_spawn_egg',
+                default: 'ウォーデンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:warden_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.witch_spawn_egg',
+                default: 'ウィッチのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:witch_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wither_skeleton_spawn_egg',
+                default: 'ウィザースケルトンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wither_skeleton_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wolf_spawn_egg',
+                default: 'オオカミのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wolf_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.zoglin_spawn_egg',
+                default: 'ゾグリンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:zoglin_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.zombie_spawn_egg',
+                default: 'ゾンビのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:zombie_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.zombie_horse_spawn_egg',
+                default: 'ゾンビホースのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:zombie_horse_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.zombie_villager_spawn_egg',
+                default: '村人ゾンビのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:zombie_villager_spawn_egg'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.zombified_piglin_spawn_egg',
+                default: 'ゾンビピグリンのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:zombified_piglin_spawn_egg'
+        }
+    ];
+}
+exports.genHiddenInfo = () => {
+    return [
+        {
+            name: formatMessage({
+                id: 'minecraft.petrified_oak_slab',
+                default: '石化したオークのハーフブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:petrified_oak_slab'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.barrier',
+                default: 'バリアブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:barrier'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.command_block',
+                default: 'コマンドブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:command_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.repeating_command_block',
+                default: 'リピートコマンドブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:repeating_command_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.structure_block',
+                default: 'ストラクチャーブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:structure_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.chain_command_block',
+                default: 'チェーンコマンドブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:chain_command_block'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.structure_void',
+                default: 'ストラクチャーヴォイド'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:structure_void'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.command_block_minecart',
+                default: 'コマンドブロック付きトロッコ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:command_block_minecart'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.debug_stick',
+                default: 'デバッグ棒'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:debug_stick'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_book',
+                default: 'エンチャントの本'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:enchanted_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.filled_map',
+                default: '地図'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:filled_map'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.knowledge_book',
+                default: '知恵の本'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:knowledge_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.light',
+                default: 'ライトブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:light'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.potion',
+                default: 'クラフト不可能なポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lingering_potion',
+                default: 'クラフト不可能な残留ポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lingering_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.splash_potion',
+                default: 'クラフト不可能なスプラッシュポーション'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:splash_potion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.tipped_arrow',
+                default: 'クラフト不可能な効能付きの矢'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:tipped_arrow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.written_book',
+                default: '記入済みの本'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:written_book'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bundle',
+                default: 'バンドル'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:bundle'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.jigsaw',
+                default: 'ジグソーブロック'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:jigsaw'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wither_spawn_egg',
+                default: 'ウィザーのスポーンエッグ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wither_spawn_egg'
+        },
         {
             name: formatMessage({
                 id: 'minecraft.air',
                 default: '空気'
             }),
-            itemID: 'minecraft:air',
             blockID: '0',
-            blockData: '0'
+            blockData: '0',
+            itemID: 'minecraft:air'
         },
         {
             name: formatMessage({
-                id: 'minecraft.CommandBlock',
-                default: 'コマンドブロック'
+                id: 'minecraft.cave_air',
+                default: '洞窟の空気'
             }),
-            itemID: 'minecraft:command_block',
-            blockID: '137',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:cave_air'
         },
         {
             name: formatMessage({
-                id: 'minecraft.barrierBlock',
-                default: 'バリアーブロック'
+                id: 'minecraft.void_air',
+                default: '奈落の空気'
             }),
-            itemID: 'minecraft:barrier',
-            blockID: '166',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:void_air'
         },
         {
             name: formatMessage({
-                id: 'minecraft.flowing_lava',
-                default: '溶岩流'
+                id: 'minecraft.end_gateway',
+                default: 'エンドゲートウェイ'
             }),
-            blockID: '10',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_gateway'
         },
         {
             name: formatMessage({
-                id: 'minecraft.lava',
-                default: '溶岩'
+                id: 'minecraft.end_portal',
+                default: 'エンドポータル'
             }),
-            blockID: '11',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:end_portal'
         },
         {
             name: formatMessage({
-                id: 'minecraft.flowing_water',
-                default: '流水'
+                id: 'minecraft.fire',
+                default: '炎'
             }),
-            blockID: '8',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:fire'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_fire',
+                default: '魂の炎'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:soul_fire'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.frosted_ice',
+                default: '薄氷'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:frosted_ice'
         },
         {
             name: formatMessage({
                 id: 'minecraft.water',
                 default: '水'
             }),
-            blockID: '9',
-            blockData: '0'
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:water'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flowing_water',
+                default: '水流'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:flowing_water'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.lava',
+                default: '溶岩'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:lava'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.flowing_lava',
+                default: '溶岩流'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:flowing_lava'
         }
-
     ];
 }
