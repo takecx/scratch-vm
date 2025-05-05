@@ -4,395 +4,619 @@ exports.genParticleInfo = () => {
     return [
         {
             name: formatMessage({
-                id: 'minecraft.dragonbreath',
-                default: 'ドラゴンブレス'
+                id: 'minecraft.ambient_entity_effect',
+                default: ' エンティティの周囲に漂う効果'
             }),
-            particleName: 'dragonbreath',
-            particleName1165: 'minecraft:dragon_breath'
+            particleName: 'minecraft:ambient_entity_effect'
         },
         {
             name: formatMessage({
-                id: 'minecraft.mobSpellAmbient',
-                default: 'ビーコン'
+                id: 'minecraft.angry_villager',
+                default: ' 怒った村人の頭上に表示されるエフェクト'
             }),
-            particleName: 'mobSpellAmbient',
-            particleName1165: 'minecraft:ambient_entity_effect'
+            particleName: 'minecraft:angry_villager'
         },
         {
             name: formatMessage({
-                id: 'minecraft.angryVillager',
-                default: '怒り'
+                id: 'minecraft.ash',
+                default: ' 灰が舞い上がるようなエフェクト'
             }),
-            particleName: 'angryVillager',
-            particleName1165: 'minecraft:angry_villager'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.barrier',
-                default: 'バリア'
-            }),
-            particleName: 'barrier',
-            particleName1165: 'minecraft:barrier'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.blockcrack',
-                default: 'ブロックのひび'
-            }),
-            particleName: 'blockcrack',
-            particleName1165: 'minecraft:block'
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.blockdust',
-                default: 'ブロックのごみ'
-            }),
-            particleName: 'blockdust',
-            particleName1165: ''
+            particleName: 'minecraft:ash'
         },
         {
             name: formatMessage({
                 id: 'minecraft.bubble',
-                default: '泡'
+                default: ' 水中で発生する泡'
             }),
-            particleName: 'bubble',
-            particleName1165: 'minecraft:bubble'
+            particleName: 'minecraft:bubble'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_column_up',
+                default: ' 泡柱が上昇する際のエフェクト'
+            }),
+            particleName: 'minecraft:bubble_column_up'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.bubble_pop',
+                default: ' 泡がはじけるエフェクト'
+            }),
+            particleName: 'minecraft:bubble_pop'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.campfire_cosy_smoke',
+                default: ' 焚き火の暖かい煙'
+            }),
+            particleName: 'minecraft:campfire_cosy_smoke'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.campfire_signal_smoke',
+                default: ' 焚き火の信号用の煙'
+            }),
+            particleName: 'minecraft:campfire_signal_smoke'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.cherry_leaves',
+                default: ' 桜の葉が舞い落ちるエフェクト'
+            }),
+            particleName: 'minecraft:cherry_leaves'
         },
         {
             name: formatMessage({
                 id: 'minecraft.cloud',
-                default: '雲'
+                default: ' 雲のようなエフェクト'
             }),
-            particleName: 'cloud',
-            particleName1165: 'minecraft:cloud'
+            particleName: 'minecraft:cloud'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.composter',
+                default: ' コンポスターが満たされた際のエフェクト'
+            }),
+            particleName: 'minecraft:composter'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.crimson_spore',
+                default: ' クリムゾンフォレストで漂う胞子'
+            }),
+            particleName: 'minecraft:crimson_spore'
         },
         {
             name: formatMessage({
                 id: 'minecraft.crit',
-                default: 'クリティカルヒット'
+                default: ' クリティカルヒット時のエフェクト'
             }),
-            particleName: 'crit',
-            particleName1165: 'minecraft:crit'
+            particleName: 'minecraft:crit'
         },
         {
             name: formatMessage({
-                id: 'minecraft.damageIndicator',
-                default: 'ダメージインジケーター'
+                id: 'minecraft.current_down',
+                default: ' 水流が下向きに流れるエフェクト'
             }),
-            particleName: 'damageIndicator',
-            particleName1165: 'minecraft:damage_indicator'
+            particleName: 'minecraft:current_down'
         },
         {
             name: formatMessage({
-                id: 'minecraft.depthsuspend',
-                default: 'depthsuspend'
+                id: 'minecraft.damage_indicator',
+                default: ' ダメージを受けた際に表示されるエフェクト'
             }),
-            particleName: 'depthsuspend',
-            particleName1165: ''
+            particleName: 'minecraft:damage_indicator'
         },
         {
             name: formatMessage({
-                id: 'minecraft.dripLava',
-                default: '滴る溶岩'
+                id: 'minecraft.dolphin',
+                default: ' イルカが泳ぐ際に発生するエフェクト'
             }),
-            particleName: 'dripLava',
-            particleName1165: 'minecraft:dripping_lava'
+            particleName: 'minecraft:dolphin'
         },
         {
             name: formatMessage({
-                id: 'minecraft.dripWater',
-                default: '滴る水滴'
+                id: 'minecraft.dragon_breath',
+                default: ' エンダードラゴンのブレス攻撃'
             }),
-            particleName: 'dripWater',
-            particleName1165: 'minecraft:dripping_water'
+            particleName: 'minecraft:dragon_breath'
         },
         {
             name: formatMessage({
-                id: 'minecraft.droplet',
-                default: '滴'
+                id: 'minecraft.dripping_dripstone_lava',
+                default: ' 滴る溶岩（ドリップストーン）'
             }),
-            particleName: 'droplet',
-            particleName1165: ''
+            particleName: 'minecraft:dripping_dripstone_lava'
         },
         {
             name: formatMessage({
-                id: 'minecraft.enchantmenttable',
-                default: 'エンチャントテーブル'
+                id: 'minecraft.dripping_dripstone_water',
+                default: ' 滴る水（ドリップストーン）'
             }),
-            particleName: 'enchantmenttable',
-            particleName1165: 'minecraft:enchant'
+            particleName: 'minecraft:dripping_dripstone_water'
         },
         {
             name: formatMessage({
-                id: 'minecraft.endRod',
-                default: 'エンドロッド'
+                id: 'minecraft.dripping_honey',
+                default: ' 滴るハチミツ'
             }),
-            particleName: 'endRod',
-            particleName1165: 'minecraft:end_rod'
+            particleName: 'minecraft:dripping_honey'
         },
         {
             name: formatMessage({
-                id: 'minecraft.explode',
-                default: '爆発'
+                id: 'minecraft.dripping_lava',
+                default: ' 滴る溶岩'
             }),
-            particleName: 'explode',
-            particleName1165: 'minecraft:explosion'
+            particleName: 'minecraft:dripping_lava'
         },
         {
             name: formatMessage({
-                id: 'minecraft.fallingdust',
-                default: '落ちてくる塵'
+                id: 'minecraft.dripping_obsidian_tear',
+                default: ' 滴るオブシディアンの涙'
             }),
-            particleName: 'fallingdust',
-            particleName1165: 'minecraft:falling_dust'
+            particleName: 'minecraft:dripping_obsidian_tear'
         },
         {
             name: formatMessage({
-                id: 'minecraft.fireworksSpark',
-                default: '花火'
+                id: 'minecraft.dripping_water',
+                default: ' 滴る水'
             }),
-            particleName: 'fireworksSpark',
-            particleName1165: 'minecraft:firework'
+            particleName: 'minecraft:dripping_water'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dust',
+                default: ' 色付きの粉塵'
+            }),
+            particleName: 'minecraft:dust'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.dust_color_transition',
+                default: ' 色が変化する粉塵'
+            }),
+            particleName: 'minecraft:dust_color_transition'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.effect',
+                default: ' ポーション効果'
+            }),
+            particleName: 'minecraft:effect'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.egg_crack',
+                default: ' 卵が割れるエフェクト'
+            }),
+            particleName: 'minecraft:egg_crack'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.electric_spark',
+                default: ' 電気の火花'
+            }),
+            particleName: 'minecraft:electric_spark'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchant',
+                default: ' エンチャントテーブルの文字が浮かぶエフェクト'
+            }),
+            particleName: 'minecraft:enchant'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.enchanted_hit',
+                default: ' エンチャントされた武器で攻撃した際のエフェクト'
+            }),
+            particleName: 'minecraft:enchanted_hit'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.end_rod',
+                default: ' エンドロッドから放たれる光'
+            }),
+            particleName: 'minecraft:end_rod'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.entity_effect',
+                default: ' エンティティに付与された効果'
+            }),
+            particleName: 'minecraft:entity_effect'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.explosion',
+                default: ' 爆発時のエフェクト'
+            }),
+            particleName: 'minecraft:explosion'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.falling_dripstone_lava',
+                default: ' 落下する溶岩（ドリップストーン）'
+            }),
+            particleName: 'minecraft:falling_dripstone_lava'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.falling_dripstone_water',
+                default: ' 落下する水（ドリップストーン）'
+            }),
+            particleName: 'minecraft:falling_dripstone_water'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.falling_dust',
+                default: ' 落下する粉塵'
+            }),
+            particleName: 'minecraft:falling_dust'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.falling_honey',
+                default: ' 落下するハチミツ'
+            }),
+            particleName: 'minecraft:falling_honey'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.falling_lava',
+                default: ' 落下する溶岩'
+            }),
+            particleName: 'minecraft:falling_lava'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.falling_nectar',
+                default: ' 落下する花の蜜'
+            }),
+            particleName: 'minecraft:falling_nectar'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.falling_obsidian_tear',
+                default: ' 落下するオブシディアンの涙'
+            }),
+            particleName: 'minecraft:falling_obsidian_tear'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.falling_spore_blossom',
+                default: ' 落下する胞子の花'
+            }),
+            particleName: 'minecraft:falling_spore_blossom'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.falling_water',
+                default: ' 落下する水'
+            }),
+            particleName: 'minecraft:falling_water'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.firework',
+                default: ' 花火の爆発'
+            }),
+            particleName: 'minecraft:firework'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.fishing',
+                default: ' 釣りの際に発生するエフェクト'
+            }),
+            particleName: 'minecraft:fishing'
         },
         {
             name: formatMessage({
                 id: 'minecraft.flame',
-                default: '炎'
+                default: ' 炎'
             }),
-            particleName: 'flame',
-            particleName1165: 'minecraft:flame'
+            particleName: 'minecraft:flame'
         },
         {
             name: formatMessage({
-                id: 'minecraft.footstep',
-                default: '足跡'
+                id: 'minecraft.flash',
+                default: ' 雷が落ちた際の閃光'
             }),
-            particleName: 'footstep',
-            particleName1165: ''
+            particleName: 'minecraft:flash'
         },
         {
             name: formatMessage({
-                id: 'minecraft.happyVillager',
-                default: '幸せな村人'
+                id: 'minecraft.glow',
+                default: ' 光るエンティティの周囲に表示されるエフェクト'
             }),
-            particleName: 'happyVillager',
-            particleName1165: 'minecraft:happy_villager'
+            particleName: 'minecraft:glow'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.glow_squid_ink',
+                default: ' 発光するイカが放つインク'
+            }),
+            particleName: 'minecraft:glow_squid_ink'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.happy_villager',
+                default: ' 幸せな村人の頭上に表示されるエフェクト'
+            }),
+            particleName: 'minecraft:happy_villager'
         },
         {
             name: formatMessage({
                 id: 'minecraft.heart',
-                default: 'ハート'
+                default: ' ハートの形をしたエフェクト'
             }),
-            particleName: 'heart',
-            particleName1165: 'minecraft:heart'
+            particleName: 'minecraft:heart'
         },
         {
             name: formatMessage({
-                id: 'minecraft.hugeexplosion',
-                default: '巨大爆発'
+                id: 'minecraft.instant_effect',
+                default: ' 即時効果のエフェクト'
             }),
-            particleName: 'hugeexplosion',
-            particleName1165: ''
+            particleName: 'minecraft:instant_effect'
         },
         {
             name: formatMessage({
-                id: 'minecraft.ironcrack',
-                default: '鉄のひび'
+                id: 'minecraft.landing_honey',
+                default: ' 着地するハチミツ'
             }),
-            particleName: 'ironcrack',
-            particleName1165: ''
+            particleName: 'minecraft:landing_honey'
         },
         {
             name: formatMessage({
-                id: 'minecraft.instantSpell',
-                default: 'インスタント'
+                id: 'minecraft.landing_lava',
+                default: ' 着地する溶岩'
             }),
-            particleName: 'instantSpell',
-            particleName1165: 'minecraft:instant_effect'
+            particleName: 'minecraft:landing_lava'
         },
         {
             name: formatMessage({
-                id: 'minecraft.largeexplosion',
-                default: '大爆発'
+                id: 'minecraft.landing_obsidian_tear',
+                default: ' 着地するオブシディアンの涙'
             }),
-            particleName: 'largeexplosion',
-            particleName1165: ''
+            particleName: 'minecraft:landing_obsidian_tear'
         },
         {
             name: formatMessage({
-                id: 'minecraft.largesmoke',
-                default: '大きな煙'
+                id: 'minecraft.large_smoke',
+                default: ' 大きな煙'
             }),
-            particleName: 'largesmoke',
-            particleName1165: 'minecraft:large_smoke'
+            particleName: 'minecraft:large_smoke'
         },
         {
             name: formatMessage({
                 id: 'minecraft.lava',
-                default: '溶岩'
+                default: ' 溶岩'
             }),
-            particleName: 'lava',
-            particleName1165: 'minecraft:lava'
+            particleName: 'minecraft:lava'
         },
         {
             name: formatMessage({
-                id: 'minecraft.magicCrit',
-                default: 'エンチャント武器のクリティカルの閃光'
+                id: 'minecraft.mycelium',
+                default: ' 菌糸の上で漂うエフェクト'
             }),
-            particleName: 'magicCrit',
-            particleName1165: ''
+            particleName: 'minecraft:mycelium'
         },
         {
             name: formatMessage({
-                id: 'minecraft.mobSpell',
-                default: 'mobSpell'
+                id: 'minecraft.nautilus',
+                default: ' ノーチラスの形をしたエフェクト'
             }),
-            particleName: 'mobSpell',
-            particleName1165: ''
-        },
-        {
-            name: formatMessage({
-                id: 'minecraft.mobappearance',
-                default: 'mobappearance'
-            }),
-            particleName: 'mobappearance',
-            particleName1165: ''
+            particleName: 'minecraft:nautilus'
         },
         {
             name: formatMessage({
                 id: 'minecraft.note',
-                default: '音符'
+                default: ' 音符の形をしたエフェクト'
             }),
-            particleName: 'note',
-            particleName1165: 'minecraft:note'
+            particleName: 'minecraft:note'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.poof',
+                default: ' 煙が消えるエフェクト'
+            }),
+            particleName: 'minecraft:poof'
         },
         {
             name: formatMessage({
                 id: 'minecraft.portal',
-                default: 'ポータル'
+                default: ' ポータルのエフェクト'
             }),
-            particleName: 'portal',
-            particleName1165: 'minecraft:portal'
+            particleName: 'minecraft:portal'
         },
         {
             name: formatMessage({
-                id: 'minecraft.reddust',
-                default: 'レッドストーンの煙'
+                id: 'minecraft.rain',
+                default: ' 雨'
             }),
-            particleName: 'reddust',
-            particleName1165: 'minecraft:dust'
+            particleName: 'minecraft:rain'
         },
         {
             name: formatMessage({
-                id: 'minecraft.slime',
-                default: 'スライムのしぶき'
+                id: 'minecraft.reverse_portal',
+                default: ' 逆方向のポータルエフェクト'
             }),
-            particleName: 'slime',
-            particleName1165: 'minecraft:item_slime'
+            particleName: 'minecraft:reverse_portal'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.scrape',
+                default: ' 削る際のエフェクト'
+            }),
+            particleName: 'minecraft:scrape'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sculk_charge',
+                default: ' スクロックのチャージ'
+            }),
+            particleName: 'minecraft:sculk_charge'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sculk_charge_pop',
+                default: ' スクロックのチャージが弾けるエフェクト'
+            }),
+            particleName: 'minecraft:sculk_charge_pop'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.sculk_soul',
+                default: ' スクロックの魂'
+            }),
+            particleName: 'minecraft:sculk_soul'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.shriek',
+                default: ' 悲鳴のエフェクト'
+            }),
+            particleName: 'minecraft:shriek'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.small_flame',
+                default: ' 小さな炎'
+            }),
+            particleName: 'minecraft:small_flame'
         },
         {
             name: formatMessage({
                 id: 'minecraft.smoke',
-                default: '煙'
+                default: ' 煙'
             }),
-            particleName: 'smoke',
-            particleName1165: 'minecraft:smoke'
+            particleName: 'minecraft:smoke'
         },
         {
             name: formatMessage({
-                id: 'minecraft.snowballpoof',
-                default: '雪玉の破壊'
+                id: 'minecraft.sneeze',
+                default: ' くしゃみ'
             }),
-            particleName: 'snowballpoof',
-            particleName1165: 'minecraft:item_snowball'
+            particleName: 'minecraft:sneeze'
         },
         {
             name: formatMessage({
-                id: 'minecraft.snowshovel',
-                default: '雪かき'
+                id: 'minecraft.snowflake',
+                default: ' 雪の結晶'
             }),
-            particleName: 'snowshovel',
-            particleName1165: ''
+            particleName: 'minecraft:snowflake'
         },
         {
             name: formatMessage({
-                id: 'minecraft.spell',
-                default: 'spell'
+                id: 'minecraft.sonic_boom',
+                default: ' ソニックブーム'
             }),
-            particleName: 'spell',
-            particleName1165: ''
+            particleName: 'minecraft:sonic_boom'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul',
+                default: ' 魂'
+            }),
+            particleName: 'minecraft:soul'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.soul_fire_flame',
+                default: ' 魂の炎'
+            }),
+            particleName: 'minecraft:soul_fire_flame'
         },
         {
             name: formatMessage({
                 id: 'minecraft.spit',
-                default: 'つば'
+                default: ' 唾を吐くエフェクト'
             }),
-            particleName: 'spit',
-            particleName1165: 'minecraft:spit'
+            particleName: 'minecraft:spit'
         },
         {
             name: formatMessage({
                 id: 'minecraft.splash',
-                default: '水しぶき'
+                default: ' 水しぶき'
             }),
-            particleName: 'splash',
-            particleName1165: 'minecraft:splash'
+            particleName: 'minecraft:splash'
         },
         {
             name: formatMessage({
-                id: 'minecraft.suspended',
-                default: 'suspended'
+                id: 'minecraft.spore_blossom_air',
+                default: ' 胞子の花が漂うエフェクト'
             }),
-            particleName: 'suspended',
-            particleName1165: ''
+            particleName: 'minecraft:spore_blossom_air'
         },
         {
             name: formatMessage({
-                id: 'minecraft.sweepAttack',
-                default: 'なぎ払い攻撃'
+                id: 'minecraft.squid_ink',
+                default: ' イカが放つインク'
             }),
-            particleName: 'sweepAttack',
-            particleName1165: 'minecraft:sweep_attack'
+            particleName: 'minecraft:squid_ink'
         },
         {
             name: formatMessage({
-                id: 'minecraft.take',
-                default: 'take'
+                id: 'minecraft.sweep_attack',
+                default: ' 横なぎ攻撃'
             }),
-            particleName: 'take',
-            particleName1165: ''
+            particleName: 'minecraft:sweep_attack'
         },
         {
             name: formatMessage({
-                id: 'minecraft.totem',
-                default: '不死のトーテム'
+                id: 'minecraft.totem_of_undying',
+                default: ' 不死のトーテムのエフェクト'
             }),
-            particleName: 'totem',
-            particleName1165: 'minecraft:totem_of_undying'
+            particleName: 'minecraft:totem_of_undying'
         },
         {
             name: formatMessage({
-                id: 'minecraft.townaura',
-                default: '菌糸の胞子'
+                id: 'minecraft.underwater',
+                default: ' 水中'
             }),
-            particleName: 'townaura',
-            particleName1165: 'minecraft:mycelium'
+            particleName: 'minecraft:underwater'
         },
         {
             name: formatMessage({
-                id: 'minecraft.wake',
-                default: '釣り'
+                id: 'minecraft.vibration',
+                default: ' 振動'
             }),
-            particleName: 'wake',
-            particleName1165: 'minecraft:fishing'
+            particleName: 'minecraft:vibration'
         },
         {
             name: formatMessage({
-                id: 'minecraft.witchMagic',
-                default: 'ウィッチの魔法'
+                id: 'minecraft.warped_spore',
+                default: ' ワープドフォレストで漂う胞子'
             }),
-            particleName: 'witchMagic',
-            particleName1165: 'minecraft:witch'
-        }
+            particleName: 'minecraft:warped_spore'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wax_off',
+                default: ' ワックスを剥がすエフェクト'
+            }),
+            particleName: 'minecraft:wax_off'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wax_on',
+                default: ' ワックスを塗るエフェクト'
+            }),
+            particleName: 'minecraft:wax_on'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.white_ash',
+                default: ' 白い灰'
+            }),
+            particleName: 'minecraft:white_ash'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.witch',
+                default: ' 魔女のエフェクト'
+            }),
+            particleName: 'minecraft:witch'
+        },
     ];
-};
+}
