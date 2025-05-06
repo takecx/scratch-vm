@@ -3033,6 +3033,22 @@ exports.genDecorationBlockInfo = () => {
         },
         {
             name: formatMessage({
+                id: 'minecraft.red_mushroom_block',
+                default: '赤色のキノコ'
+            }),
+            itemID: 'minecraft:red_mushroom_block',
+            blockID: '-',
+            blockData: '-'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.brown_mushroom_block',
+                default: '茶色のキノコブロック'
+            }),
+            itemID: 'minecraft:brown_mushroom_block',
+        },
+        {
+            name: formatMessage({
                 id: 'minecraft.shulker_box',
                 default: 'シュルカーボックス'
             }),
@@ -5656,7 +5672,6 @@ exports.genRedStoneBlockInfo = () => {
             })
         },
         {
-            itemID: 'minecraft:dirt',
             itemID: 'minecraft:piston',
             blockData: 0,
             blockID: 33,
@@ -5675,7 +5690,6 @@ exports.genRedStoneBlockInfo = () => {
             })
         },
         {
-            itemID: 'minecraft:cobblestone',
             itemID: 'minecraft:tnt',
             blockData: 0,
             blockID: 46,
@@ -5686,7 +5700,6 @@ exports.genRedStoneBlockInfo = () => {
         },
         {
             itemID: 'minecraft:lever',
-            itemID: 'minecraft:oak_sapling',
             blockData: 0,
             blockID: 69,
             name: formatMessage({
@@ -5695,7 +5708,6 @@ exports.genRedStoneBlockInfo = () => {
             })
         },
         {
-            itemID: 'minecraft:bedrock',
             itemID: 'minecraft:stone_pressure_plate',
             blockData: 0,
             blockID: 70,
@@ -5735,13 +5747,11 @@ exports.genRedStoneBlockInfo = () => {
         },
         {
             itemID: 'minecraft:oak_fence_gate',
-            itemID: 'minecraft:stone',
             blockData: 0,
             blockID: 107,
             name: formatMessage({ id: 'minecraft.OakFenceGate', default: 'オークのフェンスゲート' })
         },
         {
-            itemID: 'minecraft:oak_leaves',
             itemID: 'minecraft:spruce_fence_gate',
             blockData: 0,
             blockID: 183,
@@ -5773,7 +5783,6 @@ exports.genRedStoneBlockInfo = () => {
         },
         {
             itemID: 'minecraft:redstone_lamp',
-            itemID: 'minecraft:sand',
             blockData: 0,
             blockID: 123,
             name: formatMessage({ id: 'minecraft.RedstoneLamp(inactive)', default: 'レッドストーンランプ(inactive)' })
@@ -5784,14 +5793,12 @@ exports.genRedStoneBlockInfo = () => {
             name: formatMessage({ id: 'minecraft.RedstoneLamp(active)', default: 'レッドストーンランプ(active)' })
         },
         {
-            itemID: 'minecraft:gravel',
             itemID: 'minecraft:tripwire_hook',
             blockData: 0,
             blockID: 131,
             name: formatMessage({ id: 'minecraft.TripwireHook', default: 'トリップワイヤーフック' })
         },
         {
-            itemID: 'minecraft:gold_ore',
             itemID: 'minecraft:oak_button',
             blockData: 0,
             blockID: 143,
@@ -5817,7 +5824,6 @@ exports.genRedStoneBlockInfo = () => {
         },
         {
             itemID: 'minecraft:daylight_detector',
-            itemID: 'minecraft:iron_ore',
             blockData: 0,
             blockID: 151,
             name: formatMessage({ id: 'minecraft.DaylightDetector', default: '日照センサー' })
@@ -5841,14 +5847,12 @@ exports.genRedStoneBlockInfo = () => {
             name: formatMessage({ id: 'minecraft.Dropper', default: 'ドロッパー' })
         },
         {
-            itemID: 'minecraft:coal_ore',
             itemID: 'minecraft:iron_trapdoor',
             blockData: 0,
             blockID: 167,
             name: formatMessage({ id: 'minecraft.IronTrapdoor', default: '鉄のトラップドア' })
         },
         {
-            itemID: 'minecraft:lapis_ore',
             itemID: 'minecraft:observer',
             blockData: 0,
             blockID: 218,
@@ -5872,7 +5876,6 @@ exports.genRedStoneBlockInfo = () => {
             name: formatMessage({ id: 'minecraft.IronDoor', default: '鉄のドア' })
         },
         {
-            itemID: 'minecraft:iron_block',
             itemID: 'minecraft:spruce_door',
             blockData: 0,
             blockID: 427,
@@ -5904,14 +5907,12 @@ exports.genRedStoneBlockInfo = () => {
         },
         {
             itemID: 'minecraft:repeater',
-            itemID: 'minecraft:white_wool',
             blockData: 0,
             blockID: 356,
             name: formatMessage({ id: 'minecraft.RedstoneRepeater', default: 'レッドストーンリピーター' })
         },
         {
             itemID: 'minecraft:comparator',
-            itemID: 'minecraft:red_mushroom',
             blockData: 0,
             blockID: 404,
             name: formatMessage({ id: 'minecraft.RedstoneComparator', default: 'レッドストーンコンパレーター' })
