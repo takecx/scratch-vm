@@ -1119,7 +1119,7 @@ class Scratch3Minecraft {
     async _searchBlockToAbsCoord(args) {
         this.ws = await this.MinecraftUtils._checkState(this.ws);
         return new Promise(((resolve, reject) => {
-            this.ws.send(`world.getBlockWithData(${args.STARTX},${args.STARTY},${args.STARTZ})`);
+            this.ws.send(`world.getBlockWithData(${parseInt(args.STARTX)},${parseInt(args.STARTY)},${parseInt(args.STARTZ)})`);
             this.ws.onmessage = function (e) {
                 console.log(e.data);
                 const actualBlock = e.data.replace("block.", "").replace(".",":");
