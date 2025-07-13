@@ -225,6 +225,21 @@ class Scratch3Minecraft {
                     }
                 },
                 {
+                    opcode: 'setDayTime',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.command.setDayTime',
+                        default: '[TIME]に変える'
+                    }),
+                    arguments: {
+                        TIME: {
+                            type: ArgumentType.NUMBER,
+                            menu: 'TIME',
+                            defaultValue: 0
+                        }
+                    }
+                },
+                {
                     opcode: 'changeGameMode',
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
@@ -334,6 +349,21 @@ class Scratch3Minecraft {
                         TEXT: {
                             type: ArgumentType.STRING,
                             defaultValue: 'localhost'
+                        }
+                    }
+                },
+                {
+                    opcode: 'runCommand',
+                    blockType: BlockType.COMMAND,
+                    text: formatMessage({
+                        id: 'minecraft.command.runCommand',
+                        default: 'コマンドを実行：[COMMAND]',
+                        description: 'run specific command.'
+                    }),
+                    arguments: {
+                        COMMAND: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '/time set day'
                         }
                     }
                 },
@@ -606,6 +636,10 @@ class Scratch3Minecraft {
                     acceptReporters: true,
                     items: this.MinecraftUtils._buildMenu(this.WEATHER_TYPES)
                 },
+                TIME: {
+                    acceptReporters: true,
+                    items: this.MinecraftUtils._buildMenu(this.TIME_TYPES)
+                },
                 GAMEMODE: {
                     acceptReporters: true,
                     items: this.MinecraftUtils._buildMenu(this.GAMEMODES)
@@ -714,6 +748,54 @@ class Scratch3Minecraft {
                 }),
                 weather: 'thunder'
             }];
+    }
+
+    get TIME_TYPES() {
+        return [
+            {
+                name: formatMessage({
+                    id: 'minecraft.day',
+                    default: '昼'
+                }),
+                time: '1000'
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.night',
+                    default: '夜'
+                }),
+                time: '13000'
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.noon',
+                    default: '正午'
+                }),
+                time: '6000'
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.midnight',
+                    default: '真夜中'
+                }),
+                time: '18000'
+            },
+            {
+                name: formatMessage({
+                    id: 'minecraft.sunrise',
+                    default: '日の出'
+                }),
+                time: '23000'
+            },
+
+            {
+                name: formatMessage({
+                    id: 'minecraft.sunset',
+                    default: '日の入り'
+                }),
+                time: '12000'
+            }
+        ];
     }
 
     get GAMEMODES() {
@@ -991,6 +1073,11 @@ class Scratch3Minecraft {
         this.MinecraftUtils.setHost(args);
     }
 
+    async runCommand(args) {
+        const command = `world.runCommand(${args.COMMAND})`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
+    }
+
     async setBlock(args) {
         const coordinateMode = this.MinecraftUtils._searchCoordinateMode(args);
         if (coordinateMode === this.MinecraftUtils.absoluteStr) {
@@ -1155,6 +1242,12 @@ class Scratch3Minecraft {
     async changeWeather(args) {
         const weather = this.WEATHER_TYPES[args.WEATHER].weather;
         const command = `world.changeWeather(${weather})`;
+        await this.MinecraftUtils._sendCommand(command, this.ws);
+    }
+
+    async setDayTime(args) {
+        const time = this.TIME_TYPES[args.TIME].time;
+        const command = `world.setDayTime(${time})`;
         await this.MinecraftUtils._sendCommand(command, this.ws);
     }
 
