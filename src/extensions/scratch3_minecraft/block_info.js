@@ -6420,6 +6420,15 @@ exports.genNaturalBlockInfo = () => {
         },
         {
             name: formatMessage({
+                id: 'minecraft.torchflower_crop',
+                default: '植えられたトーチフラワーの種'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:torchflower_crop'
+        },
+        {
+            name: formatMessage({
                 id: 'minecraft.pitcher_pod',
                 default: 'ウツボカズラのさや'
             }),
@@ -6798,12 +6807,48 @@ exports.genNaturalBlockInfo = () => {
         },
         {
             name: formatMessage({
+                id: 'minecraft.melon_stem',
+                default: 'スイカの茎'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:melon_stem'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.attached_melon_stem',
+                default: 'つながったスイカの茎'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:attached_melon_stem'
+        },
+        {
+            name: formatMessage({
                 id: 'minecraft.pumpkin',
                 default: 'カボチャ'
             }),
             blockID: '0',
             blockData: '0',
             itemID: 'minecraft:pumpkin'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.pumpkin_stem',
+                default: 'カボチャの茎'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:pumpkin_stem'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.attached_pumpkin_stem',
+                default: 'つながったカボチャの茎'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:attached_pumpkin_stem'
         },
         {
             name: formatMessage({
@@ -8503,6 +8548,15 @@ exports.genFunctionalBlockInfo = () => {
         },
         {
             name: formatMessage({
+                id: 'minecraft.redstone_wire',
+                default: 'レッドストーンワイヤー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone_wire'
+        },
+        {
+            name: formatMessage({
                 id: 'minecraft.repeater',
                 default: 'レッドストーンリピーター'
             }),
@@ -9269,6 +9323,15 @@ exports.genRedStoneBlockInfo = () => {
             blockID: '0',
             blockData: '0',
             itemID: 'minecraft:redstone'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.redstone_wire',
+                default: 'レッドストーンワイヤー'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:redstone_wire'
         },
         {
             name: formatMessage({
@@ -11462,6 +11525,15 @@ exports.genFoodDrinkBlockInfo = () => {
         },
         {
             name: formatMessage({
+                id: 'minecraft.carrots',
+                default: '植えられたニンジン'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:carrots'
+        },
+        {
+            name: formatMessage({
                 id: 'minecraft.golden_carrot',
                 default: '金のニンジン'
             }),
@@ -11479,6 +11551,14 @@ exports.genFoodDrinkBlockInfo = () => {
             itemID: 'minecraft:potato'
         },
         {
+            name: formatMessage({
+                id: 'minecraft.potatoes',
+                default: '植えられたジャガイモ'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:potatoes'
+        },        {
             name: formatMessage({
                 id: 'minecraft.baked_potato',
                 default: 'ベイクドポテト'
@@ -11504,6 +11584,15 @@ exports.genFoodDrinkBlockInfo = () => {
             blockID: '0',
             blockData: '0',
             itemID: 'minecraft:beetroot'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.beetroots',
+                default: '植えられたビートルート'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:beetroots'
         },
         {
             name: formatMessage({
@@ -13254,6 +13343,15 @@ exports.genIngredientsInfo = () => {
             blockID: '0',
             blockData: '0',
             itemID: 'minecraft:wheat'
+        },
+        {
+            name: formatMessage({
+                id: 'minecraft.wheat_seeds',
+                default: '小麦の種'
+            }),
+            blockID: '0',
+            blockData: '0',
+            itemID: 'minecraft:wheat_seeds'
         },
         {
             name: formatMessage({
